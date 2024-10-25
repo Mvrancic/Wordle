@@ -1,5 +1,5 @@
 import React from 'react';
-import GameModeCard from '../../components/GameModeCard.jsx';
+import GameModeCard from '../../components/cards/GameModeCard.jsx';
 import '../../../styles/HomePage.css';
 import {Typography} from "@mui/material";
 
