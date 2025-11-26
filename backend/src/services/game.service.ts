@@ -1,5 +1,5 @@
 import gameRepository from '../repositories/game.repository';
-import { CreateGameDto, UpdateGameDto, GuessFeedback } from '../models/game.model';
+import { CreateGameDto, GuessFeedback } from '../models/game.model';
 
 // Simple word list for now - in production, this would come from a database
 const WORDS = [
