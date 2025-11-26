@@ -1,3 +1,4 @@
+import prisma from '../config/database';
 import gameRepository from '../repositories/game.repository';
 import { CreateGameDto, GuessFeedback } from '../models/game.model';
 
@@ -32,11 +33,26 @@ const WORDS = [
 export class GameService {
   async createGame(data: CreateGameDto) {
     // Select a random word
-    const randomWord = WORDS[Math.floor(Math.random() * WORDS.length)];
+    const randomWord = WORDS[Math.floor(Math.random() * WORDS.length)].toUpperCase();
+
+    // Find or create the word in the database
+    let word = await prisma.word.findUnique({
+      where: { word: randomWord },
+    });
+
+    if (!word) {
+      word = await prisma.word.create({
+        data: {
+          word: randomWord,
+          length: 5,
+          language: 'es',
+        },
+      });
+    }
 
     return gameRepository.create({
       ...data,
-      word: randomWord.toUpperCase(),
+      wordId: word.id,
     });
   }
 
@@ -60,7 +76,7 @@ export class GameService {
     }
 
     const upperGuess = guessWord.toUpperCase();
-    const upperWord = game.word.toUpperCase();
+    const upperWord = game.word.word.toUpperCase();
 
     // Generate feedback
     const feedback = this.generateFeedback(upperGuess, upperWord);
@@ -84,13 +100,19 @@ export class GameService {
         : 'playing';
 
     // Update game
-    const updatedGame = await gameRepository.update(gameId, {
+    await gameRepository.update(gameId, {
       attempts: newAttempts,
       status: newStatus,
     });
 
+    // Fetch updated game with word relation
+    const gameWithWord = await gameRepository.findById(gameId);
+    if (!gameWithWord) {
+      throw new Error('Game not found after update');
+    }
+
     return {
-      game: updatedGame,
+      game: gameWithWord,
       feedback,
       isWon,
       isGameOver: newStatus !== 'playing',
