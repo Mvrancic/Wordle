@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database for Development
+  postgres-dev:
+    image: postgres:15-alpine
+    container_name: wordle-postgres-dev
+    environment:
+      POSTGRES_DB: wordle_db_dev
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+      - ./backend/src/config/migrations.sql:/docker-entrypoint-initdb.d/01-migrations.sql
+    networks:
+      - wordle-dev-network
+    restart: unless-stopped
+
+  # Backend API Development
+  backend-dev:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: wordle-backend-dev
+    environment:
+      NODE_ENV: development
+      DB_HOST: postgres-dev
+      DB_PORT: 5432
+      DB_NAME: wordle_db_dev
+      DB_USER: postgres
+      DB_PASSWORD: password
+      PORT: 3001
+      FRONTEND_URL: http://localhost:3000
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres-dev
+    networks:
+      - wordle-dev-network
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+volumes:
+  postgres_dev_data:
+
+networks:
+  wordle-dev-network:
+    driver: bridge
+
+
+
+

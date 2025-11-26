@@ -1,0 +1,64 @@
+// This is your Prisma schema file for Supabase PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  username  String?  @unique
+  password  String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  games Game[]
+
+  @@map("users")
+}
+
+model Word {
+  id        String   @id @default(uuid())
+  word      String   @unique
+  length    Int      @default(5)
+  language  String   @default("es")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("words")
+}
+
+model Game {
+  id          String   @id @default(uuid())
+  userId      String?  @map("user_id")
+  wordId      String   @map("word_id")
+  gameMode    String   @default("classic") @map("game_mode")
+  status      String   @default("playing") // playing, won, lost
+  attempts    Int      @default(0)
+  maxAttempts Int      @default(6) @map("max_attempts")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  user   User?   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  word   Word    @relation(fields: [wordId], references: [id], onDelete: Restrict)
+  guesses Guess[]
+
+  @@map("games")
+}
+
+model Guess {
+  id          String   @id @default(uuid())
+  gameId      String   @map("game_id")
+  word        String
+  feedback    String   // JSON string with letter feedback
+  attemptNumber Int    @map("attempt_number")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  game Game @relation(fields: [gameId], references: [id], onDelete: Cascade)
+
+  @@map("guesses")
+}
