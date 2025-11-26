@@ -7,12 +7,12 @@ import {
 } from '../models/game.model';
 
 export class GameRepository {
-  async create(data: CreateGameDto): Promise<Game> {
+  async create(data: CreateGameDto & { wordId: string }): Promise<Game> {
     return prisma.game.create({
       data: {
         userId: data.userId,
         gameMode: data.gameMode || 'classic',
-        word: data.word || '',
+        wordId: data.wordId,
       },
     });
   }
@@ -20,7 +20,10 @@ export class GameRepository {
   async findById(id: string): Promise<GameWithGuesses | null> {
     return prisma.game.findUnique({
       where: { id },
-      include: { guesses: { orderBy: { attemptNumber: 'asc' } } },
+      include: {
+        guesses: { orderBy: { attemptNumber: 'asc' } },
+        word: true,
+      },
     });
   }
 

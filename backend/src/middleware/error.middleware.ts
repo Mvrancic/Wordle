@@ -3,7 +3,7 @@ import { ApiResponse } from '../types';
 
 export const errorHandler = (
   err: Error,
-  req: Request,
+  _req: Request,
   res: Response<ApiResponse>,
   _next: NextFunction
 ) => {

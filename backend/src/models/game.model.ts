@@ -1,7 +1,8 @@
-import { Game, Guess } from '@prisma/client';
+import { Game, Guess, Word } from '@prisma/client';
 
 export interface GameWithGuesses extends Game {
   guesses: Guess[];
+  word: Word;
 }
 
 export interface CreateGameDto {
