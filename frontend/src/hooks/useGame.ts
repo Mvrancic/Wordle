@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { gameApi } from '../services/api';
-import { Game, GameWithGuesses, GuessFeedback } from '../types';
+import { GameWithGuesses } from '../types';
 
 export function useGame() {
   const [game, setGame] = useState<GameWithGuesses | null>(null);
