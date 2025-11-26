@@ -1,12 +1,18 @@
 import { z } from 'zod';
 
 export const createGameSchema = z.object({
-  gameMode: z.enum(['classic', 'timer', 'accented', 'movies']).optional().default('classic'),
+  gameMode: z
+    .enum(['classic', 'timer', 'accented', 'movies'])
+    .optional()
+    .default('classic'),
   userId: z.string().uuid().optional(),
 });
 
 export const makeGuessSchema = z.object({
-  word: z.string().length(5).regex(/^[a-zA-Z]+$/),
+  word: z
+    .string()
+    .length(5)
+    .regex(/^[a-zA-Z]+$/),
 });
 
 export const updateGameSchema = z.object({
@@ -17,4 +23,3 @@ export const updateGameSchema = z.object({
 export type CreateGameInput = z.infer<typeof createGameSchema>;
 export type MakeGuessInput = z.infer<typeof makeGuessSchema>;
 export type UpdateGameInput = z.infer<typeof updateGameSchema>;
-

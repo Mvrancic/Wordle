@@ -25,4 +25,3 @@ export const notFoundHandler = (req: Request, res: Response<ApiResponse>) => {
     message: `Route ${req.method} ${req.path} not found`,
   });
 };
-

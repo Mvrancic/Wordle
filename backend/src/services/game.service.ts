@@ -3,16 +3,37 @@ import { CreateGameDto, GuessFeedback } from '../models/game.model';
 
 // Simple word list for now - in production, this would come from a database
 const WORDS = [
-  'WORLD', 'HELLO', 'WORDS', 'GAMES', 'QUICK', 'BROWN', 'FOXES', 'JUMPS',
-  'LAZER', 'CLOUD', 'MUSIC', 'DANCE', 'LIGHT', 'DARK', 'PEACE', 'LOVE',
-  'HAPPY', 'SMILE', 'OCEAN', 'BEACH', 'MOUNT', 'RIVER', 'FOREST', 'TREES'
+  'WORLD',
+  'HELLO',
+  'WORDS',
+  'GAMES',
+  'QUICK',
+  'BROWN',
+  'FOXES',
+  'JUMPS',
+  'LAZER',
+  'CLOUD',
+  'MUSIC',
+  'DANCE',
+  'LIGHT',
+  'DARK',
+  'PEACE',
+  'LOVE',
+  'HAPPY',
+  'SMILE',
+  'OCEAN',
+  'BEACH',
+  'MOUNT',
+  'RIVER',
+  'FOREST',
+  'TREES',
 ];
 
 export class GameService {
   async createGame(data: CreateGameDto) {
     // Select a random word
     const randomWord = WORDS[Math.floor(Math.random() * WORDS.length)];
-    
+
     return gameRepository.create({
       ...data,
       word: randomWord.toUpperCase(),
@@ -56,7 +77,11 @@ export class GameService {
     // Check if won
     const isWon = upperGuess === upperWord;
     const newAttempts = attemptNumber;
-    const newStatus = isWon ? 'won' : (newAttempts >= game.maxAttempts ? 'lost' : 'playing');
+    const newStatus = isWon
+      ? 'won'
+      : newAttempts >= game.maxAttempts
+        ? 'lost'
+        : 'playing';
 
     // Update game
     const updatedGame = await gameRepository.update(gameId, {
@@ -118,4 +143,3 @@ export class GameService {
 }
 
 export default new GameService();
-

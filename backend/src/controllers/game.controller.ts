@@ -16,7 +16,8 @@ export class GameController {
         message: 'Game created successfully',
       });
     } catch (error: unknown) {
-      const message = error instanceof Error ? error.message : 'Failed to create game';
+      const message =
+        error instanceof Error ? error.message : 'Failed to create game';
       res.status(500).json({
         success: false,
         error: message,
@@ -34,7 +35,8 @@ export class GameController {
         data: game,
       });
     } catch (error: unknown) {
-      const message = error instanceof Error ? error.message : 'Failed to get game';
+      const message =
+        error instanceof Error ? error.message : 'Failed to get game';
       const statusCode = message === 'Game not found' ? 404 : 500;
       res.status(statusCode).json({
         success: false,
@@ -53,11 +55,19 @@ export class GameController {
       res.json({
         success: true,
         data: result,
-        message: result.isWon ? 'Congratulations! You won!' : result.isGameOver ? 'Game over!' : 'Guess recorded',
+        message: result.isWon
+          ? 'Congratulations! You won!'
+          : result.isGameOver
+            ? 'Game over!'
+            : 'Guess recorded',
       });
     } catch (error: unknown) {
-      const message = error instanceof Error ? error.message : 'Failed to make guess';
-      const statusCode = message.includes('not found') || message.includes('not active') ? 400 : 500;
+      const message =
+        error instanceof Error ? error.message : 'Failed to make guess';
+      const statusCode =
+        message.includes('not found') || message.includes('not active')
+          ? 400
+          : 500;
       res.status(statusCode).json({
         success: false,
         error: message,
@@ -67,4 +77,3 @@ export class GameController {
 }
 
 export default new GameController();
-

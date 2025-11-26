@@ -18,7 +18,9 @@ export const getStatusColor = (status: string): string => {
   }
 };
 
-export const getFeedbackColor = (status: 'correct' | 'present' | 'absent'): string => {
+export const getFeedbackColor = (
+  status: 'correct' | 'present' | 'absent'
+): string => {
   switch (status) {
     case 'correct':
       return 'bg-green-500';
@@ -30,4 +32,3 @@ export const getFeedbackColor = (status: 'correct' | 'present' | 'absent'): stri
       return 'bg-gray-300';
   }
 };
-

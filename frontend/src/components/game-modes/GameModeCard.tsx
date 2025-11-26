@@ -13,7 +13,10 @@ interface GameModeCardProps {
   onClick: () => void;
 }
 
-export const GameModeCard: React.FC<GameModeCardProps> = ({ mode, onClick }) => {
+export const GameModeCard: React.FC<GameModeCardProps> = ({
+  mode,
+  onClick,
+}) => {
   return (
     <Card
       className={`cursor-pointer transition-all duration-200 ${

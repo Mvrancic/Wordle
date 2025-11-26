@@ -11,7 +11,9 @@ export const validate = (schema: ZodSchema) => {
         res.status(400).json({
           success: false,
           error: 'Validation error',
-          message: error.errors.map((e) => `${e.path.join('.')}: ${e.message}`).join(', '),
+          message: error.errors
+            .map(e => `${e.path.join('.')}: ${e.message}`)
+            .join(', '),
         });
       } else {
         next(error);
@@ -19,4 +21,3 @@ export const validate = (schema: ZodSchema) => {
     }
   };
 };
-

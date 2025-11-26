@@ -1,5 +1,11 @@
 import axios from 'axios';
-import { ApiResponse, Game, GameWithGuesses, CreateGameResponse, MakeGuessResponse } from '../types';
+import {
+  ApiResponse,
+  Game,
+  GameWithGuesses,
+  CreateGameResponse,
+  MakeGuessResponse,
+} from '../types';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
 
@@ -22,7 +28,9 @@ export const gameApi = {
   },
 
   getGame: async (id: string): Promise<GameWithGuesses> => {
-    const response = await apiClient.get<ApiResponse<GameWithGuesses>>(`/games/${id}`);
+    const response = await apiClient.get<ApiResponse<GameWithGuesses>>(
+      `/games/${id}`
+    );
     if (response.data.success && response.data.data) {
       return response.data.data;
     }
@@ -30,9 +38,12 @@ export const gameApi = {
   },
 
   makeGuess: async (gameId: string, word: string) => {
-    const response = await apiClient.post<MakeGuessResponse>(`/games/${gameId}/guess`, {
-      word,
-    });
+    const response = await apiClient.post<MakeGuessResponse>(
+      `/games/${gameId}/guess`,
+      {
+        word,
+      }
+    );
     if (response.data.success && response.data.data) {
       return response.data.data;
     }
@@ -41,4 +52,3 @@ export const gameApi = {
 };
 
 export default apiClient;
-

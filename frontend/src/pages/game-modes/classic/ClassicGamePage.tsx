@@ -18,7 +18,7 @@ export const ClassicGamePage: React.FC = () => {
   const [guesses, setGuesses] = useState<Guess[]>([]);
   const [revealingRow, setRevealingRow] = useState<number | null>(null);
   // TODO: Obtener palabra del backend
-  
+
   // Mostrar tooltip al entrar a la página
   useEffect(() => {
     const hasSeenTooltip = sessionStorage.getItem('wordle-help-tooltip-seen');
@@ -33,28 +33,31 @@ export const ClassicGamePage: React.FC = () => {
     setGameStarted(true);
   }, []);
 
-  const handleKeyPress = useCallback((key: string) => {
-    if (!gameStarted) return;
-    setCurrentGuess((prev) => {
-      if (prev.length < 5) {
-        return prev + key;
-      }
-      return prev;
-    });
-  }, [gameStarted]);
+  const handleKeyPress = useCallback(
+    (key: string) => {
+      if (!gameStarted) return;
+      setCurrentGuess(prev => {
+        if (prev.length < 5) {
+          return prev + key;
+        }
+        return prev;
+      });
+    },
+    [gameStarted]
+  );
 
   const handleDelete = useCallback(() => {
     if (!gameStarted) return;
-    setCurrentGuess((prev) => prev.slice(0, -1));
+    setCurrentGuess(prev => prev.slice(0, -1));
   }, [gameStarted]);
 
   const handleEnter = useCallback(() => {
     if (!gameStarted || currentGuess.length !== 5) return;
-    
+
     // Validar que sea una palabra válida (por ahora cualquier palabra de 5 letras)
     // TODO: Validar contra diccionario del backend
     // TODO: Obtener palabra del backend y generar feedback
-    
+
     // Por ahora, solo agregamos el intento sin feedback (todas las casillas en gris)
     const feedback: CellStatus[] = Array(5).fill('absent');
     const newGuess: Guess = {
@@ -62,7 +65,7 @@ export const ClassicGamePage: React.FC = () => {
       feedback,
     };
 
-    setGuesses((prev) => {
+    setGuesses(prev => {
       const newGuesses = [...prev, newGuess];
       setRevealingRow(prev.length);
       return newGuesses;
@@ -125,9 +128,9 @@ export const ClassicGamePage: React.FC = () => {
           </>
         )}
 
-        <InstructionsModal 
-          isOpen={showInstructions} 
-          onClose={() => setShowInstructions(false)} 
+        <InstructionsModal
+          isOpen={showInstructions}
+          onClose={() => setShowInstructions(false)}
         />
       </div>
     </Layout>

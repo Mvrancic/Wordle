@@ -20,4 +20,3 @@ export interface GuessFeedback {
   position: number;
   status: 'correct' | 'present' | 'absent';
 }
-

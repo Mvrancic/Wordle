@@ -16,12 +16,15 @@ export const Button: React.FC<ButtonProps> = ({
   disabled,
   ...props
 }) => {
-  const baseStyles = 'font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
-  
+  const baseStyles =
+    'font-semibold rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';
+
   const variants = {
-    primary: 'bg-wordle-correct hover:bg-wordle-correct/90 text-white focus:ring-wordle-correct',
+    primary:
+      'bg-wordle-correct hover:bg-wordle-correct/90 text-white focus:ring-wordle-correct',
     secondary: 'bg-gray-700 hover:bg-gray-600 text-white focus:ring-gray-500',
-    outline: 'border-2 border-gray-600 hover:bg-gray-700 text-white focus:ring-gray-500',
+    outline:
+      'border-2 border-gray-600 hover:bg-gray-700 text-white focus:ring-gray-500',
   };
 
   const sizes = {
@@ -40,4 +43,3 @@ export const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
-

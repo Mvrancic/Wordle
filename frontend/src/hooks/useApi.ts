@@ -20,7 +20,8 @@ export function useApi<T>() {
         options?.onSuccess?.(result);
         return result;
       } catch (err) {
-        const error = err instanceof Error ? err : new Error('An error occurred');
+        const error =
+          err instanceof Error ? err : new Error('An error occurred');
         setError(error);
         options?.onError?.(error);
         throw error;
@@ -39,4 +40,3 @@ export function useApi<T>() {
 
   return { data, loading, error, execute, reset };
 }
-

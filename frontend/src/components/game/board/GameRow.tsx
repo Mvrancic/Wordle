@@ -8,25 +8,25 @@ interface GameRowProps {
   isRevealing?: boolean;
 }
 
-export const GameRow: React.FC<GameRowProps> = ({ 
-  word, 
-  feedback, 
+export const GameRow: React.FC<GameRowProps> = ({
+  word,
+  feedback,
   isActive = false,
-  isRevealing = false 
+  isRevealing = false,
 }) => {
   const cells = Array.from({ length: 5 }, (_, index) => {
     const letter = word[index]?.toUpperCase();
     let status: CellStatus = 'empty';
     const hasFeedback = feedback && feedback[index] !== undefined;
-    
+
     if (hasFeedback) {
       status = feedback![index];
     } else if (letter) {
       status = 'filled';
     }
 
-    return { 
-      letter, 
+    return {
+      letter,
       status,
       flipDelay: index * 100, // 100ms delay entre cada casilla
       shouldFlip: hasFeedback && isRevealing,
