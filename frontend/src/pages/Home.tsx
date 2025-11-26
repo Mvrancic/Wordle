@@ -10,7 +10,8 @@ export const Home: React.FC = () => {
     {
       id: 'classic',
       title: 'Modo Clásico',
-      description: 'Juega partidas ilimitadas. Adivina palabras de 5 letras con 6 intentos.',
+      description:
+        'Juega partidas ilimitadas. Adivina palabras de 5 letras con 6 intentos.',
       available: true,
     },
     // Futuros modos de juego (deshabilitados por ahora)
@@ -53,7 +54,7 @@ export const Home: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {gameModes.map((mode) => (
+          {gameModes.map(mode => (
             <GameModeCard
               key={mode.id}
               mode={mode}

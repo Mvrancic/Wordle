@@ -12,7 +12,9 @@ export const KeyboardKey: React.FC<KeyboardKeyProps> = ({
   isPressed = false,
 }) => {
   const isSpecialKey = keyValue === 'ENTER' || keyValue === 'DELETE';
-  const width = isSpecialKey ? 'w-[72px] sm:w-16 md:w-20 lg:w-24' : 'w-12 sm:w-10 md:w-12 lg:w-14';
+  const width = isSpecialKey
+    ? 'w-[72px] sm:w-16 md:w-20 lg:w-24'
+    : 'w-12 sm:w-10 md:w-12 lg:w-14';
 
   return (
     <button

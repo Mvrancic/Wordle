@@ -31,8 +31,11 @@ export const Keyboard: React.FC<KeyboardProps> = ({
   return (
     <div className="space-y-2.5 sm:space-y-1.5 md:space-y-2 max-w-2xl mx-auto px-2 sm:px-0 pb-4 sm:pb-0">
       {KEYBOARD_ROWS.map((row, rowIndex) => (
-        <div key={rowIndex} className="flex gap-1.5 sm:gap-1 md:gap-1.5 justify-center">
-          {row.map((key) => (
+        <div
+          key={rowIndex}
+          className="flex gap-1.5 sm:gap-1 md:gap-1.5 justify-center"
+        >
+          {row.map(key => (
             <KeyboardKey
               key={key}
               keyValue={key}

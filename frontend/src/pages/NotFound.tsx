@@ -23,4 +23,3 @@ export const NotFound: React.FC = () => {
     </Layout>
   );
 };
-

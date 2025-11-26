@@ -6,23 +6,29 @@ interface InstructionsModalProps {
   onClose: () => void;
 }
 
-export const InstructionsModal: React.FC<InstructionsModalProps> = ({ isOpen, onClose }) => {
+export const InstructionsModal: React.FC<InstructionsModalProps> = ({
+  isOpen,
+  onClose,
+}) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose} title="Cómo jugar">
       <div className="space-y-4 sm:space-y-6 text-gray-300 text-sm sm:text-base">
+        <p>Adivina la palabra oculta en 6 intentos.</p>
         <p>
-          Adivina la palabra oculta en 6 intentos.
+          Cada intento debe ser una palabra válida de 5 letras. No puedes
+          ingresar letras aleatorias. Presiona el botón Enter para enviar tu
+          intento.
         </p>
         <p>
-          Cada intento debe ser una palabra válida de 5 letras. No puedes ingresar letras aleatorias. Presiona el botón Enter para enviar tu intento.
-        </p>
-        <p>
-          Después de tu envío, el color de las casillas cambiará como en los ejemplos de abajo.
+          Después de tu envío, el color de las casillas cambiará como en los
+          ejemplos de abajo.
         </p>
 
         <div className="space-y-3 sm:space-y-4 pt-3 sm:pt-4 border-t border-gray-700">
-          <h3 className="text-white font-semibold text-base sm:text-lg">Ejemplos</h3>
-          
+          <h3 className="text-white font-semibold text-base sm:text-lg">
+            Ejemplos
+          </h3>
+
           {/* Ejemplo 1 - Verde (G en GAMES) */}
           <div className="space-y-2">
             <div className="flex gap-1.5 sm:gap-2 justify-center">
@@ -43,7 +49,8 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({ isOpen, on
               </div>
             </div>
             <p className="text-sm">
-              La letra <strong className="text-wordle-correct">G</strong> está en la palabra y en la posición correcta.
+              La letra <strong className="text-wordle-correct">G</strong> está
+              en la palabra y en la posición correcta.
             </p>
           </div>
 
@@ -67,7 +74,8 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({ isOpen, on
               </div>
             </div>
             <p className="text-sm">
-              La letra <strong className="text-yellow-500">O</strong> está en la palabra pero en la posición incorrecta.
+              La letra <strong className="text-yellow-500">O</strong> está en la
+              palabra pero en la posición incorrecta.
             </p>
           </div>
 
@@ -91,7 +99,8 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({ isOpen, on
               </div>
             </div>
             <p className="text-sm">
-              La letra <strong className="text-gray-400">I</strong> no está en la palabra en ninguna posición.
+              La letra <strong className="text-gray-400">I</strong> no está en
+              la palabra en ninguna posición.
             </p>
           </div>
         </div>

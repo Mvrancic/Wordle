@@ -8,10 +8,10 @@ interface HeaderProps {
   showHelpTooltip?: boolean;
 }
 
-export const Header: React.FC<HeaderProps> = ({ 
-  gameModeTitle, 
+export const Header: React.FC<HeaderProps> = ({
+  gameModeTitle,
   onHelpClick,
-  showHelpTooltip = false 
+  showHelpTooltip = false,
 }) => {
   const location = useLocation();
   const isGamePage = location.pathname.includes('/game/');
@@ -28,7 +28,10 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="max-w-2xl mx-auto relative px-2 sm:px-0">
           <div className="flex justify-between items-center h-14 sm:h-16 relative">
             {/* Izquierda: Logo - completamente a la izquierda sin padding */}
-            <Link to="/" className="flex items-center absolute left-0 sm:left-0">
+            <Link
+              to="/"
+              className="flex items-center absolute left-0 sm:left-0"
+            >
               <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-white font-serif tracking-wide">
                 WORDLE
               </h1>
@@ -37,7 +40,9 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Centro: Título del modo de juego */}
             {gameModeTitle && (
               <div className="absolute left-1/2 transform -translate-x-1/2 hidden sm:block">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">{gameModeTitle}</h2>
+                <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">
+                  {gameModeTitle}
+                </h2>
               </div>
             )}
 

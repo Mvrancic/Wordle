@@ -19,7 +19,8 @@ export function useGame() {
       setGame(gameWithGuesses);
       return gameWithGuesses;
     } catch (err) {
-      const error = err instanceof Error ? err : new Error('Failed to create game');
+      const error =
+        err instanceof Error ? err : new Error('Failed to create game');
       setError(error);
       throw error;
     } finally {
@@ -35,7 +36,8 @@ export function useGame() {
       setGame(fetchedGame);
       return fetchedGame;
     } catch (err) {
-      const error = err instanceof Error ? err : new Error('Failed to fetch game');
+      const error =
+        err instanceof Error ? err : new Error('Failed to fetch game');
       setError(error);
       throw error;
     } finally {
@@ -43,24 +45,28 @@ export function useGame() {
     }
   }, []);
 
-  const makeGuess = useCallback(async (word: string) => {
-    if (!game) throw new Error('No game active');
-    
-    setLoading(true);
-    setError(null);
-    try {
-      const result = await gameApi.makeGuess(game.id, word);
-      const updatedGame = await gameApi.getGame(game.id);
-      setGame(updatedGame);
-      return result;
-    } catch (err) {
-      const error = err instanceof Error ? err : new Error('Failed to make guess');
-      setError(error);
-      throw error;
-    } finally {
-      setLoading(false);
-    }
-  }, [game]);
+  const makeGuess = useCallback(
+    async (word: string) => {
+      if (!game) throw new Error('No game active');
+
+      setLoading(true);
+      setError(null);
+      try {
+        const result = await gameApi.makeGuess(game.id, word);
+        const updatedGame = await gameApi.getGame(game.id);
+        setGame(updatedGame);
+        return result;
+      } catch (err) {
+        const error =
+          err instanceof Error ? err : new Error('Failed to make guess');
+        setError(error);
+        throw error;
+      } finally {
+        setLoading(false);
+      }
+    },
+    [game]
+  );
 
   const reset = useCallback(() => {
     setGame(null);
@@ -78,4 +84,3 @@ export function useGame() {
     reset,
   };
 }
-

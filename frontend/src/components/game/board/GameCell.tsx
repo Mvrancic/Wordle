@@ -10,14 +10,16 @@ interface GameCellProps {
   flipDelay?: number;
 }
 
-export const GameCell: React.FC<GameCellProps> = ({ 
-  letter, 
-  status, 
+export const GameCell: React.FC<GameCellProps> = ({
+  letter,
+  status,
   isActive = false,
   isFlipping = false,
-  flipDelay = 0
+  flipDelay = 0,
 }) => {
-  const [displayStatus, setDisplayStatus] = useState<CellStatus>(status === 'empty' ? 'empty' : 'filled');
+  const [displayStatus, setDisplayStatus] = useState<CellStatus>(
+    status === 'empty' ? 'empty' : 'filled'
+  );
 
   useEffect(() => {
     if (isFlipping) {
@@ -25,7 +27,7 @@ export const GameCell: React.FC<GameCellProps> = ({
       const timer = setTimeout(() => {
         setDisplayStatus(status);
       }, flipDelay + 250); // 250ms es la mitad de la animación
-      
+
       return () => clearTimeout(timer);
     } else {
       // Si no está haciendo flip, mostrar el status directamente

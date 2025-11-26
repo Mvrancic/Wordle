@@ -1,6 +1,10 @@
 import prisma from '../config/database';
 import { Game, Guess } from '@prisma/client';
-import { CreateGameDto, UpdateGameDto, GameWithGuesses } from '../models/game.model';
+import {
+  CreateGameDto,
+  UpdateGameDto,
+  GameWithGuesses,
+} from '../models/game.model';
 
 export class GameRepository {
   async create(data: CreateGameDto): Promise<Game> {
@@ -39,7 +43,12 @@ export class GameRepository {
     await prisma.game.delete({ where: { id } });
   }
 
-  async createGuess(gameId: string, word: string, feedback: string, attemptNumber: number): Promise<Guess> {
+  async createGuess(
+    gameId: string,
+    word: string,
+    feedback: string,
+    attemptNumber: number
+  ): Promise<Guess> {
     return prisma.guess.create({
       data: {
         gameId,
@@ -52,4 +61,3 @@ export class GameRepository {
 }
 
 export default new GameRepository();
-

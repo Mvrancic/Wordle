@@ -57,7 +57,7 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ items }) => {
       {isOpen && (
         <div className="absolute left-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-xl border border-gray-700 z-50">
           <div className="py-1">
-            {items.map((item) => (
+            {items.map(item => (
               <Link
                 key={item.path}
                 to={item.path}
@@ -73,4 +73,3 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ items }) => {
     </div>
   );
 };
-

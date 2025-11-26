@@ -72,4 +72,3 @@ app.listen(PORT, () => {
   logger.info(`📍 Environment: ${env.NODE_ENV}`);
   logger.info(`🔗 http://localhost:${PORT}`);
 });
-
