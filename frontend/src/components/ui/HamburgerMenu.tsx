@@ -35,7 +35,7 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ items }) => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="text-gray-300 hover:text-white p-2 rounded-md transition-colors"
-        aria-label="Menú"
+        aria-label="Menu"
       >
         <svg
           className="w-6 h-6"

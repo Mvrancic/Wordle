@@ -11,22 +11,22 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({
   onClose,
 }) => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title="Cómo jugar">
+    <Modal isOpen={isOpen} onClose={onClose} title="How to Play">
       <div className="space-y-4 sm:space-y-6 text-gray-300 text-sm sm:text-base">
-        <p>Adivina la palabra oculta en 6 intentos.</p>
+        <p>Guess the hidden word in 6 attempts.</p>
         <p>
-          Cada intento debe ser una palabra válida de 5 letras. No puedes
-          ingresar letras aleatorias. Presiona el botón Enter para enviar tu
-          intento.
+          Each attempt must be a valid 5-letter word. You cannot
+          enter random letters. Press the Enter button to submit your
+          attempt.
         </p>
         <p>
-          Después de tu envío, el color de las casillas cambiará como en los
-          ejemplos de abajo.
+          After your submission, the color of the tiles will change as shown in the
+          examples below.
         </p>
 
         <div className="space-y-3 sm:space-y-4 pt-3 sm:pt-4 border-t border-gray-700">
           <h3 className="text-white font-semibold text-base sm:text-lg">
-            Ejemplos
+            Examples
           </h3>
 
           {/* Ejemplo 1 - Verde (G en GAMES) */}
@@ -49,8 +49,8 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({
               </div>
             </div>
             <p className="text-sm">
-              La letra <strong className="text-wordle-correct">G</strong> está
-              en la palabra y en la posición correcta.
+              The letter <strong className="text-wordle-correct">G</strong> is
+              in the word and in the correct position.
             </p>
           </div>
 
@@ -74,8 +74,8 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({
               </div>
             </div>
             <p className="text-sm">
-              La letra <strong className="text-yellow-500">O</strong> está en la
-              palabra pero en la posición incorrecta.
+              The letter <strong className="text-yellow-500">O</strong> is in the
+              word but in the wrong position.
             </p>
           </div>
 
@@ -99,8 +99,8 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({
               </div>
             </div>
             <p className="text-sm">
-              La letra <strong className="text-gray-400">I</strong> no está en
-              la palabra en ninguna posición.
+              The letter <strong className="text-gray-400">I</strong> is not in
+              the word in any position.
             </p>
           </div>
         </div>

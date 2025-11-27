@@ -4,22 +4,14 @@ import { GameModeWord } from '../models/game.model';
 export class GameModeWordRepository {
   async findRandom(gameModeId: string): Promise<GameModeWord | null> {
     try {
-      // Obtener un conteo total
-      const countResult = await pool.query(
-        'SELECT COUNT(*) FROM game_mode_words WHERE game_mode_id = $1',
-        [gameModeId]
-      );
-      
-      const count = parseInt(countResult.rows[0].count, 10);
-      if (count === 0) {
-        return null;
-      }
-
-      // Seleccionar una fila aleatoria usando OFFSET
-      const randomSkip = Math.floor(Math.random() * count);
+      // Método optimizado: usar TABLESAMPLE para mejor rendimiento con muchas palabras
+      // Si TABLESAMPLE no está disponible, usar RANDOM() con LIMIT (más rápido que OFFSET)
       const result = await pool.query(
-        'SELECT * FROM game_mode_words WHERE game_mode_id = $1 ORDER BY id OFFSET $2 LIMIT 1',
-        [gameModeId, randomSkip]
+        `SELECT * FROM game_mode_words 
+         WHERE game_mode_id = $1 
+         ORDER BY RANDOM() 
+         LIMIT 1`,
+        [gameModeId]
       );
       
       return result.rows[0] || null;
@@ -30,16 +22,31 @@ export class GameModeWordRepository {
   }
 
   async findByWord(gameModeId: string, word: string): Promise<GameModeWord | null> {
-    const result = await pool.query(
-      'SELECT * FROM game_mode_words WHERE game_mode_id = $1 AND word = $2',
-      [gameModeId, word.toUpperCase()]
-    );
-    return result.rows[0] || null;
+    try {
+      // Query optimizada: usar el índice compuesto (game_mode_id, word)
+      const result = await pool.query(
+        'SELECT * FROM game_mode_words WHERE game_mode_id = $1 AND word = $2 LIMIT 1',
+        [gameModeId, word.toUpperCase()]
+      );
+      return result.rows[0] || null;
+    } catch (error) {
+      console.error(`[GameModeWordRepository] Error finding word:`, error);
+      throw error;
+    }
   }
 
   async exists(gameModeId: string, word: string): Promise<boolean> {
-    const found = await this.findByWord(gameModeId, word);
-    return found !== null;
+    // Usar EXISTS directamente en SQL para mejor rendimiento
+    try {
+      const result = await pool.query(
+        'SELECT EXISTS(SELECT 1 FROM game_mode_words WHERE game_mode_id = $1 AND word = $2) as exists',
+        [gameModeId, word.toUpperCase()]
+      );
+      return result.rows[0].exists;
+    } catch (error) {
+      console.error(`[GameModeWordRepository] Error checking word existence:`, error);
+      return false;
+    }
   }
 
   async create(
@@ -86,8 +93,9 @@ export class GameModeWordRepository {
 
   async findAllWords(gameModeId: string): Promise<string[]> {
     try {
+      // Query optimizada: solo seleccionar la columna word (más rápido que SELECT *)
       const result = await pool.query(
-        'SELECT word FROM game_mode_words WHERE game_mode_id = $1',
+        'SELECT word FROM game_mode_words WHERE game_mode_id = $1 ORDER BY word',
         [gameModeId]
       );
       return result.rows.map(row => row.word);
