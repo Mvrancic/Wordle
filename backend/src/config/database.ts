@@ -16,7 +16,9 @@ const pool = new Pool({
     : false,
   max: 20, // máximo de conexiones en el pool
   idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000,
+  connectionTimeoutMillis: 10000, // Aumentado a 10 segundos
+  statement_timeout: 30000, // Timeout para queries (30 segundos)
+  query_timeout: 30000,
 });
 
 // Manejar errores del pool

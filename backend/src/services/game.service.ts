@@ -5,30 +5,38 @@ import { CreateGameDto, GuessFeedback } from '../models/game.model';
 
 export class GameService {
   async createGame(data: CreateGameDto) {
-    // Get game mode
-    const gameModeName = data.gameMode || 'classic';
-    const gameMode = await gamemodeRepository.findByName(gameModeName);
-    if (!gameMode) {
-      throw new Error(`Game mode '${gameModeName}' not found`);
-    }
+    try {
+      // Get game mode
+      const gameModeName = data.gameMode || 'classic';
+      const gameMode = await gamemodeRepository.findByName(gameModeName);
+      if (!gameMode) {
+        throw new Error(`Game mode '${gameModeName}' not found`);
+      }
 
-    // Todos los modos usan las palabras del modo "classic"
-    const classicMode = await gamemodeRepository.findByName('classic');
-    if (!classicMode) {
-      throw new Error('Classic game mode not found');
-    }
+      // Todos los modos usan las palabras del modo "classic"
+      const classicMode = await gamemodeRepository.findByName('classic');
+      if (!classicMode) {
+        throw new Error('Classic game mode not found');
+      }
 
-    // Get a random word from the classic mode words
-    const gameModeWord = await gamemodewordRepository.findRandom(classicMode.id);
-    if (!gameModeWord) {
-      throw new Error('No words available for classic game mode');
-    }
+      // Get a random word from the classic mode words
+      const gameModeWord = await gamemodewordRepository.findRandom(classicMode.id);
+      if (!gameModeWord) {
+        throw new Error('No words available for classic game mode');
+      }
 
-    return gameRepository.create({
-      ...data,
-      gameModeId: gameMode.id,
-      targetWord: gameModeWord.word,
-    });
+      return await gameRepository.create({
+        ...data,
+        gameModeId: gameMode.id,
+        targetWord: gameModeWord.word,
+      });
+    } catch (error) {
+      console.error('[GameService] Error in createGame:', error);
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error('Failed to create game: Unknown error');
+    }
   }
 
   async getGameById(id: string) {

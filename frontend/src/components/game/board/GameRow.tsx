@@ -6,6 +6,7 @@ interface GameRowProps {
   feedback?: CellStatus[];
   isActive?: boolean;
   isRevealing?: boolean;
+  shouldShake?: boolean;
 }
 
 export const GameRow: React.FC<GameRowProps> = ({
@@ -13,6 +14,7 @@ export const GameRow: React.FC<GameRowProps> = ({
   feedback,
   isActive = false,
   isRevealing = false,
+  shouldShake = false,
 }) => {
   const cells = Array.from({ length: 5 }, (_, index) => {
     const letter = word[index]?.toUpperCase();
@@ -28,13 +30,17 @@ export const GameRow: React.FC<GameRowProps> = ({
     return {
       letter,
       status,
-      flipDelay: index * 100, // 100ms delay entre cada casilla
+      flipDelay: index * 150, // 150ms delay entre cada casilla (más espaciado)
       shouldFlip: hasFeedback && isRevealing,
     };
   });
 
   return (
-    <div className="flex gap-1.5 sm:gap-2 md:gap-2.5 justify-center">
+    <div
+      className={`flex gap-1.5 sm:gap-2 md:gap-2.5 justify-center ${
+        shouldShake ? 'shake-animation' : ''
+      }`}
+    >
       {cells.map((cell, index) => (
         <GameCell
           key={index}

@@ -59,6 +59,16 @@ export const gameApi = {
     }
     return false;
   },
+
+  getAllWords: async (gameMode: string = 'classic'): Promise<string[]> => {
+    const response = await apiClient.get<ApiResponse<{ words: string[] }>>(
+      `/words/all?gameMode=${gameMode}`
+    );
+    if (response.data.success && response.data.data) {
+      return response.data.data.words;
+    }
+    throw new Error(response.data.error || 'Failed to get words');
+  },
 };
 
 export default apiClient;

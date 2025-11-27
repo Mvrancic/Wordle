@@ -3,11 +3,16 @@ import { GameMode } from '../models/game.model';
 
 export class GameModeRepository {
   async findByName(name: string): Promise<GameMode | null> {
-    const result = await pool.query(
-      'SELECT * FROM game_modes WHERE name = $1',
-      [name]
-    );
-    return result.rows[0] || null;
+    try {
+      const result = await pool.query(
+        'SELECT * FROM game_modes WHERE name = $1',
+        [name]
+      );
+      return result.rows[0] || null;
+    } catch (error) {
+      console.error(`[GameModeRepository] Error finding game mode by name '${name}':`, error);
+      throw error;
+    }
   }
 
   async findById(id: string): Promise<GameMode | null> {
