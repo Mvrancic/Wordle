@@ -43,10 +43,10 @@ export const ClassicGamePage: React.FC = () => {
         console.error('Error creating game:', err);
         const errorMessage =
           err instanceof Error && err.message.includes('Network')
-            ? 'Error de conexión. Verifica que el backend esté corriendo.'
+            ? 'Connection error. Make sure the backend is running.'
             : err instanceof Error && err.message.includes('500')
-              ? 'Error del servidor. Intenta de nuevo en unos momentos.'
-              : 'Error al crear la partida. Intenta de nuevo.';
+              ? 'Server error. Please try again in a moment.'
+              : 'Error creating game. Please try again.';
         setToast({ message: errorMessage, type: 'error' });
       }
     };
@@ -128,7 +128,7 @@ export const ClassicGamePage: React.FC = () => {
           // Animación shake en la fila actual
           const currentRowIndex = guesses.length;
           setShakingRow(currentRowIndex);
-          setToast({ message: 'Palabra no válida', type: 'error' });
+          setToast({ message: 'Invalid word', type: 'error' });
           
           // Limpiar shake después de la animación
           setTimeout(() => {
@@ -179,11 +179,11 @@ export const ClassicGamePage: React.FC = () => {
       }
     } catch (err) {
       const errorMessage =
-        err instanceof Error ? err.message : 'Error al procesar el intento';
+        err instanceof Error ? err.message : 'Error processing attempt';
       
       // Si es error 500, mostrar toast y ocultar después de 3 segundos
       if (errorMessage.includes('500') || errorMessage.includes('Failed')) {
-        setToast({ message: 'Error del servidor. Intenta de nuevo.', type: 'error' });
+        setToast({ message: 'Server error. Please try again.', type: 'error' });
       } else {
         setToast({ message: errorMessage, type: 'error' });
       }
@@ -206,7 +206,7 @@ export const ClassicGamePage: React.FC = () => {
       await createGame('classic');
     } catch (err) {
       console.error('Error restarting game:', err);
-      setToast({ message: 'Error al reiniciar la partida. Intenta de nuevo.', type: 'error' });
+      setToast({ message: 'Error restarting game. Please try again.', type: 'error' });
     }
   }, [createGame, reset]);
 
@@ -227,7 +227,7 @@ export const ClassicGamePage: React.FC = () => {
       }
 
       const key = e.key.toUpperCase();
-      if (key.length === 1 && /[A-ZÑ]/.test(key)) {
+      if (key.length === 1 && /[A-Z]/.test(key)) {
         e.preventDefault();
         handleKeyPress(key);
       } else if (key === 'BACKSPACE' || key === 'DELETE') {
@@ -247,7 +247,7 @@ export const ClassicGamePage: React.FC = () => {
 
   return (
     <Layout
-      gameModeTitle="Modo Clásico"
+      gameModeTitle="Classic Mode"
       onHelpClick={() => setShowInstructions(true)}
       showHelpTooltip={showHelpTooltip}
     >
@@ -260,7 +260,7 @@ export const ClassicGamePage: React.FC = () => {
         />
 
         {loading && !game && (
-          <div className="text-center text-white">Cargando partida...</div>
+          <div className="text-center text-white">Loading game...</div>
         )}
         
         {error && !toast && (

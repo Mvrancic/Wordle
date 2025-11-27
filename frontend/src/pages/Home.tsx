@@ -9,28 +9,28 @@ export const Home: React.FC = () => {
   const gameModes = [
     {
       id: 'classic',
-      title: 'Modo Clásico',
+      title: 'Classic Mode',
       description:
-        'Juega partidas ilimitadas. Adivina palabras de 5 letras con 6 intentos.',
+        'Play unlimited games. Guess 5-letter words with 6 attempts.',
       available: true,
     },
-    // Futuros modos de juego (deshabilitados por ahora)
+    // Future game modes (disabled for now)
     {
       id: 'timer',
-      title: 'Modo Contrareloj',
-      description: 'Adivina palabras lo más rápido posible.',
+      title: 'Timer Mode',
+      description: 'Guess words as fast as possible.',
       available: false,
     },
     {
       id: 'hardcore',
-      title: 'Modo Difícil',
-      description: 'Debes usar todas las pistas que te dan en cada intento.',
+      title: 'Hard Mode',
+      description: 'You must use all the clues you get in each attempt.',
       available: false,
     },
     {
       id: 'daily',
-      title: 'Palabra del Día',
-      description: 'Una palabra nueva cada día. ¿Podrás adivinarla?',
+      title: 'Daily Word',
+      description: 'A new word every day. Can you guess it?',
       available: false,
     },
   ];
@@ -46,10 +46,10 @@ export const Home: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-3 sm:mb-4 font-serif tracking-wide">
-            Bienvenido a Wordle 
+            Welcome to Wordle 
           </h1>
           <p className="text-gray-300 text-base sm:text-lg md:text-xl">
-            Elige tu modo de juego
+            Choose your game mode
           </p>
         </div>
 

@@ -17,8 +17,8 @@ export const Header: React.FC<HeaderProps> = ({
   const isGamePage = location.pathname.includes('/game/');
 
   const menuItems = [
-    { label: 'Inicio', path: '/' },
-    { label: 'Perfil', path: '/profile' }, // TODO: implementar después
+    { label: 'Home', path: '/' },
+    { label: 'Profile', path: '/profile' }, // TODO: implement later
   ];
 
   if (isGamePage) {
@@ -51,14 +51,14 @@ export const Header: React.FC<HeaderProps> = ({
               <div className="relative">
                 {showHelpTooltip && (
                   <div className="absolute bottom-full right-0 mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded whitespace-nowrap border border-gray-700 z-10">
-                    Las instrucciones están aquí
+                    Instructions are here
                     <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
                   </div>
                 )}
                 <button
                   onClick={onHelpClick}
                   className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gray-700 hover:bg-gray-600 text-white font-bold text-base sm:text-lg flex items-center justify-center transition-colors"
-                  aria-label="Instrucciones"
+                  aria-label="Instructions"
                 >
                   ?
                 </button>
