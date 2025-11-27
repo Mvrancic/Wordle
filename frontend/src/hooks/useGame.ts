@@ -7,24 +7,39 @@ export function useGame() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
-  const createGame = useCallback(async (gameMode?: string) => {
+  const createGame = useCallback(async (gameMode?: string, retries = 2) => {
     setLoading(true);
     setError(null);
-    try {
-      const newGame = await gameApi.createGame(gameMode);
-      const gameWithGuesses: GameWithGuesses = {
-        ...newGame,
-        guesses: [],
-      };
-      setGame(gameWithGuesses);
-      return gameWithGuesses;
-    } catch (err) {
-      const error =
-        err instanceof Error ? err : new Error('Failed to create game');
-      setError(error);
-      throw error;
-    } finally {
-      setLoading(false);
+    
+    for (let attempt = 0; attempt <= retries; attempt++) {
+      try {
+        const newGame = await gameApi.createGame(gameMode);
+        const gameWithGuesses: GameWithGuesses = {
+          ...newGame,
+          guesses: [],
+        };
+        setGame(gameWithGuesses);
+        setLoading(false);
+        return gameWithGuesses;
+      } catch (err) {
+        const isLastAttempt = attempt === retries;
+        const isServerError = err instanceof Error && (
+          err.message.includes('500') || 
+          err.message.includes('Failed') ||
+          err.message.includes('Network')
+        );
+        
+        if (isLastAttempt || !isServerError) {
+          const error =
+            err instanceof Error ? err : new Error('Failed to create game');
+          setError(error);
+          setLoading(false);
+          throw error;
+        }
+        
+        // Esperar antes de reintentar (exponential backoff)
+        await new Promise(resolve => setTimeout(resolve, 1000 * (attempt + 1)));
+      }
     }
   }, []);
 

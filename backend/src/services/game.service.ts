@@ -1,59 +1,42 @@
-import prisma from '../config/database';
+import gamemodewordRepository from '../repositories/gamemodeword.repository';
+import gamemodeRepository from '../repositories/gamemode.repository';
 import gameRepository from '../repositories/game.repository';
 import { CreateGameDto, GuessFeedback } from '../models/game.model';
 
-// Simple word list for now - in production, this would come from a database
-const WORDS = [
-  'WORLD',
-  'HELLO',
-  'WORDS',
-  'GAMES',
-  'QUICK',
-  'BROWN',
-  'FOXES',
-  'JUMPS',
-  'LAZER',
-  'CLOUD',
-  'MUSIC',
-  'DANCE',
-  'LIGHT',
-  'DARK',
-  'PEACE',
-  'LOVE',
-  'HAPPY',
-  'SMILE',
-  'OCEAN',
-  'BEACH',
-  'MOUNT',
-  'RIVER',
-  'FOREST',
-  'TREES',
-];
-
 export class GameService {
   async createGame(data: CreateGameDto) {
-    // Select a random word
-    const randomWord = WORDS[Math.floor(Math.random() * WORDS.length)].toUpperCase();
+    try {
+      // Get game mode
+      const gameModeName = data.gameMode || 'classic';
+      const gameMode = await gamemodeRepository.findByName(gameModeName);
+      if (!gameMode) {
+        throw new Error(`Game mode '${gameModeName}' not found`);
+      }
 
-    // Find or create the word in the database
-    let word = await prisma.word.findUnique({
-      where: { word: randomWord },
-    });
+      // Todos los modos usan las palabras del modo "classic"
+      const classicMode = await gamemodeRepository.findByName('classic');
+      if (!classicMode) {
+        throw new Error('Classic game mode not found');
+      }
 
-    if (!word) {
-      word = await prisma.word.create({
-        data: {
-          word: randomWord,
-          length: 5,
-          language: 'es',
-        },
+      // Get a random word from the classic mode words
+      const gameModeWord = await gamemodewordRepository.findRandom(classicMode.id);
+      if (!gameModeWord) {
+        throw new Error('No words available for classic game mode');
+      }
+
+      return await gameRepository.create({
+        ...data,
+        gameModeId: gameMode.id,
+        targetWord: gameModeWord.word,
       });
+    } catch (error) {
+      console.error('[GameService] Error in createGame:', error);
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error('Failed to create game: Unknown error');
     }
-
-    return gameRepository.create({
-      ...data,
-      wordId: word.id,
-    });
   }
 
   async getGameById(id: string) {
@@ -76,7 +59,19 @@ export class GameService {
     }
 
     const upperGuess = guessWord.toUpperCase();
-    const upperWord = game.word.word.toUpperCase();
+    
+    // Validar que la palabra existe en el diccionario (usando palabras del modo classic)
+    const classicMode = await gamemodeRepository.findByName('classic');
+    if (!classicMode) {
+      throw new Error('Classic game mode not found');
+    }
+    
+    const wordExists = await gamemodewordRepository.exists(classicMode.id, upperGuess);
+    if (!wordExists) {
+      throw new Error('Word is not valid');
+    }
+
+    const upperWord = game.targetWord.toUpperCase();
 
     // Generate feedback
     const feedback = this.generateFeedback(upperGuess, upperWord);

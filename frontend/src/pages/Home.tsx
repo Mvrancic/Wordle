@@ -22,9 +22,9 @@ export const Home: React.FC = () => {
       available: false,
     },
     {
-      id: 'accented',
-      title: 'Con Tildes',
-      description: 'Palabras con acentos y caracteres especiales.',
+      id: 'hardcore',
+      title: 'Modo Difícil',
+      description: 'Debes usar todas las pistas que te dan en cada intento.',
       available: false,
     },
     {
@@ -46,7 +46,7 @@ export const Home: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-3 sm:mb-4 font-serif tracking-wide">
-            WORDLE
+            Bienvenido a Wordle 
           </h1>
           <p className="text-gray-300 text-base sm:text-lg md:text-xl">
             Elige tu modo de juego
