@@ -1,20 +1,25 @@
 export interface Game {
   id: string;
   userId?: string;
-  word: string;
-  gameMode: string;
+  gameModeId: string;
+  targetWord: string;
   status: 'playing' | 'won' | 'lost';
   attempts: number;
   maxAttempts: number;
   createdAt: string;
   updatedAt: string;
+  gameMode?: {
+    id: string;
+    name: string;
+    description?: string;
+  };
 }
 
 export interface Guess {
   id: string;
   gameId: string;
   word: string;
-  feedback: string;
+  feedback: string; // JSON string with GuessFeedback[]
   attemptNumber: number;
   createdAt: string;
 }

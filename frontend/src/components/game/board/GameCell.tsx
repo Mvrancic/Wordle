@@ -23,18 +23,24 @@ export const GameCell: React.FC<GameCellProps> = ({
 
   useEffect(() => {
     if (isFlipping) {
-      // Cambiar al estado final en la mitad de la animación
+      // Al inicio del flip, mantener 'filled' (gris)
+      setDisplayStatus('filled');
+      
+      // Cambiar al color final a mitad de la animación (cuando está de lado)
+      // La animación dura 1.2s, así que cambiamos a los 600ms (mitad)
       const timer = setTimeout(() => {
         setDisplayStatus(status);
-      }, flipDelay + 250); // 250ms es la mitad de la animación
+      }, 600 + flipDelay); // Sumar el delay de esta casilla específica
 
       return () => clearTimeout(timer);
     } else {
       // Si no está haciendo flip, mostrar el status directamente
-      if (status !== 'empty') {
+      if (status !== 'empty' && status !== 'filled') {
         setDisplayStatus(status);
-      } else {
+      } else if (status === 'empty') {
         setDisplayStatus('empty');
+      } else {
+        setDisplayStatus('filled');
       }
     }
   }, [isFlipping, status, flipDelay]);
@@ -58,7 +64,7 @@ export const GameCell: React.FC<GameCellProps> = ({
 
   return (
     <div
-      className={`aspect-square w-full max-w-[48px] sm:max-w-[56px] md:max-w-[64px] lg:max-w-[70px] rounded border-2 flex items-center justify-center text-lg sm:text-xl md:text-2xl font-bold uppercase transition-colors duration-200 ${getStatusStyles()} ${
+      className={`aspect-square w-full max-w-[48px] sm:max-w-[56px] md:max-w-[64px] lg:max-w-[70px] rounded border-2 flex items-center justify-center text-lg sm:text-xl md:text-2xl font-bold uppercase transition-colors duration-300 ${getStatusStyles()} ${
         isFlipping ? 'flip-animation' : ''
       }`}
       style={{

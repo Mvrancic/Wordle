@@ -3,10 +3,10 @@ import gameService from '../services/game.service';
 import { ApiResponse } from '../types';
 
 export class GameController {
-  async createGame(req: Request, res: Response<ApiResponse>) {
+  async createGame(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
       const game = await gameService.createGame({
-        userId: req.user?.id,
+        userId: undefined, // TODO: Implementar autenticación cuando sea necesario
         gameMode: req.body.gameMode,
       });
 
@@ -18,14 +18,23 @@ export class GameController {
     } catch (error: unknown) {
       const message =
         error instanceof Error ? error.message : 'Failed to create game';
-      res.status(500).json({
+      
+      // Log del error completo para debugging
+      console.error('[GameController] Error creating game:', error);
+      if (error instanceof Error) {
+        console.error('[GameController] Error stack:', error.stack);
+      }
+      
+      // Retornar mensaje más específico
+      const statusCode = message.includes('not found') || message.includes('No words') ? 404 : 500;
+      res.status(statusCode).json({
         success: false,
         error: message,
       });
     }
   }
 
-  async getGame(req: Request, res: Response<ApiResponse>) {
+  async getGame(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
       const { id } = req.params;
       const game = await gameService.getGameById(id);
@@ -45,7 +54,7 @@ export class GameController {
     }
   }
 
-  async makeGuess(req: Request, res: Response<ApiResponse>) {
+  async makeGuess(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
       const { id } = req.params;
       const { word } = req.body;

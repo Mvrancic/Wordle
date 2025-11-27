@@ -1,7 +1,8 @@
 // This is your Prisma schema file for Supabase PostgreSQL
 
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native"]
 }
 
 datasource db {
@@ -22,43 +23,58 @@ model User {
   @@map("users")
 }
 
-model Word {
-  id        String   @id @default(uuid())
-  word      String   @unique
-  length    Int      @default(5)
-  language  String   @default("es")
-  createdAt DateTime @default(now()) @map("created_at")
+model GameMode {
+  id          String           @id @default(uuid())
+  name        String           @unique
+  description String?
+  createdAt   DateTime         @default(now()) @map("created_at")
+  updatedAt   DateTime         @updatedAt @map("updated_at")
 
-  games Game[]
+  words      GameModeWord[]
+  games      Game[]
 
-  @@map("words")
+  @@map("game_modes")
+}
+
+model GameModeWord {
+  id          String   @id @default(uuid())
+  gameModeId  String   @map("game_mode_id")
+  word        String
+  length      Int      @default(5)
+  language    String   @default("es")
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  gameMode GameMode @relation(fields: [gameModeId], references: [id], onDelete: Cascade)
+
+  @@unique([gameModeId, word])
+  @@map("game_mode_words")
 }
 
 model Game {
   id          String   @id @default(uuid())
   userId      String?  @map("user_id")
-  wordId      String   @map("word_id")
-  gameMode    String   @default("classic") @map("game_mode")
+  gameModeId  String   @map("game_mode_id")
+  targetWord  String   @map("target_word")
   status      String   @default("playing") // playing, won, lost
   attempts    Int      @default(0)
   maxAttempts Int      @default(6) @map("max_attempts")
   createdAt   DateTime @default(now()) @map("created_at")
   updatedAt   DateTime @updatedAt @map("updated_at")
 
-  user   User?   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  word   Word    @relation(fields: [wordId], references: [id], onDelete: Restrict)
-  guesses Guess[]
+  user     User?     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  gameMode GameMode  @relation(fields: [gameModeId], references: [id], onDelete: Restrict)
+  guesses  Guess[]
 
   @@map("games")
 }
 
 model Guess {
-  id          String   @id @default(uuid())
-  gameId      String   @map("game_id")
-  word        String
-  feedback    String   // JSON string with letter feedback
-  attemptNumber Int    @map("attempt_number")
-  createdAt   DateTime @default(now()) @map("created_at")
+  id            String   @id @default(uuid())
+  gameId        String   @map("game_id")
+  word          String
+  feedback      String   // JSON string with letter feedback
+  attemptNumber Int      @map("attempt_number")
+  createdAt     DateTime @default(now()) @map("created_at")
 
   game Game @relation(fields: [gameId], references: [id], onDelete: Cascade)
 
