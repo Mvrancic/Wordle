@@ -1,13 +1,18 @@
 import { useState, useEffect, useCallback } from 'react';
-import { gameApi } from '../services/api';
 
+// Cache global para el diccionario (cargar una sola vez)
 let wordsCache: Set<string> | null = null;
 let isLoadingWords = false;
 let loadPromise: Promise<Set<string>> | null = null;
 
+interface WordListData {
+  word: string;
+}
+
 /**
- * Hook para obtener y cachear el diccionario de palabras válidas
- * Descarga todas las palabras una sola vez y las almacena en memoria
+ * Hook para cargar el diccionario de palabras válidas dinámicamente
+ * Carga desde /word_list.json usando fetch (no bloquea el bundle)
+ * Cache automático del navegador, fácil de actualizar sin recompilar
  */
 export function useWordDictionary() {
   const [isReady, setIsReady] = useState(wordsCache !== null);
@@ -33,16 +38,21 @@ export function useWordDictionary() {
       return;
     }
 
-    // Cargar las palabras
+    // Cargar las palabras dinámicamente
     setIsLoading(true);
     isLoadingWords = true;
     
-    loadPromise = gameApi
-      .getAllWords('classic')
-      .then(words => {
-        // Optimización: crear Set directamente desde array mapeado (más eficiente)
-        const upperWords = words.map(w => w.toUpperCase());
-        wordsCache = new Set(upperWords);
+    loadPromise = fetch('/word_list.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load word list');
+        }
+        return response.json() as Promise<WordListData[]>;
+      })
+      .then(wordListData => {
+        // Extraer palabras y convertir a Set
+        const words = wordListData.map(item => item.word.toUpperCase());
+        wordsCache = new Set(words);
         isLoadingWords = false;
         setIsReady(true);
         setIsLoading(false);
@@ -64,16 +74,28 @@ export function useWordDictionary() {
   const validateWord = useCallback((word: string): boolean => {
     if (!wordsCache) {
       // Si el diccionario no está cargado, permitir la palabra
-      // El backend la validará de todas formas
+      // Para evitar bloqueos durante la carga inicial
       return true;
     }
     return wordsCache.has(word.toUpperCase());
+  }, []);
+
+  const getDictionary = useCallback((): Set<string> | null => {
+    return wordsCache;
+  }, []);
+
+  const getWordList = useCallback((): string[] => {
+    if (!wordsCache) {
+      return [];
+    }
+    return Array.from(wordsCache);
   }, []);
 
   return {
     isReady,
     isLoading,
     validateWord,
+    getDictionary,
+    getWordList,
   };
 }
-

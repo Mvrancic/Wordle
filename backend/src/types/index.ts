@@ -1,5 +1,4 @@
-// Tipos compartidos del backend (sin Prisma)
-import { Game, Guess } from '../models/game.model';
+// Tipos compartidos del backend
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export interface ApiResponse<T = any> {
@@ -16,6 +15,3 @@ export interface PaginatedResponse<T> {
   limit: number;
   totalPages: number;
 }
-
-// Re-exportar tipos del modelo
-export type { Game, Guess };
