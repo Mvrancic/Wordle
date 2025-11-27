@@ -1,21 +1,28 @@
-import { PrismaClient } from '@prisma/client';
+import { Pool } from 'pg';
+import dotenv from 'dotenv';
 
-const prismaClientSingleton = () => {
-  return new PrismaClient({
-    log:
-      process.env.NODE_ENV === 'development'
-        ? ['query', 'error', 'warn']
-        : ['error'],
-  });
-};
+dotenv.config();
 
-declare global {
-  // eslint-disable-next-line no-var
-  var prismaGlobal: undefined | ReturnType<typeof prismaClientSingleton>;
-}
+// Limpiar la URL de parámetros que pg no necesita
+const cleanDatabaseUrl = process.env.DATABASE_URL?.replace('?sslmode=require', '') || '';
 
-const prisma = globalThis.prismaGlobal ?? prismaClientSingleton();
+// Configurar pool de conexiones PostgreSQL
+const pool = new Pool({
+  connectionString: cleanDatabaseUrl,
+  ssl: cleanDatabaseUrl.includes('supabase') || cleanDatabaseUrl.includes('.supabase.co')
+    ? { 
+        rejectUnauthorized: false
+      }
+    : false,
+  max: 20, // máximo de conexiones en el pool
+  idleTimeoutMillis: 30000,
+  connectionTimeoutMillis: 2000,
+});
 
-export default prisma;
+// Manejar errores del pool
+pool.on('error', (err) => {
+  console.error('Unexpected error on idle client', err);
+  process.exit(-1);
+});
 
-if (process.env.NODE_ENV !== 'production') globalThis.prismaGlobal = prisma;
+export default pool;

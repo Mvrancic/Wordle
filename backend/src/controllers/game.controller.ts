@@ -3,10 +3,10 @@ import gameService from '../services/game.service';
 import { ApiResponse } from '../types';
 
 export class GameController {
-  async createGame(req: Request, res: Response<ApiResponse>) {
+  async createGame(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
       const game = await gameService.createGame({
-        userId: req.user?.id,
+        userId: undefined, // TODO: Implementar autenticación cuando sea necesario
         gameMode: req.body.gameMode,
       });
 
@@ -25,7 +25,7 @@ export class GameController {
     }
   }
 
-  async getGame(req: Request, res: Response<ApiResponse>) {
+  async getGame(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
       const { id } = req.params;
       const game = await gameService.getGameById(id);
@@ -45,7 +45,7 @@ export class GameController {
     }
   }
 
-  async makeGuess(req: Request, res: Response<ApiResponse>) {
+  async makeGuess(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
       const { id } = req.params;
       const { word } = req.body;

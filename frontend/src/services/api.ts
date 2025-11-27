@@ -49,6 +49,16 @@ export const gameApi = {
     }
     throw new Error(response.data.error || 'Failed to make guess');
   },
+
+  validateWord: async (word: string, gameMode: string = 'classic'): Promise<boolean> => {
+    const response = await apiClient.get<ApiResponse<{ isValid: boolean }>>(
+      `/words/validate/${word}?gameMode=${gameMode}`
+    );
+    if (response.data.success && response.data.data) {
+      return response.data.data.isValid;
+    }
+    return false;
+  },
 };
 
 export default apiClient;
