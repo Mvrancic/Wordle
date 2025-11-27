@@ -30,7 +30,7 @@ export const GameRow: React.FC<GameRowProps> = ({
     return {
       letter,
       status,
-      flipDelay: index * 150, // 150ms delay entre cada casilla (más espaciado)
+      flipDelay: index * 200, // 250ms delay entre cada casilla (animación más espaciada)
       shouldFlip: hasFeedback && isRevealing,
     };
   });
