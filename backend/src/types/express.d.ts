@@ -1,4 +1,4 @@
-import { User } from '../models/game.model';
+import type { User } from '../models/user.model';
 
 declare global {
   namespace Express {
@@ -7,3 +7,5 @@ declare global {
     }
   }
 }
+
+export {};
