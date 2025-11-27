@@ -40,10 +40,13 @@ export function useWordDictionary() {
     loadPromise = gameApi
       .getAllWords('classic')
       .then(words => {
-        wordsCache = new Set(words.map(w => w.toUpperCase()));
+        // Optimización: crear Set directamente desde array mapeado (más eficiente)
+        const upperWords = words.map(w => w.toUpperCase());
+        wordsCache = new Set(upperWords);
         isLoadingWords = false;
         setIsReady(true);
         setIsLoading(false);
+        console.log(`Loaded ${words.length} words into dictionary cache`);
         return wordsCache;
       })
       .catch(error => {
