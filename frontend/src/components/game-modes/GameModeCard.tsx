@@ -31,7 +31,7 @@ export const GameModeCard: React.FC<GameModeCardProps> = ({
         <p className="text-gray-300">{mode.description}</p>
         {!mode.available && (
           <span className="inline-block text-sm text-gray-500 italic">
-            Próximamente
+            Coming Soon
           </span>
         )}
       </div>
