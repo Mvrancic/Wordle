@@ -9,56 +9,91 @@ export class GameRepository {
   async create(
     data: CreateGameDto & { gameModeId: string; targetWord: string }
   ): Promise<Game> {
-    const result = await pool.query(
-      `INSERT INTO games (user_id, game_mode_id, target_word, max_attempts, status, attempts)
-       VALUES ($1, $2, $3, $4, 'playing', 0)
-       RETURNING *`,
-      [data.userId || null, data.gameModeId, data.targetWord, data.maxAttempts || 6]
-    );
-    return result.rows[0];
+    try {
+      const result = await pool.query(
+        `INSERT INTO games (user_id, game_mode_id, target_word, max_attempts, status, attempts)
+         VALUES ($1, $2, $3, $4, 'playing', 0)
+         RETURNING *`,
+        [data.userId || null, data.gameModeId, data.targetWord, data.maxAttempts || 6]
+      );
+      
+      if (!result.rows[0]) {
+        throw new Error('Failed to create game: No data returned');
+      }
+      
+      const game = result.rows[0];
+      return {
+        ...game,
+        userId: game.user_id || undefined,
+        gameModeId: game.game_mode_id,
+        targetWord: game.target_word,
+        maxAttempts: game.max_attempts,
+        createdAt: game.created_at,
+        updatedAt: game.updated_at,
+      };
+    } catch (error) {
+      console.error('[GameRepository] Error creating game:', error);
+      if (error instanceof Error) {
+        throw new Error(`Failed to create game: ${error.message}`);
+      }
+      throw new Error('Failed to create game: Unknown error');
+    }
   }
 
   async findById(id: string): Promise<GameWithGuesses | null> {
-    // Obtener el juego
-    const gameResult = await pool.query(
-      'SELECT * FROM games WHERE id = $1',
-      [id]
-    );
-    
-    if (gameResult.rows.length === 0) {
-      return null;
+    try {
+      // Obtener el juego
+      const gameResult = await pool.query(
+        'SELECT * FROM games WHERE id = $1',
+        [id]
+      );
+      
+      if (gameResult.rows.length === 0) {
+        return null;
+      }
+
+      const game = gameResult.rows[0];
+
+      // Obtener los intentos
+      const guessesResult = await pool.query(
+        'SELECT * FROM guesses WHERE game_id = $1 ORDER BY attempt_number ASC',
+        [id]
+      );
+
+      // Obtener el modo de juego
+      const gameModeResult = await pool.query(
+        'SELECT * FROM game_modes WHERE id = $1',
+        [game.game_mode_id]
+      );
+
+      if (gameModeResult.rows.length === 0) {
+        console.error(`[GameRepository] Game mode not found for game ${id}`);
+        throw new Error(`Game mode not found for game ${id}`);
+      }
+
+      return {
+        ...game,
+        userId: game.user_id || undefined,
+        gameModeId: game.game_mode_id,
+        targetWord: game.target_word,
+        maxAttempts: game.max_attempts,
+        createdAt: game.created_at,
+        updatedAt: game.updated_at,
+        guesses: guessesResult.rows.map(g => ({
+          ...g,
+          gameId: g.game_id,
+          attemptNumber: g.attempt_number,
+          createdAt: g.created_at,
+        })),
+        gameMode: gameModeResult.rows[0],
+      };
+    } catch (error) {
+      console.error('[GameRepository] Error finding game by id:', error);
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error('Failed to find game: Unknown error');
     }
-
-    const game = gameResult.rows[0];
-
-    // Obtener los intentos
-    const guessesResult = await pool.query(
-      'SELECT * FROM guesses WHERE game_id = $1 ORDER BY attempt_number ASC',
-      [id]
-    );
-
-    // Obtener el modo de juego
-    const gameModeResult = await pool.query(
-      'SELECT * FROM game_modes WHERE id = $1',
-      [game.game_mode_id]
-    );
-
-    return {
-      ...game,
-      userId: game.user_id,
-      gameModeId: game.game_mode_id,
-      targetWord: game.target_word,
-      maxAttempts: game.max_attempts,
-      createdAt: game.created_at,
-      updatedAt: game.updated_at,
-      guesses: guessesResult.rows.map(g => ({
-        ...g,
-        gameId: g.game_id,
-        attemptNumber: g.attempt_number,
-        createdAt: g.created_at,
-      })),
-      gameMode: gameModeResult.rows[0] || null,
-    };
   }
 
   async findByUserId(userId: string): Promise<Game[]> {

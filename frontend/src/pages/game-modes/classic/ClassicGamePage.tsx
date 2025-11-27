@@ -4,8 +4,11 @@ import { InstructionsModal } from '../../../components/game-modes/classic/Instru
 import { GameBoard } from '../../../components/game/board/GameBoard';
 import { Keyboard } from '../../../components/game/keyboard/Keyboard';
 import { CellStatus } from '../../../components/game/board/GameCell';
+import { Toast } from '../../../components/ui/Toast';
+import { GameOverModal } from '../../../components/game-modes/classic/GameOverModal';
 import { useGame } from '../../../hooks/useGame';
-import { gameApi } from '../../../services/api';
+import { useKeyboardColors } from '../../../hooks/useKeyboardColors';
+import { useWordDictionary } from '../../../hooks/useWordDictionary';
 import { GuessFeedback } from '../../../types';
 
 interface Guess {
@@ -20,9 +23,16 @@ export const ClassicGamePage: React.FC = () => {
   const [currentGuess, setCurrentGuess] = useState('');
   const [guesses, setGuesses] = useState<Guess[]>([]);
   const [revealingRow, setRevealingRow] = useState<number | null>(null);
+  const [shakingRow, setShakingRow] = useState<number | null>(null);
   const [gameStatus, setGameStatus] = useState<'playing' | 'won' | 'lost' | null>(null);
   const [validatingWord, setValidatingWord] = useState(false);
-  const [wordError, setWordError] = useState<string | null>(null);
+  const [toast, setToast] = useState<{ message: string; type: 'error' | 'success' | 'info' } | null>(null);
+  
+  // Hook para colores del teclado
+  const keyColors = useKeyboardColors(guesses);
+  
+  // Hook para diccionario local (validación instantánea)
+  const { isReady: dictionaryReady, validateWord: validateWordLocal } = useWordDictionary();
 
   // Crear partida al montar el componente
   useEffect(() => {
@@ -31,10 +41,13 @@ export const ClassicGamePage: React.FC = () => {
         await createGame('classic');
       } catch (err) {
         console.error('Error creating game:', err);
-        // Si es un error de conexión, mostrar mensaje más claro
-        if (err instanceof Error && err.message.includes('Network')) {
-          console.error('Backend no está disponible. Asegúrate de que el backend esté corriendo en http://localhost:3001');
-        }
+        const errorMessage =
+          err instanceof Error && err.message.includes('Network')
+            ? 'Error de conexión. Verifica que el backend esté corriendo.'
+            : err instanceof Error && err.message.includes('500')
+              ? 'Error del servidor. Intenta de nuevo en unos momentos.'
+              : 'Error al crear la partida. Intenta de nuevo.';
+        setToast({ message: errorMessage, type: 'error' });
       }
     };
     initGame();
@@ -76,7 +89,6 @@ export const ClassicGamePage: React.FC = () => {
   const handleKeyPress = useCallback(
     (key: string) => {
       if (gameStatus !== 'playing' || loading || validatingWord) return;
-      setWordError(null);
       setCurrentGuess((prev) => {
         if (prev.length < 5) {
           return prev + key;
@@ -84,12 +96,11 @@ export const ClassicGamePage: React.FC = () => {
         return prev;
       });
     },
-    [gameStatus, loading, validatingWord]
+    [gameStatus, loading, validatingWord, dictionaryReady]
   );
 
   const handleDelete = useCallback(() => {
     if (gameStatus !== 'playing' || loading || validatingWord) return;
-    setWordError(null);
     setCurrentGuess((prev) => prev.slice(0, -1));
   }, [gameStatus, loading, validatingWord]);
 
@@ -105,19 +116,36 @@ export const ClassicGamePage: React.FC = () => {
     }
 
     setValidatingWord(true);
-    setWordError(null);
+    setShakingRow(null);
 
     try {
-      // Validar que la palabra existe en el diccionario
-      const isValid = await gameApi.validateWord(currentGuess, 'classic');
-      if (!isValid) {
-        setWordError('La palabra no está en el diccionario');
-        setValidatingWord(false);
-        return;
+      // Validar localmente (instantáneo) si el diccionario está listo
+      const guessWord = currentGuess.toUpperCase();
+      
+      if (dictionaryReady) {
+        const isValid = validateWordLocal(guessWord);
+        if (!isValid) {
+          // Animación shake en la fila actual
+          const currentRowIndex = guesses.length;
+          setShakingRow(currentRowIndex);
+          setToast({ message: 'Palabra no válida', type: 'error' });
+          
+          // Limpiar shake después de la animación
+          setTimeout(() => {
+            setShakingRow(null);
+          }, 500);
+          
+          setValidatingWord(false);
+          return;
+        }
       }
+      // Si el diccionario no está listo, el backend validará (fallback)
 
-      // Hacer el intento
-      const result = await makeGuess(currentGuess.toUpperCase());
+      // Hacer el intento PRIMERO para obtener el feedback antes de animar
+      const rowIndex = guesses.length;
+      
+      // Obtener feedback ANTES de iniciar animación
+      const result = await makeGuess(guessWord);
 
       if (result) {
         // Convertir feedback a CellStatus[]
@@ -125,55 +153,60 @@ export const ClassicGamePage: React.FC = () => {
           (f) => f.status
         ) as CellStatus[];
 
-        // Agregar el nuevo intento
+        // Agregar el guess con feedback real ANTES de animar
         const newGuess: Guess = {
-          word: currentGuess.toUpperCase(),
+          word: guessWord,
           feedback: feedbackArray,
         };
 
-        setGuesses((prev) => {
-          const newGuesses = [...prev, newGuess];
-          setRevealingRow(prev.length);
-          return newGuesses;
-        });
-
+        setGuesses(prev => [...prev, newGuess]);
         setCurrentGuess('');
+
+        // AHORA iniciar la animación (el feedback ya está disponible, se revelará durante el flip)
+        setRevealingRow(rowIndex);
 
         // Actualizar estado del juego
         if (result.isWon) {
           setGameStatus('won');
-          // TODO: Mostrar modal de felicitaciones
         } else if (result.isGameOver) {
           setGameStatus('lost');
-          // TODO: Mostrar palabra y opción de reiniciar
         }
 
         // Limpiar la animación después de que termine
         setTimeout(() => {
           setRevealingRow(null);
-        }, 1100); // 5 casillas * 100ms delay + 600ms animación
+        }, 1200 + (5 * 150)); // Duración de animación (1.2s) + delays entre casillas (5 * 150ms)
       }
     } catch (err) {
       const errorMessage =
         err instanceof Error ? err.message : 'Error al procesar el intento';
-      setWordError(errorMessage);
+      
+      // Si es error 500, mostrar toast y ocultar después de 3 segundos
+      if (errorMessage.includes('500') || errorMessage.includes('Failed')) {
+        setToast({ message: 'Error del servidor. Intenta de nuevo.', type: 'error' });
+      } else {
+        setToast({ message: errorMessage, type: 'error' });
+      }
+      
       console.error('Error making guess:', err);
     } finally {
       setValidatingWord(false);
     }
-  }, [game, currentGuess, gameStatus, loading, makeGuess, validatingWord]);
+  }, [game, currentGuess, gameStatus, loading, makeGuess, validatingWord, guesses]);
 
   const handleRestartGame = useCallback(async () => {
     reset();
     setCurrentGuess('');
     setGuesses([]);
     setRevealingRow(null);
+    setShakingRow(null);
     setGameStatus(null);
-    setWordError(null);
+    setToast(null);
     try {
       await createGame('classic');
     } catch (err) {
       console.error('Error restarting game:', err);
+      setToast({ message: 'Error al reiniciar la partida. Intenta de nuevo.', type: 'error' });
     }
   }, [createGame, reset]);
 
@@ -219,19 +252,20 @@ export const ClassicGamePage: React.FC = () => {
       showHelpTooltip={showHelpTooltip}
     >
       <div className="max-w-2xl mx-auto w-full px-2 sm:px-4 pt-12 sm:pt-0">
+        <Toast
+          message={toast?.message || ''}
+          type={toast?.type || 'error'}
+          isVisible={toast !== null}
+          onClose={() => setToast(null)}
+        />
+
         {loading && !game && (
           <div className="text-center text-white">Cargando partida...</div>
         )}
         
-        {error && (
+        {error && !toast && (
           <div className="text-center text-red-500 mb-4">
             Error: {error.message}
-          </div>
-        )}
-
-        {wordError && (
-          <div className="text-center text-red-400 mb-4 text-sm">
-            {wordError}
           </div>
         )}
 
@@ -243,6 +277,7 @@ export const ClassicGamePage: React.FC = () => {
                 currentGuess={currentGuess}
                 maxAttempts={6}
                 revealingRow={revealingRow}
+                shakingRow={shakingRow}
               />
             </div>
 
@@ -251,34 +286,19 @@ export const ClassicGamePage: React.FC = () => {
                 onKeyPress={handleKeyPress}
                 onEnter={handleEnter}
                 onDelete={handleDelete}
+                keyColors={keyColors}
               />
             </div>
           </>
         )}
 
-        {gameStatus === 'won' && (
-          <div className="text-center text-green-400 mt-4">
-            ¡Felicidades! Has ganado 🎉
-            <button
-              onClick={handleRestartGame}
-              className="ml-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-            >
-              Jugar de nuevo
-            </button>
-          </div>
-        )}
-
-        {gameStatus === 'lost' && game && (
-          <div className="text-center text-red-400 mt-4">
-            Se acabaron los intentos. La palabra era: <strong>{game.targetWord}</strong>
-            <button
-              onClick={handleRestartGame}
-              className="ml-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-            >
-              Jugar de nuevo
-            </button>
-          </div>
-        )}
+        <GameOverModal
+          isOpen={gameStatus === 'won' || gameStatus === 'lost'}
+          isWon={gameStatus === 'won'}
+          targetWord={game?.targetWord || ''}
+          attempts={guesses.length}
+          onPlayAgain={handleRestartGame}
+        />
 
         <InstructionsModal
           isOpen={showInstructions}

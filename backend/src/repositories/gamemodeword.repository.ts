@@ -3,25 +3,30 @@ import { GameModeWord } from '../models/game.model';
 
 export class GameModeWordRepository {
   async findRandom(gameModeId: string): Promise<GameModeWord | null> {
-    // Obtener un conteo total
-    const countResult = await pool.query(
-      'SELECT COUNT(*) FROM game_mode_words WHERE game_mode_id = $1',
-      [gameModeId]
-    );
-    
-    const count = parseInt(countResult.rows[0].count, 10);
-    if (count === 0) {
-      return null;
-    }
+    try {
+      // Obtener un conteo total
+      const countResult = await pool.query(
+        'SELECT COUNT(*) FROM game_mode_words WHERE game_mode_id = $1',
+        [gameModeId]
+      );
+      
+      const count = parseInt(countResult.rows[0].count, 10);
+      if (count === 0) {
+        return null;
+      }
 
-    // Seleccionar una fila aleatoria usando OFFSET
-    const randomSkip = Math.floor(Math.random() * count);
-    const result = await pool.query(
-      'SELECT * FROM game_mode_words WHERE game_mode_id = $1 ORDER BY id OFFSET $2 LIMIT 1',
-      [gameModeId, randomSkip]
-    );
-    
-    return result.rows[0] || null;
+      // Seleccionar una fila aleatoria usando OFFSET
+      const randomSkip = Math.floor(Math.random() * count);
+      const result = await pool.query(
+        'SELECT * FROM game_mode_words WHERE game_mode_id = $1 ORDER BY id OFFSET $2 LIMIT 1',
+        [gameModeId, randomSkip]
+      );
+      
+      return result.rows[0] || null;
+    } catch (error) {
+      console.error(`[GameModeWordRepository] Error finding random word for game mode ${gameModeId}:`, error);
+      throw error;
+    }
   }
 
   async findByWord(gameModeId: string, word: string): Promise<GameModeWord | null> {
@@ -76,6 +81,19 @@ export class GameModeWordRepository {
       throw error;
     } finally {
       client.release();
+    }
+  }
+
+  async findAllWords(gameModeId: string): Promise<string[]> {
+    try {
+      const result = await pool.query(
+        'SELECT word FROM game_mode_words WHERE game_mode_id = $1',
+        [gameModeId]
+      );
+      return result.rows.map(row => row.word);
+    } catch (error) {
+      console.error(`[GameModeWordRepository] Error finding all words for game mode ${gameModeId}:`, error);
+      throw error;
     }
   }
 }

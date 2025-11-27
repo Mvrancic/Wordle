@@ -50,6 +50,25 @@ export class WordController {
       });
     }
   }
+
+  async getAllWords(req: Request, res: Response<ApiResponse>): Promise<void> {
+    try {
+      const gameMode = (req.query.gameMode as string) || 'classic';
+      const words = await wordService.getAllWords(gameMode);
+
+      res.json({
+        success: true,
+        data: { words },
+      });
+    } catch (error: unknown) {
+      const message =
+        error instanceof Error ? error.message : 'Failed to get words';
+      res.status(500).json({
+        success: false,
+        error: message,
+      });
+    }
+  }
 }
 
 export default new WordController();

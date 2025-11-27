@@ -12,6 +12,7 @@ interface GameBoardProps {
   currentGuess: string;
   maxAttempts?: number;
   revealingRow?: number | null;
+  shakingRow?: number | null;
 }
 
 export const GameBoard: React.FC<GameBoardProps> = ({
@@ -19,17 +20,20 @@ export const GameBoard: React.FC<GameBoardProps> = ({
   currentGuess,
   maxAttempts = 6,
   revealingRow = null,
+  shakingRow = null,
 }) => {
   const rows = Array.from({ length: maxAttempts }, (_, index) => {
     const guess = guesses[index];
     const isActive = index === guesses.length && currentGuess.length > 0;
     const isRevealing = revealingRow === index;
+    const shouldShake = shakingRow === index;
 
     return {
       word: guess?.word || (isActive ? currentGuess : ''),
       feedback: guess?.feedback,
       isActive,
       isRevealing,
+      shouldShake,
     };
   });
 
@@ -42,6 +46,7 @@ export const GameBoard: React.FC<GameBoardProps> = ({
           feedback={row.feedback}
           isActive={row.isActive}
           isRevealing={row.isRevealing}
+          shouldShake={row.shouldShake}
         />
       ))}
     </div>

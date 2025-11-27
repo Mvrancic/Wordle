@@ -18,7 +18,16 @@ export class GameController {
     } catch (error: unknown) {
       const message =
         error instanceof Error ? error.message : 'Failed to create game';
-      res.status(500).json({
+      
+      // Log del error completo para debugging
+      console.error('[GameController] Error creating game:', error);
+      if (error instanceof Error) {
+        console.error('[GameController] Error stack:', error.stack);
+      }
+      
+      // Retornar mensaje más específico
+      const statusCode = message.includes('not found') || message.includes('No words') ? 404 : 500;
+      res.status(statusCode).json({
         success: false,
         error: message,
       });

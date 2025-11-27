@@ -1,10 +1,11 @@
 import React from 'react';
-import { KeyboardKey } from './KeyboardKey';
+import { KeyboardKey, KeyStatus } from './KeyboardKey';
 
 interface KeyboardProps {
   onKeyPress: (key: string) => void;
   onEnter: () => void;
   onDelete: () => void;
+  keyColors?: Map<string, KeyStatus>;
 }
 
 const KEYBOARD_ROWS = [
@@ -17,6 +18,7 @@ export const Keyboard: React.FC<KeyboardProps> = ({
   onKeyPress,
   onEnter,
   onDelete,
+  keyColors,
 }) => {
   const handleKeyClick = (key: string) => {
     if (key === 'ENTER') {
@@ -40,6 +42,7 @@ export const Keyboard: React.FC<KeyboardProps> = ({
               key={key}
               keyValue={key}
               onClick={() => handleKeyClick(key)}
+              status={keyColors?.get(key) || 'none'}
             />
           ))}
         </div>

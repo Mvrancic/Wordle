@@ -25,6 +25,15 @@ export class WordService {
     return gamemodewordRepository.exists(classicMode.id, word);
   }
 
+  async getAllWords(_gameModeName: string = 'classic'): Promise<string[]> {
+    // Todos los modos usan las palabras del modo "classic"
+    const classicMode = await gamemodeRepository.findByName('classic');
+    if (!classicMode) {
+      throw new Error('Classic game mode not found');
+    }
+    return gamemodewordRepository.findAllWords(classicMode.id);
+  }
+
   async seedWords(
     gameModeName: string,
     words: string[],
