@@ -13,7 +13,7 @@ export const Toast: React.FC<ToastProps> = ({
   type = 'error',
   isVisible,
   onClose,
-  duration = 3000,
+  duration = 1500,
 }) => {
   useEffect(() => {
     if (isVisible) {
