@@ -71,4 +71,63 @@ export const gameApi = {
   },
 };
 
+export const authApi = {
+  syncUser: async (userId: string, email: string, username?: string) => {
+    const response = await apiClient.post<ApiResponse<any>>('/auth/sync', {
+      userId,
+      email,
+      username,
+    });
+    if (response.data.success) {
+      return response.data;
+    }
+    throw new Error(response.data.error || 'Failed to sync user');
+  },
+};
+
+export const statsApi = {
+  getStats: async (userId: string) => {
+    const response = await apiClient.get<ApiResponse<any>>(`/stats/${userId}`);
+    if (response.data.success) {
+      return response.data;
+    }
+    throw new Error(response.data.error || 'Failed to get stats');
+  },
+
+  updateStats: async (userId: string, won: boolean, attemptsUsed: number, mode: string = 'classic') => {
+    const response = await apiClient.post<ApiResponse<any>>(`/stats/${userId}`, {
+      won,
+      attemptsUsed,
+      mode,
+    });
+    if (response.data.success) {
+      return response.data;
+    }
+    throw new Error(response.data.error || 'Failed to update stats');
+  },
+
+  getHistory: async (userId: string, limit: number = 100) => {
+    const response = await apiClient.get<ApiResponse<any[]>>(
+      `/history/${userId}?limit=${limit}`
+    );
+    if (response.data.success) {
+      return response.data;
+    }
+    throw new Error(response.data.error || 'Failed to get history');
+  },
+
+  saveGame: async (userId: string, mode: string, targetWord: string, won: boolean, attemptsUsed: number) => {
+    const response = await apiClient.post<ApiResponse<any>>(`/history/${userId}`, {
+      mode,
+      targetWord,
+      won,
+      attemptsUsed,
+    });
+    if (response.data.success) {
+      return response.data;
+    }
+    throw new Error(response.data.error || 'Failed to save game');
+  },
+};
+
 export default apiClient;

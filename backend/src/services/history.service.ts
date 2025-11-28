@@ -1,4 +1,5 @@
 import userGameHistoryRepository from '../repositories/userGameHistory.repository';
+import { CreateGameHistoryDto } from '../models/user.model';
 
 export class HistoryService {
   async getHistory(userId: string, page: number = 1, limit: number = 50) {
@@ -15,6 +16,16 @@ export class HistoryService {
         totalPages: Math.ceil(total / limit),
       },
     };
+  }
+
+  async createHistory(data: CreateGameHistoryDto) {
+    return await userGameHistoryRepository.create(
+      data.userId,
+      data.mode,
+      data.targetWord,
+      data.won,
+      data.attemptsUsed
+    );
   }
 }
 

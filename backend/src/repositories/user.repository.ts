@@ -42,11 +42,14 @@ export class UserRepository {
     }
   }
 
-  async create(email: string, username: string | undefined, hashedPassword: string): Promise<User> {
+  async create(email: string, username: string | undefined, hashedPassword: string, userId?: string): Promise<User> {
     try {
+      // Si se proporciona userId (de Supabase Auth), usarlo, sino generar uno
+      const finalUserId = userId || require('uuid').v4();
+      
       const result = await pool.query(
-        `INSERT INTO users (email, username, password) 
-         VALUES ($1, $2, $3) 
+        `INSERT INTO users (id, email, username, password) 
+         VALUES ($1, $2, $3, $4) 
          RETURNING 
           id,
           email,
@@ -54,7 +57,7 @@ export class UserRepository {
           password,
           created_at as "createdAt",
           updated_at as "updatedAt"`,
-        [email, username, hashedPassword]
+        [finalUserId, email, username, hashedPassword]
       );
       return result.rows[0];
     } catch (error) {

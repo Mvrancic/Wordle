@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HamburgerMenu } from '../ui/HamburgerMenu';
+import { useAuth } from '../../contexts/AuthContext';
 
 interface HeaderProps {
   gameModeTitle?: string;
@@ -15,11 +16,17 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const location = useLocation();
   const isGamePage = location.pathname.includes('/game/');
+  const { user } = useAuth();
 
-  const menuItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Profile', path: '/profile' }, // TODO: implement later
+  const menuItems: Array<{ label: string; path: string; isAction?: boolean }> = [
+    { label: 'Home', path: '/home' },
   ];
+
+  // Add Profile and Sign Out options if user is authenticated
+  if (user) {
+    menuItems.push({ label: 'Profile', path: '/profile' });
+    menuItems.push({ label: 'Sign Out', path: '/signout', isAction: true });
+  }
 
   if (isGamePage) {
     // En modo juego: contenedor de ancho completo con contenido centrado
@@ -29,7 +36,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex justify-between items-center h-14 sm:h-16 relative">
             {/* Izquierda: Logo - completamente a la izquierda sin padding */}
             <Link
-              to="/"
+              to="/home"
               className="flex items-center absolute left-0 sm:left-0"
             >
               <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-white font-serif tracking-wide">
@@ -76,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="bg-gray-900 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16">
-          <Link to="/" className="flex items-center">
+          <Link to="/home" className="flex items-center">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white font-serif tracking-wide">
               WORDLE
             </h1>

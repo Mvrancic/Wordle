@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
 
 interface MenuItem {
   label: string;
   path: string;
+  isAction?: boolean; // If true, it's an action (like sign out) rather than a navigation
 }
 
 interface HamburgerMenuProps {
@@ -13,6 +15,8 @@ interface HamburgerMenuProps {
 export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ items }) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const { signOut } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -57,16 +61,33 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ items }) => {
       {isOpen && (
         <div className="absolute left-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-xl border border-gray-700 z-50">
           <div className="py-1">
-            {items.map(item => (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setIsOpen(false)}
-                className="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {items.map(item => {
+              if (item.isAction && item.path === '/signout') {
+                return (
+                  <button
+                    key={item.path}
+                    onClick={async () => {
+                      setIsOpen(false);
+                      await signOut();
+                      navigate('/');
+                    }}
+                    className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition-colors"
+                  >
+                    {item.label}
+                  </button>
+                );
+              }
+              return (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition-colors"
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}
