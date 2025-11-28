@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Layout } from '../../../components/layout/Layout';
 import { InstructionsModal } from '../../../components/game-modes/classic/InstructionsModal';
 import { GameBoard } from '../../../components/game/board/GameBoard';
@@ -9,6 +9,8 @@ import { GameOverModal } from '../../../components/game-modes/classic/GameOverMo
 import { useLocalClassicGame } from '../../../hooks/useLocalClassicGame';
 import { useKeyboardColors } from '../../../hooks/useKeyboardColors';
 import { useWordDictionary } from '../../../hooks/useWordDictionary';
+import { useAuth } from '../../../contexts/AuthContext';
+import { statsApi } from '../../../services/api';
 
 interface Guess {
   word: string;
@@ -16,6 +18,7 @@ interface Guess {
 }
 
 export const ClassicGamePage: React.FC = () => {
+  const { user } = useAuth();
   const {
     targetWord,
     attempts,
@@ -28,6 +31,7 @@ export const ClassicGamePage: React.FC = () => {
   } = useLocalClassicGame();
   
   const { isReady: dictionaryReady, validateWord: validateWordLocal, getDictionary } = useWordDictionary();
+  const gameSavedRef = useRef(false);
   
   const [showInstructions, setShowInstructions] = useState(false);
   const [showHelpTooltip, setShowHelpTooltip] = useState(false);
@@ -171,6 +175,7 @@ export const ClassicGamePage: React.FC = () => {
     setShakingRow(null);
     setKeyboardReadyRow(null);
     setToast(null);
+    gameSavedRef.current = false; // Reset flag for new game
     
     // Iniciar nuevo juego inmediatamente
     if (dictionaryReady) {
@@ -182,6 +187,36 @@ export const ClassicGamePage: React.FC = () => {
       }
     }
   }, [reset, startNewGame, dictionaryReady]);
+
+  // Guardar estadísticas cuando el juego termine y el usuario esté logueado
+  useEffect(() => {
+    if (!user || !targetWord || gameStatus === 'playing' || gameSavedRef.current) {
+      return;
+    }
+
+    const saveGameStats = async () => {
+      try {
+        const won = gameStatus === 'won';
+        const attemptsUsed = attempts.length;
+
+        // Guardar historial y actualizar estadísticas
+        await statsApi.saveGame(
+          user.id,
+          'classic',
+          targetWord,
+          won,
+          attemptsUsed
+        );
+
+        gameSavedRef.current = true;
+      } catch (error) {
+        console.error('Error saving game stats:', error);
+        // No mostrar error al usuario, solo log
+      }
+    };
+
+    saveGameStats();
+  }, [user, targetWord, gameStatus, attempts.length]);
 
   useEffect(() => {
     if (gameStatus !== 'playing') return;

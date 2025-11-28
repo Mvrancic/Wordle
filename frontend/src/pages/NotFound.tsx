@@ -14,7 +14,7 @@ export const NotFound: React.FC = () => {
           <div className="text-center space-y-6">
             <h1 className="text-6xl font-bold text-white">404</h1>
             <p className="text-gray-300 text-xl">Page not found</p>
-            <Button onClick={() => navigate('/')} variant="primary">
+            <Button onClick={() => navigate('/home')} variant="primary">
               Back to Home
             </Button>
           </div>
