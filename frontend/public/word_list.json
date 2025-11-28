@@ -1,5924 +1,5939 @@
 [
-    {
-      "word": "ABIDE"
-    },
-    {
-      "word": "ABORT"
-    },
-    {
-      "word": "ABOUT"
-    },
-    {
-      "word": "ABOVE"
-    },
-    {
-      "word": "ABUSE"
-    },
-    {
-      "word": "ACORN"
-    },
-    {
-      "word": "ACRID"
-    },
-    {
-      "word": "ACUTE"
-    },
-    {
-      "word": "ADAPT"
-    },
-    {
-      "word": "ADEPT"
-    },
-    {
-      "word": "ADMIN"
-    },
-    {
-      "word": "ADMIT"
-    },
-    {
-      "word": "ADOBE"
-    },
-    {
-      "word": "ADORE"
-    },
-    {
-      "word": "ADORN"
-    },
-    {
-      "word": "ADULT"
-    },
-    {
-      "word": "AFFIX"
-    },
-    {
-      "word": "AGAIN"
-    },
-    {
-      "word": "AGATE"
-    },
-    {
-      "word": "AGENT"
-    },
-    {
-      "word": "AGILE"
-    },
-    {
-      "word": "AGING"
-    },
-    {
-      "word": "AGLOW"
-    },
-    {
-      "word": "AGONY"
-    },
-    {
-      "word": "AGREE"
-    },
-    {
-      "word": "AHEAD"
-    },
-    {
-      "word": "AISLE"
-    },
-    {
-      "word": "ALARM"
-    },
-    {
-      "word": "ALBUM"
-    },
-    {
-      "word": "ALERT"
-    },
-    {
-      "word": "ALGAE"
-    },
-    {
-      "word": "ALIBI"
-    },
-    {
-      "word": "ALIGN"
-    },
-    {
-      "word": "ALIKE"
-    },
-    {
-      "word": "ALIVE"
-    },
-    {
-      "word": "ALLOW"
-    },
-    {
-      "word": "ALLOY"
-    },
-    {
-      "word": "ALONG"
-    },
-    {
-      "word": "ALPHA"
-    },
-    {
-      "word": "ALTAR"
-    },
-    {
-      "word": "ALTER"
-    },
-    {
-      "word": "AMBER"
-    },
-    {
-      "word": "AMEND"
-    },
-    {
-      "word": "AMONG"
-    },
-    {
-      "word": "AMPLE"
-    },
-    {
-      "word": "AMPLY"
-    },
-    {
-      "word": "AMUSE"
-    },
-    {
-      "word": "ANGEL"
-    },
-    {
-      "word": "ANGER"
-    },
-    {
-      "word": "ANGLE"
-    },
-    {
-      "word": "ANGRY"
-    },
-    {
-      "word": "ANODE"
-    },
-    {
-      "word": "ANTIC"
-    },
-    {
-      "word": "APART"
-    },
-    {
-      "word": "APPLE"
-    },
-    {
-      "word": "APPLY"
-    },
-    {
-      "word": "APRON"
-    },
-    {
-      "word": "ARBOR"
-    },
-    {
-      "word": "ARDOR"
-    },
-    {
-      "word": "ARENA"
-    },
-    {
-      "word": "ARGUE"
-    },
-    {
-      "word": "ARISE"
-    },
-    {
-      "word": "ARMOR"
-    },
-    {
-      "word": "AROMA"
-    },
-    {
-      "word": "ARROW"
-    },
-    {
-      "word": "ARSON"
-    },
-    {
-      "word": "ASHEN"
-    },
-    {
-      "word": "ASIDE"
-    },
-    {
-      "word": "ASKER"
-    },
-    {
-      "word": "ASSET"
-    },
-    {
-      "word": "ATLAS"
-    },
-    {
-      "word": "ATONE"
-    },
-    {
-      "word": "ATTIC"
-    },
-    {
-      "word": "AUDIO"
-    },
-    {
-      "word": "AUDIT"
-    },
-    {
-      "word": "AUGUR"
-    },
-    {
-      "word": "AUNTY"
-    },
-    {
-      "word": "AWAIT"
-    },
-    {
-      "word": "AWARD"
-    },
-    {
-      "word": "AWARE"
-    },
-    {
-      "word": "AWOKE"
-    },
-    {
-      "word": "AXIAL"
-    },
-    {
-      "word": "AXIOM"
-    },
-    {
-      "word": "AXLES"
-    },
-    {
-      "word": "AZURE"
-    },
-    {
-      "word": "BACON"
-    },
-    {
-      "word": "BADGE"
-    },
-    {
-      "word": "BADLY"
-    },
-    {
-      "word": "BAGEL"
-    },
-    {
-      "word": "BAGGY"
-    },
-    {
-      "word": "BAKER"
-    },
-    {
-      "word": "BALER"
-    },
-    {
-      "word": "BALMY"
-    },
-    {
-      "word": "BALSA"
-    },
-    {
-      "word": "BANAL"
-    },
-    {
-      "word": "BANJO"
-    },
-    {
-      "word": "BANKS"
-    },
-    {
-      "word": "BARDS"
-    },
-    {
-      "word": "BARED"
-    },
-    {
-      "word": "BARON"
-    },
-    {
-      "word": "BASAL"
-    },
-    {
-      "word": "BASIC"
-    },
-    {
-      "word": "BASIL"
-    },
-    {
-      "word": "BASIN"
-    },
-    {
-      "word": "BASIS"
-    },
-    {
-      "word": "BEACH"
-    },
-    {
-      "word": "BEADY"
-    },
-    {
-      "word": "BEAMS"
-    },
-    {
-      "word": "BEARD"
-    },
-    {
-      "word": "BEAST"
-    },
-    {
-      "word": "BEGAN"
-    },
-    {
-      "word": "BEGIN"
-    },
-    {
-      "word": "BEGUN"
-    },
-    {
-      "word": "BELAY"
-    },
-    {
-      "word": "BELCH"
-    },
-    {
-      "word": "BELLS"
-    },
-    {
-      "word": "BELLY"
-    },
-    {
-      "word": "BELOW"
-    },
-    {
-      "word": "BENCH"
-    },
-    {
-      "word": "BERET"
-    },
-    {
-      "word": "BERRY"
-    },
-    {
-      "word": "BERTH"
-    },
-    {
-      "word": "BESET"
-    },
-    {
-      "word": "BIBLE"
-    },
-    {
-      "word": "BICEP"
-    },
-    {
-      "word": "BIDED"
-    },
-    {
-      "word": "BIDEN"
-    },
-    {
-      "word": "BIRTH"
-    },
-    {
-      "word": "BISON"
-    },
-    {
-      "word": "BLACK"
-    },
-    {
-      "word": "BLADE"
-    },
-    {
-      "word": "BLAME"
-    },
-    {
-      "word": "BLAND"
-    },
-    {
-      "word": "BLANK"
-    },
-    {
-      "word": "BLARE"
-    },
-    {
-      "word": "BLAST"
-    },
-    {
-      "word": "BLAZE"
-    },
-    {
-      "word": "BLEAK"
-    },
-    {
-      "word": "BLEAT"
-    },
-    {
-      "word": "BLEED"
-    },
-    {
-      "word": "BLEEP"
-    },
-    {
-      "word": "BLEND"
-    },
-    {
-      "word": "BLESS"
-    },
-    {
-      "word": "BLIMP"
-    },
-    {
-      "word": "BLIND"
-    },
-    {
-      "word": "BLINK"
-    },
-    {
-      "word": "BLISS"
-    },
-    {
-      "word": "BLITZ"
-    },
-    {
-      "word": "BLOAT"
-    },
-    {
-      "word": "BLOCK"
-    },
-    {
-      "word": "BLOKE"
-    },
-    {
-      "word": "BLOND"
-    },
-    {
-      "word": "BLOOM"
-    },
-    {
-      "word": "BLOWN"
-    },
-    {
-      "word": "BLUEE"
-    },
-    {
-      "word": "BLUFF"
-    },
-    {
-      "word": "BLUNT"
-    },
-    {
-      "word": "BLURB"
-    },
-    {
-      "word": "BLURT"
-    },
-    {
-      "word": "BLUSH"
-    },
-    {
-      "word": "BOARD"
-    },
-    {
-      "word": "BOAST"
-    },
-    {
-      "word": "BOBBY"
-    },
-    {
-      "word": "BODEN"
-    },
-    {
-      "word": "BOLTS"
-    },
-    {
-      "word": "BONUS"
-    },
-    {
-      "word": "BOOST"
-    },
-    {
-      "word": "BOOTH"
-    },
-    {
-      "word": "BOOTY"
-    },
-    {
-      "word": "BOOZE"
-    },
-    {
-      "word": "BORAX"
-    },
-    {
-      "word": "BORNE"
-    },
-    {
-      "word": "BOSOM"
-    },
-    {
-      "word": "BOSSY"
-    },
-    {
-      "word": "BOTCH"
-    },
-    {
-      "word": "BOUND"
-    },
-    {
-      "word": "BOWEL"
-    },
-    {
-      "word": "BOWLS"
-    },
-    {
-      "word": "BRACE"
-    },
-    {
-      "word": "BRAID"
-    },
-    {
-      "word": "BRAIN"
-    },
-    {
-      "word": "BRAKE"
-    },
-    {
-      "word": "BRAND"
-    },
-    {
-      "word": "BRASH"
-    },
-    {
-      "word": "BRAVE"
-    },
-    {
-      "word": "BRAVO"
-    },
-    {
-      "word": "BRAWL"
-    },
-    {
-      "word": "BREAD"
-    },
-    {
-      "word": "BREAK"
-    },
-    {
-      "word": "BREED"
-    },
-    {
-      "word": "BRENT"
-    },
-    {
-      "word": "BRIBE"
-    },
-    {
-      "word": "BRICK"
-    },
-    {
-      "word": "BRIDE"
-    },
-    {
-      "word": "BRIEF"
-    },
-    {
-      "word": "CABAL"
-    },
-    {
-      "word": "CABIN"
-    },
-    {
-      "word": "CABLE"
-    },
-    {
-      "word": "CACAO"
-    },
-    {
-      "word": "CACHE"
-    },
-    {
-      "word": "CACTI"
-    },
-    {
-      "word": "CADDY"
-    },
-    {
-      "word": "CADET"
-    },
-    {
-      "word": "CAGEY"
-    },
-    {
-      "word": "CAIRN"
-    },
-    {
-      "word": "CAMEL"
-    },
-    {
-      "word": "CAMEO"
-    },
-    {
-      "word": "CANAL"
-    },
-    {
-      "word": "CANDY"
-    },
-    {
-      "word": "CANOE"
-    },
-    {
-      "word": "CANON"
-    },
-    {
-      "word": "CANTE"
-    },
-    {
-      "word": "CARGO"
-    },
-    {
-      "word": "CAROL"
-    },
-    {
-      "word": "CARRY"
-    },
-    {
-      "word": "CARVE"
-    },
-    {
-      "word": "CATCH"
-    },
-    {
-      "word": "CATER"
-    },
-    {
-      "word": "CAUSE"
-    },
-    {
-      "word": "CAVIL"
-    },
-    {
-      "word": "CEASE"
-    },
-    {
-      "word": "CEDAR"
-    },
-    {
-      "word": "CELLO"
-    },
-    {
-      "word": "CENTS"
-    },
-    {
-      "word": "CHAFE"
-    },
-    {
-      "word": "CHAIN"
-    },
-    {
-      "word": "CHAIR"
-    },
-    {
-      "word": "CHALK"
-    },
-    {
-      "word": "CHAMP"
-    },
-    {
-      "word": "CHANT"
-    },
-    {
-      "word": "CHAOS"
-    },
-    {
-      "word": "CHAPS"
-    },
-    {
-      "word": "CHARD"
-    },
-    {
-      "word": "CHART"
-    },
-    {
-      "word": "CHASE"
-    },
-    {
-      "word": "CHASM"
-    },
-    {
-      "word": "CHEAP"
-    },
-    {
-      "word": "CHEAT"
-    },
-    {
-      "word": "CHECK"
-    },
-    {
-      "word": "CHEEK"
-    },
-    {
-      "word": "CHEER"
-    },
-    {
-      "word": "CHEFS"
-    },
-    {
-      "word": "CHESS"
-    },
-    {
-      "word": "CHEST"
-    },
-    {
-      "word": "CHICK"
-    },
-    {
-      "word": "CHIDE"
-    },
-    {
-      "word": "CHIEF"
-    },
-    {
-      "word": "CHILI"
-    },
-    {
-      "word": "CHIME"
-    },
-    {
-      "word": "CHINA"
-    },
-    {
-      "word": "CHIRP"
-    },
-    {
-      "word": "CHOCK"
-    },
-    {
-      "word": "CHOIR"
-    },
-    {
-      "word": "CHOKE"
-    },
-    {
-      "word": "CHORD"
-    },
-    {
-      "word": "CHORE"
-    },
-    {
-      "word": "CHOSE"
-    },
-    {
-      "word": "CHUCK"
-    },
-    {
-      "word": "CHUNK"
-    },
-    {
-      "word": "CHURN"
-    },
-    {
-      "word": "CIDER"
-    },
-    {
-      "word": "CIGAR"
-    },
-    {
-      "word": "CINCH"
-    },
-    {
-      "word": "CIRCA"
-    },
-    {
-      "word": "CIVIC"
-    },
-    {
-      "word": "CIVIL"
-    },
-    {
-      "word": "CLAIM"
-    },
-    {
-      "word": "CLANG"
-    },
-    {
-      "word": "CLASH"
-    },
-    {
-      "word": "CLASS"
-    },
-    {
-      "word": "CLEAN"
-    },
-    {
-      "word": "CLEAR"
-    },
-    {
-      "word": "CLEAT"
-    },
-    {
-      "word": "CLERK"
-    },
-    {
-      "word": "CLICK"
-    },
-    {
-      "word": "CLIFF"
-    },
-    {
-      "word": "CLIMB"
-    },
-    {
-      "word": "CLING"
-    },
-    {
-      "word": "CLINK"
-    },
-    {
-      "word": "CLOAK"
-    },
-    {
-      "word": "CLOCK"
-    },
-    {
-      "word": "CLONE"
-    },
-    {
-      "word": "CLOSE"
-    },
-    {
-      "word": "CLOTH"
-    },
-    {
-      "word": "CLOUD"
-    },
-    {
-      "word": "CLOVE"
-    },
-    {
-      "word": "CLOWN"
-    },
-    {
-      "word": "CLUBS"
-    },
-    {
-      "word": "CLUMP"
-    },
-    {
-      "word": "CLUNG"
-    },
-    {
-      "word": "COAST"
-    },
-    {
-      "word": "COBRA"
-    },
-    {
-      "word": "COCKS"
-    },
-    {
-      "word": "COCOA"
-    },
-    {
-      "word": "COLON"
-    },
-    {
-      "word": "COLOR"
-    },
-    {
-      "word": "COLTS"
-    },
-    {
-      "word": "COMBO"
-    },
-    {
-      "word": "COMET"
-    },
-    {
-      "word": "COMFY"
-    },
-    {
-      "word": "COMIC"
-    },
-    {
-      "word": "COMMA"
-    },
-    {
-      "word": "COPSE"
-    },
-    {
-      "word": "CORAL"
-    },
-    {
-      "word": "CORER"
-    },
-    {
-      "word": "COWER"
-    },
-    {
-      "word": "COYLY"
-    },
-    {
-      "word": "CRACK"
-    },
-    {
-      "word": "CRAFT"
-    },
-    {
-      "word": "CRANE"
-    },
-    {
-      "word": "CRANK"
-    },
-    {
-      "word": "CRASH"
-    },
-    {
-      "word": "CRATE"
-    },
-    {
-      "word": "CRAVE"
-    },
-    {
-      "word": "CRAWL"
-    },
-    {
-      "word": "CRAZE"
-    },
-    {
-      "word": "CREAK"
-    },
-    {
-      "word": "CREAM"
-    },
-    {
-      "word": "CREDO"
-    },
-    {
-      "word": "CREED"
-    },
-    {
-      "word": "CREEK"
-    },
-    {
-      "word": "CREEP"
-    },
-    {
-      "word": "CREST"
-    },
-    {
-      "word": "DADDY"
-    },
-    {
-      "word": "DANCE"
-    },
-    {
-      "word": "DANDY"
-    },
-    {
-      "word": "DARTS"
-    },
-    {
-      "word": "DATED"
-    },
-    {
-      "word": "DEALT"
-    },
-    {
-      "word": "DEATH"
-    },
-    {
-      "word": "DEBIT"
-    },
-    {
-      "word": "DEBUG"
-    },
-    {
-      "word": "DEBUT"
-    },
-    {
-      "word": "DECAL"
-    },
-    {
-      "word": "DECAY"
-    },
-    {
-      "word": "DECKS"
-    },
-    {
-      "word": "DECOR"
-    },
-    {
-      "word": "DECOY"
-    },
-    {
-      "word": "DEFER"
-    },
-    {
-      "word": "DEIGN"
-    },
-    {
-      "word": "DEITY"
-    },
-    {
-      "word": "DELTA"
-    },
-    {
-      "word": "DELVE"
-    },
-    {
-      "word": "DEMON"
-    },
-    {
-      "word": "DENSE"
-    },
-    {
-      "word": "DEPTH"
-    },
-    {
-      "word": "DERBY"
-    },
-    {
-      "word": "DETER"
-    },
-    {
-      "word": "DEVIL"
-    },
-    {
-      "word": "DIARY"
-    },
-    {
-      "word": "DICEY"
-    },
-    {
-      "word": "DIGIT"
-    },
-    {
-      "word": "DILLY"
-    },
-    {
-      "word": "DINGO"
-    },
-    {
-      "word": "DIRGE"
-    },
-    {
-      "word": "DIRTY"
-    },
-    {
-      "word": "DISCO"
-    },
-    {
-      "word": "DITCH"
-    },
-    {
-      "word": "DITTO"
-    },
-    {
-      "word": "DIVER"
-    },
-    {
-      "word": "DIVOT"
-    },
-    {
-      "word": "DIZZY"
-    },
-    {
-      "word": "DODGE"
-    },
-    {
-      "word": "DODGY"
-    },
-    {
-      "word": "DOGMA"
-    },
-    {
-      "word": "DOING"
-    },
-    {
-      "word": "DOLLY"
-    },
-    {
-      "word": "DOMED"
-    },
-    {
-      "word": "DONOR"
-    },
-    {
-      "word": "DONUT"
-    },
-    {
-      "word": "DOPEY"
-    },
-    {
-      "word": "DRAFT"
-    },
-    {
-      "word": "DRAIN"
-    },
-    {
-      "word": "DRAMA"
-    },
-    {
-      "word": "DRANK"
-    },
-    {
-      "word": "DRAPE"
-    },
-    {
-      "word": "DRAWL"
-    },
-    {
-      "word": "DRAWN"
-    },
-    {
-      "word": "DREAD"
-    },
-    {
-      "word": "DREAM"
-    },
-    {
-      "word": "DREGS"
-    },
-    {
-      "word": "DRESS"
-    },
-    {
-      "word": "DRIED"
-    },
-    {
-      "word": "DRIFT"
-    },
-    {
-      "word": "DRILL"
-    },
-    {
-      "word": "DRINK"
-    },
-    {
-      "word": "DRIVE"
-    },
-    {
-      "word": "DROLL"
-    },
-    {
-      "word": "DRONE"
-    },
-    {
-      "word": "DROOL"
-    },
-    {
-      "word": "DROOP"
-    },
-    {
-      "word": "DROVE"
-    },
-    {
-      "word": "DROWN"
-    },
-    {
-      "word": "DRUGS"
-    },
-    {
-      "word": "DRUID"
-    },
-    {
-      "word": "DRUNK"
-    },
-    {
-      "word": "DRYLY"
-    },
-    {
-      "word": "DUBBY"
-    },
-    {
-      "word": "DULLS"
-    },
-    {
-      "word": "DUMBO"
-    },
-    {
-      "word": "DUMMY"
-    },
-    {
-      "word": "DUMPY"
-    },
-    {
-      "word": "DUNCE"
-    },
-    {
-      "word": "DUNES"
-    },
-    {
-      "word": "DUPED"
-    },
-    {
-      "word": "DUSKY"
-    },
-    {
-      "word": "DUSTY"
-    },
-    {
-      "word": "DUTCH"
-    },
-    {
-      "word": "DWARF"
-    },
-    {
-      "word": "DWELL"
-    },
-    {
-      "word": "DWELT"
-    },
-    {
-      "word": "DWINE"
-    },
-    {
-      "word": "EAGER"
-    },
-    {
-      "word": "EAGLE"
-    },
-    {
-      "word": "EARLY"
-    },
-    {
-      "word": "EARTH"
-    },
-    {
-      "word": "EBONY"
-    },
-    {
-      "word": "ECLAT"
-    },
-    {
-      "word": "EDEMA"
-    },
-    {
-      "word": "EDGED"
-    },
-    {
-      "word": "EDICT"
-    },
-    {
-      "word": "EDIFY"
-    },
-    {
-      "word": "EERIE"
-    },
-    {
-      "word": "EIGHT"
-    },
-    {
-      "word": "EJECT"
-    },
-    {
-      "word": "ELATE"
-    },
-    {
-      "word": "ELBOW"
-    },
-    {
-      "word": "ELDER"
-    },
-    {
-      "word": "ELECT"
-    },
-    {
-      "word": "ELEGY"
-    },
-    {
-      "word": "ELFIN"
-    },
-    {
-      "word": "ELIDE"
-    },
-    {
-      "word": "ELITE"
-    },
-    {
-      "word": "ELMNT"
-    },
-    {
-      "word": "ELOIN"
-    },
-    {
-      "word": "ELOPE"
-    },
-    {
-      "word": "ELUDE"
-    },
-    {
-      "word": "ELVEN"
-    },
-    {
-      "word": "EMAIL"
-    },
-    {
-      "word": "EMBAY"
-    },
-    {
-      "word": "EMBED"
-    },
-    {
-      "word": "EMBER"
-    },
-    {
-      "word": "EMCEE"
-    },
-    {
-      "word": "EMERG"
-    },
-    {
-      "word": "EMERY"
-    },
-    {
-      "word": "EMOTE"
-    },
-    {
-      "word": "EMPTY"
-    },
-    {
-      "word": "ENACT"
-    },
-    {
-      "word": "ENATE"
-    },
-    {
-      "word": "ENDED"
-    },
-    {
-      "word": "ENDEW"
-    },
-    {
-      "word": "ENDOW"
-    },
-    {
-      "word": "ENEMY"
-    },
-    {
-      "word": "ENJOY"
-    },
-    {
-      "word": "ENLIT"
-    },
-    {
-      "word": "ENNOG"
-    },
-    {
-      "word": "ENNUI"
-    },
-    {
-      "word": "ENSKY"
-    },
-    {
-      "word": "ENSUE"
-    },
-    {
-      "word": "ENTER"
-    },
-    {
-      "word": "ENTRY"
-    },
-    {
-      "word": "ENVOY"
-    },
-    {
-      "word": "EPHOD"
-    },
-    {
-      "word": "EPOCH"
-    },
-    {
-      "word": "EPOXY"
-    },
-    {
-      "word": "EQUAL"
-    },
-    {
-      "word": "EQUIP"
-    },
-    {
-      "word": "ERASE"
-    },
-    {
-      "word": "ERODE"
-    },
-    {
-      "word": "ERRAN"
-    },
-    {
-      "word": "ERRAT"
-    },
-    {
-      "word": "ERROR"
-    },
-    {
-      "word": "ERUPT"
-    },
-    {
-      "word": "ESKER"
-    },
-    {
-      "word": "ESSAY"
-    },
-    {
-      "word": "ESTER"
-    },
-    {
-      "word": "ESTOP"
-    },
-    {
-      "word": "ETCHY"
-    },
-    {
-      "word": "ETHER"
-    },
-    {
-      "word": "ETHIC"
-    },
-    {
-      "word": "ETHOS"
-    },
-    {
-      "word": "ETUDE"
-    },
-    {
-      "word": "EVADE"
-    },
-    {
-      "word": "EVENS"
-    },
-    {
-      "word": "EVENT"
-    },
-    {
-      "word": "EVERY"
-    },
-    {
-      "word": "EVICT"
-    },
-    {
-      "word": "EVOKE"
-    },
-    {
-      "word": "EXACT"
-    },
-    {
-      "word": "EXALT"
-    },
-    {
-      "word": "EXCEL"
-    },
-    {
-      "word": "EXERT"
-    },
-    {
-      "word": "EXILE"
-    },
-    {
-      "word": "EXIST"
-    },
-    {
-      "word": "EXPEL"
-    },
-    {
-      "word": "EXTOL"
-    },
-    {
-      "word": "EXTRA"
-    },
-    {
-      "word": "EXULT"
-    },
-    {
-      "word": "EYING"
-    },
-    {
-      "word": "EYRIE"
-    },
-    {
-      "word": "EYRIR"
-    },
-    {
-      "word": "FABLE"
-    },
-    {
-      "word": "FACET"
-    },
-    {
-      "word": "FACIL"
-    },
-    {
-      "word": "FADER"
-    },
-    {
-      "word": "FALLS"
-    },
-    {
-      "word": "FALSE"
-    },
-    {
-      "word": "FANCY"
-    },
-    {
-      "word": "FANNY"
-    },
-    {
-      "word": "FATAL"
-    },
-    {
-      "word": "FATED"
-    },
-    {
-      "word": "FATTY"
-    },
-    {
-      "word": "FAULT"
-    },
-    {
-      "word": "FAUNA"
-    },
-    {
-      "word": "FAVOR"
-    },
-    {
-      "word": "FEAST"
-    },
-    {
-      "word": "FEIGN"
-    },
-    {
-      "word": "FELON"
-    },
-    {
-      "word": "FENCE"
-    },
-    {
-      "word": "FERAL"
-    },
-    {
-      "word": "FERRY"
-    },
-    {
-      "word": "FETAL"
-    },
-    {
-      "word": "FETCH"
-    },
-    {
-      "word": "FEVER"
-    },
-    {
-      "word": "FEWER"
-    },
-    {
-      "word": "FIBER"
-    },
-    {
-      "word": "FIBRE"
-    },
-    {
-      "word": "FIELD"
-    },
-    {
-      "word": "FIEND"
-    },
-    {
-      "word": "FIERY"
-    },
-    {
-      "word": "FIFTH"
-    },
-    {
-      "word": "FIFTY"
-    },
-    {
-      "word": "FIGHT"
-    },
-    {
-      "word": "FILLY"
-    },
-    {
-      "word": "FILMS"
-    },
-    {
-      "word": "FILTH"
-    },
-    {
-      "word": "FINAL"
-    },
-    {
-      "word": "FINCH"
-    },
-    {
-      "word": "FINED"
-    },
-    {
-      "word": "FINER"
-    },
-    {
-      "word": "FIRST"
-    },
-    {
-      "word": "FISHY"
-    },
-    {
-      "word": "FIXED"
-    },
-    {
-      "word": "FIZZY"
-    },
-    {
-      "word": "FJORD"
-    },
-    {
-      "word": "FLACK"
-    },
-    {
-      "word": "FLAME"
-    },
-    {
-      "word": "FLANK"
-    },
-    {
-      "word": "FLARE"
-    },
-    {
-      "word": "FLASH"
-    },
-    {
-      "word": "FLASK"
-    },
-    {
-      "word": "FLEET"
-    },
-    {
-      "word": "FLESH"
-    },
-    {
-      "word": "FLICK"
-    },
-    {
-      "word": "FLIER"
-    },
-    {
-      "word": "FLING"
-    },
-    {
-      "word": "FLINT"
-    },
-    {
-      "word": "FLOAT"
-    },
-    {
-      "word": "FLOCK"
-    },
-    {
-      "word": "FLOOD"
-    },
-    {
-      "word": "FLOOR"
-    },
-    {
-      "word": "FLORA"
-    },
-    {
-      "word": "FLOSS"
-    },
-    {
-      "word": "FLOUR"
-    },
-    {
-      "word": "FLOWN"
-    },
-    {
-      "word": "FLUFF"
-    },
-    {
-      "word": "FLUID"
-    },
-    {
-      "word": "FLUNG"
-    },
-    {
-      "word": "FLUNK"
-    },
-    {
-      "word": "FLUTE"
-    },
-    {
-      "word": "FOCUS"
-    },
-    {
-      "word": "FOGGY"
-    },
-    {
-      "word": "FOODS"
-    },
-    {
-      "word": "FOOLS"
-    },
-    {
-      "word": "FORCE"
-    },
-    {
-      "word": "FORGE"
-    },
-    {
-      "word": "FORGO"
-    },
-    {
-      "word": "FORUM"
-    },
-    {
-      "word": "FOUND"
-    },
-    {
-      "word": "FOUNT"
-    },
-    {
-      "word": "FOYER"
-    },
-    {
-      "word": "FRAME"
-    },
-    {
-      "word": "FRANK"
-    },
-    {
-      "word": "FRAUD"
-    },
-    {
-      "word": "FREAK"
-    },
-    {
-      "word": "FREED"
-    },
-    {
-      "word": "FREON"
-    },
-    {
-      "word": "FRESH"
-    },
-    {
-      "word": "FRIED"
-    },
-    {
-      "word": "FRILL"
-    },
-    {
-      "word": "FRISK"
-    },
-    {
-      "word": "FRONT"
-    },
-    {
-      "word": "FROST"
-    },
-    {
-      "word": "FROTH"
-    },
-    {
-      "word": "FROZE"
-    },
-    {
-      "word": "FRUIT"
-    },
-    {
-      "word": "FUDGE"
-    },
-    {
-      "word": "FUGUE"
-    },
-    {
-      "word": "FULLY"
-    },
-    {
-      "word": "FUNNY"
-    },
-    {
-      "word": "FURRY"
-    },
-    {
-      "word": "GABLE"
-    },
-    {
-      "word": "GAFFE"
-    },
-    {
-      "word": "GAILY"
-    },
-    {
-      "word": "GAINS"
-    },
-    {
-      "word": "GAUZE"
-    },
-    {
-      "word": "GAZER"
-    },
-    {
-      "word": "GECKO"
-    },
-    {
-      "word": "GELID"
-    },
-    {
-      "word": "GENIE"
-    },
-    {
-      "word": "GENRE"
-    },
-    {
-      "word": "GHOUL"
-    },
-    {
-      "word": "GIANT"
-    },
-    {
-      "word": "GIDDY"
-    },
-    {
-      "word": "GIFTY"
-    },
-    {
-      "word": "GIMME"
-    },
-    {
-      "word": "GIPSY"
-    },
-    {
-      "word": "GIRTH"
-    },
-    {
-      "word": "GIVEN"
-    },
-    {
-      "word": "GLADE"
-    },
-    {
-      "word": "GLAND"
-    },
-    {
-      "word": "GLARE"
-    },
-    {
-      "word": "GLASS"
-    },
-    {
-      "word": "GLEAM"
-    },
-    {
-      "word": "GLEAN"
-    },
-    {
-      "word": "GLIDE"
-    },
-    {
-      "word": "GLINT"
-    },
-    {
-      "word": "GLOBE"
-    },
-    {
-      "word": "GLOOM"
-    },
-    {
-      "word": "GLORY"
-    },
-    {
-      "word": "GLOVE"
-    },
-    {
-      "word": "GLYPH"
-    },
-    {
-      "word": "GNASH"
-    },
-    {
-      "word": "GOING"
-    },
-    {
-      "word": "GOLLY"
-    },
-    {
-      "word": "GONER"
-    },
-    {
-      "word": "GOODY"
-    },
-    {
-      "word": "GOOSE"
-    },
-    {
-      "word": "GORGE"
-    },
-    {
-      "word": "GOUGE"
-    },
-    {
-      "word": "GRACE"
-    },
-    {
-      "word": "GRADE"
-    },
-    {
-      "word": "GRAFT"
-    },
-    {
-      "word": "GRAIL"
-    },
-    {
-      "word": "GRAIN"
-    },
-    {
-      "word": "GRAND"
-    },
-    {
-      "word": "GRANT"
-    },
-    {
-      "word": "GRAPE"
-    },
-    {
-      "word": "GRAPH"
-    },
-    {
-      "word": "GRASP"
-    },
-    {
-      "word": "GRASS"
-    },
-    {
-      "word": "GRATE"
-    },
-    {
-      "word": "GRAVE"
-    },
-    {
-      "word": "GRAVY"
-    },
-    {
-      "word": "GRAZE"
-    },
-    {
-      "word": "GREAT"
-    },
-    {
-      "word": "GREED"
-    },
-    {
-      "word": "GREEN"
-    },
-    {
-      "word": "GREET"
-    },
-    {
-      "word": "GRIEF"
-    },
-    {
-      "word": "GRILL"
-    },
-    {
-      "word": "GRIME"
-    },
-    {
-      "word": "GRIND"
-    },
-    {
-      "word": "GRIPE"
-    },
-    {
-      "word": "GRITS"
-    },
-    {
-      "word": "GROAN"
-    },
-    {
-      "word": "GROIN"
-    },
-    {
-      "word": "GROOM"
-    },
-    {
-      "word": "GROPE"
-    },
-    {
-      "word": "GROUP"
-    },
-    {
-      "word": "GROVE"
-    },
-    {
-      "word": "GROWL"
-    },
-    {
-      "word": "GRUEL"
-    },
-    {
-      "word": "GRUFF"
-    },
-    {
-      "word": "GRUNT"
-    },
-    {
-      "word": "GUARD"
-    },
-    {
-      "word": "GUESS"
-    },
-    {
-      "word": "GUEST"
-    },
-    {
-      "word": "GUIDE"
-    },
-    {
-      "word": "GUILD"
-    },
-    {
-      "word": "GUILE"
-    },
-    {
-      "word": "GUILT"
-    },
-    {
-      "word": "GUMMY"
-    },
-    {
-      "word": "GUPPY"
-    },
-    {
-      "word": "GUSTO"
-    },
-    {
-      "word": "GUSTS"
-    },
-    {
-      "word": "GYPSY"
-    },
-    {
-      "word": "HABIT"
-    },
-    {
-      "word": "HAIRY"
-    },
-    {
-      "word": "HALLO"
-    },
-    {
-      "word": "HALVE"
-    },
-    {
-      "word": "HAMMY"
-    },
-    {
-      "word": "HAPPY"
-    },
-    {
-      "word": "HARDY"
-    },
-    {
-      "word": "HAREM"
-    },
-    {
-      "word": "HARRY"
-    },
-    {
-      "word": "HARSH"
-    },
-    {
-      "word": "HASTE"
-    },
-    {
-      "word": "HASTY"
-    },
-    {
-      "word": "HATCH"
-    },
-    {
-      "word": "HATER"
-    },
-    {
-      "word": "HAUNT"
-    },
-    {
-      "word": "HAVEN"
-    },
-    {
-      "word": "HAVOC"
-    },
-    {
-      "word": "HAZEL"
-    },
-    {
-      "word": "HEADY"
-    },
-    {
-      "word": "HEARD"
-    },
-    {
-      "word": "HEART"
-    },
-    {
-      "word": "HEATH"
-    },
-    {
-      "word": "HEAVE"
-    },
-    {
-      "word": "HEAVY"
-    },
-    {
-      "word": "HEDGE"
-    },
-    {
-      "word": "HEFTY"
-    },
-    {
-      "word": "HEIGHT"
-    },
-    {
-      "word": "HELIX"
-    },
-    {
-      "word": "HELLO"
-    },
-    {
-      "word": "HENCE"
-    },
-    {
-      "word": "HERBS"
-    },
-    {
-      "word": "HEROE"
-    },
-    {
-      "word": "HERON"
-    },
-    {
-      "word": "HILLY"
-    },
-    {
-      "word": "HINGE"
-    },
-    {
-      "word": "HIPPY"
-    },
-    {
-      "word": "HIRED"
-    },
-    {
-      "word": "HOARD"
-    },
-    {
-      "word": "HOBBY"
-    },
-    {
-      "word": "HONEY"
-    },
-    {
-      "word": "HONOR"
-    },
-    {
-      "word": "HORDE"
-    },
-    {
-      "word": "HORSE"
-    },
-    {
-      "word": "HOTEL"
-    },
-    {
-      "word": "HOUND"
-    },
-    {
-      "word": "HOVER"
-    },
-    {
-      "word": "HOWDY"
-    },
-    {
-      "word": "HUMAN"
-    },
-    {
-      "word": "HUMID"
-    },
-    {
-      "word": "HUMOR"
-    },
-    {
-      "word": "HUNCH"
-    },
-    {
-      "word": "HUNKY"
-    },
-    {
-      "word": "HURRY"
-    },
-    {
-      "word": "HUSKY"
-    },
-    {
-      "word": "HYDRA"
-    },
-    {
-      "word": "HYENA"
-    },
-    {
-      "word": "HYMEN"
-    },
-    {
-      "word": "HYPED"
-    },
-    {
-      "word": "HYPER"
-    },
-    {
-      "word": "HYPHY"
-    },
-    {
-      "word": "HYRAX"
-    },
-    {
-      "word": "ICING"
-    },
-    {
-      "word": "ICONS"
-    },
-    {
-      "word": "IDEAL"
-    },
-    {
-      "word": "IDEAS"
-    },
-    {
-      "word": "IDIOM"
-    },
-    {
-      "word": "IDIOT"
-    },
-    {
-      "word": "IDLER"
-    },
-    {
-      "word": "IDYLL"
-    },
-    {
-      "word": "IGLOO"
-    },
-    {
-      "word": "IMAGE"
-    },
-    {
-      "word": "IMBUE"
-    },
-    {
-      "word": "IMPEL"
-    },
-    {
-      "word": "IMPLY"
-    },
-    {
-      "word": "INANE"
-    },
-    {
-      "word": "INBOX"
-    },
-    {
-      "word": "INCUR"
-    },
-    {
-      "word": "INCUS"
-    },
-    {
-      "word": "INDEX"
-    },
-    {
-      "word": "INDIE"
-    },
-    {
-      "word": "INEPT"
-    },
-    {
-      "word": "INERT"
-    },
-    {
-      "word": "INFER"
-    },
-    {
-      "word": "INFIX"
-    },
-    {
-      "word": "INFRA"
-    },
-    {
-      "word": "INGOT"
-    },
-    {
-      "word": "INLAY"
-    },
-    {
-      "word": "INLET"
-    },
-    {
-      "word": "INNER"
-    },
-    {
-      "word": "INPUT"
-    },
-    {
-      "word": "INTEL"
-    },
-    {
-      "word": "INTER"
-    },
-    {
-      "word": "INTRO"
-    },
-    {
-      "word": "INURE"
-    },
-    {
-      "word": "IONIC"
-    },
-    {
-      "word": "IRADE"
-    },
-    {
-      "word": "IRONY"
-    },
-    {
-      "word": "ISLET"
-    },
-    {
-      "word": "ISSUE"
-    },
-    {
-      "word": "ITCHY"
-    },
-    {
-      "word": "IVORY"
-    },
-    {
-      "word": "IXORA"
-    },
-    {
-      "word": "IZARD"
-    },
-    {
-      "word": "JABBY"
-    },
-    {
-      "word": "JACKS"
-    },
-    {
-      "word": "JACKY"
-    },
-    {
-      "word": "JADED"
-    },
-    {
-      "word": "JADES"
-    },
-    {
-      "word": "JAILS"
-    },
-    {
-      "word": "JAMMY"
-    },
-    {
-      "word": "JANES"
-    },
-    {
-      "word": "JAPAN"
-    },
-    {
-      "word": "JARLS"
-    },
-    {
-      "word": "JAUNT"
-    },
-    {
-      "word": "JAWSY"
-    },
-    {
-      "word": "JELLY"
-    },
-    {
-      "word": "JERKS"
-    },
-    {
-      "word": "JERKY"
-    },
-    {
-      "word": "JESTS"
-    },
-    {
-      "word": "JETTY"
-    },
-    {
-      "word": "JEWEL"
-    },
-    {
-      "word": "JIGGY"
-    },
-    {
-      "word": "JIHAD"
-    },
-    {
-      "word": "JINGO"
-    },
-    {
-      "word": "JINKS"
-    },
-    {
-      "word": "JINNS"
-    },
-    {
-      "word": "JIRDS"
-    },
-    {
-      "word": "JIVES"
-    },
-    {
-      "word": "JOINS"
-    },
-    {
-      "word": "JOINT"
-    },
-    {
-      "word": "JOKED"
-    },
-    {
-      "word": "JOKER"
-    },
-    {
-      "word": "JOKES"
-    },
-    {
-      "word": "JOLLY"
-    },
-    {
-      "word": "JOLTS"
-    },
-    {
-      "word": "JONES"
-    },
-    {
-      "word": "JORUM"
-    },
-    {
-      "word": "JOULE"
-    },
-    {
-      "word": "JOUST"
-    },
-    {
-      "word": "JOWLS"
-    },
-    {
-      "word": "JOYED"
-    },
-    {
-      "word": "JUDGE"
-    },
-    {
-      "word": "JUICE"
-    },
-    {
-      "word": "JUICY"
-    },
-    {
-      "word": "JUMBO"
-    },
-    {
-      "word": "JUMPY"
-    },
-    {
-      "word": "JUNTA"
-    },
-    {
-      "word": "JUNTO"
-    },
-    {
-      "word": "JUROR"
-    },
-    {
-      "word": "JUSTS"
-    },
-    {
-      "word": "JUTES"
-    },
-    {
-      "word": "JUTTY"
-    },
-    {
-      "word": "JUVES"
-    },
-    {
-      "word": "KABAB"
-    },
-    {
-      "word": "KAPOK"
-    },
-    {
-      "word": "KAPPA"
-    },
-    {
-      "word": "KAPUT"
-    },
-    {
-      "word": "KARAT"
-    },
-    {
-      "word": "KARMA"
-    },
-    {
-      "word": "KARST"
-    },
-    {
-      "word": "KAYAK"
-    },
-    {
-      "word": "KAYLE"
-    },
-    {
-      "word": "KEBAB"
-    },
-    {
-      "word": "KEBAR"
-    },
-    {
-      "word": "KELLY"
-    },
-    {
-      "word": "KETCH"
-    },
-    {
-      "word": "KEYED"
-    },
-    {
-      "word": "KHADI"
-    },
-    {
-      "word": "KHAKI"
-    },
-    {
-      "word": "KILLS"
-    },
-    {
-      "word": "KILOS"
-    },
-    {
-      "word": "KILTS"
-    },
-    {
-      "word": "KINDA"
-    },
-    {
-      "word": "KINDS"
-    },
-    {
-      "word": "KINDY"
-    },
-    {
-      "word": "KINGS"
-    },
-    {
-      "word": "KININ"
-    },
-    {
-      "word": "KINKS"
-    },
-    {
-      "word": "KINKY"
-    },
-    {
-      "word": "KIOSK"
-    },
-    {
-      "word": "KIRBY"
-    },
-    {
-      "word": "KISSY"
-    },
-    {
-      "word": "KITED"
-    },
-    {
-      "word": "KITES"
-    },
-    {
-      "word": "KITTED"
-    },
-    {
-      "word": "KITTY"
-    },
-    {
-      "word": "KLUTZ"
-    },
-    {
-      "word": "KNACK"
-    },
-    {
-      "word": "KNAVE"
-    },
-    {
-      "word": "KNEAD"
-    },
-    {
-      "word": "KNEED"
-    },
-    {
-      "word": "KNEEL"
-    },
-    {
-      "word": "KNELL"
-    },
-    {
-      "word": "KNELT"
-    },
-    {
-      "word": "KNIFE"
-    },
-    {
-      "word": "KNITS"
-    },
-    {
-      "word": "KNOBS"
-    },
-    {
-      "word": "KNOLL"
-    },
-    {
-      "word": "KNOWN"
-    },
-    {
-      "word": "KNOWS"
-    },
-    {
-      "word": "KOALA"
-    },
-    {
-      "word": "KOINE"
-    },
-    {
-      "word": "KRAIT"
-    },
-    {
-      "word": "KRAUT"
-    },
-    {
-      "word": "KUDZU"
-    },
-    {
-      "word": "KULAK"
-    },
-    {
-      "word": "KURTA"
-    },
-    {
-      "word": "KURUS"
-    },
-    {
-      "word": "LABEL"
-    },
-    {
-      "word": "LABOR"
-    },
-    {
-      "word": "LACED"
-    },
-    {
-      "word": "LACES"
-    },
-    {
-      "word": "LACKS"
-    },
-    {
-      "word": "LADEN"
-    },
-    {
-      "word": "LADLE"
-    },
-    {
-      "word": "LAGER"
-    },
-    {
-      "word": "LAIRY"
-    },
-    {
-      "word": "LANCE"
-    },
-    {
-      "word": "LANDS"
-    },
-    {
-      "word": "LANES"
-    },
-    {
-      "word": "LARGE"
-    },
-    {
-      "word": "LARGO"
-    },
-    {
-      "word": "LARVA"
-    },
-    {
-      "word": "LASER"
-    },
-    {
-      "word": "LASSO"
-    },
-    {
-      "word": "LASTS"
-    },
-    {
-      "word": "LATCH"
-    },
-    {
-      "word": "LATER"
-    },
-    {
-      "word": "LATHE"
-    },
-    {
-      "word": "LATTE"
-    },
-    {
-      "word": "LAUGH"
-    },
-    {
-      "word": "LAUND"
-    },
-    {
-      "word": "LAVES"
-    },
-    {
-      "word": "LAXER"
-    },
-    {
-      "word": "LAYER"
-    },
-    {
-      "word": "LEACH"
-    },
-    {
-      "word": "LEADS"
-    },
-    {
-      "word": "LEAFY"
-    },
-    {
-      "word": "LEAKY"
-    },
-    {
-      "word": "LEANT"
-    },
-    {
-      "word": "LEAPS"
-    },
-    {
-      "word": "LEAPT"
-    },
-    {
-      "word": "LEARN"
-    },
-    {
-      "word": "LEASE"
-    },
-    {
-      "word": "LEASH"
-    },
-    {
-      "word": "LEAST"
-    },
-    {
-      "word": "LEAVE"
-    },
-    {
-      "word": "LEDGE"
-    },
-    {
-      "word": "LEGAL"
-    },
-    {
-      "word": "LEGGY"
-    },
-    {
-      "word": "LEGIT"
-    },
-    {
-      "word": "LEMON"
-    },
-    {
-      "word": "LEMUR"
-    },
-    {
-      "word": "LENDS"
-    },
-    {
-      "word": "LENSE"
-    },
-    {
-      "word": "LENTO"
-    },
-    {
-      "word": "LEPER"
-    },
-    {
-      "word": "LEVEL"
-    },
-    {
-      "word": "LEVER"
-    },
-    {
-      "word": "LEXIS"
-    },
-    {
-      "word": "LIBEL"
-    },
-    {
-      "word": "LIBRA"
-    },
-    {
-      "word": "LICIT"
-    },
-    {
-      "word": "LIDAR"
-    },
-    {
-      "word": "LIFER"
-    },
-    {
-      "word": "LIFTS"
-    },
-    {
-      "word": "LIGHT"
-    },
-    {
-      "word": "LIKED"
-    },
-    {
-      "word": "LIKEN"
-    },
-    {
-      "word": "LIKER"
-    },
-    {
-      "word": "LIKES"
-    },
-    {
-      "word": "LILAC"
-    },
-    {
-      "word": "LIMBO"
-    },
-    {
-      "word": "LIMBS"
-    },
-    {
-      "word": "LIMES"
-    },
-    {
-      "word": "LIMIT"
-    },
-    {
-      "word": "LINED"
-    },
-    {
-      "word": "LINEN"
-    },
-    {
-      "word": "LINER"
-    },
-    {
-      "word": "LINES"
-    },
-    {
-      "word": "LINGO"
-    },
-    {
-      "word": "LINKS"
-    },
-    {
-      "word": "LIONS"
-    },
-    {
-      "word": "LIPID"
-    },
-    {
-      "word": "LISPS"
-    },
-    {
-      "word": "LISTS"
-    },
-    {
-      "word": "LITHE"
-    },
-    {
-      "word": "LIVED"
-    },
-    {
-      "word": "LIVEN"
-    },
-    {
-      "word": "LIVER"
-    },
-    {
-      "word": "LIVES"
-    },
-    {
-      "word": "LIVID"
-    },
-    {
-      "word": "LLAMA"
-    },
-    {
-      "word": "LOAMY"
-    },
-    {
-      "word": "LOATH"
-    },
-    {
-      "word": "LOBBY"
-    },
-    {
-      "word": "LOCAL"
-    },
-    {
-      "word": "LOCUS"
-    },
-    {
-      "word": "LODGE"
-    },
-    {
-      "word": "LOFTY"
-    },
-    {
-      "word": "LOGIC"
-    },
-    {
-      "word": "LOGIN"
-    },
-    {
-      "word": "LOLLS"
-    },
-    {
-      "word": "LONER"
-    },
-    {
-      "word": "LONGS"
-    },
-    {
-      "word": "LOOKS"
-    },
-    {
-      "word": "LOOPY"
-    },
-    {
-      "word": "LOOSE"
-    },
-    {
-      "word": "LOPED"
-    },
-    {
-      "word": "LORDS"
-    },
-    {
-      "word": "LORRY"
-    },
-    {
-      "word": "LOSER"
-    },
-    {
-      "word": "LOSES"
-    },
-    {
-      "word": "MACAW"
-    },
-    {
-      "word": "MACHO"
-    },
-    {
-      "word": "MACRO"
-    },
-    {
-      "word": "MADAM"
-    },
-    {
-      "word": "MADES"
-    },
-    {
-      "word": "MAGIC"
-    },
-    {
-      "word": "MAGMA"
-    },
-    {
-      "word": "MAGNA"
-    },
-    {
-      "word": "MAIDS"
-    },
-    {
-      "word": "MAIZE"
-    },
-    {
-      "word": "MAJOR"
-    },
-    {
-      "word": "MAKER"
-    },
-    {
-      "word": "MALES"
-    },
-    {
-      "word": "MALLE"
-    },
-    {
-      "word": "MANGO"
-    },
-    {
-      "word": "MANIA"
-    },
-    {
-      "word": "MANIC"
-    },
-    {
-      "word": "MANOR"
-    },
-    {
-      "word": "MAPLE"
-    },
-    {
-      "word": "MARCH"
-    },
-    {
-      "word": "MARGIN"
-    },
-    {
-      "word": "MARSH"
-    },
-    {
-      "word": "MASON"
-    },
-    {
-      "word": "MATCH"
-    },
-    {
-      "word": "MATED"
-    },
-    {
-      "word": "MATES"
-    },
-    {
-      "word": "MATHS"
-    },
-    {
-      "word": "MATTE"
-    },
-    {
-      "word": "MAUVE"
-    },
-    {
-      "word": "MAXIM"
-    },
-    {
-      "word": "MAYBE"
-    },
-    {
-      "word": "MEADY"
-    },
-    {
-      "word": "MEANT"
-    },
-    {
-      "word": "MEATS"
-    },
-    {
-      "word": "MELON"
-    },
-    {
-      "word": "MELTS"
-    },
-    {
-      "word": "MEMES"
-    },
-    {
-      "word": "MENUS"
-    },
-    {
-      "word": "MERCY"
-    },
-    {
-      "word": "MERIT"
-    },
-    {
-      "word": "METAL"
-    },
-    {
-      "word": "METER"
-    },
-    {
-      "word": "METRO"
-    },
-    {
-      "word": "MEZZO"
-    },
-    {
-      "word": "MICRO"
-    },
-    {
-      "word": "MIDST"
-    },
-    {
-      "word": "MIGHT"
-    },
-    {
-      "word": "MILKY"
-    },
-    {
-      "word": "MINDS"
-    },
-    {
-      "word": "MINED"
-    },
-    {
-      "word": "MINER"
-    },
-    {
-      "word": "MINES"
-    },
-    {
-      "word": "MINOR"
-    },
-    {
-      "word": "MINTY"
-    },
-    {
-      "word": "MIRRY"
-    },
-    {
-      "word": "MISER"
-    },
-    {
-      "word": "MISSY"
-    },
-    {
-      "word": "MIXED"
-    },
-    {
-      "word": "MIXER"
-    },
-    {
-      "word": "MIXES"
-    },
-    {
-      "word": "MOCHA"
-    },
-    {
-      "word": "MODEL"
-    },
-    {
-      "word": "MODEM"
-    },
-    {
-      "word": "MODES"
-    },
-    {
-      "word": "MOGUL"
-    },
-    {
-      "word": "MOIST"
-    },
-    {
-      "word": "MOLAR"
-    },
-    {
-      "word": "MOLDY"
-    },
-    {
-      "word": "MONEY"
-    },
-    {
-      "word": "MONKS"
-    },
-    {
-      "word": "MONTH"
-    },
-    {
-      "word": "MOODY"
-    },
-    {
-      "word": "MOOSE"
-    },
-    {
-      "word": "MORAL"
-    },
-    {
-      "word": "MORSE"
-    },
-    {
-      "word": "MOSSO"
-    },
-    {
-      "word": "MOTEL"
-    },
-    {
-      "word": "MOTIF"
-    },
-    {
-      "word": "MOTOR"
-    },
-    {
-      "word": "MOTTO"
-    },
-    {
-      "word": "MOULD"
-    },
-    {
-      "word": "MOUND"
-    },
-    {
-      "word": "MOUNT"
-    },
-    {
-      "word": "MOURN"
-    },
-    {
-      "word": "MOUSE"
-    },
-    {
-      "word": "MOUTH"
-    },
-    {
-      "word": "MOVIE"
-    },
-    {
-      "word": "MOWER"
-    },
-    {
-      "word": "MUCKY"
-    },
-    {
-      "word": "MUCUS"
-    },
-    {
-      "word": "MUDDY"
-    },
-    {
-      "word": "MUGGY"
-    },
-    {
-      "word": "MULCH"
-    },
-    {
-      "word": "MUMMY"
-    },
-    {
-      "word": "MURAL"
-    },
-    {
-      "word": "MURKY"
-    },
-    {
-      "word": "MUSKY"
-    },
-    {
-      "word": "MUSSE"
-    },
-    {
-      "word": "MUSTY"
-    },
-    {
-      "word": "MYRRH"
-    },
-    {
-      "word": "NABOB"
-    },
-    {
-      "word": "NACHO"
-    },
-    {
-      "word": "NAIVE"
-    },
-    {
-      "word": "NAKED"
-    },
-    {
-      "word": "NAMED"
-    },
-    {
-      "word": "NAMES"
-    },
-    {
-      "word": "NANNY"
-    },
-    {
-      "word": "NASAL"
-    },
-    {
-      "word": "NAVEL"
-    },
-    {
-      "word": "NEEDS"
-    },
-    {
-      "word": "NEGRO"
-    },
-    {
-      "word": "NEIGH"
-    },
-    {
-      "word": "NERDS"
-    },
-    {
-      "word": "NERDY"
-    },
-    {
-      "word": "NERVE"
-    },
-    {
-      "word": "NERVY"
-    },
-    {
-      "word": "NESTS"
-    },
-    {
-      "word": "NETTY"
-    },
-    {
-      "word": "NEVER"
-    },
-    {
-      "word": "NEWER"
-    },
-    {
-      "word": "NEWLY"
-    },
-    {
-      "word": "NEXUS"
-    },
-    {
-      "word": "NICER"
-    },
-    {
-      "word": "NICHE"
-    },
-    {
-      "word": "NIECE"
-    },
-    {
-      "word": "NIGHT"
-    },
-    {
-      "word": "NINJA"
-    },
-    {
-      "word": "NINNY"
-    },
-    {
-      "word": "NINTH"
-    },
-    {
-      "word": "NIPPY"
-    },
-    {
-      "word": "NITER"
-    },
-    {
-      "word": "NITID"
-    },
-    {
-      "word": "NITON"
-    },
-    {
-      "word": "NITRE"
-    },
-    {
-      "word": "NITRO"
-    },
-    {
-      "word": "NITTY"
-    },
-    {
-      "word": "NOBLE"
-    },
-    {
-      "word": "NOBLY"
-    },
-    {
-      "word": "NODAL"
-    },
-    {
-      "word": "NODDY"
-    },
-    {
-      "word": "NODES"
-    },
-    {
-      "word": "NOELI"
-    },
-    {
-      "word": "NOGGS"
-    },
-    {
-      "word": "NOHOW"
-    },
-    {
-      "word": "NOISE"
-    },
-    {
-      "word": "NOISY"
-    },
-    {
-      "word": "NOLES"
-    },
-    {
-      "word": "NOMAD"
-    },
-    {
-      "word": "NOMEN"
-    },
-    {
-      "word": "NONCE"
-    },
-    {
-      "word": "NOOKS"
-    },
-    {
-      "word": "NOOKY"
-    },
-    {
-      "word": "NOONS"
-    },
-    {
-      "word": "NOOSE"
-    },
-    {
-      "word": "NORTH"
-    },
-    {
-      "word": "NOSEY"
-    },
-    {
-      "word": "NOTCH"
-    },
-    {
-      "word": "NOTED"
-    },
-    {
-      "word": "NOTES"
-    },
-    {
-      "word": "NOVEL"
-    },
-    {
-      "word": "NOVUM"
-    },
-    {
-      "word": "NUDGE"
-    },
-    {
-      "word": "NURSE"
-    },
-    {
-      "word": "NUTTY"
-    },
-    {
-      "word": "NYLON"
-    },
-    {
-      "word": "NYMPH"
-    },
-    {
-      "word": "OAKEN"
-    },
-    {
-      "word": "OASIS"
-    },
-    {
-      "word": "OBESE"
-    },
-    {
-      "word": "OCCUR"
-    },
-    {
-      "word": "OCEAN"
-    },
-    {
-      "word": "OCHER"
-    },
-    {
-      "word": "OCTAL"
-    },
-    {
-      "word": "OCTAN"
-    },
-    {
-      "word": "OCTET"
-    },
-    {
-      "word": "ODDER"
-    },
-    {
-      "word": "ODDLY"
-    },
-    {
-      "word": "ODORO"
-    },
-    {
-      "word": "OFFER"
-    },
-    {
-      "word": "OFTEN"
-    },
-    {
-      "word": "OGLED"
-    },
-    {
-      "word": "OGLES"
-    },
-    {
-      "word": "OILED"
-    },
-    {
-      "word": "OINTS"
-    },
-    {
-      "word": "OLDEN"
-    },
-    {
-      "word": "OLDER"
-    },
-    {
-      "word": "OLEIC"
-    },
-    {
-      "word": "OLIVE"
-    },
-    {
-      "word": "OMEGA"
-    },
-    {
-      "word": "OMENS"
-    },
-    {
-      "word": "OMITS"
-    },
-    {
-      "word": "ONION"
-    },
-    {
-      "word": "ONLAY"
-    },
-    {
-      "word": "ONSET"
-    },
-    {
-      "word": "OPALS"
-    },
-    {
-      "word": "OPERA"
-    },
-    {
-      "word": "OPERF"
-    },
-    {
-      "word": "OPINE"
-    },
-    {
-      "word": "OPIUM"
-    },
-    {
-      "word": "OPTIC"
-    },
-    {
-      "word": "ORALS"
-    },
-    {
-      "word": "ORBIT"
-    },
-    {
-      "word": "ORDER"
-    },
-    {
-      "word": "ORGAN"
-    },
-    {
-      "word": "ORGIC"
-    },
-    {
-      "word": "ORTET"
-    },
-    {
-      "word": "OTHER"
-    },
-    {
-      "word": "OTTER"
-    },
-    {
-      "word": "OUGHT"
-    },
-    {
-      "word": "OUNCE"
-    },
-    {
-      "word": "OUTDO"
-    },
-    {
-      "word": "OUTER"
-    },
-    {
-      "word": "OUTGO"
-    },
-    {
-      "word": "OUTRO"
-    },
-    {
-      "word": "OUZOS"
-    },
-    {
-      "word": "OVARY"
-    },
-    {
-      "word": "OVATE"
-    },
-    {
-      "word": "OVENS"
-    },
-    {
-      "word": "OVERT"
-    },
-    {
-      "word": "OVINE"
-    },
-    {
-      "word": "OWING"
-    },
-    {
-      "word": "OWLET"
-    },
-    {
-      "word": "OWNED"
-    },
-    {
-      "word": "OWNER"
-    },
-    {
-      "word": "OXBOW"
-    },
-    {
-      "word": "OXIDE"
-    },
-    {
-      "word": "OXLIP"
-    },
-    {
-      "word": "OZENA"
-    },
-    {
-      "word": "OZONE"
-    },
-    {
-      "word": "PACED"
-    },
-    {
-      "word": "PACER"
-    },
-    {
-      "word": "PACES"
-    },
-    {
-      "word": "PACTS"
-    },
-    {
-      "word": "PADDY"
-    },
-    {
-      "word": "PADRE"
-    },
-    {
-      "word": "PAGAN"
-    },
-    {
-      "word": "PAGER"
-    },
-    {
-      "word": "PAGES"
-    },
-    {
-      "word": "PAINT"
-    },
-    {
-      "word": "PAIRY"
-    },
-    {
-      "word": "PALER"
-    },
-    {
-      "word": "PALMS"
-    },
-    {
-      "word": "PALSY"
-    },
-    {
-      "word": "PANED"
-    },
-    {
-      "word": "PANEL"
-    },
-    {
-      "word": "PANIC"
-    },
-    {
-      "word": "PANSY"
-    },
-    {
-      "word": "PANTS"
-    },
-    {
-      "word": "PAPAL"
-    },
-    {
-      "word": "PAPER"
-    },
-    {
-      "word": "PAPPI"
-    },
-    {
-      "word": "PARDS"
-    },
-    {
-      "word": "PARED"
-    },
-    {
-      "word": "PARENT"
-    },
-    {
-      "word": "PARKS"
-    },
-    {
-      "word": "PARRY"
-    },
-    {
-      "word": "PARSE"
-    },
-    {
-      "word": "PARTS"
-    },
-    {
-      "word": "PARTY"
-    },
-    {
-      "word": "PATCH"
-    },
-    {
-      "word": "PATIO"
-    },
-    {
-      "word": "PAUSE"
-    },
-    {
-      "word": "PAVED"
-    },
-    {
-      "word": "PAWER"
-    },
-    {
-      "word": "PEACE"
-    },
-    {
-      "word": "PEACH"
-    },
-    {
-      "word": "PEAKS"
-    },
-    {
-      "word": "PEARL"
-    },
-    {
-      "word": "PEDAL"
-    },
-    {
-      "word": "PEDRO"
-    },
-    {
-      "word": "PEERS"
-    },
-    {
-      "word": "PEEVE"
-    },
-    {
-      "word": "PELTS"
-    },
-    {
-      "word": "PEONY"
-    },
-    {
-      "word": "PEPPY"
-    },
-    {
-      "word": "PERCH"
-    },
-    {
-      "word": "PERCY"
-    },
-    {
-      "word": "PERIL"
-    },
-    {
-      "word": "PERKY"
-    },
-    {
-      "word": "PESTO"
-    },
-    {
-      "word": "PETAL"
-    },
-    {
-      "word": "PETTY"
-    },
-    {
-      "word": "PHASE"
-    },
-    {
-      "word": "PHONE"
-    },
-    {
-      "word": "PHOTO"
-    },
-    {
-      "word": "PIANO"
-    },
-    {
-      "word": "PICKS"
-    },
-    {
-      "word": "PICKY"
-    },
-    {
-      "word": "PIECE"
-    },
-    {
-      "word": "PIERS"
-    },
-    {
-      "word": "PILAR"
-    },
-    {
-      "word": "PILOT"
-    },
-    {
-      "word": "PINCH"
-    },
-    {
-      "word": "PINEY"
-    },
-    {
-      "word": "PINKY"
-    },
-    {
-      "word": "PIPED"
-    },
-    {
-      "word": "PIPER"
-    },
-    {
-      "word": "PIPES"
-    },
-    {
-      "word": "PITCH"
-    },
-    {
-      "word": "PITHY"
-    },
-    {
-      "word": "PIVOT"
-    },
-    {
-      "word": "PIXEL"
-    },
-    {
-      "word": "PIXIE"
-    },
-    {
-      "word": "PIZZA"
-    },
-    {
-      "word": "PLACE"
-    },
-    {
-      "word": "PLAIN"
-    },
-    {
-      "word": "PLAIT"
-    },
-    {
-      "word": "PLANE"
-    },
-    {
-      "word": "PLANK"
-    },
-    {
-      "word": "PLANT"
-    },
-    {
-      "word": "PLATE"
-    },
-    {
-      "word": "PLAZA"
-    },
-    {
-      "word": "PLEAD"
-    },
-    {
-      "word": "PLEAT"
-    },
-    {
-      "word": "PLIED"
-    },
-    {
-      "word": "PLIER"
-    },
-    {
-      "word": "PLIES"
-    },
-    {
-      "word": "PLUCK"
-    },
-    {
-      "word": "PLUMB"
-    },
-    {
-      "word": "PLUMP"
-    },
-    {
-      "word": "PLUSH"
-    },
-    {
-      "word": "POACH"
-    },
-    {
-      "word": "POETS"
-    },
-    {
-      "word": "POINT"
-    },
-    {
-      "word": "POISE"
-    },
-    {
-      "word": "POLAR"
-    },
-    {
-      "word": "POLKA"
-    },
-    {
-      "word": "POLYP"
-    },
-    {
-      "word": "PONDS"
-    },
-    {
-      "word": "POOCH"
-    },
-    {
-      "word": "POOLE"
-    },
-    {
-      "word": "PORCH"
-    },
-    {
-      "word": "POUCH"
-    },
-    {
-      "word": "POUND"
-    },
-    {
-      "word": "POWER"
-    },
-    {
-      "word": "PRANK"
-    },
-    {
-      "word": "PRATE"
-    },
-    {
-      "word": "PRIDE"
-    },
-    {
-      "word": "PRIME"
-    },
-    {
-      "word": "PRINT"
-    },
-    {
-      "word": "PRIOR"
-    },
-    {
-      "word": "PRISM"
-    },
-    {
-      "word": "PRISON"
-    },
-    {
-      "word": "PRIVY"
-    },
-    {
-      "word": "PRIZE"
-    },
-    {
-      "word": "PROBE"
-    },
-    {
-      "word": "PROOF"
-    },
-    {
-      "word": "PROUD"
-    },
-    {
-      "word": "PROVE"
-    },
-    {
-      "word": "PROWL"
-    },
-    {
-      "word": "QUACK"
-    },
-    {
-      "word": "QUAIL"
-    },
-    {
-      "word": "QUAKE"
-    },
-    {
-      "word": "QUALM"
-    },
-    {
-      "word": "QUANT"
-    },
-    {
-      "word": "QUARK"
-    },
-    {
-      "word": "QUART"
-    },
-    {
-      "word": "QUASH"
-    },
-    {
-      "word": "QUASI"
-    },
-    {
-      "word": "QUAYS"
-    },
-    {
-      "word": "QUBIT"
-    },
-    {
-      "word": "QUEEN"
-    },
-    {
-      "word": "QUEER"
-    },
-    {
-      "word": "QUELL"
-    },
-    {
-      "word": "QUERY"
-    },
-    {
-      "word": "QUEST"
-    },
-    {
-      "word": "QUEUE"
-    },
-    {
-      "word": "QUICK"
-    },
-    {
-      "word": "QUIDS"
-    },
-    {
-      "word": "QUIET"
-    },
-    {
-      "word": "QUILL"
-    },
-    {
-      "word": "QUILT"
-    },
-    {
-      "word": "QUINE"
-    },
-    {
-      "word": "QUINT"
-    },
-    {
-      "word": "QUIRE"
-    },
-    {
-      "word": "QUIRK"
-    },
-    {
-      "word": "QUIRT"
-    },
-    {
-      "word": "QUITE"
-    },
-    {
-      "word": "QUITS"
-    },
-    {
-      "word": "QUIZZ"
-    },
-    {
-      "word": "QUOIN"
-    },
-    {
-      "word": "QUOIT"
-    },
-    {
-      "word": "QUOTA"
-    },
-    {
-      "word": "QUOTE"
-    },
-    {
-      "word": "QUOTH"
-    },
-    {
-      "word": "RABBI"
-    },
-    {
-      "word": "RABID"
-    },
-    {
-      "word": "RACED"
-    },
-    {
-      "word": "RACER"
-    },
-    {
-      "word": "RACES"
-    },
-    {
-      "word": "RACKS"
-    },
-    {
-      "word": "RADAR"
-    },
-    {
-      "word": "RADII"
-    },
-    {
-      "word": "RADIO"
-    },
-    {
-      "word": "RADON"
-    },
-    {
-      "word": "RAIDS"
-    },
-    {
-      "word": "RAILS"
-    },
-    {
-      "word": "RAINS"
-    },
-    {
-      "word": "RAINY"
-    },
-    {
-      "word": "RAISE"
-    },
-    {
-      "word": "RAJAS"
-    },
-    {
-      "word": "RAKED"
-    },
-    {
-      "word": "RAKIS"
-    },
-    {
-      "word": "RALLY"
-    },
-    {
-      "word": "RAMEN"
-    },
-    {
-      "word": "RAMPS"
-    },
-    {
-      "word": "RANCH"
-    },
-    {
-      "word": "RANDY"
-    },
-    {
-      "word": "RANTS"
-    },
-    {
-      "word": "RAPID"
-    },
-    {
-      "word": "RARER"
-    },
-    {
-      "word": "RASPY"
-    },
-    {
-      "word": "RATED"
-    },
-    {
-      "word": "RATES"
-    },
-    {
-      "word": "RATIO"
-    },
-    {
-      "word": "RATTY"
-    },
-    {
-      "word": "RAVEN"
-    },
-    {
-      "word": "RAVES"
-    },
-    {
-      "word": "RAYON"
-    },
-    {
-      "word": "RAZOR"
-    },
-    {
-      "word": "REACH"
-    },
-    {
-      "word": "REACT"
-    },
-    {
-      "word": "READY"
-    },
-    {
-      "word": "REALM"
-    },
-    {
-      "word": "REALS"
-    },
-    {
-      "word": "REAMS"
-    },
-    {
-      "word": "REAPS"
-    },
-    {
-      "word": "REARM"
-    },
-    {
-      "word": "REBAR"
-    },
-    {
-      "word": "REBEL"
-    },
-    {
-      "word": "REBID"
-    },
-    {
-      "word": "REBUS"
-    },
-    {
-      "word": "REBUT"
-    },
-    {
-      "word": "RECAP"
-    },
-    {
-      "word": "RECKS"
-    },
-    {
-      "word": "RECTO"
-    },
-    {
-      "word": "RECUR"
-    },
-    {
-      "word": "REDOX"
-    },
-    {
-      "word": "REDRY"
-    },
-    {
-      "word": "REEFS"
-    },
-    {
-      "word": "REEKS"
-    },
-    {
-      "word": "REEVE"
-    },
-    {
-      "word": "REFER"
-    },
-    {
-      "word": "REFIT"
-    },
-    {
-      "word": "REGAL"
-    },
-    {
-      "word": "REHAB"
-    },
-    {
-      "word": "REIGN"
-    },
-    {
-      "word": "REINS"
-    },
-    {
-      "word": "RELAX"
-    },
-    {
-      "word": "RELAY"
-    },
-    {
-      "word": "RELIC"
-    },
-    {
-      "word": "REMIT"
-    },
-    {
-      "word": "REMIX"
-    },
-    {
-      "word": "RENAL"
-    },
-    {
-      "word": "RENTS"
-    },
-    {
-      "word": "REPAY"
-    },
-    {
-      "word": "REPEL"
-    },
-    {
-      "word": "REPLY"
-    },
-    {
-      "word": "RESET"
-    },
-    {
-      "word": "RESIN"
-    },
-    {
-      "word": "RETRO"
-    },
-    {
-      "word": "REVUE"
-    },
-    {
-      "word": "REWAR"
-    },
-    {
-      "word": "RHINO"
-    },
-    {
-      "word": "RHYME"
-    },
-    {
-      "word": "RIGID"
-    },
-    {
-      "word": "RINGS"
-    },
-    {
-      "word": "RINSE"
-    },
-    {
-      "word": "RIOTS"
-    },
-    {
-      "word": "RIPEN"
-    },
-    {
-      "word": "RIPER"
-    },
-    {
-      "word": "RISEN"
-    },
-    {
-      "word": "RISES"
-    },
-    {
-      "word": "RISKS"
-    },
-    {
-      "word": "RISKY"
-    },
-    {
-      "word": "RIVAL"
-    },
-    {
-      "word": "RIVER"
-    },
-    {
-      "word": "RIVET"
-    },
-    {
-      "word": "ROACH"
-    },
-    {
-      "word": "ROADS"
-    },
-    {
-      "word": "ROARS"
-    },
-    {
-      "word": "ROAST"
-    },
-    {
-      "word": "ROBIN"
-    },
-    {
-      "word": "ROBOT"
-    },
-    {
-      "word": "ROCKS"
-    },
-    {
-      "word": "RODEO"
-    },
-    {
-      "word": "ROGUE"
-    },
-    {
-      "word": "ROLES"
-    },
-    {
-      "word": "ROLLS"
-    },
-    {
-      "word": "ROMAN"
-    },
-    {
-      "word": "ROMEO"
-    },
-    {
-      "word": "ROOST"
-    },
-    {
-      "word": "ROOTS"
-    },
-    {
-      "word": "ROPED"
-    },
-    {
-      "word": "ROPES"
-    },
-    {
-      "word": "ROTOR"
-    },
-    {
-      "word": "ROUGE"
-    },
-    {
-      "word": "ROUGH"
-    },
-    {
-      "word": "ROUND"
-    },
-    {
-      "word": "ROUTE"
-    },
-    {
-      "word": "ROVER"
-    },
-    {
-      "word": "ROWED"
-    },
-    {
-      "word": "ROYAL"
-    },
-    {
-      "word": "SABER"
-    },
-    {
-      "word": "SABLE"
-    },
-    {
-      "word": "SACKS"
-    },
-    {
-      "word": "SADLY"
-    },
-    {
-      "word": "SAFER"
-    },
-    {
-      "word": "SAILS"
-    },
-    {
-      "word": "SAINT"
-    },
-    {
-      "word": "SALAD"
-    },
-    {
-      "word": "SALSA"
-    },
-    {
-      "word": "SALTY"
-    },
-    {
-      "word": "SALVE"
-    },
-    {
-      "word": "SALVO"
-    },
-    {
-      "word": "SAMBA"
-    },
-    {
-      "word": "SANDY"
-    },
-    {
-      "word": "SANER"
-    },
-    {
-      "word": "SARGE"
-    },
-    {
-      "word": "SASSY"
-    },
-    {
-      "word": "SATIN"
-    },
-    {
-      "word": "SATYR"
-    },
-    {
-      "word": "SAUCE"
-    },
-    {
-      "word": "SAUCY"
-    },
-    {
-      "word": "SAUNA"
-    },
-    {
-      "word": "SAUTE"
-    },
-    {
-      "word": "SAVOR"
-    },
-    {
-      "word": "SCALD"
-    },
-    {
-      "word": "SCALE"
-    },
-    {
-      "word": "SCALP"
-    },
-    {
-      "word": "SCAMP"
-    },
-    {
-      "word": "SCANT"
-    },
-    {
-      "word": "SCARF"
-    },
-    {
-      "word": "SCARY"
-    },
-    {
-      "word": "SCENE"
-    },
-    {
-      "word": "SCENT"
-    },
-    {
-      "word": "SCION"
-    },
-    {
-      "word": "SCOOP"
-    },
-    {
-      "word": "SCOOT"
-    },
-    {
-      "word": "SCOPE"
-    },
-    {
-      "word": "SCORE"
-    },
-    {
-      "word": "SCORN"
-    },
-    {
-      "word": "SCOUT"
-    },
-    {
-      "word": "SCRAM"
-    },
-    {
-      "word": "SCRAP"
-    },
-    {
-      "word": "SCREE"
-    },
-    {
-      "word": "SCREW"
-    },
-    {
-      "word": "SCRUB"
-    },
-    {
-      "word": "SCUBA"
-    },
-    {
-      "word": "SEDAN"
-    },
-    {
-      "word": "SEEDY"
-    },
-    {
-      "word": "SEIZE"
-    },
-    {
-      "word": "SENSE"
-    },
-    {
-      "word": "SERUM"
-    },
-    {
-      "word": "SERVE"
-    },
-    {
-      "word": "SETUP"
-    },
-    {
-      "word": "SEVEN"
-    },
-    {
-      "word": "SEVER"
-    },
-    {
-      "word": "SEWER"
-    },
-    {
-      "word": "SHACK"
-    },
-    {
-      "word": "SHADE"
-    },
-    {
-      "word": "SHAKE"
-    },
-    {
-      "word": "SHAKY"
-    },
-    {
-      "word": "SHALL"
-    },
-    {
-      "word": "SHAME"
-    },
-    {
-      "word": "SHANK"
-    },
-    {
-      "word": "SHAPE"
-    },
-    {
-      "word": "SHARE"
-    },
-    {
-      "word": "SHARK"
-    },
-    {
-      "word": "SHARP"
-    },
-    {
-      "word": "SHAVE"
-    },
-    {
-      "word": "SHEAR"
-    },
-    {
-      "word": "SHEEN"
-    },
-    {
-      "word": "SHEEP"
-    },
-    {
-      "word": "SHEET"
-    },
-    {
-      "word": "SHELF"
-    },
-    {
-      "word": "SHELL"
-    },
-    {
-      "word": "SHIFT"
-    },
-    {
-      "word": "SHINE"
-    },
-    {
-      "word": "SHINY"
-    },
-    {
-      "word": "SHIRT"
-    },
-    {
-      "word": "SHOCK"
-    },
-    {
-      "word": "SHONE"
-    },
-    {
-      "word": "SHOOK"
-    },
-    {
-      "word": "SHOOT"
-    },
-    {
-      "word": "SHORE"
-    },
-    {
-      "word": "SHORT"
-    },
-    {
-      "word": "SHOUT"
-    },
-    {
-      "word": "SHOVE"
-    },
-    {
-      "word": "SHOWN"
-    },
-    {
-      "word": "SHOWY"
-    },
-    {
-      "word": "SHRED"
-    },
-    {
-      "word": "SHRUG"
-    },
-    {
-      "word": "SHUSH"
-    },
-    {
-      "word": "SIEGE"
-    },
-    {
-      "word": "SIGMA"
-    },
-    {
-      "word": "SIGNS"
-    },
-    {
-      "word": "SILKY"
-    },
-    {
-      "word": "SILLY"
-    },
-    {
-      "word": "SINCE"
-    },
-    {
-      "word": "SINEW"
-    },
-    {
-      "word": "SINGE"
-    },
-    {
-      "word": "SIREN"
-    },
-    {
-      "word": "TABLE"
-    },
-    {
-      "word": "TABOO"
-    },
-    {
-      "word": "TACIT"
-    },
-    {
-      "word": "TACKY"
-    },
-    {
-      "word": "TAINT"
-    },
-    {
-      "word": "TAKEN"
-    },
-    {
-      "word": "TALLY"
-    },
-    {
-      "word": "TAMER"
-    },
-    {
-      "word": "TAMMY"
-    },
-    {
-      "word": "TANGO"
-    },
-    {
-      "word": "TANGY"
-    },
-    {
-      "word": "TAPER"
-    },
-    {
-      "word": "TAPES"
-    },
-    {
-      "word": "TARDY"
-    },
-    {
-      "word": "TARGET"
-    },
-    {
-      "word": "TARRY"
-    },
-    {
-      "word": "TASTE"
-    },
-    {
-      "word": "TASTY"
-    },
-    {
-      "word": "TATAR"
-    },
-    {
-      "word": "TATTY"
-    },
-    {
-      "word": "TAUNT"
-    },
-    {
-      "word": "TAVERN"
-    },
-    {
-      "word": "TEACH"
-    },
-    {
-      "word": "TEARY"
-    },
-    {
-      "word": "TEASE"
-    },
-    {
-      "word": "TEDDY"
-    },
-    {
-      "word": "TEENS"
-    },
-    {
-      "word": "TEETH"
-    },
-    {
-      "word": "TELLY"
-    },
-    {
-      "word": "TEMPO"
-    },
-    {
-      "word": "TENET"
-    },
-    {
-      "word": "TENOR"
-    },
-    {
-      "word": "TENSE"
-    },
-    {
-      "word": "TENTH"
-    },
-    {
-      "word": "TEPID"
-    },
-    {
-      "word": "TERRA"
-    },
-    {
-      "word": "TERSE"
-    },
-    {
-      "word": "TESLA"
-    },
-    {
-      "word": "TESTY"
-    },
-    {
-      "word": "THANK"
-    },
-    {
-      "word": "THEFT"
-    },
-    {
-      "word": "THEIR"
-    },
-    {
-      "word": "THEME"
-    },
-    {
-      "word": "THERE"
-    },
-    {
-      "word": "THESE"
-    },
-    {
-      "word": "THETA"
-    },
-    {
-      "word": "THICK"
-    },
-    {
-      "word": "THIEF"
-    },
-    {
-      "word": "THIGH"
-    },
-    {
-      "word": "THING"
-    },
-    {
-      "word": "THINK"
-    },
-    {
-      "word": "THIRD"
-    },
-    {
-      "word": "THONG"
-    },
-    {
-      "word": "THORN"
-    },
-    {
-      "word": "THOSE"
-    },
-    {
-      "word": "THREE"
-    },
-    {
-      "word": "THREW"
-    },
-    {
-      "word": "THROB"
-    },
-    {
-      "word": "THROW"
-    },
-    {
-      "word": "THRUM"
-    },
-    {
-      "word": "THUMB"
-    },
-    {
-      "word": "THUMP"
-    },
-    {
-      "word": "THYME"
-    },
-    {
-      "word": "TIBIA"
-    },
-    {
-      "word": "TIGHT"
-    },
-    {
-      "word": "TILDE"
-    },
-    {
-      "word": "TIMER"
-    },
-    {
-      "word": "TIMID"
-    },
-    {
-      "word": "TINGE"
-    },
-    {
-      "word": "TINGLE"
-    },
-    {
-      "word": "TINNY"
-    },
-    {
-      "word": "TIPSY"
-    },
-    {
-      "word": "TIRED"
-    },
-    {
-      "word": "TIRES"
-    },
-    {
-      "word": "TITLE"
-    },
-    {
-      "word": "TOAST"
-    },
-    {
-      "word": "TODAY"
-    },
-    {
-      "word": "TOKEN"
-    },
-    {
-      "word": "TONAL"
-    },
-    {
-      "word": "TONIC"
-    },
-    {
-      "word": "TOPAZ"
-    },
-    {
-      "word": "TOPIC"
-    },
-    {
-      "word": "TORCH"
-    },
-    {
-      "word": "TORSO"
-    },
-    {
-      "word": "TORUS"
-    },
-    {
-      "word": "TOTAL"
-    },
-    {
-      "word": "TOTEM"
-    },
-    {
-      "word": "TOUCH"
-    },
-    {
-      "word": "TOUGH"
-    },
-    {
-      "word": "TOWEL"
-    },
-    {
-      "word": "TOWER"
-    },
-    {
-      "word": "TOWNS"
-    },
-    {
-      "word": "TOXIC"
-    },
-    {
-      "word": "TRACE"
-    },
-    {
-      "word": "TRACK"
-    },
-    {
-      "word": "TRADE"
-    },
-    {
-      "word": "TRAIL"
-    },
-    {
-      "word": "TRAIN"
-    },
-    {
-      "word": "TRAIT"
-    },
-    {
-      "word": "TRAMP"
-    },
-    {
-      "word": "UDDER"
-    },
-    {
-      "word": "ULCER"
-    },
-    {
-      "word": "ULTRA"
-    },
-    {
-      "word": "UMBRA"
-    },
-    {
-      "word": "UNCLE"
-    },
-    {
-      "word": "UNCUT"
-    },
-    {
-      "word": "UNDER"
-    },
-    {
-      "word": "UNDID"
-    },
-    {
-      "word": "UNDUE"
-    },
-    {
-      "word": "UNFED"
-    },
-    {
-      "word": "UNFIT"
-    },
-    {
-      "word": "UNIFY"
-    },
-    {
-      "word": "UNION"
-    },
-    {
-      "word": "UNITE"
-    },
-    {
-      "word": "UNITY"
-    },
-    {
-      "word": "UNLIT"
-    },
-    {
-      "word": "UNMET"
-    },
-    {
-      "word": "UNPIN"
-    },
-    {
-      "word": "UNSAY"
-    },
-    {
-      "word": "UNTIE"
-    },
-    {
-      "word": "UNTIL"
-    },
-    {
-      "word": "UNWED"
-    },
-    {
-      "word": "UNZIP"
-    },
-    {
-      "word": "UPEND"
-    },
-    {
-      "word": "UPPER"
-    },
-    {
-      "word": "UPSET"
-    },
-    {
-      "word": "URBAN"
-    },
-    {
-      "word": "URINE"
-    },
-    {
-      "word": "USAGE"
-    },
-    {
-      "word": "USHER"
-    },
-    {
-      "word": "USING"
-    },
-    {
-      "word": "USUAL"
-    },
-    {
-      "word": "UTERI"
-    },
-    {
-      "word": "UTILE"
-    },
-    {
-      "word": "UTOOL"
-    },
-    {
-      "word": "UTTER"
-    },
-    {
-      "word": "VAGUE"
-    },
-    {
-      "word": "VALET"
-    },
-    {
-      "word": "VALID"
-    },
-    {
-      "word": "VALOR"
-    },
-    {
-      "word": "VALUE"
-    },
-    {
-      "word": "VALVE"
-    },
-    {
-      "word": "VAPOR"
-    },
-    {
-      "word": "VASTS"
-    },
-    {
-      "word": "VECNA"
-    },
-    {
-      "word": "VENDS"
-    },
-    {
-      "word": "VENOM"
-    },
-    {
-      "word": "VENTS"
-    },
-    {
-      "word": "VENUE"
-    },
-    {
-      "word": "VERSE"
-    },
-    {
-      "word": "VERTS"
-    },
-    {
-      "word": "VERVE"
-    },
-    {
-      "word": "VICAR"
-    },
-    {
-      "word": "VICED"
-    },
-    {
-      "word": "VICES"
-    },
-    {
-      "word": "VIDEO"
-    },
-    {
-      "word": "VIGIL"
-    },
-    {
-      "word": "VIGOR"
-    },
-    {
-      "word": "VILLA"
-    },
-    {
-      "word": "VINES"
-    },
-    {
-      "word": "VINYL"
-    },
-    {
-      "word": "VIOLA"
-    },
-    {
-      "word": "VIPER"
-    },
-    {
-      "word": "VIRAL"
-    },
-    {
-      "word": "VIRUS"
-    },
-    {
-      "word": "VISIT"
-    },
-    {
-      "word": "VISOR"
-    },
-    {
-      "word": "VISTA"
-    },
-    {
-      "word": "VITAL"
-    },
-    {
-      "word": "VIVID"
-    },
-    {
-      "word": "VOCAL"
-    },
-    {
-      "word": "VODKA"
-    },
-    {
-      "word": "VOGUE"
-    },
-    {
-      "word": "VOICE"
-    },
-    {
-      "word": "VOIDS"
-    },
-    {
-      "word": "VOILA"
-    },
-    {
-      "word": "VOLTS"
-    },
-    {
-      "word": "VOMIT"
-    },
-    {
-      "word": "VOTER"
-    },
-    {
-      "word": "VOWEL"
-    },
-    {
-      "word": "VROOM"
-    },
-    {
-      "word": "VULVA"
-    },
-    {
-      "word": "WACKY"
-    },
-    {
-      "word": "WAFER"
-    },
-    {
-      "word": "WAGES"
-    },
-    {
-      "word": "WAGON"
-    },
-    {
-      "word": "WAIST"
-    },
-    {
-      "word": "WAIVE"
-    },
-    {
-      "word": "WALES"
-    },
-    {
-      "word": "WALKS"
-    },
-    {
-      "word": "WALLS"
-    },
-    {
-      "word": "WALLY"
-    },
-    {
-      "word": "WALTZ"
-    },
-    {
-      "word": "WASPS"
-    },
-    {
-      "word": "WASTE"
-    },
-    {
-      "word": "WATCH"
-    },
-    {
-      "word": "WATER"
-    },
-    {
-      "word": "WATTS"
-    },
-    {
-      "word": "WAVER"
-    },
-    {
-      "word": "WEARY"
-    },
-    {
-      "word": "WEAVE"
-    },
-    {
-      "word": "WEDGE"
-    },
-    {
-      "word": "WEEDS"
-    },
-    {
-      "word": "WEIGH"
-    },
-    {
-      "word": "WEIRD"
-    },
-    {
-      "word": "WELCH"
-    },
-    {
-      "word": "WELLS"
-    },
-    {
-      "word": "WELSH"
-    },
-    {
-      "word": "WENCH"
-    },
-    {
-      "word": "WETLY"
-    },
-    {
-      "word": "WHACK"
-    },
-    {
-      "word": "WHALE"
-    },
-    {
-      "word": "WHARF"
-    },
-    {
-      "word": "WHEAT"
-    },
-    {
-      "word": "WHEEL"
-    },
-    {
-      "word": "WHELM"
-    },
-    {
-      "word": "WHERE"
-    },
-    {
-      "word": "WHICH"
-    },
-    {
-      "word": "WHIFF"
-    },
-    {
-      "word": "WHILE"
-    },
-    {
-      "word": "WHINE"
-    },
-    {
-      "word": "WHINY"
-    },
-    {
-      "word": "WHIRL"
-    },
-    {
-      "word": "WHISK"
-    },
-    {
-      "word": "WHITE"
-    },
-    {
-      "word": "WHOLE"
-    },
-    {
-      "word": "WHOOP"
-    },
-    {
-      "word": "WHORE"
-    },
-    {
-      "word": "WHORT"
-    },
-    {
-      "word": "WHOSE"
-    },
-    {
-      "word": "WICCA"
-    },
-    {
-      "word": "WICKS"
-    },
-    {
-      "word": "WIDEN"
-    },
-    {
-      "word": "WIDER"
-    },
-    {
-      "word": "WIDOW"
-    },
-    {
-      "word": "WIDTH"
-    },
-    {
-      "word": "WIELD"
-    },
-    {
-      "word": "WIGHT"
-    },
-    {
-      "word": "WILDS"
-    },
-    {
-      "word": "WILES"
-    },
-    {
-      "word": "WILLY"
-    },
-    {
-      "word": "WIMPY"
-    },
-    {
-      "word": "WINCE"
-    },
-    {
-      "word": "WINCH"
-    },
-    {
-      "word": "WINDS"
-    },
-    {
-      "word": "WINDY"
-    },
-    {
-      "word": "WINGS"
-    },
-    {
-      "word": "WINKS"
-    },
-    {
-      "word": "WINNY"
-    },
-    {
-      "word": "WINOS"
-    },
-    {
-      "word": "WINST"
-    },
-    {
-      "word": "WIPED"
-    },
-    {
-      "word": "WIPES"
-    },
-    {
-      "word": "WIRER"
-    },
-    {
-      "word": "WIRES"
-    },
-    {
-      "word": "WISER"
-    },
-    {
-      "word": "WISPS"
-    },
-    {
-      "word": "WISPY"
-    },
-    {
-      "word": "WITCH"
-    },
-    {
-      "word": "WITTY"
-    },
-    {
-      "word": "WIVES"
-    },
-    {
-      "word": "WODGY"
-    },
-    {
-      "word": "WOKEN"
-    },
-    {
-      "word": "WOLFS"
-    },
-    {
-      "word": "WOODS"
-    },
-    {
-      "word": "WOODY"
-    },
-    {
-      "word": "WOOED"
-    },
-    {
-      "word": "WOOER"
-    },
-    {
-      "word": "WOOZY"
-    },
-    {
-      "word": "WORDS"
-    },
-    {
-      "word": "WORKS"
-    },
-    {
-      "word": "WORLD"
-    },
-    {
-      "word": "WORRY"
-    },
-    {
-      "word": "WORSE"
-    },
-    {
-      "word": "WORST"
-    },
-    {
-      "word": "WORTH"
-    },
-    {
-      "word": "WOULD"
-    },
-    {
-      "word": "WOUND"
-    },
-    {
-      "word": "WOVEN"
-    },
-    {
-      "word": "WRACK"
-    },
-    {
-      "word": "WRAIT"
-    },
-    {
-      "word": "WRATH"
-    },
-    {
-      "word": "XENIA"
-    },
-    {
-      "word": "XENIC"
-    },
-    {
-      "word": "XENON"
-    },
-    {
-      "word": "XENYL"
-    },
-    {
-      "word": "XERES"
-    },
-    {
-      "word": "XERIC"
-    },
-    {
-      "word": "XEROX"
-    },
-    {
-      "word": "XERUS"
-    },
-    {
-      "word": "XHOSA"
-    },
-    {
-      "word": "XYLEM"
-    },
-    {
-      "word": "XYSTI"
-    },
-    {
-      "word": "XYSTS"
-    },
-    {
-      "word": "YABBY"
-    },
-    {
-      "word": "YACHT"
-    },
-    {
-      "word": "YAHOO"
-    },
-    {
-      "word": "YANKS"
-    },
-    {
-      "word": "YAPPY"
-    },
-    {
-      "word": "YARAK"
-    },
-    {
-      "word": "YARDS"
-    },
-    {
-      "word": "YARNY"
-    },
-    {
-      "word": "YARRS"
-    },
-    {
-      "word": "YAWED"
-    },
-    {
-      "word": "YAWNS"
-    },
-    {
-      "word": "YEARN"
-    },
-    {
-      "word": "YEAST"
-    },
-    {
-      "word": "YECHS"
-    },
-    {
-      "word": "YECHY"
-    },
-    {
-      "word": "YELLS"
-    },
-    {
-      "word": "YELPS"
-    },
-    {
-      "word": "YERKS"
-    },
-    {
-      "word": "YESTY"
-    },
-    {
-      "word": "YETIS"
-    },
-    {
-      "word": "YEVEN"
-    },
-    {
-      "word": "YEXED"
-    },
-    {
-      "word": "YEXES"
-    },
-    {
-      "word": "YFERE"
-    },
-    {
-      "word": "YIELD"
-    },
-    {
-      "word": "YIKES"
-    },
-    {
-      "word": "YINCE"
-    },
-    {
-      "word": "YIRTH"
-    },
-    {
-      "word": "YOBBO"
-    },
-    {
-      "word": "YOBBY"
-    },
-    {
-      "word": "YODEL"
-    },
-    {
-      "word": "YODLE"
-    },
-    {
-      "word": "YOGEE"
-    },
-    {
-      "word": "YOGIC"
-    },
-    {
-      "word": "YOGIS"
-    },
-    {
-      "word": "YOKEL"
-    },
-    {
-      "word": "YOKES"
-    },
-    {
-      "word": "YOLKS"
-    },
-    {
-      "word": "YOMIM"
-    },
-    {
-      "word": "YONIC"
-    },
-    {
-      "word": "YONIS"
-    },
-    {
-      "word": "YONKS"
-    },
-    {
-      "word": "YOUNG"
-    },
-    {
-      "word": "YOURS"
-    },
-    {
-      "word": "YOUTH"
-    },
-    {
-      "word": "YOWLS"
-    },
-    {
-      "word": "YUKKY"
-    },
-    {
-      "word": "YUMMY"
-    },
-    {
-      "word": "YURTA"
-    },
-    {
-      "word": "YURTS"
-    },
-    {
-      "word": "ZAPPY"
-    },
-    {
-      "word": "ZEBRA"
-    },
-    {
-      "word": "ZEBUS"
-    },
-    {
-      "word": "ZESTY"
-    },
-    {
-      "word": "ZIGGY"
-    },
-    {
-      "word": "ZILCH"
-    },
-    {
-      "word": "ZINCS"
-    },
-    {
-      "word": "ZINCY"
-    },
-    {
-      "word": "ZIPPY"
-    },
-    {
-      "word": "ZIRAN"
-    },
-    {
-      "word": "ZOBOS"
-    },
-    {
-      "word": "ZOEAE"
-    },
-    {
-      "word": "ZOEAS"
-    },
-    {
-      "word": "ZOMBI"
-    },
-    {
-      "word": "ZONAL"
-    },
-    {
-      "word": "ZONED"
-    },
-    {
-      "word": "ZONES"
-    },
-    {
-      "word": "ZOOKS"
-    },
-    {
-      "word": "ZOOMS"
-    },
-    {
-      "word": "ZORAN"
-    },
-    {
-      "word": "ZORIL"
-    },
-    {
-      "word": "ZOSTA"
-    },
-    {
-      "word": "ZOWIE"
-    },
-    {
-      "word": "ZUPAN"
-    },
-    {
-      "word": "ZURFS"
-    },
-    {
-      "word": "ZYGON"
-    },
-    {
-      "word": "ZYMES"
-    }
-  ]
+{"word":"AARGH"},
+{"word":"ABACA"},
+{"word":"ABACI"},
+{"word":"ABACK"},
+{"word":"ABAFT"},
+{"word":"ABASE"},
+{"word":"ABASH"},
+{"word":"ABATE"},
+{"word":"ABBEY"},
+{"word":"ABBOT"},
+{"word":"ABEAM"},
+{"word":"ABEND"},
+{"word":"ABETS"},
+{"word":"ABHOR"},
+{"word":"ABIDE"},
+{"word":"ABLED"},
+{"word":"ABLER"},
+{"word":"ABODE"},
+{"word":"ABORT"},
+{"word":"ABOUT"},
+{"word":"ABOVE"},
+{"word":"ABSIT"},
+{"word":"ABUSE"},
+{"word":"ABUTS"},
+{"word":"ABUZZ"},
+{"word":"ABYSS"},
+{"word":"ACHED"},
+{"word":"ACHES"},
+{"word":"ACHOO"},
+{"word":"ACIDS"},
+{"word":"ACING"},
+{"word":"ACKED"},
+{"word":"ACMES"},
+{"word":"ACNED"},
+{"word":"ACNES"},
+{"word":"ACORN"},
+{"word":"ACRES"},
+{"word":"ACRID"},
+{"word":"ACTED"},
+{"word":"ACTIN"},
+{"word":"ACTOR"},
+{"word":"ACUTE"},
+{"word":"ADAGE"},
+{"word":"ADAPT"},
+{"word":"ADDED"},
+{"word":"ADDER"},
+{"word":"ADDLE"},
+{"word":"ADEPT"},
+{"word":"ADIEU"},
+{"word":"ADIOS"},
+{"word":"ADLIB"},
+{"word":"ADMAN"},
+{"word":"ADMEN"},
+{"word":"ADMIN"},
+{"word":"ADMIT"},
+{"word":"ADMIX"},
+{"word":"ADOBE"},
+{"word":"ADOPT"},
+{"word":"ADORE"},
+{"word":"ADORN"},
+{"word":"ADULT"},
+{"word":"ADZES"},
+{"word":"AEGIS"},
+{"word":"AERIE"},
+{"word":"AFFIX"},
+{"word":"AFIRE"},
+{"word":"AFOOT"},
+{"word":"AFORE"},
+{"word":"AFOUL"},
+{"word":"AFTER"},
+{"word":"AGAIN"},
+{"word":"AGAPE"},
+{"word":"AGARS"},
+{"word":"AGATE"},
+{"word":"AGAVE"},
+{"word":"AGENT"},
+{"word":"AGILE"},
+{"word":"AGING"},
+{"word":"AGLEY"},
+{"word":"AGLOW"},
+{"word":"AGONE"},
+{"word":"AGONY"},
+{"word":"AGORA"},
+{"word":"AGREE"},
+{"word":"AGUES"},
+{"word":"AHEAD"},
+{"word":"AHHHH"},
+{"word":"AHOLD"},
+{"word":"AHOYS"},
+{"word":"AIDED"},
+{"word":"AIDER"},
+{"word":"AIDES"},
+{"word":"AILED"},
+{"word":"AIMED"},
+{"word":"AIMER"},
+{"word":"AIOLI"},
+{"word":"AIRED"},
+{"word":"AIRER"},
+{"word":"AISLE"},
+{"word":"AITCH"},
+{"word":"AJUGA"},
+{"word":"ALACK"},
+{"word":"ALARM"},
+{"word":"ALBUM"},
+{"word":"ALDER"},
+{"word":"ALECK"},
+{"word":"ALEPH"},
+{"word":"ALERT"},
+{"word":"ALGAE"},
+{"word":"ALGAL"},
+{"word":"ALGIN"},
+{"word":"ALIAS"},
+{"word":"ALIBI"},
+{"word":"ALIEN"},
+{"word":"ALIGN"},
+{"word":"ALIKE"},
+{"word":"ALIVE"},
+{"word":"ALKYD"},
+{"word":"ALKYL"},
+{"word":"ALLAY"},
+{"word":"ALLEY"},
+{"word":"ALLOT"},
+{"word":"ALLOW"},
+{"word":"ALLOY"},
+{"word":"ALOES"},
+{"word":"ALOFT"},
+{"word":"ALOHA"},
+{"word":"ALONE"},
+{"word":"ALONG"},
+{"word":"ALOOF"},
+{"word":"ALOUD"},
+{"word":"ALPHA"},
+{"word":"ALTAR"},
+{"word":"ALTER"},
+{"word":"ALTHO"},
+{"word":"ALTOS"},
+{"word":"ALUMS"},
+{"word":"ALWAY"},
+{"word":"AMAHS"},
+{"word":"AMASS"},
+{"word":"AMAZE"},
+{"word":"AMBER"},
+{"word":"AMBIT"},
+{"word":"AMBLE"},
+{"word":"AMEBA"},
+{"word":"AMEND"},
+{"word":"AMENS"},
+{"word":"AMIDE"},
+{"word":"AMIGO"},
+{"word":"AMINE"},
+{"word":"AMINO"},
+{"word":"AMISS"},
+{"word":"AMITY"},
+{"word":"AMMOS"},
+{"word":"AMONG"},
+{"word":"AMOUR"},
+{"word":"AMPED"},
+{"word":"AMPLE"},
+{"word":"AMPLY"},
+{"word":"AMUCK"},
+{"word":"AMUSE"},
+{"word":"AMYLS"},
+{"word":"ANDED"},
+{"word":"ANENT"},
+{"word":"ANGEL"},
+{"word":"ANGER"},
+{"word":"ANGLE"},
+{"word":"ANGRY"},
+{"word":"ANGST"},
+{"word":"ANILE"},
+{"word":"ANIMA"},
+{"word":"ANION"},
+{"word":"ANISE"},
+{"word":"ANKHS"},
+{"word":"ANKLE"},
+{"word":"ANNAS"},
+{"word":"ANNEX"},
+{"word":"ANNOY"},
+{"word":"ANNUL"},
+{"word":"ANNUM"},
+{"word":"ANODE"},
+{"word":"ANOLE"},
+{"word":"ANTED"},
+{"word":"ANTES"},
+{"word":"ANTIC"},
+{"word":"ANTIS"},
+{"word":"ANTSY"},
+{"word":"ANVIL"},
+{"word":"AORTA"},
+{"word":"APACE"},
+{"word":"APART"},
+{"word":"APERS"},
+{"word":"APHID"},
+{"word":"APHIS"},
+{"word":"APIAN"},
+{"word":"APING"},
+{"word":"APISH"},
+{"word":"APNEA"},
+{"word":"APORT"},
+{"word":"APPLE"},
+{"word":"APPLY"},
+{"word":"APRON"},
+{"word":"APSES"},
+{"word":"APSOS"},
+{"word":"APTLY"},
+{"word":"AQUAE"},
+{"word":"AQUAS"},
+{"word":"ARBOR"},
+{"word":"ARCED"},
+{"word":"ARDOR"},
+{"word":"AREAL"},
+{"word":"AREAS"},
+{"word":"ARENA"},
+{"word":"ARGON"},
+{"word":"ARGOT"},
+{"word":"ARGUE"},
+{"word":"ARIAS"},
+{"word":"ARISE"},
+{"word":"ARITY"},
+{"word":"ARMED"},
+{"word":"ARMOR"},
+{"word":"AROMA"},
+{"word":"AROSE"},
+{"word":"ARRAS"},
+{"word":"ARRAY"},
+{"word":"ARROW"},
+{"word":"ARSES"},
+{"word":"ARSON"},
+{"word":"ARTSY"},
+{"word":"ARUMS"},
+{"word":"ASANA"},
+{"word":"ASCOT"},
+{"word":"ASHEN"},
+{"word":"ASHES"},
+{"word":"ASIDE"},
+{"word":"ASKED"},
+{"word":"ASKER"},
+{"word":"ASKEW"},
+{"word":"ASPEN"},
+{"word":"ASPIC"},
+{"word":"ASSAI"},
+{"word":"ASSAY"},
+{"word":"ASSED"},
+{"word":"ASSES"},
+{"word":"ASSET"},
+{"word":"ASTER"},
+{"word":"ASTIR"},
+{"word":"ASTRO"},
+{"word":"ATILT"},
+{"word":"ATLAS"},
+{"word":"ATOLL"},
+{"word":"ATOMS"},
+{"word":"ATONE"},
+{"word":"ATRIA"},
+{"word":"ATTAR"},
+{"word":"ATTIC"},
+{"word":"AUDIO"},
+{"word":"AUDIT"},
+{"word":"AUGER"},
+{"word":"AUGHT"},
+{"word":"AUGUR"},
+{"word":"AUNTS"},
+{"word":"AUNTY"},
+{"word":"AURAE"},
+{"word":"AURAL"},
+{"word":"AURAS"},
+{"word":"AURIC"},
+{"word":"AUTOS"},
+{"word":"AVAIL"},
+{"word":"AVANT"},
+{"word":"AVAST"},
+{"word":"AVERS"},
+{"word":"AVERT"},
+{"word":"AVIAN"},
+{"word":"AVOID"},
+{"word":"AVOWS"},
+{"word":"AWAIT"},
+{"word":"AWAKE"},
+{"word":"AWARD"},
+{"word":"AWARE"},
+{"word":"AWASH"},
+{"word":"AWAYS"},
+{"word":"AWFUL"},
+{"word":"AWING"},
+{"word":"AWOKE"},
+{"word":"AXELS"},
+{"word":"AXIAL"},
+{"word":"AXING"},
+{"word":"AXIOM"},
+{"word":"AXLED"},
+{"word":"AXLES"},
+{"word":"AXMAN"},
+{"word":"AXMEN"},
+{"word":"AXONS"},
+{"word":"AYINS"},
+{"word":"AZINE"},
+{"word":"AZOIC"},
+{"word":"AZURE"},
+{"word":"BABEL"},
+{"word":"BABES"},
+{"word":"BACKS"},
+{"word":"BACON"},
+{"word":"BADDY"},
+{"word":"BADGE"},
+{"word":"BADLY"},
+{"word":"BAGEL"},
+{"word":"BAGGY"},
+{"word":"BAHTS"},
+{"word":"BAILS"},
+{"word":"BAIRN"},
+{"word":"BAITS"},
+{"word":"BAIZE"},
+{"word":"BAKED"},
+{"word":"BAKER"},
+{"word":"BAKES"},
+{"word":"BALDS"},
+{"word":"BALDY"},
+{"word":"BALED"},
+{"word":"BALER"},
+{"word":"BALES"},
+{"word":"BALKS"},
+{"word":"BALKY"},
+{"word":"BALLS"},
+{"word":"BALLY"},
+{"word":"BALMS"},
+{"word":"BALMY"},
+{"word":"BALSA"},
+{"word":"BANAL"},
+{"word":"BANDS"},
+{"word":"BANDY"},
+{"word":"BANES"},
+{"word":"BANGS"},
+{"word":"BANJO"},
+{"word":"BANKS"},
+{"word":"BANNS"},
+{"word":"BARBS"},
+{"word":"BARDS"},
+{"word":"BARED"},
+{"word":"BARER"},
+{"word":"BARES"},
+{"word":"BARFS"},
+{"word":"BARFY"},
+{"word":"BARGE"},
+{"word":"BARIC"},
+{"word":"BARKS"},
+{"word":"BARKY"},
+{"word":"BARMS"},
+{"word":"BARMY"},
+{"word":"BARNS"},
+{"word":"BARON"},
+{"word":"BASAL"},
+{"word":"BASED"},
+{"word":"BASER"},
+{"word":"BASES"},
+{"word":"BASIC"},
+{"word":"BASIL"},
+{"word":"BASIN"},
+{"word":"BASIS"},
+{"word":"BASKS"},
+{"word":"BASSI"},
+{"word":"BASSO"},
+{"word":"BASTE"},
+{"word":"BATCH"},
+{"word":"BATED"},
+{"word":"BATES"},
+{"word":"BATHE"},
+{"word":"BATHS"},
+{"word":"BATIK"},
+{"word":"BATON"},
+{"word":"BATTY"},
+{"word":"BAUDS"},
+{"word":"BAULK"},
+{"word":"BAWDY"},
+{"word":"BAWLS"},
+{"word":"BAYED"},
+{"word":"BAYOU"},
+{"word":"BAZAR"},
+{"word":"BEACH"},
+{"word":"BEADS"},
+{"word":"BEADY"},
+{"word":"BEAKS"},
+{"word":"BEAKY"},
+{"word":"BEAMS"},
+{"word":"BEAMY"},
+{"word":"BEANO"},
+{"word":"BEANS"},
+{"word":"BEARD"},
+{"word":"BEARS"},
+{"word":"BEAST"},
+{"word":"BEATS"},
+{"word":"BEAUS"},
+{"word":"BEAUT"},
+{"word":"BEAUX"},
+{"word":"BEBOP"},
+{"word":"BEBUG"},
+{"word":"BECKS"},
+{"word":"BEDEW"},
+{"word":"BEDIM"},
+{"word":"BEECH"},
+{"word":"BEEFS"},
+{"word":"BEEFY"},
+{"word":"BEEPS"},
+{"word":"BEERS"},
+{"word":"BEERY"},
+{"word":"BEETS"},
+{"word":"BEFIT"},
+{"word":"BEFOG"},
+{"word":"BEGAN"},
+{"word":"BEGAT"},
+{"word":"BEGET"},
+{"word":"BEGIN"},
+{"word":"BEGOT"},
+{"word":"BEGUN"},
+{"word":"BEIGE"},
+{"word":"BEING"},
+{"word":"BELAY"},
+{"word":"BELCH"},
+{"word":"BELIE"},
+{"word":"BELLE"},
+{"word":"BELLI"},
+{"word":"BELLS"},
+{"word":"BELLY"},
+{"word":"BELOW"},
+{"word":"BELTS"},
+{"word":"BENCH"},
+{"word":"BENDS"},
+{"word":"BENTS"},
+{"word":"BERET"},
+{"word":"BERGS"},
+{"word":"BERMS"},
+{"word":"BERRY"},
+{"word":"BERTH"},
+{"word":"BERYL"},
+{"word":"BESET"},
+{"word":"BESOT"},
+{"word":"BESTS"},
+{"word":"BETAS"},
+{"word":"BETEL"},
+{"word":"BETHS"},
+{"word":"BEVEL"},
+{"word":"BEZEL"},
+{"word":"BHANG"},
+{"word":"BHOYS"},
+{"word":"BIBBS"},
+{"word":"BIBLE"},
+{"word":"BICEP"},
+{"word":"BIDDY"},
+{"word":"BIDED"},
+{"word":"BIDEN"},
+{"word":"BIDER"},
+{"word":"BIDES"},
+{"word":"BIDET"},
+{"word":"BIERS"},
+{"word":"BIFFS"},
+{"word":"BIFFY"},
+{"word":"BIGGY"},
+{"word":"BIGHT"},
+{"word":"BIGLY"},
+{"word":"BIGOT"},
+{"word":"BIKED"},
+{"word":"BIKER"},
+{"word":"BIKES"},
+{"word":"BILES"},
+{"word":"BILGE"},
+{"word":"BILGY"},
+{"word":"BILKS"},
+{"word":"BILLS"},
+{"word":"BILLY"},
+{"word":"BIMBO"},
+{"word":"BINDS"},
+{"word":"BINGE"},
+{"word":"BINGO"},
+{"word":"BIOME"},
+{"word":"BIPED"},
+{"word":"BIPOD"},
+{"word":"BIRCH"},
+{"word":"BIRDS"},
+{"word":"BIRTH"},
+{"word":"BISON"},
+{"word":"BITCH"},
+{"word":"BITER"},
+{"word":"BITES"},
+{"word":"BITSY"},
+{"word":"BITTY"},
+{"word":"BLABS"},
+{"word":"BLACK"},
+{"word":"BLADE"},
+{"word":"BLAHS"},
+{"word":"BLAME"},
+{"word":"BLAND"},
+{"word":"BLANK"},
+{"word":"BLARE"},
+{"word":"BLASH"},
+{"word":"BLAST"},
+{"word":"BLATS"},
+{"word":"BLAZE"},
+{"word":"BLEAK"},
+{"word":"BLEAR"},
+{"word":"BLEAT"},
+{"word":"BLEBS"},
+{"word":"BLEED"},
+{"word":"BLEEP"},
+{"word":"BLEND"},
+{"word":"BLESS"},
+{"word":"BLEST"},
+{"word":"BLIMP"},
+{"word":"BLIND"},
+{"word":"BLINI"},
+{"word":"BLINK"},
+{"word":"BLIPS"},
+{"word":"BLISS"},
+{"word":"BLITZ"},
+{"word":"BLOAT"},
+{"word":"BLOBS"},
+{"word":"BLOCK"},
+{"word":"BLOCS"},
+{"word":"BLOKE"},
+{"word":"BLOND"},
+{"word":"BLOOD"},
+{"word":"BLOOM"},
+{"word":"BLOTS"},
+{"word":"BLOWN"},
+{"word":"BLOWS"},
+{"word":"BLOWY"},
+{"word":"BLUED"},
+{"word":"BLUEE"},
+{"word":"BLUER"},
+{"word":"BLUES"},
+{"word":"BLUFF"},
+{"word":"BLUNT"},
+{"word":"BLURB"},
+{"word":"BLURS"},
+{"word":"BLURT"},
+{"word":"BLUSH"},
+{"word":"BOARD"},
+{"word":"BOARS"},
+{"word":"BOAST"},
+{"word":"BOATS"},
+{"word":"BOBBY"},
+{"word":"BOCCE"},
+{"word":"BOCCI"},
+{"word":"BOCKS"},
+{"word":"BODED"},
+{"word":"BODEN"},
+{"word":"BODES"},
+{"word":"BODGE"},
+{"word":"BOFFO"},
+{"word":"BOFFS"},
+{"word":"BOGEY"},
+{"word":"BOGGY"},
+{"word":"BOGIE"},
+{"word":"BOGUS"},
+{"word":"BOILS"},
+{"word":"BOLAS"},
+{"word":"BOLLS"},
+{"word":"BOLOS"},
+{"word":"BOLTS"},
+{"word":"BOMBE"},
+{"word":"BOMBS"},
+{"word":"BONDS"},
+{"word":"BONED"},
+{"word":"BONER"},
+{"word":"BONES"},
+{"word":"BONGO"},
+{"word":"BONGS"},
+{"word":"BONKS"},
+{"word":"BONNE"},
+{"word":"BONNY"},
+{"word":"BONUS"},
+{"word":"BOOBS"},
+{"word":"BOOBY"},
+{"word":"BOOED"},
+{"word":"BOOKS"},
+{"word":"BOOKY"},
+{"word":"BOOMS"},
+{"word":"BOOMY"},
+{"word":"BOONS"},
+{"word":"BOORS"},
+{"word":"BOOST"},
+{"word":"BOOTH"},
+{"word":"BOOTS"},
+{"word":"BOOTY"},
+{"word":"BOOZE"},
+{"word":"BOOZY"},
+{"word":"BORAX"},
+{"word":"BORED"},
+{"word":"BORER"},
+{"word":"BORES"},
+{"word":"BORIC"},
+{"word":"BORNE"},
+{"word":"BORON"},
+{"word":"BOSKY"},
+{"word":"BOSOM"},
+{"word":"BOSON"},
+{"word":"BOSSA"},
+{"word":"BOSSY"},
+{"word":"BOSUN"},
+{"word":"BOTCH"},
+{"word":"BOUGH"},
+{"word":"BOULE"},
+{"word":"BOUND"},
+{"word":"BOUTS"},
+{"word":"BOWED"},
+{"word":"BOWEL"},
+{"word":"BOWER"},
+{"word":"BOWIE"},
+{"word":"BOWLS"},
+{"word":"BOXED"},
+{"word":"BOXER"},
+{"word":"BOXES"},
+{"word":"BOZOS"},
+{"word":"BRACE"},
+{"word":"BRACK"},
+{"word":"BRACT"},
+{"word":"BRADS"},
+{"word":"BRAES"},
+{"word":"BRAGS"},
+{"word":"BRAID"},
+{"word":"BRAIN"},
+{"word":"BRAKE"},
+{"word":"BRAND"},
+{"word":"BRANS"},
+{"word":"BRANT"},
+{"word":"BRASH"},
+{"word":"BRASS"},
+{"word":"BRATS"},
+{"word":"BRAVA"},
+{"word":"BRAVE"},
+{"word":"BRAVO"},
+{"word":"BRAWL"},
+{"word":"BRAWN"},
+{"word":"BRAYS"},
+{"word":"BRAZE"},
+{"word":"BREAD"},
+{"word":"BREAK"},
+{"word":"BREAM"},
+{"word":"BREED"},
+{"word":"BRENT"},
+{"word":"BREVE"},
+{"word":"BREWS"},
+{"word":"BRIAR"},
+{"word":"BRIBE"},
+{"word":"BRICK"},
+{"word":"BRIDE"},
+{"word":"BRIEF"},
+{"word":"BRIER"},
+{"word":"BRIES"},
+{"word":"BRIGS"},
+{"word":"BRIMS"},
+{"word":"BRINE"},
+{"word":"BRING"},
+{"word":"BRINK"},
+{"word":"BRINY"},
+{"word":"BRISK"},
+{"word":"BROAD"},
+{"word":"BROIL"},
+{"word":"BROKE"},
+{"word":"BROMO"},
+{"word":"BRONC"},
+{"word":"BRONX"},
+{"word":"BROOD"},
+{"word":"BROOK"},
+{"word":"BROOM"},
+{"word":"BROTH"},
+{"word":"BROWN"},
+{"word":"BROWS"},
+{"word":"BRUIN"},
+{"word":"BRUIT"},
+{"word":"BRUNG"},
+{"word":"BRUNT"},
+{"word":"BRUSH"},
+{"word":"BRUSK"},
+{"word":"BRUTE"},
+{"word":"BUBBA"},
+{"word":"BUCKS"},
+{"word":"BUDDY"},
+{"word":"BUDGE"},
+{"word":"BUENA"},
+{"word":"BUENO"},
+{"word":"BUFFA"},
+{"word":"BUFFO"},
+{"word":"BUFFS"},
+{"word":"BUGGY"},
+{"word":"BUGLE"},
+{"word":"BUILD"},
+{"word":"BUILT"},
+{"word":"BULBS"},
+{"word":"BULGE"},
+{"word":"BULGY"},
+{"word":"BULKS"},
+{"word":"BULKY"},
+{"word":"BULLS"},
+{"word":"BULLY"},
+{"word":"BUMPH"},
+{"word":"BUMPS"},
+{"word":"BUMPY"},
+{"word":"BUNCH"},
+{"word":"BUNCO"},
+{"word":"BUNDS"},
+{"word":"BUNGS"},
+{"word":"BUNKO"},
+{"word":"BUNKS"},
+{"word":"BUNNY"},
+{"word":"BUNTS"},
+{"word":"BUOYS"},
+{"word":"BURET"},
+{"word":"BURGS"},
+{"word":"BURLS"},
+{"word":"BURLY"},
+{"word":"BURNS"},
+{"word":"BURNT"},
+{"word":"BURPS"},
+{"word":"BURRO"},
+{"word":"BURRS"},
+{"word":"BURRY"},
+{"word":"BURST"},
+{"word":"BUSBY"},
+{"word":"BUSED"},
+{"word":"BUSES"},
+{"word":"BUSHY"},
+{"word":"BUSKS"},
+{"word":"BUSTS"},
+{"word":"BUSTY"},
+{"word":"BUTCH"},
+{"word":"BUTTE"},
+{"word":"BUTTS"},
+{"word":"BUTYL"},
+{"word":"BUXOM"},
+{"word":"BUYER"},
+{"word":"BUZZY"},
+{"word":"BWANA"},
+{"word":"BYLAW"},
+{"word":"BYRES"},
+{"word":"BYTES"},
+{"word":"BYWAY"},
+{"word":"CABAL"},
+{"word":"CABBY"},
+{"word":"CABIN"},
+{"word":"CABLE"},
+{"word":"CACAO"},
+{"word":"CACHE"},
+{"word":"CACTI"},
+{"word":"CADDY"},
+{"word":"CADET"},
+{"word":"CADGE"},
+{"word":"CADRE"},
+{"word":"CAFES"},
+{"word":"CAGED"},
+{"word":"CAGER"},
+{"word":"CAGES"},
+{"word":"CAGEY"},
+{"word":"CAIRN"},
+{"word":"CAKED"},
+{"word":"CAKES"},
+{"word":"CALIX"},
+{"word":"CALKS"},
+{"word":"CALLA"},
+{"word":"CALLS"},
+{"word":"CALMS"},
+{"word":"CALVE"},
+{"word":"CALYX"},
+{"word":"CAMEL"},
+{"word":"CAMEO"},
+{"word":"CAMPO"},
+{"word":"CAMPS"},
+{"word":"CAMPY"},
+{"word":"CANAL"},
+{"word":"CANDY"},
+{"word":"CANED"},
+{"word":"CANER"},
+{"word":"CANES"},
+{"word":"CANNA"},
+{"word":"CANNY"},
+{"word":"CANOE"},
+{"word":"CANON"},
+{"word":"CANST"},
+{"word":"CANTE"},
+{"word":"CANTO"},
+{"word":"CANTS"},
+{"word":"CAPED"},
+{"word":"CAPER"},
+{"word":"CAPES"},
+{"word":"CAPON"},
+{"word":"CAPOS"},
+{"word":"CARAT"},
+{"word":"CARDS"},
+{"word":"CARED"},
+{"word":"CARER"},
+{"word":"CARES"},
+{"word":"CARET"},
+{"word":"CARGO"},
+{"word":"CARNE"},
+{"word":"CARNY"},
+{"word":"CAROB"},
+{"word":"CAROL"},
+{"word":"CAROM"},
+{"word":"CARON"},
+{"word":"CARPS"},
+{"word":"CARPY"},
+{"word":"CARRY"},
+{"word":"CARTE"},
+{"word":"CARTS"},
+{"word":"CARVE"},
+{"word":"CASAS"},
+{"word":"CASED"},
+{"word":"CASES"},
+{"word":"CASKS"},
+{"word":"CASTE"},
+{"word":"CASTS"},
+{"word":"CASUS"},
+{"word":"CATCH"},
+{"word":"CATER"},
+{"word":"CATTY"},
+{"word":"CAULK"},
+{"word":"CAULS"},
+{"word":"CAUSE"},
+{"word":"CAVED"},
+{"word":"CAVES"},
+{"word":"CAVIL"},
+{"word":"CAWED"},
+{"word":"CEASE"},
+{"word":"CEDAR"},
+{"word":"CEDED"},
+{"word":"CEDER"},
+{"word":"CEDES"},
+{"word":"CEILS"},
+{"word":"CELEB"},
+{"word":"CELLO"},
+{"word":"CELLS"},
+{"word":"CENTO"},
+{"word":"CENTS"},
+{"word":"CHAFE"},
+{"word":"CHAFF"},
+{"word":"CHAIN"},
+{"word":"CHAIR"},
+{"word":"CHALK"},
+{"word":"CHAMP"},
+{"word":"CHANT"},
+{"word":"CHAOS"},
+{"word":"CHAPS"},
+{"word":"CHARD"},
+{"word":"CHARM"},
+{"word":"CHARS"},
+{"word":"CHART"},
+{"word":"CHARY"},
+{"word":"CHASE"},
+{"word":"CHASM"},
+{"word":"CHATS"},
+{"word":"CHAWS"},
+{"word":"CHEAP"},
+{"word":"CHEAT"},
+{"word":"CHECK"},
+{"word":"CHEEK"},
+{"word":"CHEEP"},
+{"word":"CHEER"},
+{"word":"CHEFS"},
+{"word":"CHERT"},
+{"word":"CHESS"},
+{"word":"CHEST"},
+{"word":"CHEWS"},
+{"word":"CHEWY"},
+{"word":"CHICK"},
+{"word":"CHIDE"},
+{"word":"CHIEF"},
+{"word":"CHIFF"},
+{"word":"CHILD"},
+{"word":"CHILE"},
+{"word":"CHILI"},
+{"word":"CHILL"},
+{"word":"CHIME"},
+{"word":"CHIMP"},
+{"word":"CHINA"},
+{"word":"CHINE"},
+{"word":"CHINK"},
+{"word":"CHINO"},
+{"word":"CHINS"},
+{"word":"CHIPS"},
+{"word":"CHIRP"},
+{"word":"CHITS"},
+{"word":"CHIVE"},
+{"word":"CHOCK"},
+{"word":"CHOIR"},
+{"word":"CHOKE"},
+{"word":"CHOMP"},
+{"word":"CHOOS"},
+{"word":"CHOPS"},
+{"word":"CHORD"},
+{"word":"CHORE"},
+{"word":"CHOSE"},
+{"word":"CHOWS"},
+{"word":"CHUCK"},
+{"word":"CHUFF"},
+{"word":"CHUGS"},
+{"word":"CHUMP"},
+{"word":"CHUMS"},
+{"word":"CHUNK"},
+{"word":"CHURL"},
+{"word":"CHURN"},
+{"word":"CHUTE"},
+{"word":"CIDER"},
+{"word":"CIGAR"},
+{"word":"CILIA"},
+{"word":"CILLS"},
+{"word":"CINCH"},
+{"word":"CIRCA"},
+{"word":"CIRRI"},
+{"word":"CITED"},
+{"word":"CITES"},
+{"word":"CIVET"},
+{"word":"CIVIC"},
+{"word":"CIVIL"},
+{"word":"CIVVY"},
+{"word":"CLACK"},
+{"word":"CLADS"},
+{"word":"CLAIM"},
+{"word":"CLAMP"},
+{"word":"CLAMS"},
+{"word":"CLANG"},
+{"word":"CLANK"},
+{"word":"CLANS"},
+{"word":"CLAPS"},
+{"word":"CLASH"},
+{"word":"CLASP"},
+{"word":"CLASS"},
+{"word":"CLAVE"},
+{"word":"CLAWS"},
+{"word":"CLAYS"},
+{"word":"CLEAN"},
+{"word":"CLEAR"},
+{"word":"CLEAT"},
+{"word":"CLEFS"},
+{"word":"CLEFT"},
+{"word":"CLERK"},
+{"word":"CLEWS"},
+{"word":"CLICK"},
+{"word":"CLIFF"},
+{"word":"CLIMB"},
+{"word":"CLIME"},
+{"word":"CLING"},
+{"word":"CLINK"},
+{"word":"CLIPS"},
+{"word":"CLOAK"},
+{"word":"CLOCK"},
+{"word":"CLODS"},
+{"word":"CLOGS"},
+{"word":"CLOMP"},
+{"word":"CLONE"},
+{"word":"CLOPS"},
+{"word":"CLOSE"},
+{"word":"CLOTH"},
+{"word":"CLOTS"},
+{"word":"CLOUD"},
+{"word":"CLOUT"},
+{"word":"CLOVE"},
+{"word":"CLOWN"},
+{"word":"CLOYS"},
+{"word":"CLUBS"},
+{"word":"CLUCK"},
+{"word":"CLUED"},
+{"word":"CLUES"},
+{"word":"CLUMP"},
+{"word":"CLUNG"},
+{"word":"CLUNK"},
+{"word":"COACH"},
+{"word":"COALS"},
+{"word":"COAST"},
+{"word":"COATI"},
+{"word":"COATS"},
+{"word":"COBRA"},
+{"word":"COCAS"},
+{"word":"COCCI"},
+{"word":"COCKS"},
+{"word":"COCKY"},
+{"word":"COCOA"},
+{"word":"COCOS"},
+{"word":"CODAS"},
+{"word":"CODED"},
+{"word":"CODER"},
+{"word":"CODES"},
+{"word":"CODEX"},
+{"word":"CODON"},
+{"word":"COEDS"},
+{"word":"COHOS"},
+{"word":"COIFS"},
+{"word":"COILS"},
+{"word":"COINS"},
+{"word":"COKED"},
+{"word":"COKES"},
+{"word":"COLAS"},
+{"word":"COLDS"},
+{"word":"COLIC"},
+{"word":"COLON"},
+{"word":"COLOR"},
+{"word":"COLTS"},
+{"word":"COMAS"},
+{"word":"COMBO"},
+{"word":"COMBS"},
+{"word":"COMER"},
+{"word":"COMES"},
+{"word":"COMET"},
+{"word":"COMFY"},
+{"word":"COMIC"},
+{"word":"COMMA"},
+{"word":"COMPS"},
+{"word":"CONCH"},
+{"word":"CONDO"},
+{"word":"CONED"},
+{"word":"CONES"},
+{"word":"CONEY"},
+{"word":"CONGA"},
+{"word":"CONIC"},
+{"word":"CONKS"},
+{"word":"COOCH"},
+{"word":"COOED"},
+{"word":"COOKS"},
+{"word":"COOKY"},
+{"word":"COOLS"},
+{"word":"COONS"},
+{"word":"COOPS"},
+{"word":"COOTS"},
+{"word":"COPED"},
+{"word":"COPER"},
+{"word":"COPES"},
+{"word":"COPRA"},
+{"word":"COPSE"},
+{"word":"COQUI"},
+{"word":"CORAL"},
+{"word":"CORDS"},
+{"word":"CORDY"},
+{"word":"CORED"},
+{"word":"CORER"},
+{"word":"CORES"},
+{"word":"CORGI"},
+{"word":"CORKS"},
+{"word":"CORKY"},
+{"word":"CORMS"},
+{"word":"CORNS"},
+{"word":"CORNU"},
+{"word":"CORNY"},
+{"word":"CORPS"},
+{"word":"COSET"},
+{"word":"COSTA"},
+{"word":"COSTS"},
+{"word":"COTES"},
+{"word":"COTTA"},
+{"word":"COUCH"},
+{"word":"COUGH"},
+{"word":"COULD"},
+{"word":"COUNT"},
+{"word":"COUPE"},
+{"word":"COUPS"},
+{"word":"COURT"},
+{"word":"COUTH"},
+{"word":"COVEN"},
+{"word":"COVER"},
+{"word":"COVES"},
+{"word":"COVET"},
+{"word":"COVEY"},
+{"word":"COWED"},
+{"word":"COWER"},
+{"word":"COWLS"},
+{"word":"COWRY"},
+{"word":"COXED"},
+{"word":"COXES"},
+{"word":"COYER"},
+{"word":"COYLY"},
+{"word":"COYPU"},
+{"word":"COZEN"},
+{"word":"CRABS"},
+{"word":"CRACK"},
+{"word":"CRAFT"},
+{"word":"CRAGS"},
+{"word":"CRAMP"},
+{"word":"CRAMS"},
+{"word":"CRANE"},
+{"word":"CRANK"},
+{"word":"CRAPS"},
+{"word":"CRASH"},
+{"word":"CRASS"},
+{"word":"CRATE"},
+{"word":"CRAVE"},
+{"word":"CRAWL"},
+{"word":"CRAWS"},
+{"word":"CRAZE"},
+{"word":"CRAZY"},
+{"word":"CREAK"},
+{"word":"CREAM"},
+{"word":"CREDO"},
+{"word":"CREED"},
+{"word":"CREEK"},
+{"word":"CREEL"},
+{"word":"CREEP"},
+{"word":"CREME"},
+{"word":"CREPE"},
+{"word":"CREPT"},
+{"word":"CRESS"},
+{"word":"CREST"},
+{"word":"CREWS"},
+{"word":"CRIBS"},
+{"word":"CRICK"},
+{"word":"CRIED"},
+{"word":"CRIER"},
+{"word":"CRIES"},
+{"word":"CRIME"},
+{"word":"CRIMP"},
+{"word":"CRINK"},
+{"word":"CRISP"},
+{"word":"CRITS"},
+{"word":"CROAK"},
+{"word":"CROCK"},
+{"word":"CROCS"},
+{"word":"CROFT"},
+{"word":"CRONE"},
+{"word":"CRONY"},
+{"word":"CROOK"},
+{"word":"CROON"},
+{"word":"CROPS"},
+{"word":"CROSS"},
+{"word":"CROUP"},
+{"word":"CROWD"},
+{"word":"CROWN"},
+{"word":"CROWS"},
+{"word":"CRUDE"},
+{"word":"CRUDS"},
+{"word":"CRUEL"},
+{"word":"CRUET"},
+{"word":"CRUFT"},
+{"word":"CRUMB"},
+{"word":"CRUMP"},
+{"word":"CRUSE"},
+{"word":"CRUSH"},
+{"word":"CRUST"},
+{"word":"CRYPT"},
+{"word":"CUBBY"},
+{"word":"CUBED"},
+{"word":"CUBER"},
+{"word":"CUBES"},
+{"word":"CUBIC"},
+{"word":"CUBIT"},
+{"word":"CUFFS"},
+{"word":"CUING"},
+{"word":"CUKES"},
+{"word":"CULLS"},
+{"word":"CULPA"},
+{"word":"CULTS"},
+{"word":"CUMIN"},
+{"word":"CUNTS"},
+{"word":"CUPID"},
+{"word":"CUPPA"},
+{"word":"CUPPY"},
+{"word":"CURBS"},
+{"word":"CURDS"},
+{"word":"CURDY"},
+{"word":"CURED"},
+{"word":"CURER"},
+{"word":"CURES"},
+{"word":"CURIA"},
+{"word":"CURIE"},
+{"word":"CURIO"},
+{"word":"CURLS"},
+{"word":"CURLY"},
+{"word":"CURRY"},
+{"word":"CURSE"},
+{"word":"CURVE"},
+{"word":"CURVY"},
+{"word":"CUSHY"},
+{"word":"CUSPS"},
+{"word":"CUSPY"},
+{"word":"CUTER"},
+{"word":"CUTIE"},
+{"word":"CUTUP"},
+{"word":"CYCAD"},
+{"word":"CYCLE"},
+{"word":"CYNIC"},
+{"word":"CYSTS"},
+{"word":"CZARS"},
+{"word":"DACHA"},
+{"word":"DADDY"},
+{"word":"DADOS"},
+{"word":"DAFFY"},
+{"word":"DAILY"},
+{"word":"DAIRY"},
+{"word":"DAISY"},
+{"word":"DALES"},
+{"word":"DALLY"},
+{"word":"DAMES"},
+{"word":"DAMNS"},
+{"word":"DAMPS"},
+{"word":"DANCE"},
+{"word":"DANDY"},
+{"word":"DARED"},
+{"word":"DARER"},
+{"word":"DARES"},
+{"word":"DARKS"},
+{"word":"DARKY"},
+{"word":"DARNS"},
+{"word":"DARTS"},
+{"word":"DASHY"},
+{"word":"DATED"},
+{"word":"DATER"},
+{"word":"DATES"},
+{"word":"DATUM"},
+{"word":"DAUBS"},
+{"word":"DAUNT"},
+{"word":"DAVIT"},
+{"word":"DAWNS"},
+{"word":"DAZED"},
+{"word":"DAZES"},
+{"word":"DEADS"},
+{"word":"DEALS"},
+{"word":"DEALT"},
+{"word":"DEANS"},
+{"word":"DEARS"},
+{"word":"DEARY"},
+{"word":"DEATH"},
+{"word":"DEBAR"},
+{"word":"DEBIT"},
+{"word":"DEBTS"},
+{"word":"DEBUG"},
+{"word":"DEBUT"},
+{"word":"DECAF"},
+{"word":"DECAL"},
+{"word":"DECAY"},
+{"word":"DECKS"},
+{"word":"DECOR"},
+{"word":"DECOY"},
+{"word":"DECRY"},
+{"word":"DEEDS"},
+{"word":"DEEMS"},
+{"word":"DEEPS"},
+{"word":"DEFER"},
+{"word":"DEFOG"},
+{"word":"DEFUN"},
+{"word":"DEGAS"},
+{"word":"DEGUM"},
+{"word":"DEICE"},
+{"word":"DEIFY"},
+{"word":"DEIGN"},
+{"word":"DEISM"},
+{"word":"DEIST"},
+{"word":"DEITY"},
+{"word":"DELAY"},
+{"word":"DELFT"},
+{"word":"DELIS"},
+{"word":"DELLS"},
+{"word":"DELTA"},
+{"word":"DELVE"},
+{"word":"DEMIT"},
+{"word":"DEMON"},
+{"word":"DEMOS"},
+{"word":"DEMUR"},
+{"word":"DENIM"},
+{"word":"DENSE"},
+{"word":"DENTS"},
+{"word":"DEPOT"},
+{"word":"DEPTH"},
+{"word":"DEQUE"},
+{"word":"DERBY"},
+{"word":"DESEX"},
+{"word":"DESKS"},
+{"word":"DETER"},
+{"word":"DEUCE"},
+{"word":"DEVIL"},
+{"word":"DEWED"},
+{"word":"DEWEY"},
+{"word":"DHOWS"},
+{"word":"DIALS"},
+{"word":"DIARY"},
+{"word":"DIAZO"},
+{"word":"DICED"},
+{"word":"DICER"},
+{"word":"DICES"},
+{"word":"DICEY"},
+{"word":"DICKS"},
+{"word":"DICKY"},
+{"word":"DICOT"},
+{"word":"DICTA"},
+{"word":"DICTU"},
+{"word":"DICUT"},
+{"word":"DIDDY"},
+{"word":"DIDOS"},
+{"word":"DIDOT"},
+{"word":"DIDST"},
+{"word":"DIEMS"},
+{"word":"DIEST"},
+{"word":"DIETH"},
+{"word":"DIETS"},
+{"word":"DIGIT"},
+{"word":"DIKED"},
+{"word":"DIKES"},
+{"word":"DILDO"},
+{"word":"DILLS"},
+{"word":"DILLY"},
+{"word":"DIMER"},
+{"word":"DIMES"},
+{"word":"DIMLY"},
+{"word":"DINAR"},
+{"word":"DINED"},
+{"word":"DINER"},
+{"word":"DINES"},
+{"word":"DINGO"},
+{"word":"DINGS"},
+{"word":"DINGY"},
+{"word":"DINKS"},
+{"word":"DINKY"},
+{"word":"DINTS"},
+{"word":"DIODE"},
+{"word":"DIPPY"},
+{"word":"DIPSO"},
+{"word":"DIRER"},
+{"word":"DIRGE"},
+{"word":"DIRKS"},
+{"word":"DIRTS"},
+{"word":"DIRTY"},
+{"word":"DISCO"},
+{"word":"DISCS"},
+{"word":"DISHY"},
+{"word":"DISKS"},
+{"word":"DITCH"},
+{"word":"DITTO"},
+{"word":"DITTY"},
+{"word":"DIVAN"},
+{"word":"DIVAS"},
+{"word":"DIVED"},
+{"word":"DIVER"},
+{"word":"DIVES"},
+{"word":"DIVOT"},
+{"word":"DIVVY"},
+{"word":"DIXIT"},
+{"word":"DIZZY"},
+{"word":"DJINN"},
+{"word":"DOCKS"},
+{"word":"DODGE"},
+{"word":"DODGY"},
+{"word":"DODOS"},
+{"word":"DOERS"},
+{"word":"DOEST"},
+{"word":"DOETH"},
+{"word":"DOFFS"},
+{"word":"DOGES"},
+{"word":"DOGGO"},
+{"word":"DOGGY"},
+{"word":"DOGIE"},
+{"word":"DOGMA"},
+{"word":"DOILY"},
+{"word":"DOING"},
+{"word":"DOLCE"},
+{"word":"DOLED"},
+{"word":"DOLES"},
+{"word":"DOLLS"},
+{"word":"DOLLY"},
+{"word":"DOLOR"},
+{"word":"DOLTS"},
+{"word":"DOMED"},
+{"word":"DOMES"},
+{"word":"DONEE"},
+{"word":"DONNA"},
+{"word":"DONOR"},
+{"word":"DONUT"},
+{"word":"DOOMS"},
+{"word":"DOORS"},
+{"word":"DOOZY"},
+{"word":"DOPED"},
+{"word":"DOPER"},
+{"word":"DOPES"},
+{"word":"DOPEY"},
+{"word":"DORKS"},
+{"word":"DORKY"},
+{"word":"DORMS"},
+{"word":"DOSED"},
+{"word":"DOSER"},
+{"word":"DOSES"},
+{"word":"DOTED"},
+{"word":"DOTER"},
+{"word":"DOTES"},
+{"word":"DOTTY"},
+{"word":"DOUBT"},
+{"word":"DOUGH"},
+{"word":"DOUSE"},
+{"word":"DOVES"},
+{"word":"DOVEY"},
+{"word":"DOWDY"},
+{"word":"DOWEL"},
+{"word":"DOWER"},
+{"word":"DOWNS"},
+{"word":"DOWNY"},
+{"word":"DOWRY"},
+{"word":"DOWSE"},
+{"word":"DOXIE"},
+{"word":"DOYEN"},
+{"word":"DOZED"},
+{"word":"DOZEN"},
+{"word":"DOZER"},
+{"word":"DOZES"},
+{"word":"DRABS"},
+{"word":"DRAFT"},
+{"word":"DRAGS"},
+{"word":"DRAIN"},
+{"word":"DRAKE"},
+{"word":"DRAMA"},
+{"word":"DRAMS"},
+{"word":"DRANK"},
+{"word":"DRAPE"},
+{"word":"DRAWL"},
+{"word":"DRAWN"},
+{"word":"DRAWS"},
+{"word":"DRAYS"},
+{"word":"DREAD"},
+{"word":"DREAM"},
+{"word":"DREAR"},
+{"word":"DRECK"},
+{"word":"DREGS"},
+{"word":"DRESS"},
+{"word":"DRIBS"},
+{"word":"DRIED"},
+{"word":"DRIER"},
+{"word":"DRIES"},
+{"word":"DRIFT"},
+{"word":"DRILL"},
+{"word":"DRILY"},
+{"word":"DRINK"},
+{"word":"DRIPS"},
+{"word":"DRIVE"},
+{"word":"DROID"},
+{"word":"DROLL"},
+{"word":"DRONE"},
+{"word":"DROOL"},
+{"word":"DROOP"},
+{"word":"DROPS"},
+{"word":"DROSS"},
+{"word":"DROVE"},
+{"word":"DROWN"},
+{"word":"DRUBS"},
+{"word":"DRUGS"},
+{"word":"DRUID"},
+{"word":"DRUMS"},
+{"word":"DRUNK"},
+{"word":"DRYAD"},
+{"word":"DRYER"},
+{"word":"DRYLY"},
+{"word":"DUALS"},
+{"word":"DUBBY"},
+{"word":"DUCAL"},
+{"word":"DUCAT"},
+{"word":"DUCES"},
+{"word":"DUCHY"},
+{"word":"DUCKS"},
+{"word":"DUCKY"},
+{"word":"DUCTS"},
+{"word":"DUDDY"},
+{"word":"DUDES"},
+{"word":"DUELS"},
+{"word":"DUETS"},
+{"word":"DUFFS"},
+{"word":"DUKES"},
+{"word":"DULLS"},
+{"word":"DULLY"},
+{"word":"DULSE"},
+{"word":"DUMBO"},
+{"word":"DUMMY"},
+{"word":"DUMPS"},
+{"word":"DUMPY"},
+{"word":"DUNCE"},
+{"word":"DUNES"},
+{"word":"DUNGS"},
+{"word":"DUNGY"},
+{"word":"DUNKS"},
+{"word":"DUNNO"},
+{"word":"DUOMO"},
+{"word":"DUPED"},
+{"word":"DUPER"},
+{"word":"DUPES"},
+{"word":"DUPLE"},
+{"word":"DURST"},
+{"word":"DUSKS"},
+{"word":"DUSKY"},
+{"word":"DUSTS"},
+{"word":"DUSTY"},
+{"word":"DUTCH"},
+{"word":"DUVET"},
+{"word":"DWARF"},
+{"word":"DWEEB"},
+{"word":"DWELL"},
+{"word":"DWELT"},
+{"word":"DWINE"},
+{"word":"DYADS"},
+{"word":"DYERS"},
+{"word":"DYING"},
+{"word":"DYKES"},
+{"word":"DYNES"},
+{"word":"EAGER"},
+{"word":"EAGLE"},
+{"word":"EARED"},
+{"word":"EARLS"},
+{"word":"EARLY"},
+{"word":"EARNS"},
+{"word":"EARTH"},
+{"word":"EASED"},
+{"word":"EASEL"},
+{"word":"EASES"},
+{"word":"EASTS"},
+{"word":"EATEN"},
+{"word":"EATER"},
+{"word":"EAVES"},
+{"word":"EBBED"},
+{"word":"EBONY"},
+{"word":"ECHOS"},
+{"word":"ECLAT"},
+{"word":"EDEMA"},
+{"word":"EDGED"},
+{"word":"EDGER"},
+{"word":"EDGES"},
+{"word":"EDICT"},
+{"word":"EDIFY"},
+{"word":"EDITS"},
+{"word":"EDUCE"},
+{"word":"EERIE"},
+{"word":"EGADS"},
+{"word":"EGGED"},
+{"word":"EGGER"},
+{"word":"EGRET"},
+{"word":"EIDER"},
+{"word":"EIGHT"},
+{"word":"EJECT"},
+{"word":"EKING"},
+{"word":"ELAND"},
+{"word":"ELANS"},
+{"word":"ELATE"},
+{"word":"ELBOW"},
+{"word":"ELDER"},
+{"word":"ELECT"},
+{"word":"ELEGY"},
+{"word":"ELFIN"},
+{"word":"ELIDE"},
+{"word":"ELITE"},
+{"word":"ELMNT"},
+{"word":"ELOIN"},
+{"word":"ELOPE"},
+{"word":"ELUDE"},
+{"word":"ELVEN"},
+{"word":"ELVES"},
+{"word":"EMAIL"},
+{"word":"EMBAY"},
+{"word":"EMBED"},
+{"word":"EMBER"},
+{"word":"EMCEE"},
+{"word":"EMEND"},
+{"word":"EMERG"},
+{"word":"EMERY"},
+{"word":"EMIRS"},
+{"word":"EMITS"},
+{"word":"EMOTE"},
+{"word":"EMPTY"},
+{"word":"ENACT"},
+{"word":"ENATE"},
+{"word":"ENDED"},
+{"word":"ENDER"},
+{"word":"ENDEW"},
+{"word":"ENDOW"},
+{"word":"ENDUE"},
+{"word":"ENEMA"},
+{"word":"ENEMY"},
+{"word":"ENJOY"},
+{"word":"ENLIT"},
+{"word":"ENNOG"},
+{"word":"ENNUI"},
+{"word":"ENROL"},
+{"word":"ENSKY"},
+{"word":"ENSUE"},
+{"word":"ENTER"},
+{"word":"ENTRY"},
+{"word":"ENVOI"},
+{"word":"ENVOY"},
+{"word":"EPACT"},
+{"word":"EPEES"},
+{"word":"EPHAH"},
+{"word":"EPHOD"},
+{"word":"EPICS"},
+{"word":"EPOCH"},
+{"word":"EPOXY"},
+{"word":"EPSOM"},
+{"word":"EQUAL"},
+{"word":"EQUIP"},
+{"word":"ERASE"},
+{"word":"ERECT"},
+{"word":"ERODE"},
+{"word":"ERRAN"},
+{"word":"ERRAT"},
+{"word":"ERRED"},
+{"word":"ERROR"},
+{"word":"ERUCT"},
+{"word":"ERUPT"},
+{"word":"ESKER"},
+{"word":"ESSAY"},
+{"word":"ESSES"},
+{"word":"ESTER"},
+{"word":"ESTOP"},
+{"word":"ETCHY"},
+{"word":"ETEXT"},
+{"word":"ETHER"},
+{"word":"ETHIC"},
+{"word":"ETHOS"},
+{"word":"ETHYL"},
+{"word":"ETUDE"},
+{"word":"EVADE"},
+{"word":"EVENS"},
+{"word":"EVENT"},
+{"word":"EVERY"},
+{"word":"EVICT"},
+{"word":"EVILS"},
+{"word":"EVOKE"},
+{"word":"EXACT"},
+{"word":"EXALT"},
+{"word":"EXAMS"},
+{"word":"EXCEL"},
+{"word":"EXCON"},
+{"word":"EXEAT"},
+{"word":"EXECS"},
+{"word":"EXERT"},
+{"word":"EXILE"},
+{"word":"EXIST"},
+{"word":"EXITS"},
+{"word":"EXPAT"},
+{"word":"EXPEL"},
+{"word":"EXPOS"},
+{"word":"EXTOL"},
+{"word":"EXTRA"},
+{"word":"EXUDE"},
+{"word":"EXULT"},
+{"word":"EXURB"},
+{"word":"EYERS"},
+{"word":"EYING"},
+{"word":"EYRIE"},
+{"word":"EYRIR"},
+{"word":"FABLE"},
+{"word":"FACED"},
+{"word":"FACER"},
+{"word":"FACES"},
+{"word":"FACET"},
+{"word":"FACIE"},
+{"word":"FACIL"},
+{"word":"FACTO"},
+{"word":"FACTS"},
+{"word":"FADDY"},
+{"word":"FADED"},
+{"word":"FADER"},
+{"word":"FADES"},
+{"word":"FAERY"},
+{"word":"FAGOT"},
+{"word":"FAILS"},
+{"word":"FAINT"},
+{"word":"FAIRE"},
+{"word":"FAIRS"},
+{"word":"FAIRY"},
+{"word":"FAITH"},
+{"word":"FAKED"},
+{"word":"FAKER"},
+{"word":"FAKES"},
+{"word":"FAKIR"},
+{"word":"FALLS"},
+{"word":"FALSE"},
+{"word":"FAMED"},
+{"word":"FAMES"},
+{"word":"FANCY"},
+{"word":"FANGS"},
+{"word":"FANIN"},
+{"word":"FANNY"},
+{"word":"FARAD"},
+{"word":"FARCE"},
+{"word":"FARED"},
+{"word":"FARES"},
+{"word":"FARMS"},
+{"word":"FARTS"},
+{"word":"FASTS"},
+{"word":"FATAL"},
+{"word":"FATED"},
+{"word":"FATES"},
+{"word":"FATLY"},
+{"word":"FATSO"},
+{"word":"FATTY"},
+{"word":"FATWA"},
+{"word":"FAULT"},
+{"word":"FAUNA"},
+{"word":"FAUNS"},
+{"word":"FAVOR"},
+{"word":"FAWNS"},
+{"word":"FAWNY"},
+{"word":"FAXED"},
+{"word":"FAXER"},
+{"word":"FAXES"},
+{"word":"FAZED"},
+{"word":"FAZES"},
+{"word":"FEARS"},
+{"word":"FEAST"},
+{"word":"FEATS"},
+{"word":"FECAL"},
+{"word":"FECES"},
+{"word":"FEEDS"},
+{"word":"FEELS"},
+{"word":"FEIGN"},
+{"word":"FEINT"},
+{"word":"FEIST"},
+{"word":"FELLA"},
+{"word":"FELLS"},
+{"word":"FELON"},
+{"word":"FELTS"},
+{"word":"FEMME"},
+{"word":"FEMUR"},
+{"word":"FENCE"},
+{"word":"FENDS"},
+{"word":"FENNY"},
+{"word":"FERAL"},
+{"word":"FERMI"},
+{"word":"FERNS"},
+{"word":"FERNY"},
+{"word":"FERRY"},
+{"word":"FETAL"},
+{"word":"FETCH"},
+{"word":"FETED"},
+{"word":"FETES"},
+{"word":"FETID"},
+{"word":"FETOR"},
+{"word":"FETUS"},
+{"word":"FEUAR"},
+{"word":"FEUDS"},
+{"word":"FEUED"},
+{"word":"FEVER"},
+{"word":"FEWER"},
+{"word":"FIATS"},
+{"word":"FIBER"},
+{"word":"FIBRE"},
+{"word":"FICHE"},
+{"word":"FICHU"},
+{"word":"FIEFS"},
+{"word":"FIELD"},
+{"word":"FIEND"},
+{"word":"FIERY"},
+{"word":"FIFES"},
+{"word":"FIFTH"},
+{"word":"FIFTY"},
+{"word":"FIGHT"},
+{"word":"FILAR"},
+{"word":"FILCH"},
+{"word":"FILED"},
+{"word":"FILER"},
+{"word":"FILES"},
+{"word":"FILET"},
+{"word":"FILLS"},
+{"word":"FILLY"},
+{"word":"FILMS"},
+{"word":"FILMY"},
+{"word":"FILTH"},
+{"word":"FINAL"},
+{"word":"FINCH"},
+{"word":"FINDS"},
+{"word":"FINED"},
+{"word":"FINER"},
+{"word":"FINES"},
+{"word":"FINIF"},
+{"word":"FINIS"},
+{"word":"FINKS"},
+{"word":"FINNY"},
+{"word":"FIORD"},
+{"word":"FIRED"},
+{"word":"FIRER"},
+{"word":"FIRES"},
+{"word":"FIRMA"},
+{"word":"FIRMS"},
+{"word":"FIRST"},
+{"word":"FIRTH"},
+{"word":"FISHY"},
+{"word":"FISTS"},
+{"word":"FISTY"},
+{"word":"FITLY"},
+{"word":"FIVER"},
+{"word":"FIVES"},
+{"word":"FIXED"},
+{"word":"FIXER"},
+{"word":"FIXES"},
+{"word":"FIXIT"},
+{"word":"FIZZY"},
+{"word":"FJORD"},
+{"word":"FLABS"},
+{"word":"FLACK"},
+{"word":"FLAGS"},
+{"word":"FLAIL"},
+{"word":"FLAIR"},
+{"word":"FLAKE"},
+{"word":"FLAKS"},
+{"word":"FLAKY"},
+{"word":"FLAME"},
+{"word":"FLAMS"},
+{"word":"FLANK"},
+{"word":"FLAPS"},
+{"word":"FLARE"},
+{"word":"FLASH"},
+{"word":"FLASK"},
+{"word":"FLATS"},
+{"word":"FLAWS"},
+{"word":"FLAYS"},
+{"word":"FLEAS"},
+{"word":"FLECK"},
+{"word":"FLEES"},
+{"word":"FLEET"},
+{"word":"FLESH"},
+{"word":"FLICK"},
+{"word":"FLICS"},
+{"word":"FLIED"},
+{"word":"FLIER"},
+{"word":"FLIES"},
+{"word":"FLING"},
+{"word":"FLINT"},
+{"word":"FLIPS"},
+{"word":"FLIRT"},
+{"word":"FLITS"},
+{"word":"FLOAT"},
+{"word":"FLOCK"},
+{"word":"FLOES"},
+{"word":"FLOGS"},
+{"word":"FLOOD"},
+{"word":"FLOOR"},
+{"word":"FLOPS"},
+{"word":"FLORA"},
+{"word":"FLOSS"},
+{"word":"FLOUR"},
+{"word":"FLOUT"},
+{"word":"FLOWN"},
+{"word":"FLOWS"},
+{"word":"FLUBS"},
+{"word":"FLUES"},
+{"word":"FLUFF"},
+{"word":"FLUID"},
+{"word":"FLUKE"},
+{"word":"FLUKY"},
+{"word":"FLUME"},
+{"word":"FLUNG"},
+{"word":"FLUNK"},
+{"word":"FLUSH"},
+{"word":"FLUTE"},
+{"word":"FLYBY"},
+{"word":"FLYER"},
+{"word":"FOALS"},
+{"word":"FOAMS"},
+{"word":"FOAMY"},
+{"word":"FOCAL"},
+{"word":"FOCUS"},
+{"word":"FOGEY"},
+{"word":"FOGGY"},
+{"word":"FOILS"},
+{"word":"FOIST"},
+{"word":"FOLDS"},
+{"word":"FOLIA"},
+{"word":"FOLIC"},
+{"word":"FOLIO"},
+{"word":"FOLKS"},
+{"word":"FOLKY"},
+{"word":"FOLLY"},
+{"word":"FONDU"},
+{"word":"FONTS"},
+{"word":"FOODS"},
+{"word":"FOOLS"},
+{"word":"FOOTS"},
+{"word":"FORAY"},
+{"word":"FORCE"},
+{"word":"FORDS"},
+{"word":"FORES"},
+{"word":"FORGE"},
+{"word":"FORGO"},
+{"word":"FORKS"},
+{"word":"FORKY"},
+{"word":"FORMA"},
+{"word":"FORMS"},
+{"word":"FORTE"},
+{"word":"FORTH"},
+{"word":"FORTS"},
+{"word":"FORTY"},
+{"word":"FORUM"},
+{"word":"FOSSA"},
+{"word":"FOSSE"},
+{"word":"FOULS"},
+{"word":"FOUND"},
+{"word":"FOUNT"},
+{"word":"FOURS"},
+{"word":"FOVEA"},
+{"word":"FOWLS"},
+{"word":"FOXED"},
+{"word":"FOXES"},
+{"word":"FOYER"},
+{"word":"FRAIL"},
+{"word":"FRAME"},
+{"word":"FRANC"},
+{"word":"FRANK"},
+{"word":"FRATS"},
+{"word":"FRAUD"},
+{"word":"FRAYS"},
+{"word":"FREAK"},
+{"word":"FREED"},
+{"word":"FREER"},
+{"word":"FREES"},
+{"word":"FREON"},
+{"word":"FRESH"},
+{"word":"FRETS"},
+{"word":"FRIAR"},
+{"word":"FRIED"},
+{"word":"FRIER"},
+{"word":"FRIES"},
+{"word":"FRIGS"},
+{"word":"FRILL"},
+{"word":"FRISK"},
+{"word":"FRIZZ"},
+{"word":"FROCK"},
+{"word":"FROGS"},
+{"word":"FROND"},
+{"word":"FRONT"},
+{"word":"FROSH"},
+{"word":"FROST"},
+{"word":"FROTH"},
+{"word":"FROWN"},
+{"word":"FROZE"},
+{"word":"FRUIT"},
+{"word":"FRUMP"},
+{"word":"FRYER"},
+{"word":"FTPED"},
+{"word":"FUCKS"},
+{"word":"FUDGE"},
+{"word":"FUDGY"},
+{"word":"FUELS"},
+{"word":"FUGAL"},
+{"word":"FUGIT"},
+{"word":"FUGUE"},
+{"word":"FULLS"},
+{"word":"FULLY"},
+{"word":"FUMED"},
+{"word":"FUMER"},
+{"word":"FUMES"},
+{"word":"FUNDS"},
+{"word":"FUNGI"},
+{"word":"FUNGO"},
+{"word":"FUNKS"},
+{"word":"FUNKY"},
+{"word":"FUNNY"},
+{"word":"FURLS"},
+{"word":"FUROR"},
+{"word":"FURRY"},
+{"word":"FURZE"},
+{"word":"FUSED"},
+{"word":"FUSEE"},
+{"word":"FUSES"},
+{"word":"FUSSY"},
+{"word":"FUSTY"},
+{"word":"FUTON"},
+{"word":"FUZED"},
+{"word":"FUZES"},
+{"word":"FUZZY"},
+{"word":"GABBY"},
+{"word":"GABLE"},
+{"word":"GAFFE"},
+{"word":"GAFFS"},
+{"word":"GAGES"},
+{"word":"GAILY"},
+{"word":"GAINS"},
+{"word":"GAITS"},
+{"word":"GALAS"},
+{"word":"GALES"},
+{"word":"GALLS"},
+{"word":"GAMBA"},
+{"word":"GAMED"},
+{"word":"GAMER"},
+{"word":"GAMES"},
+{"word":"GAMEY"},
+{"word":"GAMIC"},
+{"word":"GAMIN"},
+{"word":"GAMMA"},
+{"word":"GAMUT"},
+{"word":"GANEF"},
+{"word":"GANGS"},
+{"word":"GAOLS"},
+{"word":"GAPED"},
+{"word":"GAPER"},
+{"word":"GAPES"},
+{"word":"GAPPY"},
+{"word":"GARBS"},
+{"word":"GARDE"},
+{"word":"GASES"},
+{"word":"GASPS"},
+{"word":"GASSY"},
+{"word":"GATED"},
+{"word":"GATES"},
+{"word":"GATOR"},
+{"word":"GAUDY"},
+{"word":"GAUGE"},
+{"word":"GAUNT"},
+{"word":"GAUSS"},
+{"word":"GAUZE"},
+{"word":"GAUZY"},
+{"word":"GAVEL"},
+{"word":"GAWKS"},
+{"word":"GAWKY"},
+{"word":"GAYER"},
+{"word":"GAYLY"},
+{"word":"GAZED"},
+{"word":"GAZER"},
+{"word":"GAZES"},
+{"word":"GEARS"},
+{"word":"GECKO"},
+{"word":"GEEKS"},
+{"word":"GEESE"},
+{"word":"GELDS"},
+{"word":"GELID"},
+{"word":"GENES"},
+{"word":"GENET"},
+{"word":"GENIE"},
+{"word":"GENII"},
+{"word":"GENRE"},
+{"word":"GENTS"},
+{"word":"GENUS"},
+{"word":"GEODE"},
+{"word":"GEOID"},
+{"word":"GERMS"},
+{"word":"GESSO"},
+{"word":"GETUP"},
+{"word":"GHOST"},
+{"word":"GHOTI"},
+{"word":"GHOUL"},
+{"word":"GIANT"},
+{"word":"GIBED"},
+{"word":"GIBER"},
+{"word":"GIBES"},
+{"word":"GIDDY"},
+{"word":"GIFTS"},
+{"word":"GIFTY"},
+{"word":"GIGAS"},
+{"word":"GIGUE"},
+{"word":"GILDS"},
+{"word":"GILLS"},
+{"word":"GILTS"},
+{"word":"GIMEL"},
+{"word":"GIMME"},
+{"word":"GIMPS"},
+{"word":"GIMPY"},
+{"word":"GINNY"},
+{"word":"GIPSY"},
+{"word":"GIRDS"},
+{"word":"GIRLS"},
+{"word":"GIRLY"},
+{"word":"GIROS"},
+{"word":"GIRTH"},
+{"word":"GIRTS"},
+{"word":"GISMO"},
+{"word":"GISTS"},
+{"word":"GIVEN"},
+{"word":"GIVER"},
+{"word":"GIVES"},
+{"word":"GIZMO"},
+{"word":"GLADE"},
+{"word":"GLADS"},
+{"word":"GLAND"},
+{"word":"GLANS"},
+{"word":"GLARE"},
+{"word":"GLARY"},
+{"word":"GLASS"},
+{"word":"GLAZE"},
+{"word":"GLEAM"},
+{"word":"GLEAN"},
+{"word":"GLEBE"},
+{"word":"GLEES"},
+{"word":"GLENS"},
+{"word":"GLIDE"},
+{"word":"GLINT"},
+{"word":"GLITZ"},
+{"word":"GLOAT"},
+{"word":"GLOBE"},
+{"word":"GLOBS"},
+{"word":"GLOMS"},
+{"word":"GLOOM"},
+{"word":"GLORY"},
+{"word":"GLOSS"},
+{"word":"GLOVE"},
+{"word":"GLOWS"},
+{"word":"GLUED"},
+{"word":"GLUER"},
+{"word":"GLUES"},
+{"word":"GLUEY"},
+{"word":"GLUON"},
+{"word":"GLUTS"},
+{"word":"GLYPH"},
+{"word":"GNARL"},
+{"word":"GNASH"},
+{"word":"GNATS"},
+{"word":"GNAWS"},
+{"word":"GNOME"},
+{"word":"GOADS"},
+{"word":"GOALS"},
+{"word":"GOATS"},
+{"word":"GODLY"},
+{"word":"GOERS"},
+{"word":"GOEST"},
+{"word":"GOETH"},
+{"word":"GOFER"},
+{"word":"GOING"},
+{"word":"GOLDS"},
+{"word":"GOLEM"},
+{"word":"GOLFS"},
+{"word":"GOLLY"},
+{"word":"GONAD"},
+{"word":"GONER"},
+{"word":"GONGS"},
+{"word":"GONNA"},
+{"word":"GONZO"},
+{"word":"GOODS"},
+{"word":"GOODY"},
+{"word":"GOOEY"},
+{"word":"GOOFS"},
+{"word":"GOOFY"},
+{"word":"GOOKS"},
+{"word":"GOOKY"},
+{"word":"GOONS"},
+{"word":"GOONY"},
+{"word":"GOOPY"},
+{"word":"GOOSE"},
+{"word":"GOOSY"},
+{"word":"GORED"},
+{"word":"GORES"},
+{"word":"GORGE"},
+{"word":"GORSE"},
+{"word":"GOTHS"},
+{"word":"GOTTA"},
+{"word":"GOUDA"},
+{"word":"GOUGE"},
+{"word":"GOURD"},
+{"word":"GOUTS"},
+{"word":"GOUTY"},
+{"word":"GOWNS"},
+{"word":"GOYIM"},
+{"word":"GRABS"},
+{"word":"GRACE"},
+{"word":"GRADE"},
+{"word":"GRADS"},
+{"word":"GRAFT"},
+{"word":"GRAIL"},
+{"word":"GRAIN"},
+{"word":"GRAMS"},
+{"word":"GRAND"},
+{"word":"GRANT"},
+{"word":"GRAPE"},
+{"word":"GRAPH"},
+{"word":"GRAPY"},
+{"word":"GRASP"},
+{"word":"GRASS"},
+{"word":"GRATA"},
+{"word":"GRATE"},
+{"word":"GRAVE"},
+{"word":"GRAVY"},
+{"word":"GRAYS"},
+{"word":"GRAZE"},
+{"word":"GREAT"},
+{"word":"GREBE"},
+{"word":"GREED"},
+{"word":"GREEK"},
+{"word":"GREEN"},
+{"word":"GREET"},
+{"word":"GREPS"},
+{"word":"GREYS"},
+{"word":"GRIDS"},
+{"word":"GRIEF"},
+{"word":"GRIFT"},
+{"word":"GRILL"},
+{"word":"GRIME"},
+{"word":"GRIMY"},
+{"word":"GRIND"},
+{"word":"GRINS"},
+{"word":"GRIPE"},
+{"word":"GRIPS"},
+{"word":"GRIST"},
+{"word":"GRITS"},
+{"word":"GROAN"},
+{"word":"GROAT"},
+{"word":"GRODY"},
+{"word":"GROGS"},
+{"word":"GROIN"},
+{"word":"GROKS"},
+{"word":"GRONK"},
+{"word":"GROOK"},
+{"word":"GROOM"},
+{"word":"GROPE"},
+{"word":"GROSS"},
+{"word":"GROUP"},
+{"word":"GROUT"},
+{"word":"GROVE"},
+{"word":"GROWL"},
+{"word":"GROWN"},
+{"word":"GROWS"},
+{"word":"GRUBS"},
+{"word":"GRUEL"},
+{"word":"GRUFF"},
+{"word":"GRUMP"},
+{"word":"GRUNT"},
+{"word":"GUANO"},
+{"word":"GUARD"},
+{"word":"GUAVA"},
+{"word":"GUESS"},
+{"word":"GUEST"},
+{"word":"GUIDE"},
+{"word":"GUILD"},
+{"word":"GUILE"},
+{"word":"GUILT"},
+{"word":"GUISE"},
+{"word":"GULAG"},
+{"word":"GULCH"},
+{"word":"GULES"},
+{"word":"GULFS"},
+{"word":"GULLS"},
+{"word":"GULLY"},
+{"word":"GULPS"},
+{"word":"GUMBO"},
+{"word":"GUMMY"},
+{"word":"GUNKS"},
+{"word":"GUNKY"},
+{"word":"GUNNY"},
+{"word":"GUPPY"},
+{"word":"GURUS"},
+{"word":"GUSHY"},
+{"word":"GUSTO"},
+{"word":"GUSTS"},
+{"word":"GUSTY"},
+{"word":"GUTSY"},
+{"word":"GUTTA"},
+{"word":"GUTTY"},
+{"word":"GUYED"},
+{"word":"GWINE"},
+{"word":"GYPPY"},
+{"word":"GYPSY"},
+{"word":"GYROS"},
+{"word":"GYVED"},
+{"word":"GYVES"},
+{"word":"HABIT"},
+{"word":"HACKS"},
+{"word":"HADDA"},
+{"word":"HADES"},
+{"word":"HADST"},
+{"word":"HAFTA"},
+{"word":"HAFTS"},
+{"word":"HAIKU"},
+{"word":"HAILS"},
+{"word":"HAIRS"},
+{"word":"HAIRY"},
+{"word":"HALED"},
+{"word":"HALER"},
+{"word":"HALES"},
+{"word":"HALLO"},
+{"word":"HALLS"},
+{"word":"HALMA"},
+{"word":"HALOS"},
+{"word":"HALTS"},
+{"word":"HALVE"},
+{"word":"HAMES"},
+{"word":"HAMMY"},
+{"word":"HAMZA"},
+{"word":"HANDS"},
+{"word":"HANDY"},
+{"word":"HANGS"},
+{"word":"HANKS"},
+{"word":"HANKY"},
+{"word":"HAPAX"},
+{"word":"HAPLY"},
+{"word":"HAPPY"},
+{"word":"HARDY"},
+{"word":"HAREM"},
+{"word":"HARES"},
+{"word":"HARKS"},
+{"word":"HARMS"},
+{"word":"HARPS"},
+{"word":"HARPY"},
+{"word":"HARRY"},
+{"word":"HARSH"},
+{"word":"HARTS"},
+{"word":"HARUM"},
+{"word":"HASPS"},
+{"word":"HASTE"},
+{"word":"HASTY"},
+{"word":"HATCH"},
+{"word":"HATED"},
+{"word":"HATER"},
+{"word":"HATES"},
+{"word":"HAULS"},
+{"word":"HAUNT"},
+{"word":"HAUTE"},
+{"word":"HAVEN"},
+{"word":"HAVES"},
+{"word":"HAVOC"},
+{"word":"HAWED"},
+{"word":"HAWKS"},
+{"word":"HAYED"},
+{"word":"HAYER"},
+{"word":"HAYEY"},
+{"word":"HAZED"},
+{"word":"HAZEL"},
+{"word":"HAZER"},
+{"word":"HAZES"},
+{"word":"HEADS"},
+{"word":"HEADY"},
+{"word":"HEALS"},
+{"word":"HEAPS"},
+{"word":"HEARD"},
+{"word":"HEARS"},
+{"word":"HEART"},
+{"word":"HEATH"},
+{"word":"HEATS"},
+{"word":"HEAVE"},
+{"word":"HEAVY"},
+{"word":"HEDGE"},
+{"word":"HEEDS"},
+{"word":"HEELS"},
+{"word":"HEERD"},
+{"word":"HEFTS"},
+{"word":"HEFTY"},
+{"word":"HEIGH"},
+{"word":"HEIRS"},
+{"word":"HEIST"},
+{"word":"HELIX"},
+{"word":"HELLO"},
+{"word":"HELLS"},
+{"word":"HELMS"},
+{"word":"HELPS"},
+{"word":"HEMPS"},
+{"word":"HEMPY"},
+{"word":"HENCE"},
+{"word":"HENGE"},
+{"word":"HENNA"},
+{"word":"HENRY"},
+{"word":"HERBS"},
+{"word":"HERBY"},
+{"word":"HERDS"},
+{"word":"HEREM"},
+{"word":"HERES"},
+{"word":"HEROE"},
+{"word":"HERON"},
+{"word":"HEROS"},
+{"word":"HERTZ"},
+{"word":"HEWED"},
+{"word":"HEWER"},
+{"word":"HEXAD"},
+{"word":"HEXED"},
+{"word":"HEXER"},
+{"word":"HEXES"},
+{"word":"HICKS"},
+{"word":"HIDER"},
+{"word":"HIDES"},
+{"word":"HIGHS"},
+{"word":"HIKED"},
+{"word":"HIKER"},
+{"word":"HIKES"},
+{"word":"HILAR"},
+{"word":"HILLS"},
+{"word":"HILLY"},
+{"word":"HILTS"},
+{"word":"HILUM"},
+{"word":"HIMBO"},
+{"word":"HINDS"},
+{"word":"HINGE"},
+{"word":"HINTS"},
+{"word":"HIPPO"},
+{"word":"HIPPY"},
+{"word":"HIRED"},
+{"word":"HIRER"},
+{"word":"HIRES"},
+{"word":"HITCH"},
+{"word":"HIVED"},
+{"word":"HIVER"},
+{"word":"HIVES"},
+{"word":"HOAGY"},
+{"word":"HOARD"},
+{"word":"HOARS"},
+{"word":"HOARY"},
+{"word":"HOBBY"},
+{"word":"HOBOS"},
+{"word":"HOCKS"},
+{"word":"HOCUS"},
+{"word":"HODAD"},
+{"word":"HOERS"},
+{"word":"HOGAN"},
+{"word":"HOIST"},
+{"word":"HOKEY"},
+{"word":"HOKUM"},
+{"word":"HOLDS"},
+{"word":"HOLED"},
+{"word":"HOLER"},
+{"word":"HOLES"},
+{"word":"HOLEY"},
+{"word":"HOLLY"},
+{"word":"HOLON"},
+{"word":"HOMED"},
+{"word":"HOMER"},
+{"word":"HOMES"},
+{"word":"HOMEY"},
+{"word":"HOMME"},
+{"word":"HOMOS"},
+{"word":"HONED"},
+{"word":"HONER"},
+{"word":"HONES"},
+{"word":"HONEY"},
+{"word":"HONKS"},
+{"word":"HONKY"},
+{"word":"HONOR"},
+{"word":"HOOCH"},
+{"word":"HOODS"},
+{"word":"HOOEY"},
+{"word":"HOOFS"},
+{"word":"HOOKS"},
+{"word":"HOOKY"},
+{"word":"HOOPS"},
+{"word":"HOOTS"},
+{"word":"HOPED"},
+{"word":"HOPER"},
+{"word":"HOPES"},
+{"word":"HOPPY"},
+{"word":"HORDE"},
+{"word":"HORNS"},
+{"word":"HORNY"},
+{"word":"HORSE"},
+{"word":"HORSY"},
+{"word":"HOSED"},
+{"word":"HOSES"},
+{"word":"HOSTS"},
+{"word":"HOTEL"},
+{"word":"HOTLY"},
+{"word":"HOUND"},
+{"word":"HOURI"},
+{"word":"HOURS"},
+{"word":"HOUSE"},
+{"word":"HOVEL"},
+{"word":"HOVER"},
+{"word":"HOWDY"},
+{"word":"HOWLS"},
+{"word":"HUBBA"},
+{"word":"HUBBY"},
+{"word":"HUFFS"},
+{"word":"HUFFY"},
+{"word":"HUGER"},
+{"word":"HULAS"},
+{"word":"HULKS"},
+{"word":"HULKY"},
+{"word":"HULLO"},
+{"word":"HULLS"},
+{"word":"HUMAN"},
+{"word":"HUMID"},
+{"word":"HUMOR"},
+{"word":"HUMPF"},
+{"word":"HUMPH"},
+{"word":"HUMPS"},
+{"word":"HUMPY"},
+{"word":"HUMUS"},
+{"word":"HUNCH"},
+{"word":"HUNKS"},
+{"word":"HUNKY"},
+{"word":"HUNTS"},
+{"word":"HURLS"},
+{"word":"HURLY"},
+{"word":"HURRY"},
+{"word":"HURTS"},
+{"word":"HUSKS"},
+{"word":"HUSKY"},
+{"word":"HUSSY"},
+{"word":"HUTCH"},
+{"word":"HUZZA"},
+{"word":"HYDRA"},
+{"word":"HYDRO"},
+{"word":"HYENA"},
+{"word":"HYING"},
+{"word":"HYMEN"},
+{"word":"HYMNS"},
+{"word":"HYPED"},
+{"word":"HYPER"},
+{"word":"HYPES"},
+{"word":"HYPHY"},
+{"word":"HYPOS"},
+{"word":"HYRAX"},
+{"word":"IAMBS"},
+{"word":"ICERS"},
+{"word":"ICHOR"},
+{"word":"ICIER"},
+{"word":"ICILY"},
+{"word":"ICING"},
+{"word":"ICONS"},
+{"word":"IDEAL"},
+{"word":"IDEAS"},
+{"word":"IDIOM"},
+{"word":"IDIOT"},
+{"word":"IDLED"},
+{"word":"IDLER"},
+{"word":"IDLES"},
+{"word":"IDOLS"},
+{"word":"IDYLL"},
+{"word":"IDYLS"},
+{"word":"IGLOO"},
+{"word":"IKATS"},
+{"word":"IKONS"},
+{"word":"ILEUM"},
+{"word":"ILEUS"},
+{"word":"ILIAC"},
+{"word":"ILIUM"},
+{"word":"IMAGE"},
+{"word":"IMAGO"},
+{"word":"IMAMS"},
+{"word":"IMBED"},
+{"word":"IMBUE"},
+{"word":"IMMIX"},
+{"word":"IMPEL"},
+{"word":"IMPLY"},
+{"word":"IMPRO"},
+{"word":"INANE"},
+{"word":"INAPT"},
+{"word":"INBOX"},
+{"word":"INCUR"},
+{"word":"INCUS"},
+{"word":"INDEX"},
+{"word":"INDIE"},
+{"word":"INEPT"},
+{"word":"INERT"},
+{"word":"INFER"},
+{"word":"INFIX"},
+{"word":"INFRA"},
+{"word":"INGOT"},
+{"word":"INJUN"},
+{"word":"INKED"},
+{"word":"INKER"},
+{"word":"INLAY"},
+{"word":"INLET"},
+{"word":"INNER"},
+{"word":"INODE"},
+{"word":"INPUT"},
+{"word":"INSET"},
+{"word":"INTEL"},
+{"word":"INTER"},
+{"word":"INTRA"},
+{"word":"INTRO"},
+{"word":"INURE"},
+{"word":"IOCTL"},
+{"word":"IODIC"},
+{"word":"IONIC"},
+{"word":"IOTAS"},
+{"word":"IRADE"},
+{"word":"IRATE"},
+{"word":"IRKED"},
+{"word":"IRONS"},
+{"word":"IRONY"},
+{"word":"ISLES"},
+{"word":"ISLET"},
+{"word":"ISSUE"},
+{"word":"ITCHY"},
+{"word":"ITEMS"},
+{"word":"IVIED"},
+{"word":"IVIES"},
+{"word":"IVORY"},
+{"word":"IXNAY"},
+{"word":"IXORA"},
+{"word":"IZARD"},
+{"word":"JABBY"},
+{"word":"JACKS"},
+{"word":"JACKY"},
+{"word":"JADED"},
+{"word":"JADES"},
+{"word":"JAGGY"},
+{"word":"JAILS"},
+{"word":"JAKES"},
+{"word":"JAMBS"},
+{"word":"JAMMY"},
+{"word":"JANES"},
+{"word":"JAPAN"},
+{"word":"JARLS"},
+{"word":"JAUNT"},
+{"word":"JAWED"},
+{"word":"JAWSY"},
+{"word":"JAZZY"},
+{"word":"JEANS"},
+{"word":"JEEPS"},
+{"word":"JEERS"},
+{"word":"JELLO"},
+{"word":"JELLS"},
+{"word":"JELLY"},
+{"word":"JENNY"},
+{"word":"JERKS"},
+{"word":"JERKY"},
+{"word":"JERRY"},
+{"word":"JESTS"},
+{"word":"JETTY"},
+{"word":"JEWEL"},
+{"word":"JIBED"},
+{"word":"JIBER"},
+{"word":"JIBES"},
+{"word":"JIFFS"},
+{"word":"JIFFY"},
+{"word":"JIGGY"},
+{"word":"JIHAD"},
+{"word":"JILTS"},
+{"word":"JIMMY"},
+{"word":"JINGO"},
+{"word":"JINGS"},
+{"word":"JINKS"},
+{"word":"JINNS"},
+{"word":"JIRDS"},
+{"word":"JIVED"},
+{"word":"JIVES"},
+{"word":"JOCKS"},
+{"word":"JOEYS"},
+{"word":"JOHNS"},
+{"word":"JOINS"},
+{"word":"JOINT"},
+{"word":"JOIST"},
+{"word":"JOKED"},
+{"word":"JOKER"},
+{"word":"JOKES"},
+{"word":"JOLLY"},
+{"word":"JOLTS"},
+{"word":"JONES"},
+{"word":"JORUM"},
+{"word":"JOULE"},
+{"word":"JOUST"},
+{"word":"JOWLS"},
+{"word":"JOWLY"},
+{"word":"JOYED"},
+{"word":"JUDGE"},
+{"word":"JUDOS"},
+{"word":"JUICE"},
+{"word":"JUICY"},
+{"word":"JUJUS"},
+{"word":"JUKES"},
+{"word":"JULEP"},
+{"word":"JUMBO"},
+{"word":"JUMPS"},
+{"word":"JUMPY"},
+{"word":"JUNCO"},
+{"word":"JUNKS"},
+{"word":"JUNKY"},
+{"word":"JUNTA"},
+{"word":"JUNTO"},
+{"word":"JUROR"},
+{"word":"JUSTE"},
+{"word":"JUSTS"},
+{"word":"JUTES"},
+{"word":"JUTTY"},
+{"word":"JUVES"},
+{"word":"KABAB"},
+{"word":"KABOB"},
+{"word":"KAIAK"},
+{"word":"KALES"},
+{"word":"KAPOK"},
+{"word":"KAPPA"},
+{"word":"KAPUT"},
+{"word":"KARAT"},
+{"word":"KARMA"},
+{"word":"KARST"},
+{"word":"KAYAK"},
+{"word":"KAYLE"},
+{"word":"KAYOS"},
+{"word":"KAZOO"},
+{"word":"KEBAB"},
+{"word":"KEBAR"},
+{"word":"KEBOB"},
+{"word":"KEELS"},
+{"word":"KEENS"},
+{"word":"KEEPS"},
+{"word":"KEFIR"},
+{"word":"KELLY"},
+{"word":"KELPS"},
+{"word":"KELPY"},
+{"word":"KENAF"},
+{"word":"KEPIS"},
+{"word":"KERBS"},
+{"word":"KERFS"},
+{"word":"KERNS"},
+{"word":"KETCH"},
+{"word":"KEYED"},
+{"word":"KEYER"},
+{"word":"KHADI"},
+{"word":"KHAKI"},
+{"word":"KHANS"},
+{"word":"KICKS"},
+{"word":"KICKY"},
+{"word":"KIDDO"},
+{"word":"KIKES"},
+{"word":"KILLS"},
+{"word":"KILNS"},
+{"word":"KILOS"},
+{"word":"KILTS"},
+{"word":"KILTY"},
+{"word":"KINDA"},
+{"word":"KINDS"},
+{"word":"KINDY"},
+{"word":"KINGS"},
+{"word":"KININ"},
+{"word":"KINKS"},
+{"word":"KINKY"},
+{"word":"KIOSK"},
+{"word":"KIRBY"},
+{"word":"KIRKS"},
+{"word":"KISSY"},
+{"word":"KITED"},
+{"word":"KITES"},
+{"word":"KITHS"},
+{"word":"KITTY"},
+{"word":"KIVAS"},
+{"word":"KIWIS"},
+{"word":"KLIEG"},
+{"word":"KLUGE"},
+{"word":"KLUGY"},
+{"word":"KLUNK"},
+{"word":"KLUTZ"},
+{"word":"KNACK"},
+{"word":"KNAVE"},
+{"word":"KNEAD"},
+{"word":"KNEED"},
+{"word":"KNEEL"},
+{"word":"KNEES"},
+{"word":"KNELL"},
+{"word":"KNELT"},
+{"word":"KNIFE"},
+{"word":"KNISH"},
+{"word":"KNITS"},
+{"word":"KNOBS"},
+{"word":"KNOCK"},
+{"word":"KNOLL"},
+{"word":"KNOPS"},
+{"word":"KNOTS"},
+{"word":"KNOUT"},
+{"word":"KNOWN"},
+{"word":"KNOWS"},
+{"word":"KNURL"},
+{"word":"KOALA"},
+{"word":"KOINE"},
+{"word":"KOOKS"},
+{"word":"KOOKY"},
+{"word":"KOPEK"},
+{"word":"KRAAL"},
+{"word":"KRAIT"},
+{"word":"KRAUT"},
+{"word":"KRILL"},
+{"word":"KRONA"},
+{"word":"KRONE"},
+{"word":"KUDOS"},
+{"word":"KUDZU"},
+{"word":"KULAK"},
+{"word":"KURTA"},
+{"word":"KURUS"},
+{"word":"KYRIE"},
+{"word":"LABEL"},
+{"word":"LABIA"},
+{"word":"LABOR"},
+{"word":"LACED"},
+{"word":"LACER"},
+{"word":"LACES"},
+{"word":"LACEY"},
+{"word":"LACKS"},
+{"word":"LADED"},
+{"word":"LADEN"},
+{"word":"LADES"},
+{"word":"LADLE"},
+{"word":"LAGER"},
+{"word":"LAIRD"},
+{"word":"LAIRS"},
+{"word":"LAIRY"},
+{"word":"LAITY"},
+{"word":"LAKER"},
+{"word":"LAKES"},
+{"word":"LAMAS"},
+{"word":"LAMBS"},
+{"word":"LAMED"},
+{"word":"LAMER"},
+{"word":"LAMES"},
+{"word":"LAMPS"},
+{"word":"LANAI"},
+{"word":"LANCE"},
+{"word":"LANDS"},
+{"word":"LANES"},
+{"word":"LANKY"},
+{"word":"LAPEL"},
+{"word":"LAPIN"},
+{"word":"LAPIS"},
+{"word":"LAPSE"},
+{"word":"LARCH"},
+{"word":"LARDS"},
+{"word":"LARDY"},
+{"word":"LARGE"},
+{"word":"LARGO"},
+{"word":"LARKS"},
+{"word":"LARVA"},
+{"word":"LASED"},
+{"word":"LASER"},
+{"word":"LASES"},
+{"word":"LASSO"},
+{"word":"LASTS"},
+{"word":"LATCH"},
+{"word":"LATER"},
+{"word":"LATEX"},
+{"word":"LATHE"},
+{"word":"LATHS"},
+{"word":"LATIN"},
+{"word":"LATTE"},
+{"word":"LATUS"},
+{"word":"LAUDE"},
+{"word":"LAUDS"},
+{"word":"LAUGH"},
+{"word":"LAUND"},
+{"word":"LAVAS"},
+{"word":"LAVED"},
+{"word":"LAVER"},
+{"word":"LAVES"},
+{"word":"LAWNS"},
+{"word":"LAWNY"},
+{"word":"LAWZY"},
+{"word":"LAXER"},
+{"word":"LAXLY"},
+{"word":"LAYER"},
+{"word":"LAYUP"},
+{"word":"LAZED"},
+{"word":"LAZES"},
+{"word":"LEACH"},
+{"word":"LEADS"},
+{"word":"LEAFS"},
+{"word":"LEAFY"},
+{"word":"LEAKS"},
+{"word":"LEAKY"},
+{"word":"LEANS"},
+{"word":"LEANT"},
+{"word":"LEAPS"},
+{"word":"LEAPT"},
+{"word":"LEARN"},
+{"word":"LEASE"},
+{"word":"LEASH"},
+{"word":"LEAST"},
+{"word":"LEAVE"},
+{"word":"LEDGE"},
+{"word":"LEECH"},
+{"word":"LEEKS"},
+{"word":"LEERS"},
+{"word":"LEERY"},
+{"word":"LEFTS"},
+{"word":"LEFTY"},
+{"word":"LEGAL"},
+{"word":"LEGGO"},
+{"word":"LEGGY"},
+{"word":"LEGIT"},
+{"word":"LEGOS"},
+{"word":"LEMMA"},
+{"word":"LEMME"},
+{"word":"LEMON"},
+{"word":"LEMUR"},
+{"word":"LENDS"},
+{"word":"LENSE"},
+{"word":"LENTO"},
+{"word":"LEPER"},
+{"word":"LEPTA"},
+{"word":"LETUP"},
+{"word":"LEVEE"},
+{"word":"LEVEL"},
+{"word":"LEVER"},
+{"word":"LEVIS"},
+{"word":"LEXIS"},
+{"word":"LIARS"},
+{"word":"LIBEL"},
+{"word":"LIBRA"},
+{"word":"LICIT"},
+{"word":"LICKS"},
+{"word":"LIDAR"},
+{"word":"LIEGE"},
+{"word":"LIENS"},
+{"word":"LIERS"},
+{"word":"LIEST"},
+{"word":"LIETH"},
+{"word":"LIFER"},
+{"word":"LIFTS"},
+{"word":"LIGHT"},
+{"word":"LIGNE"},
+{"word":"LIKED"},
+{"word":"LIKEN"},
+{"word":"LIKER"},
+{"word":"LIKES"},
+{"word":"LILAC"},
+{"word":"LILTS"},
+{"word":"LILTY"},
+{"word":"LIMBO"},
+{"word":"LIMBS"},
+{"word":"LIMBY"},
+{"word":"LIMED"},
+{"word":"LIMEN"},
+{"word":"LIMES"},
+{"word":"LIMEY"},
+{"word":"LIMIT"},
+{"word":"LIMNS"},
+{"word":"LIMOS"},
+{"word":"LIMPS"},
+{"word":"LINED"},
+{"word":"LINEN"},
+{"word":"LINER"},
+{"word":"LINES"},
+{"word":"LINGO"},
+{"word":"LINGS"},
+{"word":"LINKS"},
+{"word":"LINTS"},
+{"word":"LINTY"},
+{"word":"LIONS"},
+{"word":"LIPID"},
+{"word":"LIPPY"},
+{"word":"LIRAS"},
+{"word":"LISLE"},
+{"word":"LISPS"},
+{"word":"LISTS"},
+{"word":"LITER"},
+{"word":"LITES"},
+{"word":"LITHE"},
+{"word":"LITHO"},
+{"word":"LITRE"},
+{"word":"LIVED"},
+{"word":"LIVEN"},
+{"word":"LIVER"},
+{"word":"LIVES"},
+{"word":"LIVID"},
+{"word":"LIVRE"},
+{"word":"LLAMA"},
+{"word":"LOADS"},
+{"word":"LOAFS"},
+{"word":"LOAMS"},
+{"word":"LOAMY"},
+{"word":"LOANS"},
+{"word":"LOATH"},
+{"word":"LOBAR"},
+{"word":"LOBBY"},
+{"word":"LOBED"},
+{"word":"LOBES"},
+{"word":"LOCAL"},
+{"word":"LOCHS"},
+{"word":"LOCKS"},
+{"word":"LOCOS"},
+{"word":"LOCUS"},
+{"word":"LODES"},
+{"word":"LODGE"},
+{"word":"LOESS"},
+{"word":"LOFTS"},
+{"word":"LOFTY"},
+{"word":"LOGES"},
+{"word":"LOGGY"},
+{"word":"LOGIC"},
+{"word":"LOGIN"},
+{"word":"LOGOS"},
+{"word":"LOINS"},
+{"word":"LOLLS"},
+{"word":"LOLLY"},
+{"word":"LONER"},
+{"word":"LONGS"},
+{"word":"LOOKS"},
+{"word":"LOOKY"},
+{"word":"LOOMS"},
+{"word":"LOONS"},
+{"word":"LOONY"},
+{"word":"LOOPS"},
+{"word":"LOOPY"},
+{"word":"LOOSE"},
+{"word":"LOOTS"},
+{"word":"LOPED"},
+{"word":"LOPER"},
+{"word":"LOPES"},
+{"word":"LOPPY"},
+{"word":"LORDS"},
+{"word":"LORDY"},
+{"word":"LORES"},
+{"word":"LORRY"},
+{"word":"LOSER"},
+{"word":"LOSES"},
+{"word":"LOSSY"},
+{"word":"LOTSA"},
+{"word":"LOTTA"},
+{"word":"LOTTO"},
+{"word":"LOTUS"},
+{"word":"LOUIS"},
+{"word":"LOUSE"},
+{"word":"LOUSY"},
+{"word":"LOUTS"},
+{"word":"LOVED"},
+{"word":"LOVER"},
+{"word":"LOVES"},
+{"word":"LOWED"},
+{"word":"LOWER"},
+{"word":"LOWLY"},
+{"word":"LOXES"},
+{"word":"LOYAL"},
+{"word":"LUAUS"},
+{"word":"LUBES"},
+{"word":"LUBRA"},
+{"word":"LUCID"},
+{"word":"LUCKS"},
+{"word":"LUCKY"},
+{"word":"LUCRE"},
+{"word":"LULAB"},
+{"word":"LULLS"},
+{"word":"LULUS"},
+{"word":"LUMEN"},
+{"word":"LUMPS"},
+{"word":"LUMPY"},
+{"word":"LUNAR"},
+{"word":"LUNCH"},
+{"word":"LUNES"},
+{"word":"LUNGE"},
+{"word":"LUNGS"},
+{"word":"LUPUS"},
+{"word":"LURCH"},
+{"word":"LURED"},
+{"word":"LURER"},
+{"word":"LURES"},
+{"word":"LURID"},
+{"word":"LURKS"},
+{"word":"LUSTS"},
+{"word":"LUSTY"},
+{"word":"LUTED"},
+{"word":"LUTES"},
+{"word":"LUVYA"},
+{"word":"LUXES"},
+{"word":"LYCRA"},
+{"word":"LYING"},
+{"word":"LYMPH"},
+{"word":"LYNCH"},
+{"word":"LYRES"},
+{"word":"LYRIC"},
+{"word":"MACAW"},
+{"word":"MACED"},
+{"word":"MACER"},
+{"word":"MACES"},
+{"word":"MACHO"},
+{"word":"MACRO"},
+{"word":"MADAM"},
+{"word":"MADES"},
+{"word":"MADLY"},
+{"word":"MAFIA"},
+{"word":"MAGIC"},
+{"word":"MAGMA"},
+{"word":"MAGNA"},
+{"word":"MAGUS"},
+{"word":"MAHUA"},
+{"word":"MAIDS"},
+{"word":"MAILS"},
+{"word":"MAIMS"},
+{"word":"MAINS"},
+{"word":"MAIZE"},
+{"word":"MAJOR"},
+{"word":"MAKER"},
+{"word":"MAKES"},
+{"word":"MALES"},
+{"word":"MALLE"},
+{"word":"MALLS"},
+{"word":"MALTS"},
+{"word":"MALTY"},
+{"word":"MAMAS"},
+{"word":"MAMBO"},
+{"word":"MAMMA"},
+{"word":"MAMMY"},
+{"word":"MANED"},
+{"word":"MANES"},
+{"word":"MANGE"},
+{"word":"MANGO"},
+{"word":"MANGY"},
+{"word":"MANIA"},
+{"word":"MANIC"},
+{"word":"MANLY"},
+{"word":"MANNA"},
+{"word":"MANOR"},
+{"word":"MANSE"},
+{"word":"MANTA"},
+{"word":"MAPLE"},
+{"word":"MARCH"},
+{"word":"MARES"},
+{"word":"MARGE"},
+{"word":"MARIA"},
+{"word":"MARKS"},
+{"word":"MARLS"},
+{"word":"MARRY"},
+{"word":"MARSH"},
+{"word":"MARTS"},
+{"word":"MASER"},
+{"word":"MASHY"},
+{"word":"MASKS"},
+{"word":"MASON"},
+{"word":"MASSE"},
+{"word":"MASTS"},
+{"word":"MATCH"},
+{"word":"MATED"},
+{"word":"MATER"},
+{"word":"MATES"},
+{"word":"MATEY"},
+{"word":"MATHS"},
+{"word":"MATTE"},
+{"word":"MATZO"},
+{"word":"MAULS"},
+{"word":"MAUVE"},
+{"word":"MAVEN"},
+{"word":"MAVIS"},
+{"word":"MAXIM"},
+{"word":"MAXIS"},
+{"word":"MAYBE"},
+{"word":"MAYOR"},
+{"word":"MAYST"},
+{"word":"MAZED"},
+{"word":"MAZER"},
+{"word":"MAZES"},
+{"word":"MEADS"},
+{"word":"MEADY"},
+{"word":"MEALS"},
+{"word":"MEALY"},
+{"word":"MEANS"},
+{"word":"MEANT"},
+{"word":"MEANY"},
+{"word":"MEATS"},
+{"word":"MEATY"},
+{"word":"MEBBE"},
+{"word":"MECCA"},
+{"word":"MECUM"},
+{"word":"MEDAL"},
+{"word":"MEDIA"},
+{"word":"MEDIC"},
+{"word":"MEETS"},
+{"word":"MELBA"},
+{"word":"MELDS"},
+{"word":"MELEE"},
+{"word":"MELON"},
+{"word":"MELTS"},
+{"word":"MEMES"},
+{"word":"MEMOS"},
+{"word":"MENDS"},
+{"word":"MENUS"},
+{"word":"MEOWS"},
+{"word":"MERCY"},
+{"word":"MERGE"},
+{"word":"MERIT"},
+{"word":"MERRY"},
+{"word":"MERSE"},
+{"word":"MESAS"},
+{"word":"MESNE"},
+{"word":"MESON"},
+{"word":"MESSY"},
+{"word":"METAL"},
+{"word":"METED"},
+{"word":"METER"},
+{"word":"METES"},
+{"word":"METRE"},
+{"word":"METRO"},
+{"word":"MEWED"},
+{"word":"MEZZO"},
+{"word":"MIAOW"},
+{"word":"MICAS"},
+{"word":"MICKS"},
+{"word":"MICRO"},
+{"word":"MIDDY"},
+{"word":"MIDIS"},
+{"word":"MIDST"},
+{"word":"MIENS"},
+{"word":"MIFFS"},
+{"word":"MIGHT"},
+{"word":"MIKED"},
+{"word":"MIKES"},
+{"word":"MILCH"},
+{"word":"MILER"},
+{"word":"MILES"},
+{"word":"MILKS"},
+{"word":"MILKY"},
+{"word":"MILLS"},
+{"word":"MIMED"},
+{"word":"MIMEO"},
+{"word":"MIMER"},
+{"word":"MIMES"},
+{"word":"MIMIC"},
+{"word":"MIMSY"},
+{"word":"MINAS"},
+{"word":"MINCE"},
+{"word":"MINDS"},
+{"word":"MINED"},
+{"word":"MINER"},
+{"word":"MINES"},
+{"word":"MINIM"},
+{"word":"MINIS"},
+{"word":"MINKS"},
+{"word":"MINOR"},
+{"word":"MINTS"},
+{"word":"MINTY"},
+{"word":"MINUS"},
+{"word":"MIRED"},
+{"word":"MIRES"},
+{"word":"MIRRY"},
+{"word":"MIRTH"},
+{"word":"MISER"},
+{"word":"MISSY"},
+{"word":"MISTS"},
+{"word":"MISTY"},
+{"word":"MITER"},
+{"word":"MITES"},
+{"word":"MITRE"},
+{"word":"MITTS"},
+{"word":"MIXED"},
+{"word":"MIXER"},
+{"word":"MIXES"},
+{"word":"MIXUP"},
+{"word":"MOANS"},
+{"word":"MOATS"},
+{"word":"MOCHA"},
+{"word":"MOCKS"},
+{"word":"MODAL"},
+{"word":"MODEL"},
+{"word":"MODEM"},
+{"word":"MODES"},
+{"word":"MODUS"},
+{"word":"MOGUL"},
+{"word":"MOHEL"},
+{"word":"MOIRE"},
+{"word":"MOIST"},
+{"word":"MOLAL"},
+{"word":"MOLAR"},
+{"word":"MOLAS"},
+{"word":"MOLDS"},
+{"word":"MOLDY"},
+{"word":"MOLES"},
+{"word":"MOLLS"},
+{"word":"MOLLY"},
+{"word":"MOLTO"},
+{"word":"MOLTS"},
+{"word":"MOMMA"},
+{"word":"MOMMY"},
+{"word":"MONAD"},
+{"word":"MONDO"},
+{"word":"MONEY"},
+{"word":"MONIC"},
+{"word":"MONKS"},
+{"word":"MONTE"},
+{"word":"MONTH"},
+{"word":"MOOCH"},
+{"word":"MOODS"},
+{"word":"MOODY"},
+{"word":"MOOED"},
+{"word":"MOOLA"},
+{"word":"MOONS"},
+{"word":"MOONY"},
+{"word":"MOORS"},
+{"word":"MOOSE"},
+{"word":"MOOTS"},
+{"word":"MOPED"},
+{"word":"MOPER"},
+{"word":"MOPES"},
+{"word":"MORAL"},
+{"word":"MORAY"},
+{"word":"MOREL"},
+{"word":"MORES"},
+{"word":"MORNS"},
+{"word":"MORON"},
+{"word":"MORPH"},
+{"word":"MORSE"},
+{"word":"MORTS"},
+{"word":"MOSEY"},
+{"word":"MOSSO"},
+{"word":"MOSSY"},
+{"word":"MOSTS"},
+{"word":"MOTEL"},
+{"word":"MOTES"},
+{"word":"MOTET"},
+{"word":"MOTHS"},
+{"word":"MOTHY"},
+{"word":"MOTIF"},
+{"word":"MOTOR"},
+{"word":"MOTTO"},
+{"word":"MOULD"},
+{"word":"MOULT"},
+{"word":"MOUND"},
+{"word":"MOUNT"},
+{"word":"MOURN"},
+{"word":"MOUSE"},
+{"word":"MOUSY"},
+{"word":"MOUTH"},
+{"word":"MOVED"},
+{"word":"MOVER"},
+{"word":"MOVES"},
+{"word":"MOVIE"},
+{"word":"MOWED"},
+{"word":"MOWER"},
+{"word":"MOXIE"},
+{"word":"MRADS"},
+{"word":"MUCHO"},
+{"word":"MUCKS"},
+{"word":"MUCKY"},
+{"word":"MUCUS"},
+{"word":"MUDDY"},
+{"word":"MUFFS"},
+{"word":"MUFTI"},
+{"word":"MUGGY"},
+{"word":"MUJIK"},
+{"word":"MULCH"},
+{"word":"MULCT"},
+{"word":"MULES"},
+{"word":"MULEY"},
+{"word":"MULLS"},
+{"word":"MUMBO"},
+{"word":"MUMMY"},
+{"word":"MUMPS"},
+{"word":"MUNCH"},
+{"word":"MUNGE"},
+{"word":"MUNGS"},
+{"word":"MUNGY"},
+{"word":"MUONS"},
+{"word":"MURAL"},
+{"word":"MURKS"},
+{"word":"MURKY"},
+{"word":"MUSED"},
+{"word":"MUSER"},
+{"word":"MUSES"},
+{"word":"MUSHY"},
+{"word":"MUSIC"},
+{"word":"MUSKS"},
+{"word":"MUSKY"},
+{"word":"MUSOS"},
+{"word":"MUSSE"},
+{"word":"MUSSY"},
+{"word":"MUSTA"},
+{"word":"MUSTS"},
+{"word":"MUSTY"},
+{"word":"MUTED"},
+{"word":"MUTER"},
+{"word":"MUTES"},
+{"word":"MUTTS"},
+{"word":"MUXES"},
+{"word":"MYLAR"},
+{"word":"MYNAH"},
+{"word":"MYNAS"},
+{"word":"MYRRH"},
+{"word":"MYTHS"},
+{"word":"NABLA"},
+{"word":"NABOB"},
+{"word":"NACHO"},
+{"word":"NADIR"},
+{"word":"NAIAD"},
+{"word":"NAILS"},
+{"word":"NAIVE"},
+{"word":"NAKED"},
+{"word":"NAMED"},
+{"word":"NAMER"},
+{"word":"NAMES"},
+{"word":"NANNY"},
+{"word":"NAPES"},
+{"word":"NAPPY"},
+{"word":"NARCO"},
+{"word":"NARCS"},
+{"word":"NARDS"},
+{"word":"NARES"},
+{"word":"NASAL"},
+{"word":"NASTY"},
+{"word":"NATAL"},
+{"word":"NATCH"},
+{"word":"NATES"},
+{"word":"NATTY"},
+{"word":"NAVAL"},
+{"word":"NAVEL"},
+{"word":"NAVES"},
+{"word":"NEARS"},
+{"word":"NEATH"},
+{"word":"NEATO"},
+{"word":"NECKS"},
+{"word":"NEEDS"},
+{"word":"NEEDY"},
+{"word":"NEGRO"},
+{"word":"NEIGH"},
+{"word":"NEONS"},
+{"word":"NERDS"},
+{"word":"NERDY"},
+{"word":"NERFS"},
+{"word":"NERTS"},
+{"word":"NERVE"},
+{"word":"NERVY"},
+{"word":"NESTS"},
+{"word":"NETTY"},
+{"word":"NEVER"},
+{"word":"NEWEL"},
+{"word":"NEWER"},
+{"word":"NEWLY"},
+{"word":"NEWSY"},
+{"word":"NEWTS"},
+{"word":"NEXUS"},
+{"word":"NICAD"},
+{"word":"NICER"},
+{"word":"NICHE"},
+{"word":"NICKS"},
+{"word":"NIECE"},
+{"word":"NIFTY"},
+{"word":"NIGHT"},
+{"word":"NIHIL"},
+{"word":"NIMBI"},
+{"word":"NINES"},
+{"word":"NINJA"},
+{"word":"NINNY"},
+{"word":"NINTH"},
+{"word":"NIPPY"},
+{"word":"NISEI"},
+{"word":"NITER"},
+{"word":"NITID"},
+{"word":"NITON"},
+{"word":"NITRE"},
+{"word":"NITRO"},
+{"word":"NITTY"},
+{"word":"NIXED"},
+{"word":"NIXES"},
+{"word":"NIXIE"},
+{"word":"NOBBY"},
+{"word":"NOBLE"},
+{"word":"NOBLY"},
+{"word":"NODAL"},
+{"word":"NODDY"},
+{"word":"NODES"},
+{"word":"NOELI"},
+{"word":"NOELS"},
+{"word":"NOGGS"},
+{"word":"NOHOW"},
+{"word":"NOIRE"},
+{"word":"NOISE"},
+{"word":"NOISY"},
+{"word":"NOLES"},
+{"word":"NOMAD"},
+{"word":"NOMEN"},
+{"word":"NONCE"},
+{"word":"NONES"},
+{"word":"NONNY"},
+{"word":"NOOKS"},
+{"word":"NOOKY"},
+{"word":"NOONS"},
+{"word":"NOOSE"},
+{"word":"NORMS"},
+{"word":"NORTH"},
+{"word":"NOSED"},
+{"word":"NOSES"},
+{"word":"NOSEY"},
+{"word":"NOTCH"},
+{"word":"NOTED"},
+{"word":"NOTER"},
+{"word":"NOTES"},
+{"word":"NOUNS"},
+{"word":"NOVAE"},
+{"word":"NOVAS"},
+{"word":"NOVEL"},
+{"word":"NOVUM"},
+{"word":"NOWAY"},
+{"word":"NUDER"},
+{"word":"NUDES"},
+{"word":"NUDGE"},
+{"word":"NUDIE"},
+{"word":"NUKED"},
+{"word":"NUKES"},
+{"word":"NULLS"},
+{"word":"NUMBS"},
+{"word":"NURBS"},
+{"word":"NURSE"},
+{"word":"NUTSY"},
+{"word":"NUTTY"},
+{"word":"NYLON"},
+{"word":"NYMPH"},
+{"word":"OAKEN"},
+{"word":"OAKUM"},
+{"word":"OARED"},
+{"word":"OASES"},
+{"word":"OASIS"},
+{"word":"OATEN"},
+{"word":"OATHS"},
+{"word":"OBEAH"},
+{"word":"OBESE"},
+{"word":"OBEYS"},
+{"word":"OBITS"},
+{"word":"OBOES"},
+{"word":"OCCUR"},
+{"word":"OCEAN"},
+{"word":"OCHER"},
+{"word":"OCHRE"},
+{"word":"OCTAL"},
+{"word":"OCTAN"},
+{"word":"OCTET"},
+{"word":"ODDER"},
+{"word":"ODDLY"},
+{"word":"ODIUM"},
+{"word":"ODORO"},
+{"word":"ODORS"},
+{"word":"ODOUR"},
+{"word":"OFFAL"},
+{"word":"OFFED"},
+{"word":"OFFEN"},
+{"word":"OFFER"},
+{"word":"OFTEN"},
+{"word":"OGLED"},
+{"word":"OGLER"},
+{"word":"OGLES"},
+{"word":"OGRES"},
+{"word":"OHHHH"},
+{"word":"OHMIC"},
+{"word":"OILED"},
+{"word":"OILER"},
+{"word":"OINKS"},
+{"word":"OINKY"},
+{"word":"OINTS"},
+{"word":"OKAPI"},
+{"word":"OKAYS"},
+{"word":"OKRAS"},
+{"word":"OLDEN"},
+{"word":"OLDER"},
+{"word":"OLDIE"},
+{"word":"OLEIC"},
+{"word":"OLEOS"},
+{"word":"OLIOS"},
+{"word":"OLIVE"},
+{"word":"OMBRE"},
+{"word":"OMEGA"},
+{"word":"OMENS"},
+{"word":"OMITS"},
+{"word":"ONCET"},
+{"word":"ONION"},
+{"word":"ONLAY"},
+{"word":"ONSET"},
+{"word":"OODLE"},
+{"word":"OOMPH"},
+{"word":"OOZED"},
+{"word":"OOZES"},
+{"word":"OPALS"},
+{"word":"OPENS"},
+{"word":"OPERA"},
+{"word":"OPERF"},
+{"word":"OPINE"},
+{"word":"OPIUM"},
+{"word":"OPTED"},
+{"word":"OPTIC"},
+{"word":"ORALS"},
+{"word":"ORATE"},
+{"word":"ORBED"},
+{"word":"ORBIT"},
+{"word":"ORCAS"},
+{"word":"ORDER"},
+{"word":"ORGAN"},
+{"word":"ORGIC"},
+{"word":"ORING"},
+{"word":"ORLON"},
+{"word":"ORTET"},
+{"word":"ORTHO"},
+{"word":"OSIER"},
+{"word":"OTHER"},
+{"word":"OTTER"},
+{"word":"OUGHT"},
+{"word":"OUIJA"},
+{"word":"OUNCE"},
+{"word":"OUSEL"},
+{"word":"OUSTS"},
+{"word":"OUTDO"},
+{"word":"OUTEN"},
+{"word":"OUTER"},
+{"word":"OUTGO"},
+{"word":"OUTRO"},
+{"word":"OUTTA"},
+{"word":"OUZEL"},
+{"word":"OUZOS"},
+{"word":"OVALS"},
+{"word":"OVARY"},
+{"word":"OVATE"},
+{"word":"OVENS"},
+{"word":"OVERS"},
+{"word":"OVERT"},
+{"word":"OVINE"},
+{"word":"OVOID"},
+{"word":"OVULE"},
+{"word":"OWEST"},
+{"word":"OWETH"},
+{"word":"OWING"},
+{"word":"OWLET"},
+{"word":"OWNED"},
+{"word":"OWNER"},
+{"word":"OXBOW"},
+{"word":"OXEYE"},
+{"word":"OXIDE"},
+{"word":"OXLIP"},
+{"word":"OZENA"},
+{"word":"OZONE"},
+{"word":"PACED"},
+{"word":"PACER"},
+{"word":"PACES"},
+{"word":"PACKS"},
+{"word":"PACTS"},
+{"word":"PADDY"},
+{"word":"PADRE"},
+{"word":"PAEAN"},
+{"word":"PAGAN"},
+{"word":"PAGED"},
+{"word":"PAGER"},
+{"word":"PAGES"},
+{"word":"PAILS"},
+{"word":"PAINS"},
+{"word":"PAINT"},
+{"word":"PAIRS"},
+{"word":"PAIRY"},
+{"word":"PALED"},
+{"word":"PALER"},
+{"word":"PALES"},
+{"word":"PALLS"},
+{"word":"PALLY"},
+{"word":"PALMS"},
+{"word":"PALMY"},
+{"word":"PALSY"},
+{"word":"PAMPA"},
+{"word":"PANDA"},
+{"word":"PANED"},
+{"word":"PANEL"},
+{"word":"PANES"},
+{"word":"PANGA"},
+{"word":"PANGS"},
+{"word":"PANIC"},
+{"word":"PANSY"},
+{"word":"PANTS"},
+{"word":"PANTY"},
+{"word":"PAPAL"},
+{"word":"PAPAS"},
+{"word":"PAPAW"},
+{"word":"PAPER"},
+{"word":"PAPPI"},
+{"word":"PAPPY"},
+{"word":"PARAS"},
+{"word":"PARCH"},
+{"word":"PARDS"},
+{"word":"PARED"},
+{"word":"PAREN"},
+{"word":"PARER"},
+{"word":"PARES"},
+{"word":"PARKA"},
+{"word":"PARKS"},
+{"word":"PARRY"},
+{"word":"PARSE"},
+{"word":"PARTS"},
+{"word":"PARTY"},
+{"word":"PASHA"},
+{"word":"PASSE"},
+{"word":"PASTA"},
+{"word":"PASTE"},
+{"word":"PASTS"},
+{"word":"PASTY"},
+{"word":"PATCH"},
+{"word":"PATEN"},
+{"word":"PATER"},
+{"word":"PATES"},
+{"word":"PATHS"},
+{"word":"PATIO"},
+{"word":"PATSY"},
+{"word":"PATTY"},
+{"word":"PAUSE"},
+{"word":"PAVAN"},
+{"word":"PAVED"},
+{"word":"PAVER"},
+{"word":"PAVES"},
+{"word":"PAWED"},
+{"word":"PAWER"},
+{"word":"PAWKY"},
+{"word":"PAWLS"},
+{"word":"PAWNS"},
+{"word":"PAYED"},
+{"word":"PAYEE"},
+{"word":"PAYER"},
+{"word":"PEACE"},
+{"word":"PEACH"},
+{"word":"PEAKS"},
+{"word":"PEAKY"},
+{"word":"PEALS"},
+{"word":"PEARL"},
+{"word":"PEARS"},
+{"word":"PEASE"},
+{"word":"PEATS"},
+{"word":"PEATY"},
+{"word":"PECAN"},
+{"word":"PECKS"},
+{"word":"PEDAL"},
+{"word":"PEDRO"},
+{"word":"PEEKS"},
+{"word":"PEELS"},
+{"word":"PEENS"},
+{"word":"PEEPS"},
+{"word":"PEERS"},
+{"word":"PEEVE"},
+{"word":"PEKOE"},
+{"word":"PELTS"},
+{"word":"PENAL"},
+{"word":"PENCE"},
+{"word":"PENDS"},
+{"word":"PENES"},
+{"word":"PENGO"},
+{"word":"PENIS"},
+{"word":"PENNY"},
+{"word":"PEONS"},
+{"word":"PEONY"},
+{"word":"PEPPY"},
+{"word":"PERCH"},
+{"word":"PERCY"},
+{"word":"PERDU"},
+{"word":"PERIL"},
+{"word":"PERKS"},
+{"word":"PERKY"},
+{"word":"PERMS"},
+{"word":"PESKY"},
+{"word":"PESOS"},
+{"word":"PESTO"},
+{"word":"PESTS"},
+{"word":"PETAL"},
+{"word":"PETER"},
+{"word":"PETIT"},
+{"word":"PETRI"},
+{"word":"PETTY"},
+{"word":"PEWEE"},
+{"word":"PEWIT"},
+{"word":"PFFFT"},
+{"word":"PHAGE"},
+{"word":"PHASE"},
+{"word":"PHIAL"},
+{"word":"PHLOX"},
+{"word":"PHONE"},
+{"word":"PHONY"},
+{"word":"PHOTO"},
+{"word":"PHYLA"},
+{"word":"PIANO"},
+{"word":"PICAS"},
+{"word":"PICKS"},
+{"word":"PICKY"},
+{"word":"PICOT"},
+{"word":"PIECE"},
+{"word":"PIERS"},
+{"word":"PIETA"},
+{"word":"PIETY"},
+{"word":"PIGGY"},
+{"word":"PIGMY"},
+{"word":"PIING"},
+{"word":"PIKER"},
+{"word":"PIKES"},
+{"word":"PILAF"},
+{"word":"PILAR"},
+{"word":"PILAU"},
+{"word":"PILED"},
+{"word":"PILES"},
+{"word":"PILLS"},
+{"word":"PILOT"},
+{"word":"PIMPS"},
+{"word":"PINCH"},
+{"word":"PINED"},
+{"word":"PINES"},
+{"word":"PINEY"},
+{"word":"PINGS"},
+{"word":"PINKO"},
+{"word":"PINKS"},
+{"word":"PINKY"},
+{"word":"PINTO"},
+{"word":"PINTS"},
+{"word":"PINUP"},
+{"word":"PIONS"},
+{"word":"PIOUS"},
+{"word":"PIPED"},
+{"word":"PIPER"},
+{"word":"PIPES"},
+{"word":"PIPET"},
+{"word":"PIQUE"},
+{"word":"PISMO"},
+{"word":"PITAS"},
+{"word":"PITCH"},
+{"word":"PITHS"},
+{"word":"PITHY"},
+{"word":"PITON"},
+{"word":"PIVOT"},
+{"word":"PIXEL"},
+{"word":"PIXIE"},
+{"word":"PIZZA"},
+{"word":"PLACE"},
+{"word":"PLAID"},
+{"word":"PLAIN"},
+{"word":"PLAIT"},
+{"word":"PLANE"},
+{"word":"PLANK"},
+{"word":"PLANS"},
+{"word":"PLANT"},
+{"word":"PLASH"},
+{"word":"PLASM"},
+{"word":"PLATE"},
+{"word":"PLATS"},
+{"word":"PLAYA"},
+{"word":"PLAYS"},
+{"word":"PLAZA"},
+{"word":"PLEAD"},
+{"word":"PLEAS"},
+{"word":"PLEAT"},
+{"word":"PLEBE"},
+{"word":"PLEBS"},
+{"word":"PLEIN"},
+{"word":"PLENA"},
+{"word":"PLIED"},
+{"word":"PLIER"},
+{"word":"PLIES"},
+{"word":"PLINK"},
+{"word":"PLODS"},
+{"word":"PLONK"},
+{"word":"PLOPS"},
+{"word":"PLOTS"},
+{"word":"PLOWS"},
+{"word":"PLOYS"},
+{"word":"PLUCK"},
+{"word":"PLUGS"},
+{"word":"PLUMB"},
+{"word":"PLUME"},
+{"word":"PLUMP"},
+{"word":"PLUMS"},
+{"word":"PLUMY"},
+{"word":"PLUNK"},
+{"word":"PLUSH"},
+{"word":"PLYER"},
+{"word":"POACH"},
+{"word":"POCKS"},
+{"word":"POCKY"},
+{"word":"PODGY"},
+{"word":"PODIA"},
+{"word":"POEMS"},
+{"word":"POESY"},
+{"word":"POETS"},
+{"word":"POINT"},
+{"word":"POISE"},
+{"word":"POKED"},
+{"word":"POKER"},
+{"word":"POKES"},
+{"word":"POKEY"},
+{"word":"POLAR"},
+{"word":"POLED"},
+{"word":"POLER"},
+{"word":"POLES"},
+{"word":"POLIO"},
+{"word":"POLIS"},
+{"word":"POLKA"},
+{"word":"POLLS"},
+{"word":"POLLY"},
+{"word":"POLOS"},
+{"word":"POLYP"},
+{"word":"POMPS"},
+{"word":"PONDS"},
+{"word":"PONES"},
+{"word":"POOCH"},
+{"word":"POOEY"},
+{"word":"POOHS"},
+{"word":"POOLE"},
+{"word":"POOLS"},
+{"word":"POOPS"},
+{"word":"POPES"},
+{"word":"POPPY"},
+{"word":"PORCH"},
+{"word":"PORED"},
+{"word":"PORES"},
+{"word":"PORGY"},
+{"word":"PORKS"},
+{"word":"PORKY"},
+{"word":"PORNO"},
+{"word":"PORTS"},
+{"word":"POSED"},
+{"word":"POSER"},
+{"word":"POSES"},
+{"word":"POSET"},
+{"word":"POSIT"},
+{"word":"POSSE"},
+{"word":"POSTE"},
+{"word":"POSTS"},
+{"word":"POTTY"},
+{"word":"POUCH"},
+{"word":"POUFS"},
+{"word":"POUND"},
+{"word":"POURS"},
+{"word":"POUTS"},
+{"word":"POWER"},
+{"word":"POXED"},
+{"word":"POXES"},
+{"word":"PRAMS"},
+{"word":"PRANK"},
+{"word":"PRATE"},
+{"word":"PRATS"},
+{"word":"PRAWN"},
+{"word":"PRAYS"},
+{"word":"PREEN"},
+{"word":"PREPS"},
+{"word":"PRESS"},
+{"word":"PREST"},
+{"word":"PREXY"},
+{"word":"PREYS"},
+{"word":"PRICE"},
+{"word":"PRICK"},
+{"word":"PRIDE"},
+{"word":"PRIED"},
+{"word":"PRIER"},
+{"word":"PRIES"},
+{"word":"PRIGS"},
+{"word":"PRIMA"},
+{"word":"PRIME"},
+{"word":"PRIMO"},
+{"word":"PRIMP"},
+{"word":"PRIMS"},
+{"word":"PRINK"},
+{"word":"PRINT"},
+{"word":"PRIOR"},
+{"word":"PRISE"},
+{"word":"PRISM"},
+{"word":"PRIVY"},
+{"word":"PRIZE"},
+{"word":"PROBE"},
+{"word":"PRODS"},
+{"word":"PROEM"},
+{"word":"PROFS"},
+{"word":"PROMO"},
+{"word":"PROMS"},
+{"word":"PRONE"},
+{"word":"PRONG"},
+{"word":"PROOF"},
+{"word":"PROPS"},
+{"word":"PROSE"},
+{"word":"PROSY"},
+{"word":"PROUD"},
+{"word":"PROVE"},
+{"word":"PROWL"},
+{"word":"PROWS"},
+{"word":"PROXY"},
+{"word":"PRUDE"},
+{"word":"PRUNE"},
+{"word":"PRUTA"},
+{"word":"PRYER"},
+{"word":"PSALM"},
+{"word":"PSEUD"},
+{"word":"PSHAW"},
+{"word":"PSOAS"},
+{"word":"PSSST"},
+{"word":"PSYCH"},
+{"word":"PUBES"},
+{"word":"PUBIC"},
+{"word":"PUBIS"},
+{"word":"PUCKS"},
+{"word":"PUDGY"},
+{"word":"PUFFS"},
+{"word":"PUFFY"},
+{"word":"PUKED"},
+{"word":"PUKES"},
+{"word":"PUKKA"},
+{"word":"PULLS"},
+{"word":"PULPS"},
+{"word":"PULPY"},
+{"word":"PULSE"},
+{"word":"PUMAS"},
+{"word":"PUMPS"},
+{"word":"PUNCH"},
+{"word":"PUNKS"},
+{"word":"PUNKY"},
+{"word":"PUNNY"},
+{"word":"PUNTS"},
+{"word":"PUPAE"},
+{"word":"PUPAL"},
+{"word":"PUPAS"},
+{"word":"PUPIL"},
+{"word":"PUPPY"},
+{"word":"PUREE"},
+{"word":"PURER"},
+{"word":"PURGE"},
+{"word":"PURLS"},
+{"word":"PURRS"},
+{"word":"PURSE"},
+{"word":"PURTY"},
+{"word":"PUSHY"},
+{"word":"PUSSY"},
+{"word":"PUTTS"},
+{"word":"PUTTY"},
+{"word":"PYGMY"},
+{"word":"PYLON"},
+{"word":"PYRES"},
+{"word":"PYXIE"},
+{"word":"QOPHS"},
+{"word":"QUACK"},
+{"word":"QUADS"},
+{"word":"QUAFF"},
+{"word":"QUAIL"},
+{"word":"QUAIS"},
+{"word":"QUAKE"},
+{"word":"QUALM"},
+{"word":"QUALS"},
+{"word":"QUANT"},
+{"word":"QUARK"},
+{"word":"QUART"},
+{"word":"QUASH"},
+{"word":"QUASI"},
+{"word":"QUAYS"},
+{"word":"QUBIT"},
+{"word":"QUEEN"},
+{"word":"QUEER"},
+{"word":"QUELL"},
+{"word":"QUERY"},
+{"word":"QUEST"},
+{"word":"QUEUE"},
+{"word":"QUICK"},
+{"word":"QUIDS"},
+{"word":"QUIET"},
+{"word":"QUIFF"},
+{"word":"QUILL"},
+{"word":"QUILT"},
+{"word":"QUINE"},
+{"word":"QUINT"},
+{"word":"QUIPS"},
+{"word":"QUIPU"},
+{"word":"QUIRE"},
+{"word":"QUIRK"},
+{"word":"QUIRT"},
+{"word":"QUITE"},
+{"word":"QUITS"},
+{"word":"QUIZZ"},
+{"word":"QUOIN"},
+{"word":"QUOIT"},
+{"word":"QUOTA"},
+{"word":"QUOTE"},
+{"word":"QUOTH"},
+{"word":"RABBI"},
+{"word":"RABID"},
+{"word":"RACED"},
+{"word":"RACER"},
+{"word":"RACES"},
+{"word":"RACKS"},
+{"word":"RADAR"},
+{"word":"RADII"},
+{"word":"RADIO"},
+{"word":"RADIX"},
+{"word":"RADON"},
+{"word":"RAFTS"},
+{"word":"RAGED"},
+{"word":"RAGES"},
+{"word":"RAIDS"},
+{"word":"RAILS"},
+{"word":"RAINS"},
+{"word":"RAINY"},
+{"word":"RAISE"},
+{"word":"RAJAH"},
+{"word":"RAJAS"},
+{"word":"RAKED"},
+{"word":"RAKER"},
+{"word":"RAKES"},
+{"word":"RAKIS"},
+{"word":"RALLY"},
+{"word":"RAMEN"},
+{"word":"RAMPS"},
+{"word":"RANCH"},
+{"word":"RANDS"},
+{"word":"RANDY"},
+{"word":"RANGE"},
+{"word":"RANGY"},
+{"word":"RANKS"},
+{"word":"RANTS"},
+{"word":"RAPED"},
+{"word":"RAPER"},
+{"word":"RAPES"},
+{"word":"RAPID"},
+{"word":"RARER"},
+{"word":"RASAE"},
+{"word":"RASPS"},
+{"word":"RASPY"},
+{"word":"RATED"},
+{"word":"RATER"},
+{"word":"RATES"},
+{"word":"RATHS"},
+{"word":"RATIO"},
+{"word":"RATTY"},
+{"word":"RAVED"},
+{"word":"RAVEL"},
+{"word":"RAVEN"},
+{"word":"RAVER"},
+{"word":"RAVES"},
+{"word":"RAWER"},
+{"word":"RAWLY"},
+{"word":"RAYED"},
+{"word":"RAYON"},
+{"word":"RAZED"},
+{"word":"RAZER"},
+{"word":"RAZES"},
+{"word":"RAZOR"},
+{"word":"REACH"},
+{"word":"REACT"},
+{"word":"READS"},
+{"word":"READY"},
+{"word":"REALM"},
+{"word":"REALS"},
+{"word":"REAMS"},
+{"word":"REAPS"},
+{"word":"REARM"},
+{"word":"REARS"},
+{"word":"REBAR"},
+{"word":"REBEL"},
+{"word":"REBID"},
+{"word":"REBOX"},
+{"word":"REBUS"},
+{"word":"REBUT"},
+{"word":"RECAP"},
+{"word":"RECKS"},
+{"word":"RECTA"},
+{"word":"RECTO"},
+{"word":"RECUR"},
+{"word":"RECUT"},
+{"word":"REDID"},
+{"word":"REDIP"},
+{"word":"REDLY"},
+{"word":"REDOX"},
+{"word":"REDRY"},
+{"word":"REDUX"},
+{"word":"REEDS"},
+{"word":"REEDY"},
+{"word":"REEFS"},
+{"word":"REEKS"},
+{"word":"REEKY"},
+{"word":"REELS"},
+{"word":"REEVE"},
+{"word":"REFER"},
+{"word":"REFIT"},
+{"word":"REFIX"},
+{"word":"REFLY"},
+{"word":"REFRY"},
+{"word":"REGAL"},
+{"word":"REHAB"},
+{"word":"REIFY"},
+{"word":"REIGN"},
+{"word":"REINS"},
+{"word":"RELAX"},
+{"word":"RELAY"},
+{"word":"RELET"},
+{"word":"RELIC"},
+{"word":"REMAN"},
+{"word":"REMAP"},
+{"word":"REMIT"},
+{"word":"REMIX"},
+{"word":"RENAL"},
+{"word":"RENDS"},
+{"word":"RENEW"},
+{"word":"RENTE"},
+{"word":"RENTS"},
+{"word":"REPAY"},
+{"word":"REPEL"},
+{"word":"REPLY"},
+{"word":"REPRO"},
+{"word":"RERAN"},
+{"word":"RERUN"},
+{"word":"RESAW"},
+{"word":"RESAY"},
+{"word":"RESET"},
+{"word":"RESEW"},
+{"word":"RESIN"},
+{"word":"RESTS"},
+{"word":"RETCH"},
+{"word":"RETRO"},
+{"word":"RETRY"},
+{"word":"REUSE"},
+{"word":"REVEL"},
+{"word":"REVET"},
+{"word":"REVUE"},
+{"word":"REWAR"},
+{"word":"REWED"},
+{"word":"RHEAS"},
+{"word":"RHEUM"},
+{"word":"RHINO"},
+{"word":"RHUMB"},
+{"word":"RHYME"},
+{"word":"RIALS"},
+{"word":"RIBBY"},
+{"word":"RICED"},
+{"word":"RICER"},
+{"word":"RICES"},
+{"word":"RIDER"},
+{"word":"RIDES"},
+{"word":"RIDGE"},
+{"word":"RIDGY"},
+{"word":"RIFER"},
+{"word":"RIFLE"},
+{"word":"RIFTS"},
+{"word":"RIGHT"},
+{"word":"RIGID"},
+{"word":"RIGOR"},
+{"word":"RILED"},
+{"word":"RILES"},
+{"word":"RILLE"},
+{"word":"RILLS"},
+{"word":"RIMED"},
+{"word":"RIMER"},
+{"word":"RIMES"},
+{"word":"RINDS"},
+{"word":"RINGS"},
+{"word":"RINKS"},
+{"word":"RINSE"},
+{"word":"RIOTS"},
+{"word":"RIPEN"},
+{"word":"RIPER"},
+{"word":"RISEN"},
+{"word":"RISER"},
+{"word":"RISES"},
+{"word":"RISKS"},
+{"word":"RISKY"},
+{"word":"RITES"},
+{"word":"RITZY"},
+{"word":"RIVAL"},
+{"word":"RIVED"},
+{"word":"RIVEN"},
+{"word":"RIVER"},
+{"word":"RIVES"},
+{"word":"RIVET"},
+{"word":"ROACH"},
+{"word":"ROADS"},
+{"word":"ROAMS"},
+{"word":"ROANS"},
+{"word":"ROARS"},
+{"word":"ROAST"},
+{"word":"ROBED"},
+{"word":"ROBES"},
+{"word":"ROBIN"},
+{"word":"ROBLE"},
+{"word":"ROBOT"},
+{"word":"ROCKS"},
+{"word":"ROCKY"},
+{"word":"RODEO"},
+{"word":"ROGER"},
+{"word":"ROGUE"},
+{"word":"ROIDS"},
+{"word":"ROILS"},
+{"word":"ROILY"},
+{"word":"ROLES"},
+{"word":"ROLLS"},
+{"word":"ROMAN"},
+{"word":"ROMEO"},
+{"word":"ROMPS"},
+{"word":"RONDO"},
+{"word":"ROODS"},
+{"word":"ROOFS"},
+{"word":"ROOKS"},
+{"word":"ROOKY"},
+{"word":"ROOMS"},
+{"word":"ROOMY"},
+{"word":"ROOST"},
+{"word":"ROOTS"},
+{"word":"ROOTY"},
+{"word":"ROPED"},
+{"word":"ROPER"},
+{"word":"ROPES"},
+{"word":"ROSES"},
+{"word":"ROSIN"},
+{"word":"ROTOR"},
+{"word":"ROUGE"},
+{"word":"ROUGH"},
+{"word":"ROUND"},
+{"word":"ROUSE"},
+{"word":"ROUST"},
+{"word":"ROUTE"},
+{"word":"ROUTS"},
+{"word":"ROVED"},
+{"word":"ROVER"},
+{"word":"ROVES"},
+{"word":"ROWAN"},
+{"word":"ROWDY"},
+{"word":"ROWED"},
+{"word":"ROWER"},
+{"word":"ROYAL"},
+{"word":"RUBES"},
+{"word":"RUBLE"},
+{"word":"RUCHE"},
+{"word":"RUDDY"},
+{"word":"RUDER"},
+{"word":"RUFFS"},
+{"word":"RUGBY"},
+{"word":"RUING"},
+{"word":"RUINS"},
+{"word":"RULED"},
+{"word":"RULER"},
+{"word":"RULES"},
+{"word":"RUMBA"},
+{"word":"RUMEN"},
+{"word":"RUMMY"},
+{"word":"RUMOR"},
+{"word":"RUMPS"},
+{"word":"RUNES"},
+{"word":"RUNGS"},
+{"word":"RUNIC"},
+{"word":"RUNNY"},
+{"word":"RUNTS"},
+{"word":"RUNTY"},
+{"word":"RUPEE"},
+{"word":"RURAL"},
+{"word":"RUSES"},
+{"word":"RUSKS"},
+{"word":"RUSSE"},
+{"word":"RUSTS"},
+{"word":"RUSTY"},
+{"word":"RUTTY"},
+{"word":"SABER"},
+{"word":"SABLE"},
+{"word":"SABRA"},
+{"word":"SABRE"},
+{"word":"SACKS"},
+{"word":"SADLY"},
+{"word":"SAFER"},
+{"word":"SAFES"},
+{"word":"SAGAS"},
+{"word":"SAGER"},
+{"word":"SAGES"},
+{"word":"SAHIB"},
+{"word":"SAILS"},
+{"word":"SAINT"},
+{"word":"SAITH"},
+{"word":"SAKES"},
+{"word":"SALAD"},
+{"word":"SALES"},
+{"word":"SALLY"},
+{"word":"SALON"},
+{"word":"SALSA"},
+{"word":"SALTS"},
+{"word":"SALTY"},
+{"word":"SALVE"},
+{"word":"SALVO"},
+{"word":"SAMBA"},
+{"word":"SANDS"},
+{"word":"SANDY"},
+{"word":"SANER"},
+{"word":"SAPPY"},
+{"word":"SARAN"},
+{"word":"SARGE"},
+{"word":"SARIS"},
+{"word":"SASSY"},
+{"word":"SATED"},
+{"word":"SATES"},
+{"word":"SATIN"},
+{"word":"SATYR"},
+{"word":"SAUCE"},
+{"word":"SAUCY"},
+{"word":"SAUNA"},
+{"word":"SAUTE"},
+{"word":"SAVED"},
+{"word":"SAVER"},
+{"word":"SAVES"},
+{"word":"SAVOR"},
+{"word":"SAVVY"},
+{"word":"SAWED"},
+{"word":"SAWER"},
+{"word":"SAXES"},
+{"word":"SAYER"},
+{"word":"SCABS"},
+{"word":"SCADS"},
+{"word":"SCALD"},
+{"word":"SCALE"},
+{"word":"SCALP"},
+{"word":"SCALY"},
+{"word":"SCAMP"},
+{"word":"SCAMS"},
+{"word":"SCANS"},
+{"word":"SCANT"},
+{"word":"SCARE"},
+{"word":"SCARF"},
+{"word":"SCARP"},
+{"word":"SCARS"},
+{"word":"SCARY"},
+{"word":"SCATS"},
+{"word":"SCENE"},
+{"word":"SCENT"},
+{"word":"SCHMO"},
+{"word":"SCHWA"},
+{"word":"SCION"},
+{"word":"SCOFF"},
+{"word":"SCOLD"},
+{"word":"SCONE"},
+{"word":"SCOOP"},
+{"word":"SCOOT"},
+{"word":"SCOPE"},
+{"word":"SCOPS"},
+{"word":"SCORE"},
+{"word":"SCORN"},
+{"word":"SCOUR"},
+{"word":"SCOUT"},
+{"word":"SCOWL"},
+{"word":"SCOWS"},
+{"word":"SCRAM"},
+{"word":"SCRAP"},
+{"word":"SCREE"},
+{"word":"SCREW"},
+{"word":"SCRIM"},
+{"word":"SCRIP"},
+{"word":"SCROD"},
+{"word":"SCRUB"},
+{"word":"SCRUM"},
+{"word":"SCUBA"},
+{"word":"SCUDI"},
+{"word":"SCUDO"},
+{"word":"SCUDS"},
+{"word":"SCUFF"},
+{"word":"SCULL"},
+{"word":"SCUMS"},
+{"word":"SCURF"},
+{"word":"SCUSE"},
+{"word":"SCUZZ"},
+{"word":"SEALS"},
+{"word":"SEAMS"},
+{"word":"SEAMY"},
+{"word":"SEARS"},
+{"word":"SEATS"},
+{"word":"SEBUM"},
+{"word":"SECCO"},
+{"word":"SECTS"},
+{"word":"SEDAN"},
+{"word":"SEDER"},
+{"word":"SEDGE"},
+{"word":"SEDGY"},
+{"word":"SEDUM"},
+{"word":"SEEDS"},
+{"word":"SEEDY"},
+{"word":"SEEKS"},
+{"word":"SEEMS"},
+{"word":"SEEPS"},
+{"word":"SEERS"},
+{"word":"SEEST"},
+{"word":"SEETH"},
+{"word":"SEGUE"},
+{"word":"SEINE"},
+{"word":"SEIZE"},
+{"word":"SELAH"},
+{"word":"SELFS"},
+{"word":"SELLS"},
+{"word":"SEMEN"},
+{"word":"SEMIS"},
+{"word":"SENDS"},
+{"word":"SENSE"},
+{"word":"SEPAL"},
+{"word":"SEPIA"},
+{"word":"SEPOY"},
+{"word":"SEPTA"},
+{"word":"SERFS"},
+{"word":"SERGE"},
+{"word":"SERIF"},
+{"word":"SERUM"},
+{"word":"SERVE"},
+{"word":"SERVO"},
+{"word":"SETUP"},
+{"word":"SEVEN"},
+{"word":"SEVER"},
+{"word":"SEWED"},
+{"word":"SEWER"},
+{"word":"SEXED"},
+{"word":"SEXES"},
+{"word":"SHACK"},
+{"word":"SHADE"},
+{"word":"SHADS"},
+{"word":"SHADY"},
+{"word":"SHAFT"},
+{"word":"SHAGS"},
+{"word":"SHAHS"},
+{"word":"SHAKE"},
+{"word":"SHAKO"},
+{"word":"SHAKY"},
+{"word":"SHALE"},
+{"word":"SHALL"},
+{"word":"SHALT"},
+{"word":"SHAME"},
+{"word":"SHAMS"},
+{"word":"SHANK"},
+{"word":"SHAPE"},
+{"word":"SHARD"},
+{"word":"SHARE"},
+{"word":"SHARK"},
+{"word":"SHARP"},
+{"word":"SHAVE"},
+{"word":"SHAWL"},
+{"word":"SHAWM"},
+{"word":"SHAYS"},
+{"word":"SHEAF"},
+{"word":"SHEAR"},
+{"word":"SHEDS"},
+{"word":"SHEEN"},
+{"word":"SHEEP"},
+{"word":"SHEER"},
+{"word":"SHEET"},
+{"word":"SHEIK"},
+{"word":"SHELF"},
+{"word":"SHELL"},
+{"word":"SHERD"},
+{"word":"SHEWS"},
+{"word":"SHIED"},
+{"word":"SHIER"},
+{"word":"SHIES"},
+{"word":"SHIFT"},
+{"word":"SHIKI"},
+{"word":"SHILL"},
+{"word":"SHIMS"},
+{"word":"SHINE"},
+{"word":"SHINS"},
+{"word":"SHINY"},
+{"word":"SHIPS"},
+{"word":"SHIRE"},
+{"word":"SHIRK"},
+{"word":"SHIRR"},
+{"word":"SHIRT"},
+{"word":"SHISH"},
+{"word":"SHITS"},
+{"word":"SHLEP"},
+{"word":"SHMOO"},
+{"word":"SHNOR"},
+{"word":"SHOAL"},
+{"word":"SHOAT"},
+{"word":"SHOCK"},
+{"word":"SHOED"},
+{"word":"SHOER"},
+{"word":"SHOES"},
+{"word":"SHOJI"},
+{"word":"SHONE"},
+{"word":"SHOOK"},
+{"word":"SHOOS"},
+{"word":"SHOOT"},
+{"word":"SHOPS"},
+{"word":"SHORE"},
+{"word":"SHORN"},
+{"word":"SHORT"},
+{"word":"SHOTS"},
+{"word":"SHOUT"},
+{"word":"SHOVE"},
+{"word":"SHOWN"},
+{"word":"SHOWS"},
+{"word":"SHOWY"},
+{"word":"SHRED"},
+{"word":"SHREW"},
+{"word":"SHRUB"},
+{"word":"SHRUG"},
+{"word":"SHUCK"},
+{"word":"SHUNS"},
+{"word":"SHUNT"},
+{"word":"SHUSH"},
+{"word":"SHUTE"},
+{"word":"SHUTS"},
+{"word":"SHYER"},
+{"word":"SHYLY"},
+{"word":"SIBYL"},
+{"word":"SICKO"},
+{"word":"SICKS"},
+{"word":"SIDED"},
+{"word":"SIDES"},
+{"word":"SIDLE"},
+{"word":"SIEGE"},
+{"word":"SIEVE"},
+{"word":"SIFTS"},
+{"word":"SIGHS"},
+{"word":"SIGHT"},
+{"word":"SIGMA"},
+{"word":"SIGNS"},
+{"word":"SILKS"},
+{"word":"SILKY"},
+{"word":"SILLS"},
+{"word":"SILLY"},
+{"word":"SILOS"},
+{"word":"SILTS"},
+{"word":"SILTY"},
+{"word":"SINCE"},
+{"word":"SINES"},
+{"word":"SINEW"},
+{"word":"SINGE"},
+{"word":"SINGS"},
+{"word":"SINKS"},
+{"word":"SINUS"},
+{"word":"SIRED"},
+{"word":"SIREE"},
+{"word":"SIREN"},
+{"word":"SIRES"},
+{"word":"SIRUP"},
+{"word":"SISAL"},
+{"word":"SISSY"},
+{"word":"SITAR"},
+{"word":"SITED"},
+{"word":"SITES"},
+{"word":"SITUS"},
+{"word":"SIXES"},
+{"word":"SIXTH"},
+{"word":"SIXTY"},
+{"word":"SIZED"},
+{"word":"SIZER"},
+{"word":"SIZES"},
+{"word":"SKATE"},
+{"word":"SKEET"},
+{"word":"SKEIN"},
+{"word":"SKEWS"},
+{"word":"SKIDS"},
+{"word":"SKIED"},
+{"word":"SKIER"},
+{"word":"SKIES"},
+{"word":"SKIFF"},
+{"word":"SKILL"},
+{"word":"SKIMP"},
+{"word":"SKIMS"},
+{"word":"SKINS"},
+{"word":"SKINT"},
+{"word":"SKIPS"},
+{"word":"SKIRT"},
+{"word":"SKITS"},
+{"word":"SKOAL"},
+{"word":"SKULK"},
+{"word":"SKULL"},
+{"word":"SKUNK"},
+{"word":"SKYED"},
+{"word":"SLABS"},
+{"word":"SLACK"},
+{"word":"SLAGS"},
+{"word":"SLAIN"},
+{"word":"SLAKE"},
+{"word":"SLAMS"},
+{"word":"SLANG"},
+{"word":"SLANT"},
+{"word":"SLAPS"},
+{"word":"SLASH"},
+{"word":"SLATE"},
+{"word":"SLATS"},
+{"word":"SLAVE"},
+{"word":"SLAWS"},
+{"word":"SLAYS"},
+{"word":"SLEDS"},
+{"word":"SLEEK"},
+{"word":"SLEEP"},
+{"word":"SLEET"},
+{"word":"SLEPT"},
+{"word":"SLEWS"},
+{"word":"SLICE"},
+{"word":"SLICK"},
+{"word":"SLIDE"},
+{"word":"SLIER"},
+{"word":"SLILY"},
+{"word":"SLIME"},
+{"word":"SLIMS"},
+{"word":"SLIMY"},
+{"word":"SLING"},
+{"word":"SLINK"},
+{"word":"SLIPS"},
+{"word":"SLITS"},
+{"word":"SLOBS"},
+{"word":"SLOES"},
+{"word":"SLOGS"},
+{"word":"SLOMO"},
+{"word":"SLOOP"},
+{"word":"SLOPE"},
+{"word":"SLOPS"},
+{"word":"SLOSH"},
+{"word":"SLOTH"},
+{"word":"SLOTS"},
+{"word":"SLOWS"},
+{"word":"SLUED"},
+{"word":"SLUES"},
+{"word":"SLUFF"},
+{"word":"SLUGS"},
+{"word":"SLUMP"},
+{"word":"SLUMS"},
+{"word":"SLUNG"},
+{"word":"SLUNK"},
+{"word":"SLURP"},
+{"word":"SLURS"},
+{"word":"SLUSH"},
+{"word":"SLUTS"},
+{"word":"SLYER"},
+{"word":"SLYLY"},
+{"word":"SMACK"},
+{"word":"SMALL"},
+{"word":"SMART"},
+{"word":"SMASH"},
+{"word":"SMEAR"},
+{"word":"SMELL"},
+{"word":"SMELT"},
+{"word":"SMILE"},
+{"word":"SMIRK"},
+{"word":"SMITE"},
+{"word":"SMITH"},
+{"word":"SMOCK"},
+{"word":"SMOGS"},
+{"word":"SMOKE"},
+{"word":"SMOKY"},
+{"word":"SMOTE"},
+{"word":"SMURF"},
+{"word":"SMUTS"},
+{"word":"SNACK"},
+{"word":"SNAFU"},
+{"word":"SNAGS"},
+{"word":"SNAIL"},
+{"word":"SNAKE"},
+{"word":"SNAKY"},
+{"word":"SNAPS"},
+{"word":"SNARE"},
+{"word":"SNARF"},
+{"word":"SNARK"},
+{"word":"SNARL"},
+{"word":"SNEAK"},
+{"word":"SNEER"},
+{"word":"SNIDE"},
+{"word":"SNIFF"},
+{"word":"SNIPE"},
+{"word":"SNIPS"},
+{"word":"SNITS"},
+{"word":"SNOBS"},
+{"word":"SNOOD"},
+{"word":"SNOOK"},
+{"word":"SNOOP"},
+{"word":"SNOOT"},
+{"word":"SNORE"},
+{"word":"SNORT"},
+{"word":"SNOTS"},
+{"word":"SNOUT"},
+{"word":"SNOWS"},
+{"word":"SNOWY"},
+{"word":"SNUBS"},
+{"word":"SNUCK"},
+{"word":"SNUFF"},
+{"word":"SNUGS"},
+{"word":"SOAKS"},
+{"word":"SOAPS"},
+{"word":"SOAPY"},
+{"word":"SOARS"},
+{"word":"SOBER"},
+{"word":"SOCKO"},
+{"word":"SOCKS"},
+{"word":"SOCLE"},
+{"word":"SODAS"},
+{"word":"SOFAS"},
+{"word":"SOFTS"},
+{"word":"SOFTY"},
+{"word":"SOGGY"},
+{"word":"SOILS"},
+{"word":"SOLAR"},
+{"word":"SOLED"},
+{"word":"SOLES"},
+{"word":"SOLID"},
+{"word":"SOLON"},
+{"word":"SOLOS"},
+{"word":"SOLUM"},
+{"word":"SOLVE"},
+{"word":"SOMAS"},
+{"word":"SONAR"},
+{"word":"SONGS"},
+{"word":"SONIC"},
+{"word":"SONLY"},
+{"word":"SONNY"},
+{"word":"SOOTH"},
+{"word":"SOOTS"},
+{"word":"SOOTY"},
+{"word":"SOPPY"},
+{"word":"SORER"},
+{"word":"SORES"},
+{"word":"SORRY"},
+{"word":"SORTA"},
+{"word":"SORTS"},
+{"word":"SOULS"},
+{"word":"SOUND"},
+{"word":"SOUPS"},
+{"word":"SOUPY"},
+{"word":"SOURS"},
+{"word":"SOUSE"},
+{"word":"SOUTH"},
+{"word":"SOWED"},
+{"word":"SOWER"},
+{"word":"SOYAS"},
+{"word":"SPACE"},
+{"word":"SPACY"},
+{"word":"SPADE"},
+{"word":"SPAKE"},
+{"word":"SPANG"},
+{"word":"SPANK"},
+{"word":"SPANS"},
+{"word":"SPARE"},
+{"word":"SPARK"},
+{"word":"SPARS"},
+{"word":"SPASM"},
+{"word":"SPATE"},
+{"word":"SPATS"},
+{"word":"SPAWN"},
+{"word":"SPAYS"},
+{"word":"SPAZZ"},
+{"word":"SPEAK"},
+{"word":"SPEAR"},
+{"word":"SPECK"},
+{"word":"SPECS"},
+{"word":"SPEED"},
+{"word":"SPELL"},
+{"word":"SPELT"},
+{"word":"SPEND"},
+{"word":"SPENT"},
+{"word":"SPERM"},
+{"word":"SPEWS"},
+{"word":"SPICE"},
+{"word":"SPICS"},
+{"word":"SPICY"},
+{"word":"SPIED"},
+{"word":"SPIEL"},
+{"word":"SPIER"},
+{"word":"SPIES"},
+{"word":"SPIFF"},
+{"word":"SPIKE"},
+{"word":"SPIKY"},
+{"word":"SPILL"},
+{"word":"SPILT"},
+{"word":"SPINA"},
+{"word":"SPINE"},
+{"word":"SPINS"},
+{"word":"SPINY"},
+{"word":"SPIRE"},
+{"word":"SPITE"},
+{"word":"SPITS"},
+{"word":"SPITZ"},
+{"word":"SPIVS"},
+{"word":"SPLAT"},
+{"word":"SPLAY"},
+{"word":"SPLIT"},
+{"word":"SPOIL"},
+{"word":"SPOKE"},
+{"word":"SPOOF"},
+{"word":"SPOOK"},
+{"word":"SPOOL"},
+{"word":"SPOON"},
+{"word":"SPOOR"},
+{"word":"SPORE"},
+{"word":"SPORT"},
+{"word":"SPOTS"},
+{"word":"SPOUT"},
+{"word":"SPRAT"},
+{"word":"SPRAY"},
+{"word":"SPREE"},
+{"word":"SPRIG"},
+{"word":"SPRIT"},
+{"word":"SPROG"},
+{"word":"SPRUE"},
+{"word":"SPUDS"},
+{"word":"SPUED"},
+{"word":"SPUME"},
+{"word":"SPUMY"},
+{"word":"SPUNK"},
+{"word":"SPURN"},
+{"word":"SPURS"},
+{"word":"SPURT"},
+{"word":"SPUTA"},
+{"word":"SQUAB"},
+{"word":"SQUAD"},
+{"word":"SQUAT"},
+{"word":"SQUAW"},
+{"word":"SQUIB"},
+{"word":"SQUID"},
+{"word":"STABS"},
+{"word":"STACK"},
+{"word":"STAFF"},
+{"word":"STAGE"},
+{"word":"STAGS"},
+{"word":"STAGY"},
+{"word":"STAID"},
+{"word":"STAIN"},
+{"word":"STAIR"},
+{"word":"STAKE"},
+{"word":"STALE"},
+{"word":"STALK"},
+{"word":"STALL"},
+{"word":"STAMP"},
+{"word":"STAND"},
+{"word":"STANK"},
+{"word":"STAPH"},
+{"word":"STARE"},
+{"word":"STARK"},
+{"word":"STARS"},
+{"word":"START"},
+{"word":"STASH"},
+{"word":"STATE"},
+{"word":"STATS"},
+{"word":"STAVE"},
+{"word":"STAYS"},
+{"word":"STEAD"},
+{"word":"STEAK"},
+{"word":"STEAL"},
+{"word":"STEAM"},
+{"word":"STEED"},
+{"word":"STEEL"},
+{"word":"STEEP"},
+{"word":"STEER"},
+{"word":"STEIN"},
+{"word":"STELA"},
+{"word":"STELE"},
+{"word":"STEMS"},
+{"word":"STENO"},
+{"word":"STEPS"},
+{"word":"STERN"},
+{"word":"STETS"},
+{"word":"STEWS"},
+{"word":"STICK"},
+{"word":"STIED"},
+{"word":"STIES"},
+{"word":"STIFF"},
+{"word":"STILE"},
+{"word":"STILL"},
+{"word":"STILT"},
+{"word":"STING"},
+{"word":"STINK"},
+{"word":"STINT"},
+{"word":"STIRS"},
+{"word":"STOAE"},
+{"word":"STOAS"},
+{"word":"STOAT"},
+{"word":"STOCK"},
+{"word":"STOGY"},
+{"word":"STOIC"},
+{"word":"STOKE"},
+{"word":"STOLE"},
+{"word":"STOMA"},
+{"word":"STOMP"},
+{"word":"STONE"},
+{"word":"STONY"},
+{"word":"STOOD"},
+{"word":"STOOL"},
+{"word":"STOOP"},
+{"word":"STOPS"},
+{"word":"STORE"},
+{"word":"STORK"},
+{"word":"STORM"},
+{"word":"STORY"},
+{"word":"STOUP"},
+{"word":"STOUT"},
+{"word":"STOVE"},
+{"word":"STOWS"},
+{"word":"STRAP"},
+{"word":"STRAW"},
+{"word":"STRAY"},
+{"word":"STREP"},
+{"word":"STREW"},
+{"word":"STRIP"},
+{"word":"STROP"},
+{"word":"STRUM"},
+{"word":"STRUT"},
+{"word":"STUBS"},
+{"word":"STUCK"},
+{"word":"STUDS"},
+{"word":"STUDY"},
+{"word":"STUFF"},
+{"word":"STUMP"},
+{"word":"STUNG"},
+{"word":"STUNK"},
+{"word":"STUNS"},
+{"word":"STUNT"},
+{"word":"STYES"},
+{"word":"STYLE"},
+{"word":"STYLI"},
+{"word":"SUAVE"},
+{"word":"SUCKS"},
+{"word":"SUDSY"},
+{"word":"SUEDE"},
+{"word":"SUERS"},
+{"word":"SUETS"},
+{"word":"SUETY"},
+{"word":"SUGAR"},
+{"word":"SUING"},
+{"word":"SUITE"},
+{"word":"SUITS"},
+{"word":"SULFA"},
+{"word":"SULKS"},
+{"word":"SULKY"},
+{"word":"SULLY"},
+{"word":"SUMAC"},
+{"word":"SUMMA"},
+{"word":"SUMPS"},
+{"word":"SUNNY"},
+{"word":"SUNUP"},
+{"word":"SUPER"},
+{"word":"SUPES"},
+{"word":"SUPRA"},
+{"word":"SURAS"},
+{"word":"SURDS"},
+{"word":"SURER"},
+{"word":"SURFS"},
+{"word":"SURGE"},
+{"word":"SURLY"},
+{"word":"SUSHI"},
+{"word":"SUTRA"},
+{"word":"SWABS"},
+{"word":"SWAGS"},
+{"word":"SWAIN"},
+{"word":"SWAMI"},
+{"word":"SWAMP"},
+{"word":"SWANK"},
+{"word":"SWANS"},
+{"word":"SWAPS"},
+{"word":"SWARD"},
+{"word":"SWARE"},
+{"word":"SWARF"},
+{"word":"SWARM"},
+{"word":"SWART"},
+{"word":"SWASH"},
+{"word":"SWATH"},
+{"word":"SWATS"},
+{"word":"SWAYS"},
+{"word":"SWEAR"},
+{"word":"SWEAT"},
+{"word":"SWEDE"},
+{"word":"SWEEP"},
+{"word":"SWEET"},
+{"word":"SWELL"},
+{"word":"SWEPT"},
+{"word":"SWIFT"},
+{"word":"SWIGS"},
+{"word":"SWILL"},
+{"word":"SWIMS"},
+{"word":"SWINE"},
+{"word":"SWING"},
+{"word":"SWIPE"},
+{"word":"SWIRL"},
+{"word":"SWISH"},
+{"word":"SWISS"},
+{"word":"SWIVE"},
+{"word":"SWOON"},
+{"word":"SWOOP"},
+{"word":"SWORD"},
+{"word":"SWORE"},
+{"word":"SWORN"},
+{"word":"SWUNG"},
+{"word":"SYLPH"},
+{"word":"SYNCH"},
+{"word":"SYNCS"},
+{"word":"SYNOD"},
+{"word":"SYRUP"},
+{"word":"TABBY"},
+{"word":"TABLE"},
+{"word":"TABOO"},
+{"word":"TABOR"},
+{"word":"TABUS"},
+{"word":"TACET"},
+{"word":"TACIT"},
+{"word":"TACKS"},
+{"word":"TACKY"},
+{"word":"TACOS"},
+{"word":"TACTS"},
+{"word":"TAELS"},
+{"word":"TAFFY"},
+{"word":"TAGUA"},
+{"word":"TAILS"},
+{"word":"TAINT"},
+{"word":"TAKEN"},
+{"word":"TAKER"},
+{"word":"TAKES"},
+{"word":"TALCS"},
+{"word":"TALES"},
+{"word":"TALKS"},
+{"word":"TALKY"},
+{"word":"TALLY"},
+{"word":"TALON"},
+{"word":"TALUS"},
+{"word":"TAMED"},
+{"word":"TAMER"},
+{"word":"TAMES"},
+{"word":"TAMMY"},
+{"word":"TAMPS"},
+{"word":"TANGO"},
+{"word":"TANGS"},
+{"word":"TANGY"},
+{"word":"TANKS"},
+{"word":"TANSY"},
+{"word":"TAPED"},
+{"word":"TAPER"},
+{"word":"TAPES"},
+{"word":"TAPIR"},
+{"word":"TAPIS"},
+{"word":"TARDY"},
+{"word":"TARED"},
+{"word":"TARES"},
+{"word":"TARNS"},
+{"word":"TAROS"},
+{"word":"TAROT"},
+{"word":"TARPS"},
+{"word":"TARRY"},
+{"word":"TARTS"},
+{"word":"TASKS"},
+{"word":"TASTE"},
+{"word":"TASTY"},
+{"word":"TATAR"},
+{"word":"TATER"},
+{"word":"TATTY"},
+{"word":"TAUNT"},
+{"word":"TAUPE"},
+{"word":"TAWNY"},
+{"word":"TAXED"},
+{"word":"TAXER"},
+{"word":"TAXES"},
+{"word":"TAXIS"},
+{"word":"TAXOL"},
+{"word":"TAXON"},
+{"word":"TEACH"},
+{"word":"TEAKS"},
+{"word":"TEALS"},
+{"word":"TEAMS"},
+{"word":"TEARS"},
+{"word":"TEARY"},
+{"word":"TEASE"},
+{"word":"TEATS"},
+{"word":"TECHS"},
+{"word":"TECHY"},
+{"word":"TECUM"},
+{"word":"TEDDY"},
+{"word":"TEEMS"},
+{"word":"TEENS"},
+{"word":"TEENY"},
+{"word":"TEETH"},
+{"word":"TELEX"},
+{"word":"TELLS"},
+{"word":"TELLY"},
+{"word":"TEMPI"},
+{"word":"TEMPO"},
+{"word":"TEMPS"},
+{"word":"TEMPT"},
+{"word":"TENCH"},
+{"word":"TENDS"},
+{"word":"TENET"},
+{"word":"TENON"},
+{"word":"TENOR"},
+{"word":"TENSE"},
+{"word":"TENTH"},
+{"word":"TENTS"},
+{"word":"TEPEE"},
+{"word":"TEPID"},
+{"word":"TERCE"},
+{"word":"TERMS"},
+{"word":"TERNS"},
+{"word":"TERRA"},
+{"word":"TERRY"},
+{"word":"TERSE"},
+{"word":"TESLA"},
+{"word":"TESTS"},
+{"word":"TESTY"},
+{"word":"TETRA"},
+{"word":"TEXAS"},
+{"word":"TEXTS"},
+{"word":"THANE"},
+{"word":"THANK"},
+{"word":"THANX"},
+{"word":"THATS"},
+{"word":"THAWS"},
+{"word":"THEES"},
+{"word":"THEFT"},
+{"word":"THEIR"},
+{"word":"THEME"},
+{"word":"THENS"},
+{"word":"THERE"},
+{"word":"THERM"},
+{"word":"THESE"},
+{"word":"THETA"},
+{"word":"THEWS"},
+{"word":"THICK"},
+{"word":"THIEF"},
+{"word":"THIGH"},
+{"word":"THINE"},
+{"word":"THING"},
+{"word":"THINK"},
+{"word":"THINS"},
+{"word":"THIRD"},
+{"word":"THONG"},
+{"word":"THORN"},
+{"word":"THOSE"},
+{"word":"THOUS"},
+{"word":"THREE"},
+{"word":"THREW"},
+{"word":"THROB"},
+{"word":"THROE"},
+{"word":"THROW"},
+{"word":"THRUM"},
+{"word":"THUDS"},
+{"word":"THUGS"},
+{"word":"THUMB"},
+{"word":"THUMP"},
+{"word":"THUNK"},
+{"word":"THWAP"},
+{"word":"THYME"},
+{"word":"TIARA"},
+{"word":"TIBIA"},
+{"word":"TICKS"},
+{"word":"TIDAL"},
+{"word":"TIDED"},
+{"word":"TIDES"},
+{"word":"TIERS"},
+{"word":"TIFFS"},
+{"word":"TIGER"},
+{"word":"TIGHT"},
+{"word":"TIKES"},
+{"word":"TIKIS"},
+{"word":"TILDE"},
+{"word":"TILED"},
+{"word":"TILER"},
+{"word":"TILES"},
+{"word":"TILLS"},
+{"word":"TILTH"},
+{"word":"TILTS"},
+{"word":"TIMED"},
+{"word":"TIMER"},
+{"word":"TIMES"},
+{"word":"TIMID"},
+{"word":"TINES"},
+{"word":"TINGE"},
+{"word":"TINGS"},
+{"word":"TINNY"},
+{"word":"TINTS"},
+{"word":"TIPPY"},
+{"word":"TIPSY"},
+{"word":"TIRED"},
+{"word":"TIRES"},
+{"word":"TIROS"},
+{"word":"TITAN"},
+{"word":"TITER"},
+{"word":"TITHE"},
+{"word":"TITLE"},
+{"word":"TITRE"},
+{"word":"TITTY"},
+{"word":"TIZZY"},
+{"word":"TOADS"},
+{"word":"TOADY"},
+{"word":"TOAST"},
+{"word":"TODAY"},
+{"word":"TODDY"},
+{"word":"TOFFS"},
+{"word":"TOFFY"},
+{"word":"TOGAS"},
+{"word":"TOILE"},
+{"word":"TOILS"},
+{"word":"TOKED"},
+{"word":"TOKEN"},
+{"word":"TOKER"},
+{"word":"TOKES"},
+{"word":"TOLLS"},
+{"word":"TOMBS"},
+{"word":"TOMES"},
+{"word":"TOMMY"},
+{"word":"TONAL"},
+{"word":"TONED"},
+{"word":"TONER"},
+{"word":"TONES"},
+{"word":"TONGS"},
+{"word":"TONIC"},
+{"word":"TOOLS"},
+{"word":"TOONS"},
+{"word":"TOOTH"},
+{"word":"TOOTS"},
+{"word":"TOPAZ"},
+{"word":"TOPED"},
+{"word":"TOPER"},
+{"word":"TOPES"},
+{"word":"TOPIC"},
+{"word":"TOPOI"},
+{"word":"TOPOS"},
+{"word":"TOQUE"},
+{"word":"TORAH"},
+{"word":"TORCH"},
+{"word":"TORIC"},
+{"word":"TORSI"},
+{"word":"TORSO"},
+{"word":"TORTE"},
+{"word":"TORTS"},
+{"word":"TORUS"},
+{"word":"TOTAL"},
+{"word":"TOTED"},
+{"word":"TOTEM"},
+{"word":"TOTER"},
+{"word":"TOTES"},
+{"word":"TOTTY"},
+{"word":"TOUCH"},
+{"word":"TOUGH"},
+{"word":"TOURS"},
+{"word":"TOUTS"},
+{"word":"TOVES"},
+{"word":"TOWED"},
+{"word":"TOWEL"},
+{"word":"TOWER"},
+{"word":"TOWNS"},
+{"word":"TOXIC"},
+{"word":"TOXIN"},
+{"word":"TOYED"},
+{"word":"TOYER"},
+{"word":"TOYON"},
+{"word":"TRACE"},
+{"word":"TRACK"},
+{"word":"TRACT"},
+{"word":"TRADE"},
+{"word":"TRAIL"},
+{"word":"TRAIN"},
+{"word":"TRAIT"},
+{"word":"TRAMP"},
+{"word":"TRAMS"},
+{"word":"TRANS"},
+{"word":"TRAPS"},
+{"word":"TRASH"},
+{"word":"TRAWL"},
+{"word":"TRAYS"},
+{"word":"TREAD"},
+{"word":"TREAP"},
+{"word":"TREAT"},
+{"word":"TREED"},
+{"word":"TREES"},
+{"word":"TREKS"},
+{"word":"TREND"},
+{"word":"TRESS"},
+{"word":"TREWS"},
+{"word":"TREYS"},
+{"word":"TRIAD"},
+{"word":"TRIAL"},
+{"word":"TRIBE"},
+{"word":"TRIBS"},
+{"word":"TRICE"},
+{"word":"TRICK"},
+{"word":"TRIED"},
+{"word":"TRIER"},
+{"word":"TRIES"},
+{"word":"TRIKE"},
+{"word":"TRILL"},
+{"word":"TRIMS"},
+{"word":"TRIOS"},
+{"word":"TRIPE"},
+{"word":"TRIPS"},
+{"word":"TRITE"},
+{"word":"TROLL"},
+{"word":"TROMP"},
+{"word":"TROOP"},
+{"word":"TROTH"},
+{"word":"TROTS"},
+{"word":"TROUT"},
+{"word":"TROVE"},
+{"word":"TROWS"},
+{"word":"TRUCE"},
+{"word":"TRUCK"},
+{"word":"TRUED"},
+{"word":"TRUER"},
+{"word":"TRUES"},
+{"word":"TRULY"},
+{"word":"TRUMP"},
+{"word":"TRUNK"},
+{"word":"TRUSS"},
+{"word":"TRUST"},
+{"word":"TRUTH"},
+{"word":"TRYST"},
+{"word":"TSARS"},
+{"word":"TUANS"},
+{"word":"TUBAL"},
+{"word":"TUBAS"},
+{"word":"TUBBY"},
+{"word":"TUBED"},
+{"word":"TUBER"},
+{"word":"TUBES"},
+{"word":"TUCKS"},
+{"word":"TUFAS"},
+{"word":"TUFTS"},
+{"word":"TUFTY"},
+{"word":"TULIP"},
+{"word":"TULLE"},
+{"word":"TUMMY"},
+{"word":"TUMOR"},
+{"word":"TUNAS"},
+{"word":"TUNED"},
+{"word":"TUNER"},
+{"word":"TUNES"},
+{"word":"TUNIC"},
+{"word":"TUNNY"},
+{"word":"TUPLE"},
+{"word":"TURBO"},
+{"word":"TURDS"},
+{"word":"TURDY"},
+{"word":"TURFS"},
+{"word":"TURFY"},
+{"word":"TURNS"},
+{"word":"TURPS"},
+{"word":"TUSKS"},
+{"word":"TUSKY"},
+{"word":"TUTOR"},
+{"word":"TUTTI"},
+{"word":"TUTUS"},
+{"word":"TUXES"},
+{"word":"TWAIN"},
+{"word":"TWANG"},
+{"word":"TWATS"},
+{"word":"TWEAK"},
+{"word":"TWEED"},
+{"word":"TWEET"},
+{"word":"TWERP"},
+{"word":"TWICE"},
+{"word":"TWIGS"},
+{"word":"TWILL"},
+{"word":"TWINE"},
+{"word":"TWINK"},
+{"word":"TWINS"},
+{"word":"TWINY"},
+{"word":"TWIRL"},
+{"word":"TWIRP"},
+{"word":"TWIST"},
+{"word":"TWITS"},
+{"word":"TWIXT"},
+{"word":"TYING"},
+{"word":"TYKES"},
+{"word":"TYPAL"},
+{"word":"TYPED"},
+{"word":"TYPES"},
+{"word":"TYPOS"},
+{"word":"TYRES"},
+{"word":"TYROS"},
+{"word":"TZARS"},
+{"word":"UDDER"},
+{"word":"UKASE"},
+{"word":"ULCER"},
+{"word":"ULNAR"},
+{"word":"ULNAS"},
+{"word":"ULTRA"},
+{"word":"UMBEL"},
+{"word":"UMBER"},
+{"word":"UMBRA"},
+{"word":"UMIAK"},
+{"word":"UMPED"},
+{"word":"UMPTY"},
+{"word":"UNAPT"},
+{"word":"UNARC"},
+{"word":"UNARM"},
+{"word":"UNARY"},
+{"word":"UNATE"},
+{"word":"UNBAN"},
+{"word":"UNBAR"},
+{"word":"UNBOX"},
+{"word":"UNCAP"},
+{"word":"UNCLE"},
+{"word":"UNCUT"},
+{"word":"UNDER"},
+{"word":"UNDID"},
+{"word":"UNDUE"},
+{"word":"UNFED"},
+{"word":"UNFIT"},
+{"word":"UNFIX"},
+{"word":"UNHIP"},
+{"word":"UNHIT"},
+{"word":"UNIFY"},
+{"word":"UNION"},
+{"word":"UNITE"},
+{"word":"UNITS"},
+{"word":"UNITY"},
+{"word":"UNJAM"},
+{"word":"UNLIT"},
+{"word":"UNMAN"},
+{"word":"UNMAP"},
+{"word":"UNMET"},
+{"word":"UNPEG"},
+{"word":"UNPIN"},
+{"word":"UNRIG"},
+{"word":"UNSAY"},
+{"word":"UNSEE"},
+{"word":"UNSET"},
+{"word":"UNSEW"},
+{"word":"UNSEX"},
+{"word":"UNTIE"},
+{"word":"UNTIL"},
+{"word":"UNWED"},
+{"word":"UNWON"},
+{"word":"UNZIP"},
+{"word":"UPEND"},
+{"word":"UPPED"},
+{"word":"UPPER"},
+{"word":"UPSET"},
+{"word":"URBAN"},
+{"word":"UREAS"},
+{"word":"URGED"},
+{"word":"URGER"},
+{"word":"URGES"},
+{"word":"URINE"},
+{"word":"USAGE"},
+{"word":"USERS"},
+{"word":"USHER"},
+{"word":"USING"},
+{"word":"USUAL"},
+{"word":"USURP"},
+{"word":"USURY"},
+{"word":"UTERI"},
+{"word":"UTERO"},
+{"word":"UTILE"},
+{"word":"UTOOL"},
+{"word":"UTTER"},
+{"word":"UVULA"},
+{"word":"VACUA"},
+{"word":"VACUO"},
+{"word":"VAGUE"},
+{"word":"VAGUS"},
+{"word":"VAILS"},
+{"word":"VALES"},
+{"word":"VALET"},
+{"word":"VALID"},
+{"word":"VALOR"},
+{"word":"VALUE"},
+{"word":"VALVE"},
+{"word":"VAMPS"},
+{"word":"VANED"},
+{"word":"VANES"},
+{"word":"VAPES"},
+{"word":"VAPID"},
+{"word":"VAPOR"},
+{"word":"VARIA"},
+{"word":"VASES"},
+{"word":"VASTS"},
+{"word":"VAULT"},
+{"word":"VAUNT"},
+{"word":"VEALS"},
+{"word":"VECNA"},
+{"word":"VEEPS"},
+{"word":"VEERS"},
+{"word":"VEGAN"},
+{"word":"VEILS"},
+{"word":"VEINS"},
+{"word":"VEINY"},
+{"word":"VELAR"},
+{"word":"VELDS"},
+{"word":"VELDT"},
+{"word":"VENAL"},
+{"word":"VENDS"},
+{"word":"VENOM"},
+{"word":"VENTS"},
+{"word":"VENUE"},
+{"word":"VERBS"},
+{"word":"VERGE"},
+{"word":"VERSA"},
+{"word":"VERSE"},
+{"word":"VERSO"},
+{"word":"VERST"},
+{"word":"VERTS"},
+{"word":"VERVE"},
+{"word":"VESTS"},
+{"word":"VETCH"},
+{"word":"VEXED"},
+{"word":"VEXES"},
+{"word":"VIALS"},
+{"word":"VIAND"},
+{"word":"VIBES"},
+{"word":"VICAR"},
+{"word":"VICED"},
+{"word":"VICES"},
+{"word":"VIDEO"},
+{"word":"VIERS"},
+{"word":"VIEWS"},
+{"word":"VIGIL"},
+{"word":"VIGOR"},
+{"word":"VILER"},
+{"word":"VILLA"},
+{"word":"VILLE"},
+{"word":"VILLI"},
+{"word":"VINCA"},
+{"word":"VINED"},
+{"word":"VINES"},
+{"word":"VINYL"},
+{"word":"VIOLA"},
+{"word":"VIOLS"},
+{"word":"VIPER"},
+{"word":"VIRAL"},
+{"word":"VIREO"},
+{"word":"VIRES"},
+{"word":"VIRUS"},
+{"word":"VISAS"},
+{"word":"VISED"},
+{"word":"VISES"},
+{"word":"VISIT"},
+{"word":"VISOR"},
+{"word":"VISTA"},
+{"word":"VITAE"},
+{"word":"VITAL"},
+{"word":"VITAM"},
+{"word":"VITAS"},
+{"word":"VITRO"},
+{"word":"VIVAS"},
+{"word":"VIVID"},
+{"word":"VIVRE"},
+{"word":"VIXEN"},
+{"word":"VIZOR"},
+{"word":"VOCAB"},
+{"word":"VOCAL"},
+{"word":"VODKA"},
+{"word":"VOGUE"},
+{"word":"VOICE"},
+{"word":"VOIDS"},
+{"word":"VOILA"},
+{"word":"VOILE"},
+{"word":"VOLTS"},
+{"word":"VOMIT"},
+{"word":"VOTED"},
+{"word":"VOTER"},
+{"word":"VOTES"},
+{"word":"VOUCH"},
+{"word":"VOWED"},
+{"word":"VOWEL"},
+{"word":"VOWER"},
+{"word":"VOXEL"},
+{"word":"VROOM"},
+{"word":"VULVA"},
+{"word":"VYING"},
+{"word":"WACKO"},
+{"word":"WACKY"},
+{"word":"WADED"},
+{"word":"WADER"},
+{"word":"WADES"},
+{"word":"WADIS"},
+{"word":"WAFER"},
+{"word":"WAFTS"},
+{"word":"WAGED"},
+{"word":"WAGER"},
+{"word":"WAGES"},
+{"word":"WAGON"},
+{"word":"WAHOO"},
+{"word":"WAIFS"},
+{"word":"WAILS"},
+{"word":"WAIST"},
+{"word":"WAITS"},
+{"word":"WAIVE"},
+{"word":"WAKED"},
+{"word":"WAKEN"},
+{"word":"WAKER"},
+{"word":"WAKES"},
+{"word":"WALED"},
+{"word":"WALES"},
+{"word":"WALKS"},
+{"word":"WALLS"},
+{"word":"WALLY"},
+{"word":"WALTZ"},
+{"word":"WANDS"},
+{"word":"WANED"},
+{"word":"WANES"},
+{"word":"WANLY"},
+{"word":"WANNA"},
+{"word":"WANTA"},
+{"word":"WANTS"},
+{"word":"WARDS"},
+{"word":"WARES"},
+{"word":"WARMS"},
+{"word":"WARNS"},
+{"word":"WARPS"},
+{"word":"WARTS"},
+{"word":"WARTY"},
+{"word":"WASHY"},
+{"word":"WASPS"},
+{"word":"WASPY"},
+{"word":"WASSA"},
+{"word":"WASTE"},
+{"word":"WATCH"},
+{"word":"WATER"},
+{"word":"WATSA"},
+{"word":"WATTS"},
+{"word":"WAVED"},
+{"word":"WAVER"},
+{"word":"WAVES"},
+{"word":"WAXED"},
+{"word":"WAXEN"},
+{"word":"WAXER"},
+{"word":"WAXES"},
+{"word":"WAZOO"},
+{"word":"WEALD"},
+{"word":"WEALS"},
+{"word":"WEANS"},
+{"word":"WEARS"},
+{"word":"WEARY"},
+{"word":"WEAVE"},
+{"word":"WEBBY"},
+{"word":"WEBER"},
+{"word":"WEDGE"},
+{"word":"WEDGY"},
+{"word":"WEEDS"},
+{"word":"WEEDY"},
+{"word":"WEEKS"},
+{"word":"WEENY"},
+{"word":"WEEPS"},
+{"word":"WEEPY"},
+{"word":"WEEST"},
+{"word":"WEFTS"},
+{"word":"WEIGH"},
+{"word":"WEIRD"},
+{"word":"WEIRS"},
+{"word":"WELCH"},
+{"word":"WELDS"},
+{"word":"WELLS"},
+{"word":"WELSH"},
+{"word":"WELTS"},
+{"word":"WENCH"},
+{"word":"WENDS"},
+{"word":"WESTS"},
+{"word":"WETLY"},
+{"word":"WHACK"},
+{"word":"WHALE"},
+{"word":"WHAMS"},
+{"word":"WHANG"},
+{"word":"WHARF"},
+{"word":"WHATS"},
+{"word":"WHEAL"},
+{"word":"WHEAT"},
+{"word":"WHEEE"},
+{"word":"WHEEL"},
+{"word":"WHELK"},
+{"word":"WHELM"},
+{"word":"WHELP"},
+{"word":"WHENS"},
+{"word":"WHERE"},
+{"word":"WHETS"},
+{"word":"WHEWS"},
+{"word":"WHEYS"},
+{"word":"WHICH"},
+{"word":"WHIFF"},
+{"word":"WHILE"},
+{"word":"WHIMS"},
+{"word":"WHINE"},
+{"word":"WHINY"},
+{"word":"WHIPS"},
+{"word":"WHIPT"},
+{"word":"WHIRL"},
+{"word":"WHIRR"},
+{"word":"WHIRS"},
+{"word":"WHISH"},
+{"word":"WHISK"},
+{"word":"WHIST"},
+{"word":"WHITE"},
+{"word":"WHITS"},
+{"word":"WHIZZ"},
+{"word":"WHOAS"},
+{"word":"WHOLE"},
+{"word":"WHOMP"},
+{"word":"WHOOO"},
+{"word":"WHOOP"},
+{"word":"WHOPS"},
+{"word":"WHORE"},
+{"word":"WHORL"},
+{"word":"WHORT"},
+{"word":"WHOSE"},
+{"word":"WHOSO"},
+{"word":"WHUMP"},
+{"word":"WICCA"},
+{"word":"WICKS"},
+{"word":"WIDEN"},
+{"word":"WIDER"},
+{"word":"WIDOW"},
+{"word":"WIDTH"},
+{"word":"WIELD"},
+{"word":"WIFEY"},
+{"word":"WIGHT"},
+{"word":"WILCO"},
+{"word":"WILDS"},
+{"word":"WILED"},
+{"word":"WILES"},
+{"word":"WILLS"},
+{"word":"WILLY"},
+{"word":"WILTS"},
+{"word":"WIMPS"},
+{"word":"WIMPY"},
+{"word":"WINCE"},
+{"word":"WINCH"},
+{"word":"WINDS"},
+{"word":"WINDY"},
+{"word":"WINED"},
+{"word":"WINES"},
+{"word":"WINEY"},
+{"word":"WINGS"},
+{"word":"WINKS"},
+{"word":"WINNY"},
+{"word":"WINOS"},
+{"word":"WINST"},
+{"word":"WIPED"},
+{"word":"WIPER"},
+{"word":"WIPES"},
+{"word":"WIRED"},
+{"word":"WIRER"},
+{"word":"WIRES"},
+{"word":"WISED"},
+{"word":"WISER"},
+{"word":"WISES"},
+{"word":"WISPS"},
+{"word":"WISPY"},
+{"word":"WISTS"},
+{"word":"WITCH"},
+{"word":"WITHS"},
+{"word":"WITTY"},
+{"word":"WIVES"},
+{"word":"WIZEN"},
+{"word":"WODGY"},
+{"word":"WOKEN"},
+{"word":"WOLDS"},
+{"word":"WOLFS"},
+{"word":"WOMAN"},
+{"word":"WOMBS"},
+{"word":"WOMEN"},
+{"word":"WONKS"},
+{"word":"WONKY"},
+{"word":"WONTS"},
+{"word":"WOODS"},
+{"word":"WOODY"},
+{"word":"WOOED"},
+{"word":"WOOER"},
+{"word":"WOOFS"},
+{"word":"WOOLS"},
+{"word":"WOOLY"},
+{"word":"WOOSH"},
+{"word":"WOOZY"},
+{"word":"WORDS"},
+{"word":"WORDY"},
+{"word":"WORKS"},
+{"word":"WORLD"},
+{"word":"WORMS"},
+{"word":"WORMY"},
+{"word":"WORRY"},
+{"word":"WORSE"},
+{"word":"WORST"},
+{"word":"WORTH"},
+{"word":"WORTS"},
+{"word":"WOULD"},
+{"word":"WOUND"},
+{"word":"WOVEN"},
+{"word":"WOWED"},
+{"word":"WOWEE"},
+{"word":"WRACK"},
+{"word":"WRAIT"},
+{"word":"WRAPS"},
+{"word":"WRATH"},
+{"word":"WREAK"},
+{"word":"WRECK"},
+{"word":"WRENS"},
+{"word":"WREST"},
+{"word":"WRIER"},
+{"word":"WRING"},
+{"word":"WRIST"},
+{"word":"WRITE"},
+{"word":"WRITS"},
+{"word":"WRONG"},
+{"word":"WROTE"},
+{"word":"WROTH"},
+{"word":"WRUNG"},
+{"word":"WRYER"},
+{"word":"WRYLY"},
+{"word":"WURST"},
+{"word":"XENIA"},
+{"word":"XENIC"},
+{"word":"XENON"},
+{"word":"XENYL"},
+{"word":"XERES"},
+{"word":"XERIC"},
+{"word":"XEROX"},
+{"word":"XERUS"},
+{"word":"XHOSA"},
+{"word":"XORED"},
+{"word":"XYLEM"},
+{"word":"XYSTI"},
+{"word":"XYSTS"},
+{"word":"YABBY"},
+{"word":"YACHT"},
+{"word":"YAHOO"},
+{"word":"YANKS"},
+{"word":"YAPPY"},
+{"word":"YARAK"},
+{"word":"YARDS"},
+{"word":"YARNS"},
+{"word":"YARNY"},
+{"word":"YARRS"},
+{"word":"YAWED"},
+{"word":"YAWLS"},
+{"word":"YAWNS"},
+{"word":"YAWNY"},
+{"word":"YAWPS"},
+{"word":"YEARN"},
+{"word":"YEARS"},
+{"word":"YEAST"},
+{"word":"YECCH"},
+{"word":"YECHS"},
+{"word":"YECHY"},
+{"word":"YELLA"},
+{"word":"YELLS"},
+{"word":"YELPS"},
+{"word":"YENTA"},
+{"word":"YERBA"},
+{"word":"YERKS"},
+{"word":"YESES"},
+{"word":"YESTY"},
+{"word":"YETIS"},
+{"word":"YEVEN"},
+{"word":"YEXED"},
+{"word":"YEXES"},
+{"word":"YFERE"},
+{"word":"YIELD"},
+{"word":"YIKES"},
+{"word":"YINCE"},
+{"word":"YIPES"},
+{"word":"YIRTH"},
+{"word":"YOBBO"},
+{"word":"YOBBY"},
+{"word":"YODEL"},
+{"word":"YODLE"},
+{"word":"YOGAS"},
+{"word":"YOGEE"},
+{"word":"YOGIC"},
+{"word":"YOGIS"},
+{"word":"YOKED"},
+{"word":"YOKEL"},
+{"word":"YOKES"},
+{"word":"YOLKS"},
+{"word":"YOLKY"},
+{"word":"YOMIM"},
+{"word":"YONIC"},
+{"word":"YONIS"},
+{"word":"YONKS"},
+{"word":"YORES"},
+{"word":"YOUNG"},
+{"word":"YOURN"},
+{"word":"YOURS"},
+{"word":"YOUSE"},
+{"word":"YOUTH"},
+{"word":"YOWLS"},
+{"word":"YOYOS"},
+{"word":"YUCCA"},
+{"word":"YUCKY"},
+{"word":"YUKKY"},
+{"word":"YULES"},
+{"word":"YUMMY"},
+{"word":"YURTA"},
+{"word":"YURTS"},
+{"word":"ZAPPY"},
+{"word":"ZAYIN"},
+{"word":"ZEALS"},
+{"word":"ZEBRA"},
+{"word":"ZEBUS"},
+{"word":"ZEROS"},
+{"word":"ZESTS"},
+{"word":"ZESTY"},
+{"word":"ZETAS"},
+{"word":"ZIGGY"},
+{"word":"ZILCH"},
+{"word":"ZINCS"},
+{"word":"ZINCY"},
+{"word":"ZINGS"},
+{"word":"ZINGY"},
+{"word":"ZIPPY"},
+{"word":"ZIRAN"},
+{"word":"ZLOTY"},
+{"word":"ZOBOS"},
+{"word":"ZOEAE"},
+{"word":"ZOEAS"},
+{"word":"ZOMBI"},
+{"word":"ZONAL"},
+{"word":"ZONED"},
+{"word":"ZONES"},
+{"word":"ZONKS"},
+{"word":"ZOOEY"},
+{"word":"ZOOKS"},
+{"word":"ZOOMS"},
+{"word":"ZORAN"},
+{"word":"ZORIL"},
+{"word":"ZOSTA"},
+{"word":"ZOWIE"},
+{"word":"ZUPAN"},
+{"word":"ZURFS"},
+{"word":"ZYGON"},
+{"word":"ZYMES"}
+]
