@@ -7,14 +7,16 @@ export class UserGameHistoryRepository {
     mode: string,
     targetWord: string,
     won: boolean,
-    attemptsUsed: number
+    attemptsUsed: number,
+    timeLimit?: number,
+    timeTaken?: number
   ): Promise<UserGameHistory> {
     try {
       const result = await pool.query(
-        `INSERT INTO user_game_history (user_id, mode, target_word, won, attempts_used)
-         VALUES ($1, $2, $3, $4, $5)
+        `INSERT INTO user_game_history (user_id, mode, target_word, won, attempts_used, time_limit, time_taken)
+         VALUES ($1, $2, $3, $4, $5, $6, $7)
          RETURNING *`,
-        [userId, mode, targetWord.toUpperCase(), won, attemptsUsed]
+        [userId, mode, targetWord.toUpperCase(), won, attemptsUsed, timeLimit || null, timeTaken || null]
       );
       return result.rows[0];
     } catch (error) {
@@ -33,6 +35,8 @@ export class UserGameHistoryRepository {
           target_word as "targetWord",
           won,
           attempts_used as "attemptsUsed",
+          time_limit as "timeLimit",
+          time_taken as "timeTaken",
           played_at as "playedAt",
           created_at as "createdAt"
          FROM user_game_history
