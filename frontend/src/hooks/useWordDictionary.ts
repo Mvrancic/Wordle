@@ -56,7 +56,6 @@ export function useWordDictionary() {
         isLoadingWords = false;
         setIsReady(true);
         setIsLoading(false);
-        console.log(`Loaded ${words.length} words into dictionary cache`);
         return wordsCache;
       })
       .catch(error => {

@@ -40,6 +40,7 @@ export const ClassicGamePage: React.FC = () => {
   const [shakingRow, setShakingRow] = useState<number | null>(null);
   const [toast, setToast] = useState<{ message: string; type: 'error' | 'success' | 'info' } | null>(null);
   const [keyboardReadyRow, setKeyboardReadyRow] = useState<number | null>(null);
+  const [showGameOver, setShowGameOver] = useState(false);
   
   // Usar todos los guesses, incluyendo el que acaba de terminar su animación
   // keyboardReadyRow indica que esa fila ya terminó de animarse y puede incluirse en los colores
@@ -175,6 +176,7 @@ export const ClassicGamePage: React.FC = () => {
     setShakingRow(null);
     setKeyboardReadyRow(null);
     setToast(null);
+    setShowGameOver(false);
     gameSavedRef.current = false; // Reset flag for new game
     
     // Iniciar nuevo juego inmediatamente
@@ -251,6 +253,13 @@ export const ClassicGamePage: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyboardPress);
   }, [gameStatus, handleKeyPress, handleDelete, handleEnter, handleRestartGame]);
 
+  // Show game over modal when game ends
+  React.useEffect(() => {
+    if (gameStatus === 'won' || gameStatus === 'lost') {
+      setShowGameOver(true);
+    }
+  }, [gameStatus]);
+
   return (
     <Layout
       gameModeTitle="Classic Mode"
@@ -293,11 +302,12 @@ export const ClassicGamePage: React.FC = () => {
         )}
 
         <GameOverModal
-          isOpen={gameStatus === 'won' || gameStatus === 'lost'}
+          isOpen={showGameOver && (gameStatus === 'won' || gameStatus === 'lost')}
           isWon={gameStatus === 'won'}
           targetWord={targetWord || ''}
           attempts={attempts.length}
           onPlayAgain={handleRestartGame}
+          onClose={() => setShowGameOver(false)}
         />
 
         <InstructionsModal
