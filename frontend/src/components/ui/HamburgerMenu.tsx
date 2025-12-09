@@ -15,7 +15,7 @@ interface HamburgerMenuProps {
 export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ items }) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const { signOut } = useAuth();
+  const { user, signOut, signInWithGoogle } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -88,6 +88,23 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ items }) => {
                 </Link>
               );
             })}
+
+            {/* Show "Sign In with Google" button for guest users */}
+            {!user && (
+              <button
+                onClick={async () => {
+                  setIsOpen(false);
+                  try {
+                    await signInWithGoogle();
+                  } catch (error) {
+                    console.error('Error signing in:', error);
+                  }
+                }}
+                className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition-colors border-t border-gray-700 flex items-center gap-2"
+              >
+                Sign In
+              </button>
+            )}
           </div>
         </div>
       )}
