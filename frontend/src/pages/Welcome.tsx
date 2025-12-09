@@ -9,45 +9,25 @@ export const Welcome: React.FC = () => {
 
   // Check for OAuth callback and redirect after authentication
   useEffect(() => {
-    console.log('Welcome useEffect - loading:', loading, 'hash:', window.location.hash);
-    
     // Check if URL has OAuth callback hash
     const hash = window.location.hash;
     const hasOAuthCallback = hash.includes('access_token') || hash.includes('provider_token') || hash.includes('type=recovery');
     
-    console.log('OAuth callback check:', {
-      hash,
-      hasOAuthCallback,
-      loading
-    });
-    
     if (hasOAuthCallback) {
-      console.log('✅ OAuth callback detected! Hash:', hash.substring(0, 50) + '...');
-      
       // Wait for session to be processed by Supabase
       const checkSession = async () => {
-        console.log('Checking session...');
         const { data: { session }, error } = await supabase.auth.getSession();
         
         if (error) {
-          console.error('❌ Error getting session:', error);
           return;
         }
         
-        console.log('Session check result:', {
-          hasSession: !!session,
-          userEmail: session?.user?.email,
-          userId: session?.user?.id
-        });
-        
         if (session?.user) {
-          console.log('✅ Session found! User:', session.user.email, 'Redirecting to home...');
           // Clear the hash
           window.history.replaceState(null, '', '/');
           // Redirect to home
           navigate('/home', { replace: true });
         } else {
-          console.log('⚠️ No session found yet, retrying in 1s...');
           // Retry after a longer delay (max 5 retries)
           setTimeout(checkSession, 1000);
         }
@@ -55,8 +35,6 @@ export const Welcome: React.FC = () => {
       
       // Check session after a brief delay to let Supabase process
       setTimeout(checkSession, 500);
-    } else if (!loading) {
-      console.log('No OAuth callback detected. Hash:', hash || '(empty)');
     }
   }, [loading, navigate]);
 

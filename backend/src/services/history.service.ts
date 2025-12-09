@@ -24,7 +24,9 @@ export class HistoryService {
       data.mode,
       data.targetWord,
       data.won,
-      data.attemptsUsed
+      data.attemptsUsed,
+      data.timeLimit,
+      data.timeTaken
     );
   }
 }

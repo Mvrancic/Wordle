@@ -19,7 +19,7 @@ export const Home: React.FC = () => {
       id: 'timer',
       title: 'Timer Mode',
       description: 'Guess words as fast as possible.',
-      available: false,
+      available: true,
     },
     {
       id: 'hardcore',
@@ -38,6 +38,8 @@ export const Home: React.FC = () => {
   const handleModeClick = (modeId: string) => {
     if (modeId === 'classic') {
       navigate('/game/classic');
+    } else if (modeId === 'timer') {
+      navigate('/game/timer');
     }
   };
 
@@ -46,7 +48,7 @@ export const Home: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-3 sm:mb-4 font-serif tracking-wide">
-            Welcome to Wordle 
+            Welcome to Wordle
           </h1>
           <p className="text-gray-300 text-base sm:text-lg md:text-xl">
             Choose your game mode
