@@ -7,7 +7,7 @@ export class HistoryController {
     try {
       // TODO: Use req.user?.id when authentication is implemented
       const userId = req.params.userId;
-      
+
       if (!userId) {
         res.status(400).json({
           success: false,
@@ -20,7 +20,7 @@ export class HistoryController {
       const limit = parseInt(req.query.limit as string, 10) || 100;
 
       const result = await historyService.getHistory(userId, page, limit);
-      
+
       // Return just the history array for simpler frontend consumption
       res.json({
         success: true,
@@ -38,7 +38,7 @@ export class HistoryController {
   async createHistory(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
       const userId = req.params.userId || req.body.userId;
-      
+
       if (!userId) {
         res.status(400).json({
           success: false,
@@ -47,7 +47,7 @@ export class HistoryController {
         return;
       }
 
-      const { mode, targetWord, won, attemptsUsed } = req.body;
+      const { mode, targetWord, won, attemptsUsed, timeLimit, timeTaken } = req.body;
 
       if (!mode || !targetWord || typeof won !== 'boolean' || !attemptsUsed) {
         res.status(400).json({
@@ -63,6 +63,8 @@ export class HistoryController {
         targetWord,
         won,
         attemptsUsed,
+        timeLimit,
+        timeTaken,
       });
 
       res.json({

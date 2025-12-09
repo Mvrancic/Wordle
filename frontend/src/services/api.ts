@@ -116,12 +116,14 @@ export const statsApi = {
     throw new Error(response.data.error || 'Failed to get history');
   },
 
-  saveGame: async (userId: string, mode: string, targetWord: string, won: boolean, attemptsUsed: number) => {
+  saveGame: async (userId: string, mode: string, targetWord: string, won: boolean, attemptsUsed: number, timeLimit?: number, timeTaken?: number) => {
     const response = await apiClient.post<ApiResponse<any>>(`/history/${userId}`, {
       mode,
       targetWord,
       won,
       attemptsUsed,
+      timeLimit,
+      timeTaken,
     });
     if (response.data.success) {
       return response.data;

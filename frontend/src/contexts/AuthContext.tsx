@@ -38,36 +38,18 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       setSession(session);
       setUser(session?.user ?? null);
       setLoading(false);
-      
-      // If we have a session from OAuth callback, log it
-      if (session?.user) {
-        console.log('Session restored:', session.user.email);
-      }
     });
 
     // Listen for auth changes (including OAuth callbacks)
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (event, session) => {
-      console.log('🔔 Auth state changed:', {
-        event,
-        hasSession: !!session,
-        userEmail: session?.user?.email,
-        userId: session?.user?.id
-      });
-      
       setSession(session);
       setUser(session?.user ?? null);
       setLoading(false);
       
       // When user signs in via OAuth, sync to our backend database
       if (event === 'SIGNED_IN' && session?.user) {
-        console.log('✅ User signed in via OAuth:', {
-          email: session.user.email,
-          id: session.user.id,
-          provider: session.user.app_metadata?.provider
-        });
-        
         // Sync user to our backend database
         (async () => {
           try {
@@ -77,15 +59,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
               session.user.email || '',
               session.user.user_metadata?.full_name || session.user.user_metadata?.name
             );
-            console.log('✅ User synced to backend database');
           } catch (error) {
-            console.error('❌ Error syncing user to backend:', error);
+            // Error syncing user to backend
           }
         })();
-      }
-      
-      if (event === 'TOKEN_REFRESHED') {
-        console.log('🔄 Token refreshed');
       }
     });
 

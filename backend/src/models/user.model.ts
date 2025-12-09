@@ -29,6 +29,8 @@ export interface UserGameHistory {
   targetWord: string;
   won: boolean;
   attemptsUsed: number;
+  timeLimit?: number;
+  timeTaken?: number;
   playedAt: Date;
   createdAt: Date;
 }
@@ -61,6 +63,8 @@ export interface CreateGameHistoryDto {
   targetWord: string;
   won: boolean;
   attemptsUsed: number;
+  timeLimit?: number;
+  timeTaken?: number;
 }
 
 export interface UpdateUserSettingsDto {
