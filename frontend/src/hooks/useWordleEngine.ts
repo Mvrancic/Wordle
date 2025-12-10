@@ -15,22 +15,27 @@ interface GameState {
   maxAttempts: number;
 }
 
-const STORAGE_KEY = 'wordle-game-state';
+const DEFAULT_STORAGE_KEY = 'wordle-game-state';
 const MAX_ATTEMPTS = 6;
 
 /**
  * Motor base del juego Wordle - reutilizable para todos los modos
  * Maneja estado, evaluación, persistencia en localStorage
  */
-export function useWordleEngine() {
+export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
   const [targetWord, setTargetWord] = useState<string>('');
   const [attempts, setAttempts] = useState<GameGuess[]>([]);
   const [gameStatus, setGameStatus] = useState<'playing' | 'won' | 'lost'>('playing');
   const [currentAttempt, setCurrentAttempt] = useState(0);
 
-  // Cargar estado guardado al inicializar
+  // Cargar estado guardado al inicializar (solo para modos que no sean daily)
   useEffect(() => {
-    const savedState = localStorage.getItem(STORAGE_KEY);
+    // Para daily mode, no cargar desde localStorage - siempre se carga desde el backend
+    if (storageKey === 'wordle-daily-game-state') {
+      return;
+    }
+    
+    const savedState = localStorage.getItem(storageKey);
     if (savedState) {
       try {
         const state: GameState = JSON.parse(savedState);
@@ -42,11 +47,10 @@ export function useWordleEngine() {
           setCurrentAttempt(state.currentAttempt || 0);
         }
       } catch (error) {
-        console.error('Error loading saved game state:', error);
-        localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem(storageKey);
       }
     }
-  }, []);
+  }, [storageKey]);
 
   // Guardar estado en localStorage cuando cambie
   useEffect(() => {
@@ -58,9 +62,9 @@ export function useWordleEngine() {
         currentAttempt,
         maxAttempts: MAX_ATTEMPTS,
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      localStorage.setItem(storageKey, JSON.stringify(state));
     }
-  }, [targetWord, attempts, gameStatus, currentAttempt]);
+  }, [targetWord, attempts, gameStatus, currentAttempt, storageKey]);
 
   /**
    * Inicia un nuevo juego con una palabra objetivo específica
@@ -71,14 +75,14 @@ export function useWordleEngine() {
     setAttempts([]);
     setGameStatus('playing');
     setCurrentAttempt(0);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+    localStorage.setItem(storageKey, JSON.stringify({
       targetWord: upperWord,
       attempts: [],
       gameStatus: 'playing',
       currentAttempt: 0,
       maxAttempts: MAX_ATTEMPTS,
     }));
-  }, []);
+  }, [storageKey]);
 
   /**
    * Procesa un intento: valida y evalúa la palabra
@@ -127,7 +131,7 @@ export function useWordleEngine() {
 
     // Limpiar localStorage si el juego terminó
     if (isGameOver) {
-      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem(storageKey);
     }
 
     return {
@@ -145,8 +149,8 @@ export function useWordleEngine() {
     setAttempts([]);
     setGameStatus('playing');
     setCurrentAttempt(0);
-    localStorage.removeItem(STORAGE_KEY);
-  }, []);
+    localStorage.removeItem(storageKey);
+  }, [storageKey]);
 
   return {
     targetWord,

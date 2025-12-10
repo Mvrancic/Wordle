@@ -19,16 +19,16 @@ export const GameModeCard: React.FC<GameModeCardProps> = ({
 }) => {
   return (
     <Card
-      className={`cursor-pointer transition-all duration-200 ${
+      className={`h-full min-h-[240px] sm:min-h-[260px] flex flex-col justify-center transition-all duration-200 ${
         mode.available
-          ? 'hover:border-wordle-correct hover:shadow-lg hover:shadow-wordle-correct/20'
-          : 'opacity-50 cursor-not-allowed'
+          ? 'cursor-pointer hover:border-wordle-correct hover:shadow-lg hover:shadow-wordle-correct/20 hover:scale-105'
+          : 'opacity-50 cursor-default'
       }`}
       onClick={mode.available ? onClick : undefined}
     >
-      <div className="text-center space-y-4">
-        <h3 className="text-2xl font-bold text-white">{mode.title}</h3>
-        <p className="text-gray-300">{mode.description}</p>
+      <div className="text-center space-y-3 sm:space-y-4">
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">{mode.title}</h3>
+        <p className="text-gray-300 text-sm sm:text-base md:text-lg px-4">{mode.description}</p>
         {!mode.available && (
           <span className="inline-block text-sm text-gray-500 italic">
             Coming Soon

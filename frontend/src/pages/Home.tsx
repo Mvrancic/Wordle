@@ -31,7 +31,7 @@ export const Home: React.FC = () => {
       id: 'daily',
       title: 'Daily Word',
       description: 'A new word every day. Can you guess it?',
-      available: false,
+      available: true,
     },
   ];
 
@@ -40,6 +40,8 @@ export const Home: React.FC = () => {
       navigate('/game/classic');
     } else if (modeId === 'timer') {
       navigate('/game/timer');
+    } else if (modeId === 'daily') {
+      navigate('/game/daily');
     }
   };
 
@@ -55,7 +57,7 @@ export const Home: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
           {gameModes.map(mode => (
             <GameModeCard
               key={mode.id}

@@ -1,14 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface GameOverModalProps {
   isOpen: boolean;
   isWon: boolean;
   targetWord: string;
   attempts: number;
-  onPlayAgain: () => void;
+  onPlayAgain?: () => void;
   onClose?: () => void;
   customMessage?: string; // Optional custom message for the loss screen
   timeTaken?: number; // Optional time taken in seconds
+  isDailyMode?: boolean; // If true, show "come back tomorrow" instead of "Play Again"
+  preventClose?: boolean; // If true, prevent closing the modal (for daily mode when already played)
 }
 
 export const GameOverModal: React.FC<GameOverModalProps> = ({
@@ -20,12 +23,15 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
   onClose,
   customMessage,
   timeTaken,
+  isDailyMode = false,
+  preventClose = false,
 }) => {
+  const navigate = useNavigate();
   const modalRef = React.useRef<HTMLDivElement>(null);
 
-  // Handle click outside to close
+  // Handle click outside to close (only if preventClose is false)
   React.useEffect(() => {
-    if (!isOpen || !onClose) return;
+    if (!isOpen || !onClose || preventClose) return;
 
     const handleClickOutside = (event: MouseEvent) => {
       if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
@@ -37,7 +43,7 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isOpen, onClose]);
+  }, [isOpen, onClose, preventClose]);
 
   const formatTime = (seconds: number) => {
     if (seconds < 60) return `${seconds}s`;
@@ -55,7 +61,7 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
 
       {/* Modal */}
       <div ref={modalRef} className="relative bg-gray-800 rounded-lg shadow-2xl max-w-md w-full mx-4 p-8 border-2 border-gray-600">
-        {onClose && (
+        {onClose && !preventClose && (
           <button
             onClick={onClose}
             className="absolute top-4 left-4 text-gray-400 hover:text-white transition-colors flex items-center gap-1 font-medium text-sm"
@@ -98,12 +104,30 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
                 </p>
               )}
             </div>
-            <button
-              onClick={onPlayAgain}
-              className="w-full bg-wordle-correct hover:bg-[#5a9a54] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
-            >
-              Play Again
-            </button>
+            {isDailyMode ? (
+              <div className="space-y-4">
+                <p className="text-gray-400 text-center mt-4">
+                  Vuelve mañana para una nueva palabra
+                </p>
+                {preventClose && (
+                  <button
+                    onClick={() => navigate('/home')}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
+                  >
+                    Volver al Inicio
+                  </button>
+                )}
+              </div>
+            ) : (
+              onPlayAgain && (
+                <button
+                  onClick={onPlayAgain}
+                  className="w-full bg-wordle-correct hover:bg-[#5a9a54] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
+                >
+                  Play Again
+                </button>
+              )
+            )}
           </div>
         ) : (
           <div className="text-center mt-4">
@@ -129,12 +153,30 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
             <p className="text-gray-400 mb-6">
               Try again!
             </p>
-            <button
-              onClick={onPlayAgain}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
-            >
-              Play Again
-            </button>
+            {isDailyMode ? (
+              <div className="space-y-4">
+                <p className="text-gray-400 text-center">
+                  Vuelve mañana para una nueva palabra
+                </p>
+                {preventClose && (
+                  <button
+                    onClick={() => navigate('/home')}
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
+                  >
+                    Volver al Inicio
+                  </button>
+                )}
+              </div>
+            ) : (
+              onPlayAgain && (
+                <button
+                  onClick={onPlayAgain}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
+                >
+                  Play Again
+                </button>
+              )
+            )}
           </div>
         )}
       </div>

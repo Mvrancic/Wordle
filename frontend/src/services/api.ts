@@ -132,4 +132,19 @@ export const statsApi = {
   },
 };
 
+export const dailyWordApi = {
+  getAllDailyWords: async (): Promise<ApiResponse<{ words: string[] }>> => {
+    const response = await apiClient.get<ApiResponse<{ words: string[] }>>('/daily/all');
+    return response.data;
+  },
+  getTodayWord: async (word: string, userId?: string): Promise<ApiResponse<{ word: string; hasPlayed: boolean; todayGame?: { targetWord: string; won: boolean; attemptsUsed: number } }>> => {
+    const params = userId ? `?userId=${userId}` : '';
+    const response = await apiClient.post<ApiResponse<{ word: string; hasPlayed: boolean; todayGame?: { targetWord: string; won: boolean; attemptsUsed: number } }>>(
+      `/daily/today${params}`,
+      { word }
+    );
+    return response.data;
+  },
+};
+
 export default apiClient;
