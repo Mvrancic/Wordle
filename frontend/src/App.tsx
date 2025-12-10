@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import { Profile } from './pages/Profile';
 import { ClassicGamePage } from './pages/game-modes/classic/ClassicGamePage';
 import { TimerGamePage } from './pages/game-modes/timer/TimerGamePage';
+import { DailyGamePage } from './pages/game-modes/daily/DailyGamePage';
 import { NotFound } from './pages/NotFound';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/game/classic" element={<ClassicGamePage />} />
           <Route path="/game/timer" element={<TimerGamePage />} />
+          <Route path="/game/daily" element={<DailyGamePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
