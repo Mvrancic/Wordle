@@ -80,3 +80,12 @@ model Guess {
 
   @@map("guesses")
 }
+
+model DailyWord {
+  id        String   @id @default(uuid())
+  word      String
+  date      DateTime @unique @db.Date
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("daily_words")
+}
