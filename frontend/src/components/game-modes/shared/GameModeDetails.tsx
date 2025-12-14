@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface GameModeDetailsProps {
-  mode: 'classic' | 'timer';
+  mode: 'classic' | 'timer' | 'hard';
 }
 
 export const GameModeDetails: React.FC<GameModeDetailsProps> = ({ mode }) => {
@@ -31,6 +31,60 @@ export const GameModeDetails: React.FC<GameModeDetailsProps> = ({ mode }) => {
           <div>
             <strong className="text-white text-base sm:text-lg">4. Win or lose:</strong>
             <p className="mt-1">If you guess the word in time, you win! If the timer runs out, you lose.</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (mode === 'hard') {
+    return (
+      <div className="space-y-4 sm:space-y-6 flex flex-col justify-center min-h-[400px]">
+        <h3 className="text-white font-semibold text-lg sm:text-xl">
+          Hard Mode Rules
+        </h3>
+        <div className="space-y-4 text-sm sm:text-base">
+          <p className="text-gray-300">
+            Hard Mode is similar to Classic Mode, but with one important difference: 
+            you <strong className="text-white">must use all the clues</strong> you receive in each attempt.
+          </p>
+          
+          <div className="space-y-3 pt-2 border-t border-gray-700">
+            <div>
+              <strong className="text-white text-base sm:text-lg flex items-center gap-2">
+                <span className="w-6 h-6 bg-wordle-correct rounded flex items-center justify-center text-white text-xs">✓</span>
+                Green Letters (Correct Position)
+              </strong>
+              <p className="mt-1 ml-8">
+                If a letter appears in <strong className="text-wordle-correct">green</strong>, you <strong className="text-white">must</strong> use that letter in the same position in all future attempts. You can also try it in other positions if you want.
+              </p>
+            </div>
+            
+            <div>
+              <strong className="text-white text-base sm:text-lg flex items-center gap-2">
+                <span className="w-6 h-6 bg-yellow-500 rounded flex items-center justify-center text-white text-xs">!</span>
+                Yellow Letters (Wrong Position)
+              </strong>
+              <p className="mt-1 ml-8">
+                If a letter appears in <strong className="text-yellow-500">yellow</strong>, you <strong className="text-white">must</strong> include that letter in all future attempts, but not in the same position where it was yellow.
+              </p>
+            </div>
+            
+            <div>
+              <strong className="text-white text-base sm:text-lg flex items-center gap-2">
+                <span className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center text-white text-xs">✗</span>
+                Gray Letters (Not in Word)
+              </strong>
+              <p className="mt-1 ml-8">
+                If a letter appears in <strong className="text-gray-400">gray</strong>, you <strong className="text-white">cannot</strong> use that letter again in any future attempts.
+              </p>
+            </div>
+          </div>
+          
+          <div className="pt-2 border-t border-gray-700">
+            <p className="text-gray-300 text-xs sm:text-sm">
+              <strong className="text-white">Note:</strong> If you violate any of these rules, your guess will be rejected with an error message explaining what you need to fix.
+            </p>
           </div>
         </div>
       </div>

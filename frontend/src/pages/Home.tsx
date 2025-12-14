@@ -25,7 +25,7 @@ export const Home: React.FC = () => {
       id: 'hardcore',
       title: 'Hard Mode',
       description: 'You must use all the clues you get in each attempt.',
-      available: false,
+      available: true,
     },
     {
       id: 'daily',
@@ -42,6 +42,8 @@ export const Home: React.FC = () => {
       navigate('/game/timer');
     } else if (modeId === 'daily') {
       navigate('/game/daily');
+    } else if (modeId === 'hardcore') {
+      navigate('/game/hard');
     }
   };
 
