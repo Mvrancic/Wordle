@@ -26,14 +26,6 @@ export function useDailyGame() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  /**
-   * Obtiene la palabra del día desde el backend
-   * La lógica es:
-   * 1. Obtener todas las palabras usadas desde el backend
-   * 2. Comparar con word_list.json y seleccionar una palabra única
-   * 3. Enviar esa palabra al backend para guardarla (si no existe para hoy)
-   * 4. El backend devuelve la palabra del día (misma para todos)
-   */
   const startNewGame = useCallback(async () => {
     if (wordLoaded) {
       return;
@@ -52,33 +44,27 @@ export function useDailyGame() {
       
       if (wordList.length === 0) {
         setIsLoading(false);
-        return; // Esperar a que se cargue la lista
+        return;
       }
 
-      // 1. Obtener todas las palabras usadas desde el backend
       const usedWordsResponse = await dailyWordApi.getAllDailyWords();
       
       const usedWords: string[] = usedWordsResponse.success && usedWordsResponse.data 
         ? usedWordsResponse.data.words.map(w => w.toUpperCase())
         : [];
 
-      // 2. Comparar con word_list.json y seleccionar una palabra única
       const allWords = wordList.map(w => w.toUpperCase());
       const usedSet = new Set(usedWords);
       const availableWords = allWords.filter(word => !usedSet.has(word.toUpperCase()));
 
       let selectedWord: string;
       if (availableWords.length === 0) {
-        // Si todas las palabras han sido usadas, elegir una aleatoria de la lista completa
         selectedWord = allWords[Math.floor(Math.random() * allWords.length)];
       } else {
-        // Seleccionar una palabra aleatoria de las disponibles
         const randomIndex = Math.floor(Math.random() * availableWords.length);
         selectedWord = availableWords[randomIndex];
       }
 
-      // 3. Enviar la palabra al backend para guardarla (si no existe para hoy)
-      // El backend devuelve la palabra del día (puede ser la misma o diferente si ya existía)
       const response = await dailyWordApi.getTodayWord(selectedWord, user?.id);
       
       if (response.success && response.data) {
@@ -86,15 +72,11 @@ export function useDailyGame() {
         
         setHasPlayedToday(response.data.hasPlayed);
         
-        // Si ya jugó hoy, cargar el juego anterior
         if (response.data.hasPlayed && response.data.todayGame) {
           const game = response.data.todayGame;
           setPreviousGame(game);
-          
-          // Cargar el estado del juego anterior en el engine
           engine.startNewGame(game.targetWord);
         } else {
-          // 4. Iniciar el juego con la palabra del día (misma para todos)
           engine.startNewGame(dailyWord);
         }
         
@@ -110,14 +92,11 @@ export function useDailyGame() {
     }
   }, [engine, user, getWordList, wordLoaded, isLoading]);
 
-  // Cargar la palabra del día cuando el diccionario esté listo (solo una vez)
   useEffect(() => {
-    // Solo intentar cargar si el diccionario está listo y aún no hemos cargado la palabra
     if (dictionaryReady && !wordLoaded && !isLoading) {
       startNewGame();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dictionaryReady]);
+  }, [dictionaryReady, wordLoaded, isLoading, startNewGame]);
 
   return {
     targetWord: engine.targetWord,

@@ -104,30 +104,29 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
                 </p>
               )}
             </div>
-            {isDailyMode ? (
-              <div className="space-y-4">
+            <div className="space-y-4">
+              {isDailyMode && (
                 <p className="text-gray-400 text-center mt-4">
-                  Vuelve mañana para una nueva palabra
+                  Come back tomorrow for a new word
                 </p>
-                {preventClose && (
+              )}
+              <div className="flex gap-3">
+                {onPlayAgain && (
                   <button
-                    onClick={() => navigate('/home')}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
+                    onClick={onPlayAgain}
+                    className="flex-1 bg-wordle-correct hover:bg-[#5a9a54] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
                   >
-                    Volver al Inicio
+                    Play Again
                   </button>
                 )}
-              </div>
-            ) : (
-              onPlayAgain && (
                 <button
-                  onClick={onPlayAgain}
-                  className="w-full bg-wordle-correct hover:bg-[#5a9a54] text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
+                  onClick={() => navigate('/home')}
+                  className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
                 >
-                  Play Again
+                  Back to Home
                 </button>
-              )
-            )}
+              </div>
+            </div>
           </div>
         ) : (
           <div className="text-center mt-4">
@@ -153,30 +152,29 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
             <p className="text-gray-400 mb-6">
               Try again!
             </p>
-            {isDailyMode ? (
-              <div className="space-y-4">
+            <div className="space-y-4">
+              {isDailyMode && (
                 <p className="text-gray-400 text-center">
-                  Vuelve mañana para una nueva palabra
+                  Come back tomorrow for a new word
                 </p>
-                {preventClose && (
+              )}
+              <div className="flex gap-3">
+                {onPlayAgain && (
                   <button
-                    onClick={() => navigate('/home')}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
+                    onClick={onPlayAgain}
+                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
                   >
-                    Volver al Inicio
+                    Play Again
                   </button>
                 )}
-              </div>
-            ) : (
-              onPlayAgain && (
                 <button
-                  onClick={onPlayAgain}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
+                  onClick={() => navigate('/home')}
+                  className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200"
                 >
-                  Play Again
+                  Back to Home
                 </button>
-              )
-            )}
+              </div>
+            </div>
           </div>
         )}
       </div>

@@ -11,7 +11,6 @@ import { logger } from './utils/logger';
 
 const app = express();
 
-// Security middleware
 app.use(helmet());
 app.use(
   cors({
@@ -20,17 +19,11 @@ app.use(
   })
 );
 
-// Compression
 app.use(compression());
-
-// Logging
 app.use(morgan('dev'));
-
-// Body parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Rate limiting
 const limiter = rateLimit({
   windowMs: parseInt(env.RATE_LIMIT_WINDOW_MS),
   max: parseInt(env.RATE_LIMIT_MAX_REQUESTS),
@@ -38,7 +31,6 @@ const limiter = rateLimit({
 });
 app.use('/api/', limiter);
 
-// Health check
 app.get('/health', (_req, res) => {
   res.json({
     status: 'OK',
@@ -47,7 +39,6 @@ app.get('/health', (_req, res) => {
   });
 });
 
-// Root endpoint
 app.get('/', (_req, res) => {
   res.json({
     message: 'Welcome to Wordle API',
@@ -55,16 +46,10 @@ app.get('/', (_req, res) => {
   });
 });
 
-// API routes
 app.use('/api', routes);
-
-// 404 handler
 app.use(notFoundHandler);
-
-// Error handler
 app.use(errorHandler);
 
-// Start server
 const PORT = env.PORT;
 
 app.listen(PORT, () => {

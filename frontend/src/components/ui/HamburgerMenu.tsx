@@ -97,7 +97,7 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ items }) => {
                   try {
                     await signInWithGoogle();
                   } catch (error) {
-                    console.error('Error signing in:', error);
+                    // Silently handle error
                   }
                 }}
                 className="block w-full text-left px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white transition-colors border-t border-gray-700 flex items-center gap-2"

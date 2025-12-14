@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { Layout } from '../components/layout/Layout';
 import { statsApi } from '../services/api';
+import type { GameHistory as GameHistoryType } from '../types';
 
 interface Stats {
   gamesPlayed: number;
@@ -11,7 +12,7 @@ interface Stats {
   currentStreak: number;
   maxStreak: number;
   avgAttempts: number;
-  attemptsDistribution: Record<number, number>; // { 1: 5, 2: 10, ... }
+  attemptsDistribution: Record<number, number>;
 }
 
 const GAME_MODES = [
@@ -29,6 +30,52 @@ export const Profile: React.FC = () => {
   const [stats, setStats] = useState<Stats | null>(null);
   const [loading, setLoading] = useState(true);
 
+  const loadStats = useCallback(async () => {
+    if (!user) return;
+
+    try {
+      setLoading(true);
+      const response = await statsApi.getStats(user.id);
+      const statsData = response.data;
+
+      const historyResponse = await statsApi.getHistory(user.id);
+      const history: GameHistoryType[] = historyResponse.data || [];
+
+      const filteredHistory = selectedMode === 'all' 
+        ? history 
+        : history.filter((h) => h.mode === selectedMode);
+
+      const distribution: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
+      filteredHistory
+        .filter((h) => h.won)
+        .forEach((h) => {
+          if (h.attemptsUsed >= 1 && h.attemptsUsed <= 6) {
+            distribution[h.attemptsUsed] = (distribution[h.attemptsUsed] || 0) + 1;
+          }
+        });
+
+      const modeStats = {
+        gamesPlayed: filteredHistory.length,
+        gamesWon: filteredHistory.filter((h) => h.won).length,
+        winRate: filteredHistory.length > 0 
+          ? (filteredHistory.filter((h) => h.won).length / filteredHistory.length) * 100 
+          : 0,
+        currentStreak: statsData?.currentStreak || 0,
+        maxStreak: statsData?.maxStreak || 0,
+        avgAttempts: filteredHistory.length > 0
+          ? filteredHistory.reduce((sum, h) => sum + (h.attemptsUsed || 0), 0) / filteredHistory.length
+          : 0,
+        attemptsDistribution: distribution,
+      };
+
+      setStats(modeStats);
+    } catch (error) {
+      // Silently handle error
+    } finally {
+      setLoading(false);
+    }
+  }, [user, selectedMode]);
+
   useEffect(() => {
     if (!user) {
       navigate('/');
@@ -36,58 +83,7 @@ export const Profile: React.FC = () => {
     }
 
     loadStats();
-  }, [user, selectedMode, navigate]);
-
-  const loadStats = async () => {
-    if (!user) return;
-
-    try {
-      setLoading(true);
-      // TODO: Update API to support mode filtering
-      const response = await statsApi.getStats(user.id);
-      const statsData = response.data;
-
-      // Get attempts distribution from history
-      const historyResponse = await statsApi.getHistory(user.id);
-      const history = historyResponse.data || [];
-
-      // Filter by mode if not 'all'
-      const filteredHistory = selectedMode === 'all' 
-        ? history 
-        : history.filter((h: any) => h.mode === selectedMode);
-
-      // Calculate attempts distribution
-      const distribution: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
-      filteredHistory
-        .filter((h: any) => h.won)
-        .forEach((h: any) => {
-          if (h.attemptsUsed >= 1 && h.attemptsUsed <= 6) {
-            distribution[h.attemptsUsed] = (distribution[h.attemptsUsed] || 0) + 1;
-          }
-        });
-
-      // Recalculate stats for selected mode
-      const modeStats = {
-        gamesPlayed: filteredHistory.length,
-        gamesWon: filteredHistory.filter((h: any) => h.won).length,
-        winRate: filteredHistory.length > 0 
-          ? (filteredHistory.filter((h: any) => h.won).length / filteredHistory.length) * 100 
-          : 0,
-        currentStreak: statsData.currentStreak || 0,
-        maxStreak: statsData.maxStreak || 0,
-        avgAttempts: filteredHistory.length > 0
-          ? filteredHistory.reduce((sum: number, h: any) => sum + (h.attemptsUsed || 0), 0) / filteredHistory.length
-          : 0,
-        attemptsDistribution: distribution,
-      };
-
-      setStats(modeStats);
-    } catch (error) {
-      console.error('Error loading stats:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  }, [user, navigate, loadStats]);
 
   const handleSignOut = async () => {
     await signOut();

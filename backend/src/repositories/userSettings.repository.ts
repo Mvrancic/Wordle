@@ -1,5 +1,6 @@
 import pool from '../config/database';
 import { UserSettings } from '../models/user.model';
+import { logger } from '../utils/logger';
 
 export class UserSettingsRepository {
   async findByUserId(userId: string): Promise<UserSettings | null> {
@@ -10,7 +11,7 @@ export class UserSettingsRepository {
       );
       return result.rows[0] || null;
     } catch (error) {
-      console.error(`[UserSettingsRepository] Error finding settings for user ${userId}:`, error);
+      logger.error(`Error finding settings for user ${userId}`, error);
       throw error;
     }
   }
@@ -32,7 +33,7 @@ export class UserSettingsRepository {
       );
       return result.rows[0];
     } catch (error) {
-      console.error(`[UserSettingsRepository] Error creating settings for user ${userId}:`, error);
+      logger.error(`Error creating settings for user ${userId}`, error);
       throw error;
     }
   }
@@ -98,7 +99,7 @@ export class UserSettingsRepository {
 
       return result.rows[0];
     } catch (error) {
-      console.error(`[UserSettingsRepository] Error updating settings for user ${userId}:`, error);
+      logger.error(`Error updating settings for user ${userId}`, error);
       throw error;
     }
   }

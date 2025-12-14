@@ -18,19 +18,13 @@ interface GameState {
 const DEFAULT_STORAGE_KEY = 'wordle-game-state';
 const MAX_ATTEMPTS = 6;
 
-/**
- * Motor base del juego Wordle - reutilizable para todos los modos
- * Maneja estado, evaluación, persistencia en localStorage
- */
 export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
   const [targetWord, setTargetWord] = useState<string>('');
   const [attempts, setAttempts] = useState<GameGuess[]>([]);
   const [gameStatus, setGameStatus] = useState<'playing' | 'won' | 'lost'>('playing');
   const [currentAttempt, setCurrentAttempt] = useState(0);
 
-  // Cargar estado guardado al inicializar (solo para modos que no sean daily)
   useEffect(() => {
-    // Para daily mode, no cargar desde localStorage - siempre se carga desde el backend
     if (storageKey === 'wordle-daily-game-state') {
       return;
     }
@@ -39,7 +33,6 @@ export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
     if (savedState) {
       try {
         const state: GameState = JSON.parse(savedState);
-        // Solo restaurar si hay una palabra objetivo (juego en progreso)
         if (state.targetWord && state.targetWord.length === 5) {
           setTargetWord(state.targetWord);
           setAttempts(state.attempts || []);
@@ -52,7 +45,6 @@ export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
     }
   }, [storageKey]);
 
-  // Guardar estado en localStorage cuando cambie
   useEffect(() => {
     if (targetWord) {
       const state: GameState = {
@@ -66,9 +58,6 @@ export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
     }
   }, [targetWord, attempts, gameStatus, currentAttempt, storageKey]);
 
-  /**
-   * Inicia un nuevo juego con una palabra objetivo específica
-   */
   const startNewGame = useCallback((word: string) => {
     const upperWord = word.toUpperCase();
     setTargetWord(upperWord);
@@ -84,9 +73,6 @@ export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
     }));
   }, [storageKey]);
 
-  /**
-   * Procesa un intento: valida y evalúa la palabra
-   */
   const submitGuess = useCallback((guess: string, dictionary: Set<string>): {
     feedback: CellStatus[];
     isWon: boolean;
@@ -98,15 +84,12 @@ export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
 
     const upperGuess = guess.toUpperCase();
 
-    // Validar palabra
     if (!isValidWord(upperGuess, dictionary)) {
-      return null; // Indica que la palabra no es válida
+      return null;
     }
 
-    // Evaluar feedback
     const feedback = evaluateGuess(upperGuess, targetWord);
 
-    // Crear nuevo intento
     const newAttempt: GameGuess = {
       word: upperGuess,
       feedback,
@@ -115,7 +98,6 @@ export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
     const newAttempts = [...attempts, newAttempt];
     const newCurrentAttempt = currentAttempt + 1;
 
-    // Determinar si ganó o perdió
     const isWon = upperGuess === targetWord;
     const isGameOver = isWon || newCurrentAttempt >= MAX_ATTEMPTS;
     const newStatus: 'playing' | 'won' | 'lost' = isWon
@@ -124,12 +106,10 @@ export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
         ? 'lost'
         : 'playing';
 
-    // Actualizar estado
     setAttempts(newAttempts);
     setCurrentAttempt(newCurrentAttempt);
     setGameStatus(newStatus);
 
-    // Limpiar localStorage si el juego terminó
     if (isGameOver) {
       localStorage.removeItem(storageKey);
     }
@@ -139,11 +119,8 @@ export function useWordleEngine(storageKey: string = DEFAULT_STORAGE_KEY) {
       isWon,
       isGameOver,
     };
-  }, [targetWord, attempts, currentAttempt]);
+  }, [targetWord, attempts, currentAttempt, storageKey]);
 
-  /**
-   * Resetea el juego completamente
-   */
   const reset = useCallback(() => {
     setTargetWord('');
     setAttempts([]);

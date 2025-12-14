@@ -47,7 +47,7 @@ export const Welcome: React.FC = () => {
       await signInWithGoogle();
       // The redirect will happen via OAuth, then we'll handle it in the useEffect above
     } catch (error) {
-      console.error('Error signing in:', error);
+      // Silently handle error
     }
   };
 

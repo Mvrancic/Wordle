@@ -5,6 +5,9 @@ import {
   GameWithGuesses,
   CreateGameResponse,
   MakeGuessResponse,
+  UserStats,
+  GameHistory,
+  SyncUserResponse,
 } from '../types';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
@@ -72,8 +75,8 @@ export const gameApi = {
 };
 
 export const authApi = {
-  syncUser: async (userId: string, email: string, username?: string) => {
-    const response = await apiClient.post<ApiResponse<any>>('/auth/sync', {
+  syncUser: async (userId: string, email: string, username?: string): Promise<ApiResponse<SyncUserResponse>> => {
+    const response = await apiClient.post<ApiResponse<SyncUserResponse>>('/auth/sync', {
       userId,
       email,
       username,
@@ -86,16 +89,16 @@ export const authApi = {
 };
 
 export const statsApi = {
-  getStats: async (userId: string) => {
-    const response = await apiClient.get<ApiResponse<any>>(`/stats/${userId}`);
+  getStats: async (userId: string): Promise<ApiResponse<UserStats>> => {
+    const response = await apiClient.get<ApiResponse<UserStats>>(`/stats/${userId}`);
     if (response.data.success) {
       return response.data;
     }
     throw new Error(response.data.error || 'Failed to get stats');
   },
 
-  updateStats: async (userId: string, won: boolean, attemptsUsed: number, mode: string = 'classic') => {
-    const response = await apiClient.post<ApiResponse<any>>(`/stats/${userId}`, {
+  updateStats: async (userId: string, won: boolean, attemptsUsed: number, mode: string = 'classic'): Promise<ApiResponse<UserStats>> => {
+    const response = await apiClient.post<ApiResponse<UserStats>>(`/stats/${userId}`, {
       won,
       attemptsUsed,
       mode,
@@ -106,8 +109,8 @@ export const statsApi = {
     throw new Error(response.data.error || 'Failed to update stats');
   },
 
-  getHistory: async (userId: string, limit: number = 100) => {
-    const response = await apiClient.get<ApiResponse<any[]>>(
+  getHistory: async (userId: string, limit: number = 100): Promise<ApiResponse<GameHistory[]>> => {
+    const response = await apiClient.get<ApiResponse<GameHistory[]>>(
       `/history/${userId}?limit=${limit}`
     );
     if (response.data.success) {
@@ -116,8 +119,8 @@ export const statsApi = {
     throw new Error(response.data.error || 'Failed to get history');
   },
 
-  saveGame: async (userId: string, mode: string, targetWord: string, won: boolean, attemptsUsed: number, timeLimit?: number, timeTaken?: number) => {
-    const response = await apiClient.post<ApiResponse<any>>(`/history/${userId}`, {
+  saveGame: async (userId: string, mode: string, targetWord: string, won: boolean, attemptsUsed: number, timeLimit?: number, timeTaken?: number): Promise<ApiResponse<GameHistory>> => {
+    const response = await apiClient.post<ApiResponse<GameHistory>>(`/history/${userId}`, {
       mode,
       targetWord,
       won,

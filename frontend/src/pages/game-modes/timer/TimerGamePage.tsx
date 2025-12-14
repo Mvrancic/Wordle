@@ -36,7 +36,6 @@ export const TimerGamePage: React.FC = () => {
     const { isReady: dictionaryReady, validateWord: validateWordLocal, getDictionary } = useWordDictionary();
     const gameSavedRef = useRef(false);
 
-    // Timer mode specific states
     const [showTimeSelection, setShowTimeSelection] = useState(true);
     const [showCountdown, setShowCountdown] = useState(false);
     const [timeLimit, setTimeLimit] = useState<number | null>(null);
@@ -44,7 +43,6 @@ export const TimerGamePage: React.FC = () => {
     const [startTime, setStartTime] = useState<number | null>(null);
     const [timeTaken, setTimeTaken] = useState<number | undefined>(undefined);
 
-    // Game states
     const [showInstructions, setShowInstructions] = useState(false);
     const [currentGuess, setCurrentGuess] = useState('');
     const [revealingRow, setRevealingRow] = useState<number | null>(null);
@@ -53,6 +51,12 @@ export const TimerGamePage: React.FC = () => {
     const [keyboardReadyRow, setKeyboardReadyRow] = useState<number | null>(null);
     const [timeUpLoss, setTimeUpLoss] = useState(false);
     const [showGameOver, setShowGameOver] = useState(false);
+
+    useEffect(() => {
+        if (gameStatus === 'playing' && !timeUpLoss) {
+            setShowGameOver(false);
+        }
+    }, [gameStatus, timeUpLoss]);
 
     const guessesForKeyboard = revealingRow !== null && (keyboardReadyRow === null || keyboardReadyRow < revealingRow)
         ? attempts.slice(0, revealingRow)
@@ -81,7 +85,6 @@ export const TimerGamePage: React.FC = () => {
             try {
                 startNewGame();
             } catch (err) {
-                console.error('Error starting game:', err);
                 setToast({ message: 'Error starting game. Please refresh the page.', type: 'error' });
             }
         }
@@ -225,7 +228,7 @@ export const TimerGamePage: React.FC = () => {
 
                 gameSavedRef.current = true;
             } catch (error) {
-                console.error('Error saving game stats:', error);
+                // Silently handle error
             }
         };
 
@@ -265,13 +268,21 @@ export const TimerGamePage: React.FC = () => {
     }, [gameStatus, isTimerRunning, handleKeyPress, handleDelete, handleEnter, handleRestartGame]);
 
     const isGameOver = gameStatus === 'won' || gameStatus === 'lost' || timeUpLoss;
+    const [modalDismissed, setModalDismissed] = useState(false);
 
-    // Show game over modal when game ends
     React.useEffect(() => {
-        if (isGameOver) {
+        if (isGameOver && !modalDismissed) {
             setShowGameOver(true);
+        } else if (gameStatus === 'playing' && !timeUpLoss) {
+            setShowGameOver(false);
+            setModalDismissed(false);
         }
-    }, [isGameOver]);
+    }, [isGameOver, gameStatus, timeUpLoss, modalDismissed]);
+
+    const handleCloseModal = useCallback(() => {
+        setShowGameOver(false);
+        setModalDismissed(true);
+    }, []);
 
     return (
         <Layout
@@ -340,7 +351,7 @@ export const TimerGamePage: React.FC = () => {
                     targetWord={targetWord || ''}
                     attempts={attempts.length}
                     onPlayAgain={handleRestartGame}
-                    onClose={() => setShowGameOver(false)}
+                    onClose={handleCloseModal}
                     customMessage={timeUpLoss ? "Time's up!" : undefined}
                     timeTaken={timeTaken}
                 />

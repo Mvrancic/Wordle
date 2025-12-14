@@ -1,12 +1,11 @@
 import { Pool } from 'pg';
 import dotenv from 'dotenv';
+import { logger } from '../utils/logger';
 
 dotenv.config();
 
-// Limpiar la URL de parámetros que pg no necesita
 const cleanDatabaseUrl = process.env.DATABASE_URL?.replace('?sslmode=require', '') || '';
 
-// Configurar pool de conexiones PostgreSQL
 const pool = new Pool({
   connectionString: cleanDatabaseUrl,
   ssl: cleanDatabaseUrl.includes('supabase') || cleanDatabaseUrl.includes('.supabase.co')
@@ -14,16 +13,15 @@ const pool = new Pool({
         rejectUnauthorized: false
       }
     : false,
-  max: 20, // máximo de conexiones en el pool
+  max: 20,
   idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 10000, // Aumentado a 10 segundos
-  statement_timeout: 30000, // Timeout para queries (30 segundos)
+  connectionTimeoutMillis: 10000,
+  statement_timeout: 30000,
   query_timeout: 30000,
 });
 
-// Manejar errores del pool
 pool.on('error', (err) => {
-  console.error('Unexpected error on idle client', err);
+  logger.error('Unexpected error on idle client', err);
   process.exit(-1);
 });
 

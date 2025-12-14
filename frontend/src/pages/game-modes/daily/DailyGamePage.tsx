@@ -35,11 +35,8 @@ export const DailyGamePage: React.FC = () => {
   const { isReady: dictionaryReady, validateWord: validateWordLocal, getDictionary } = useWordDictionary();
   const gameSavedRef = useRef(false);
 
-  // Limpiar cualquier estado de otros modos al montar
   useEffect(() => {
-    // Limpiar localStorage de otros modos para asegurar que Daily sea independiente
     localStorage.removeItem('wordle-game-state');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [showInstructions, setShowInstructions] = useState(false);
@@ -49,6 +46,7 @@ export const DailyGamePage: React.FC = () => {
   const [toast, setToast] = useState<{ message: string; type: 'error' | 'success' | 'info' } | null>(null);
   const [keyboardReadyRow, setKeyboardReadyRow] = useState<number | null>(null);
   const [showGameOver, setShowGameOver] = useState(false);
+  const [modalDismissed, setModalDismissed] = useState(false);
 
   const guessesForKeyboard = revealingRow !== null && (keyboardReadyRow === null || keyboardReadyRow < revealingRow)
     ? attempts.slice(0, revealingRow)
@@ -158,7 +156,7 @@ export const DailyGamePage: React.FC = () => {
 
         gameSavedRef.current = true;
       } catch (error) {
-        // Error saving game stats
+        // Silently handle error
       }
     };
 
@@ -190,15 +188,23 @@ export const DailyGamePage: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyboardPress);
   }, [gameStatus, hasPlayedToday, handleKeyPress, handleDelete, handleEnter]);
 
-  // Show game over modal when game ends OR when user already played today
   React.useEffect(() => {
-    if (gameStatus === 'won' || gameStatus === 'lost') {
+    if ((gameStatus === 'won' || gameStatus === 'lost') && !modalDismissed) {
       setShowGameOver(true);
-    } else if (hasPlayedToday && previousGame && targetWord) {
-      // Si ya jugó hoy, mostrar el modal automáticamente
+    } else if (hasPlayedToday && previousGame && targetWord && !modalDismissed) {
       setShowGameOver(true);
+    } else if (gameStatus === 'playing' && !hasPlayedToday) {
+      setShowGameOver(false);
+      setModalDismissed(false);
     }
-  }, [gameStatus, hasPlayedToday, previousGame, targetWord]);
+  }, [gameStatus, hasPlayedToday, previousGame, targetWord, modalDismissed]);
+
+  const handleCloseModal = useCallback(() => {
+    if (!hasPlayedToday || !previousGame) {
+      setShowGameOver(false);
+      setModalDismissed(true);
+    }
+  }, [hasPlayedToday, previousGame]);
 
   return (
     <Layout
@@ -252,14 +258,9 @@ export const DailyGamePage: React.FC = () => {
           isWon={previousGame ? previousGame.won : gameStatus === 'won'}
           targetWord={targetWord || ''}
           attempts={previousGame ? previousGame.attemptsUsed : attempts.length}
-          onClose={() => {
-            // Solo permitir cerrar si no ha jugado hoy
-            if (!hasPlayedToday || !previousGame) {
-              setShowGameOver(false);
-            }
-          }}
+          onClose={handleCloseModal}
           isDailyMode={true}
-          preventClose={hasPlayedToday && !!previousGame} // Prevenir cerrar si ya jugó hoy
+          preventClose={hasPlayedToday && !!previousGame}
         />
 
         <InstructionsModal

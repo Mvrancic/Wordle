@@ -1,5 +1,6 @@
 import pool from '../config/database';
 import { UserStats } from '../models/user.model';
+import { logger } from '../utils/logger';
 
 export class UserStatsRepository {
   async findByUserId(userId: string): Promise<UserStats | null> {
@@ -21,7 +22,7 @@ export class UserStatsRepository {
       );
       return result.rows[0] || null;
     } catch (error) {
-      console.error(`[UserStatsRepository] Error finding stats for user ${userId}:`, error);
+      logger.error(`Error finding stats for user ${userId}`, error);
       throw error;
     }
   }
@@ -46,7 +47,7 @@ export class UserStatsRepository {
       );
       return result.rows[0];
     } catch (error) {
-      console.error(`[UserStatsRepository] Error creating stats for user ${userId}:`, error);
+      logger.error(`Error creating stats for user ${userId}`, error);
       throw error;
     }
   }
@@ -70,7 +71,7 @@ export class UserStatsRepository {
       }
       return stats;
     } catch (error) {
-      console.error(`[UserStatsRepository] Error updating stats for user ${userId}:`, error);
+      logger.error(`Error updating stats for user ${userId}`, error);
       throw error;
     }
   }

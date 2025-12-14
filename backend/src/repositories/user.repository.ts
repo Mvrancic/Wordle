@@ -1,5 +1,6 @@
 import pool from '../config/database';
 import { User } from '../models/user.model';
+import { logger } from '../utils/logger';
 
 export class UserRepository {
   async findById(id: string): Promise<User | null> {
@@ -17,7 +18,7 @@ export class UserRepository {
       );
       return result.rows[0] || null;
     } catch (error) {
-      console.error(`[UserRepository] Error finding user by id ${id}:`, error);
+      logger.error(`Error finding user by id ${id}`, error);
       throw error;
     }
   }
@@ -37,14 +38,13 @@ export class UserRepository {
       );
       return result.rows[0] || null;
     } catch (error) {
-      console.error(`[UserRepository] Error finding user by email ${email}:`, error);
+      logger.error(`Error finding user by email ${email}`, error);
       throw error;
     }
   }
 
   async create(email: string, username: string | undefined, hashedPassword: string, userId?: string): Promise<User> {
     try {
-      // Si se proporciona userId (de Supabase Auth), usarlo, sino generar uno
       const finalUserId = userId || require('uuid').v4();
       
       const result = await pool.query(
@@ -61,7 +61,7 @@ export class UserRepository {
       );
       return result.rows[0];
     } catch (error) {
-      console.error('[UserRepository] Error creating user:', error);
+      logger.error('Error creating user', error);
       throw error;
     }
   }

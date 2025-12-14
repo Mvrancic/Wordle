@@ -1,5 +1,6 @@
 import pool from '../config/database';
 import { UserGameHistory } from '../models/user.model';
+import { logger } from '../utils/logger';
 
 export class UserGameHistoryRepository {
   async create(
@@ -20,7 +21,7 @@ export class UserGameHistoryRepository {
       );
       return result.rows[0];
     } catch (error) {
-      console.error('[UserGameHistoryRepository] Error creating game history:', error);
+      logger.error('Error creating game history', error);
       throw error;
     }
   }
@@ -47,7 +48,7 @@ export class UserGameHistoryRepository {
       );
       return result.rows;
     } catch (error) {
-      console.error(`[UserGameHistoryRepository] Error finding history for user ${userId}:`, error);
+      logger.error(`Error finding history for user ${userId}`, error);
       throw error;
     }
   }
@@ -60,7 +61,7 @@ export class UserGameHistoryRepository {
       );
       return parseInt(result.rows[0].count, 10);
     } catch (error) {
-      console.error(`[UserGameHistoryRepository] Error counting history for user ${userId}:`, error);
+      logger.error(`Error counting history for user ${userId}`, error);
       throw error;
     }
   }
