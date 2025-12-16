@@ -117,3 +117,4 @@ export const HardModeGamePage: React.FC = () => {
     </Layout>
   );
 };
+
