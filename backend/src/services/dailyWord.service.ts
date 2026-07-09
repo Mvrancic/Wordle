@@ -15,21 +15,17 @@ export class DailyWordService {
    * If no word for today exists, saves the provided word and returns it
    */
   async getOrSetTodayWord(word: string): Promise<string> {
-    try {
-      // Check if today's word exists
-      let todayWord = await dailyWordRepository.getTodayWord();
+    // Check if today's word exists
+    const todayWord = await dailyWordRepository.getTodayWord();
 
-      if (todayWord) {
-        return todayWord;
-      }
-
-      // No word for today, save the provided word
-      await dailyWordRepository.setTodayWord(word);
-      
-      return word.toUpperCase();
-    } catch (error) {
-      throw error;
+    if (todayWord) {
+      return todayWord;
     }
+
+    // No word for today, save the provided word
+    await dailyWordRepository.setTodayWord(word);
+
+    return word.toUpperCase();
   }
 
   /**

@@ -8,12 +8,13 @@ export class AuthController {
   // Sincronizar usuario de Supabase Auth a nuestra tabla users
   async syncUser(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
-      const { userId, email, username } = req.body;
+      const userId = req.userId!;
+      const { email, username } = req.body;
 
-      if (!userId || !email) {
+      if (!email) {
         res.status(400).json({
           success: false,
-          error: 'User ID and email are required',
+          error: 'Email is required',
         });
         return;
       }
@@ -27,8 +28,9 @@ export class AuthController {
         try {
           user = await userRepository.create(email, username || null, dummyPassword, userId);
           await userStatsRepository.create(userId);
-        } catch (error: any) {
-          if (error.code === '23505') {
+        } catch (error: unknown) {
+          const isDuplicateKey = typeof error === 'object' && error !== null && 'code' in error && (error as { code: string }).code === '23505';
+          if (isDuplicateKey) {
             user = await userRepository.findById(userId);
             if (!user) {
               throw error;

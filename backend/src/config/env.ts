@@ -15,6 +15,7 @@ const envSchema = z.object({
     .min(32)
     .default('development-secret-key-minimum-32-characters-long'),
   JWT_EXPIRES_IN: z.string().default('7d'),
+  SUPABASE_URL: z.string().url(),
   RATE_LIMIT_WINDOW_MS: z.string().default('900000'),
   RATE_LIMIT_MAX_REQUESTS: z.string().default('100'),
 });

@@ -1,181 +1,162 @@
 # Wordle Game Unlimited 🎯
 
-A comprehensive Wordle game implementation featuring multiple game modes, built as a full-stack monorepo with both frontend and backend components.
+A Wordle implementation with five real game modes, built as a full-stack
+monorepo. Game logic lives entirely in the frontend (offline-playable,
+localStorage-backed); the backend only handles auth sync, stats, history and
+the shared daily word.
 
 ## 🏗️ Repository Structure
 
-This is a **monorepo** containing both frontend and backend components:
-
-### Backend Structure
 ```
 backend/
 ├── src/
 │   ├── controllers/       # Route controllers
 │   ├── services/          # Business logic
-│   ├── repositories/      # Data access (Prisma)
+│   ├── repositories/      # Data access (raw SQL via `pg`)
 │   ├── models/            # TypeScript types and interfaces
-│   ├── schemas/           # Validation schemas (Zod)
-│   ├── middleware/        # Custom middlewares
+│   ├── middleware/        # Auth verification, error handling
 │   ├── routes/            # Route definitions
-│   ├── config/            # Configuration (DB, env)
+│   ├── config/            # Configuration (DB pool, env)
 │   ├── utils/             # Utilities
 │   └── types/             # Shared types
-├── prisma/
-│   └── schema.prisma      # Prisma schema
+├── sql/                   # SQL migrations (run manually in Supabase)
 └── package.json
-```
 
-### Frontend Structure
-```
 frontend/
 ├── src/
 │   ├── components/        # Reusable components
-│   │   ├── ui/           # Basic UI components
-│   │   └── layout/       # Layout components
-│   ├── hooks/            # Custom hooks
-│   ├── pages/            # Page components
-│   ├── services/         # API calls
-│   ├── types/            # TypeScript types
-│   └── utils/            # Utilities
+│   │   ├── game/          # Board, cells, keyboard
+│   │   ├── game-modes/    # Mode-specific UI (selectors, modals)
+│   │   └── layout/        # Header, layout shell
+│   ├── hooks/              # Game engines + page logic per mode
+│   ├── pages/              # Route components
+│   ├── services/           # API client
+│   ├── contexts/           # Auth context (Supabase session)
+│   ├── types/               # TypeScript types
+│   └── utils/               # Word evaluation logic
 └── package.json
 ```
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: React + TypeScript + Tailwind CSS + React Router
-- **Backend**: Express.js + TypeScript + Prisma + Supabase (PostgreSQL)
-- **Architecture**: Layered architecture (controllers → services → repositories → models)
+- **Frontend**: React + TypeScript + Tailwind CSS + React Router + Supabase JS (auth)
+- **Backend**: Express.js + TypeScript + `pg` (raw SQL) + Supabase (PostgreSQL + Auth)
+- **Architecture**: Game logic runs client-side; the backend is a thin API for
+  auth sync, per-user stats/history, and the daily word. There is no ORM —
+  repositories use hand-written SQL against a Supabase Postgres database.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn package manager
-- Supabase account (for database)
+- Node.js v18+
+- A Supabase project (Postgres database + Google OAuth provider enabled)
 
-### Installation
-
-#### 1. Backend Setup
+### 1. Backend setup
 
 ```bash
 cd backend
-
-# Install dependencies
 npm install
 
-# Setup Prisma
-npx prisma generate
-
-# Copy environment file
 cp env.example .env
-
-# Edit .env and add your Supabase DATABASE_URL
-# DATABASE_URL="postgresql://user:password@host:5432/database?schema=public"
-
-# Run migrations
-npx prisma migrate dev --name init
-
-# Start development server
-npm run dev
 ```
 
-#### 2. Frontend Setup
+Edit `.env`:
+- `DATABASE_URL` — your Supabase connection string (Project Settings → Database).
+- `SUPABASE_JWT_SECRET` — Project Settings → API → JWT Settings → JWT Secret.
+  The backend uses this to verify the session token the frontend sends;
+  without it the server refuses to start.
+- `FRONTEND_URL` — where the frontend runs (`http://localhost:3000` for local dev).
+
+Create the database schema by running the SQL files in `backend/sql/` **in
+order** (`01-...` through `04-...`) in the Supabase SQL Editor.
+
+```bash
+npm run dev   # http://localhost:3001
+```
+
+### 2. Frontend setup
 
 ```bash
 cd frontend
-
-# Install dependencies
 npm install
 
-# Copy environment file (optional)
 cp .env.example .env
-
-# Start development server
-npm start
 ```
 
-### Running with Docker
+Edit `.env`:
+- `REACT_APP_API_URL` — the backend URL (`http://localhost:3001/api` for local dev).
+- `REACT_APP_SUPABASE_URL` / `REACT_APP_SUPABASE_ANON_KEY` — same Supabase
+  project as the backend (Project Settings → API).
 
 ```bash
-# Development environment
-docker-compose -f docker-compose.dev.yml up
-
-# Production environment
-docker-compose up
+npm start   # http://localhost:3000
 ```
+
+Both servers need to be running for auth, stats, history and the Daily Word
+mode. Classic/Timer/Hard/Multi are fully playable offline as a guest even if
+the backend is down — only Daily Word and login-gated stats require it.
+
+### Docker
+
+`docker-compose.yml` and `scripts/setup.sh` exist in the repo but are **not
+currently verified** — they configure the backend with `DB_HOST`/`DB_PORT`-style
+variables that the app doesn't read (it only reads `DATABASE_URL`), so it will
+fail to boot as-is. Use the manual npm setup above until that's fixed.
 
 ## 📝 Environment Variables
 
-### Backend (.env)
+### Backend (`.env`)
 ```env
-DATABASE_URL="postgresql://user:password@host:5432/database?schema=public"
+DATABASE_URL="postgresql://user:password@host:5432/database?sslmode=require"
 PORT=3001
 NODE_ENV=development
 FRONTEND_URL=http://localhost:3000
-JWT_SECRET=your-super-secret-jwt-key-here
-JWT_EXPIRES_IN=7d
+SUPABASE_JWT_SECRET=your-supabase-project-jwt-secret
 RATE_LIMIT_WINDOW_MS=900000
 RATE_LIMIT_MAX_REQUESTS=100
 ```
+`JWT_SECRET`/`JWT_EXPIRES_IN` are also validated but unused today — reserved
+for a possible future first-party auth flow. All real auth goes through
+Supabase.
 
-### Frontend (.env)
+### Frontend (`.env`)
 ```env
 REACT_APP_API_URL=http://localhost:3001/api
+REACT_APP_SUPABASE_URL=https://your-project.supabase.co
+REACT_APP_SUPABASE_ANON_KEY=your-supabase-anon-key
 ```
 
-## 🎮 Game Overview
+## 🎮 Game Modes
 
-This repository contains a complete Wordle game implementation that goes beyond the classic version, offering multiple exciting game modes for players of all skill levels.
+All five modes share the same 5-letter English word list and color-coded
+feedback (🟩 correct position, 🟨 wrong position, ⬜ not in word).
 
-### Classic Wordle Mode
-The traditional Wordle experience where players attempt to guess a 5-letter word within 6 attempts. Each guess provides valuable color-coded feedback:
-- 🟩 **Green**: Correct letter in the correct position
-- 🟨 **Yellow**: Correct letter in the wrong position  
-- ⬜ **Gray**: Letter not in the word
+- **Classic** — unlimited plays, 6 attempts, no time or extra rules.
+- **Timer** — pick a time limit (10s–5min); guess before it runs out.
+- **Hard** — every green/yellow clue from a previous guess must be reused.
+- **Daily** — one shared word per day, same for everyone, one attempt per day.
+- **Multi** — Quordle/Dordle-style: guess 2 or 4 words at once, one guess
+  evaluated against every unsolved board, boardCount + 5 shared attempts
+  (7 for 2 words, 9 for 4).
 
-### Additional Game Modes
-
-#### ⏰ Timer Mode
-Race against the clock to solve words as quickly as possible, adding an exciting time-pressure element to the classic gameplay.
-
-#### 🔤 Accented Words Mode
-Challenge yourself with Spanish words that include accents and special characters, perfect for language learners and native speakers.
-
-#### 🎬 Movie Titles Mode
-Guess popular movie titles instead of regular words, combining word-guessing fun with cinema knowledge.
-
-## 🎯 Game Features
-
-- **Multiple Difficulty Levels**: From beginner-friendly to expert challenges
-- **Responsive Design**: Play seamlessly across desktop, tablet, and mobile devices
-- **Real-time Feedback**: Instant visual feedback for each guess
-- **Statistics Tracking**: Keep track of your win streaks and performance
-- **Customizable Themes**: Choose from various color schemes and themes
-- **Multi-language Support**: Enjoy the game in different languages
-
-## 🎲 How to Play
-
-1. **Start a Game**: Choose your preferred game mode
-2. **Make Your Guess**: Enter a valid word (5 letters for classic mode)
-3. **Analyze Feedback**: Use the color clues to narrow down possibilities
-4. **Strategic Guessing**: Apply logic and vocabulary knowledge to solve the puzzle
-5. **Win or Learn**: Either celebrate your victory or learn from your attempts
-
-### Tips for Success
-- Start with words containing common vowels (A, E, I, O, U)
-- Use words with different letter combinations to maximize information gain
-- Pay attention to letter frequency in the language
-- Don't repeat letters you've already eliminated
+Signed-in users (Google, via Supabase) get their stats and game history
+persisted server-side. Classic, Timer, Hard and Multi are fully playable
+offline as a guest, entirely via localStorage. Daily always needs the
+backend, guest or not, since the word has to be the same for everyone.
 
 ## 📊 API Endpoints
 
-### Games
-- `POST /api/games` - Create a new game
-- `GET /api/games/:id` - Get game by ID
-- `POST /api/games/:id/guess` - Make a guess
+All routes below except `/auth/sync`'s registration step require a Supabase
+session token (`Authorization: Bearer <access_token>`), which the frontend's
+API client attaches automatically. `/daily/today` accepts an optional token.
 
-### Health Check
-- `GET /health` - API health check
+- `POST /api/auth/sync` — sync a Supabase-authenticated user into our `users` table
+- `GET /api/stats/:userId` — get a user's stats (must match the session)
+- `POST /api/stats/record` — record a finished game (history + streak/stats update)
+- `GET /api/history/:userId` — get a user's game history (must match the session)
+- `GET /api/daily/all` — list previously used daily words
+- `POST /api/daily/today` — get/set today's word, and whether this user already played
+- `GET /health` — health check
 
 ## 🧪 Development Scripts
 
@@ -183,35 +164,39 @@ Guess popular movie titles instead of regular words, combining word-guessing fun
 ```bash
 npm run dev          # Start development server
 npm run build        # Build for production
-npm run start        # Start production server
-npm run lint         # Lint code
-npm run format       # Format code
-npm run type-check   # Type check
-npm run prisma:studio # Open Prisma Studio
+npm run start         # Start production server (after build)
+npm run lint          # Lint code
+npm run format        # Format code
+npm run type-check    # Type check
 ```
 
 ### Frontend
 ```bash
-npm start            # Start development server
-npm run build        # Build for production
-npm test             # Run tests
+npm start             # Start development server
+npm run build         # Build for production
+npm test              # Run tests
 ```
+
+Test coverage today is limited to the pure word-evaluation logic
+(`src/utils/gameLogic.test.ts`) — there's no end-to-end or component test
+suite yet.
 
 ## 📚 Architecture
 
-### Backend Architecture (Layered)
-1. **Controllers**: Handle HTTP requests/responses
-2. **Services**: Business logic and game rules
-3. **Repositories**: Data access layer using Prisma
-4. **Models**: TypeScript interfaces and DTOs
-5. **Schemas**: Validation schemas using Zod
+### Backend (layered)
+1. **Controllers** — HTTP request/response handling
+2. **Services** — business logic (stats aggregation, daily word selection)
+3. **Repositories** — hand-written SQL over a `pg` connection pool
+4. **Middleware** — Supabase JWT verification (`requireAuth`/`optionalAuth`), error handling
 
-### Frontend Architecture
-1. **Pages**: Route components
-2. **Components**: Reusable UI components
-3. **Hooks**: Custom React hooks for state management
-4. **Services**: API client and data fetching
-5. **Types**: TypeScript type definitions
+### Frontend
+1. **Pages** — one per route/game mode
+2. **Hooks** — one local game-engine hook per mode (`useLocalClassicGame`,
+   `useLocalHardGame`, `useDailyGame`, `useLocalMultiGame`), plus shared
+   helpers (`useWordDictionary`, `useKeyboardColors`)
+3. **Components** — board/cell/keyboard primitives reused across every mode
+4. **Services** — `services/api.ts`, an axios client with an interceptor that
+   attaches the current Supabase session token
 
 ---
 

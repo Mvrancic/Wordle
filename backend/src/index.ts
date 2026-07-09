@@ -14,7 +14,7 @@ const app = express();
 // 🔥 CRÍTICO: Manejar OPTIONS ANTES de CUALQUIER otra cosa
 // Esto es especialmente importante en Vercel Serverless Functions
 // Este middleware DEBE estar antes de cualquier otro middleware
-app.use((req, res, next) => {
+app.use((req, res, next): void => {
   // Manejar preflight OPTIONS requests
   if (req.method === 'OPTIONS') {
     const origin = req.headers.origin as string | undefined;
@@ -39,7 +39,8 @@ app.use((req, res, next) => {
       res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
     }
     
-    return res.sendStatus(200);
+    res.sendStatus(200);
+    return;
   }
   next();
 });

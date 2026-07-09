@@ -5,14 +5,10 @@ import { ApiResponse } from '../types';
 export class HistoryController {
   async getHistory(req: Request, res: Response<ApiResponse>): Promise<void> {
     try {
-      // TODO: Use req.user?.id when authentication is implemented
-      const userId = req.params.userId;
+      const userId = req.userId!;
 
-      if (!userId) {
-        res.status(400).json({
-          success: false,
-          error: 'User ID is required',
-        });
+      if (req.params.userId !== userId) {
+        res.status(403).json({ success: false, error: 'Forbidden' });
         return;
       }
 
@@ -34,52 +30,6 @@ export class HistoryController {
       });
     }
   }
-
-  async createHistory(req: Request, res: Response<ApiResponse>): Promise<void> {
-    try {
-      const userId = req.params.userId || req.body.userId;
-
-      if (!userId) {
-        res.status(400).json({
-          success: false,
-          error: 'User ID is required',
-        });
-        return;
-      }
-
-      const { mode, targetWord, won, attemptsUsed, timeLimit, timeTaken } = req.body;
-
-      if (!mode || !targetWord || typeof won !== 'boolean' || !attemptsUsed) {
-        res.status(400).json({
-          success: false,
-          error: 'Missing required fields: mode, targetWord, won, attemptsUsed',
-        });
-        return;
-      }
-
-      const history = await historyService.createHistory({
-        userId,
-        mode,
-        targetWord,
-        won,
-        attemptsUsed,
-        timeLimit,
-        timeTaken,
-      });
-
-      res.json({
-        success: true,
-        data: history,
-      });
-    } catch (error: unknown) {
-      const message = error instanceof Error ? error.message : 'Failed to create history';
-      res.status(500).json({
-        success: false,
-        error: message,
-      });
-    }
-  }
 }
 
 export default new HistoryController();
-

@@ -22,6 +22,6 @@ module.exports = {
     'prefer-const': 'error',
     'no-var': 'error',
   },
-  ignorePatterns: ['dist', 'node_modules', '*.config.js', 'prisma'],
+  ignorePatterns: ['dist', 'node_modules', '*.config.js'],
 };
 

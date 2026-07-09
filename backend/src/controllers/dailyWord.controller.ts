@@ -32,7 +32,7 @@ export class DailyWordController {
    */
   async getTodayWord(req: Request, res: Response<ApiResponse<{ word: string; hasPlayed: boolean; todayGame?: { targetWord: string; won: boolean; attemptsUsed: number } | null }>>): Promise<void> {
     try {
-      const userId = req.query.userId as string | undefined;
+      const userId = req.userId;
       const word = req.body.word as string | undefined;
       
       if (!word || typeof word !== 'string' || word.length !== 5) {

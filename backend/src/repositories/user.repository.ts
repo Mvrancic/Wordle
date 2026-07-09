@@ -43,21 +43,19 @@ export class UserRepository {
     }
   }
 
-  async create(email: string, username: string | undefined, hashedPassword: string, userId?: string): Promise<User> {
+  async create(email: string, username: string | undefined, hashedPassword: string, userId: string): Promise<User> {
     try {
-      const finalUserId = userId || require('uuid').v4();
-      
       const result = await pool.query(
-        `INSERT INTO users (id, email, username, password) 
-         VALUES ($1, $2, $3, $4) 
-         RETURNING 
+        `INSERT INTO users (id, email, username, password)
+         VALUES ($1, $2, $3, $4)
+         RETURNING
           id,
           email,
           username,
           password,
           created_at as "createdAt",
           updated_at as "updatedAt"`,
-        [finalUserId, email, username, hashedPassword]
+        [userId, email, username, hashedPassword]
       );
       return result.rows[0];
     } catch (error) {

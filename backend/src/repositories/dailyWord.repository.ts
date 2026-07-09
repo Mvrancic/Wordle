@@ -24,21 +24,17 @@ export class DailyWordRepository {
    */
   async getTodayWord(): Promise<string | null> {
     const today = this.getArgentinaTodayDate();
-    
-    try {
-      const result = await pool.query(
-        `SELECT word FROM daily_words WHERE date = $1::date`,
-        [today]
-      );
 
-      if (result.rows.length > 0) {
-        return result.rows[0].word;
-      }
+    const result = await pool.query(
+      `SELECT word FROM daily_words WHERE date = $1::date`,
+      [today]
+    );
 
-      return null;
-    } catch (error) {
-      throw error;
+    if (result.rows.length > 0) {
+      return result.rows[0].word;
     }
+
+    return null;
   }
 
   /**
@@ -67,14 +63,10 @@ export class DailyWordRepository {
       );
     } catch (error) {
       // Si hay error de constraint único, intentar con UPDATE
-      try {
-        await pool.query(
-          `UPDATE daily_words SET word = $1 WHERE date = $2::date`,
-          [word.toUpperCase(), today]
-        );
-      } catch (updateError) {
-        throw updateError;
-      }
+      await pool.query(
+        `UPDATE daily_words SET word = $1 WHERE date = $2::date`,
+        [word.toUpperCase(), today]
+      );
     }
   }
 
