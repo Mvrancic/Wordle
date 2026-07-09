@@ -217,7 +217,6 @@ export const TimerGamePage: React.FC = () => {
                 const attemptsUsed = attempts.length;
 
                 await statsApi.saveGame(
-                    user.id,
                     'timer',
                     targetWord,
                     won,

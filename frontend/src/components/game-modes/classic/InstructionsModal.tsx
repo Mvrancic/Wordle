@@ -5,7 +5,7 @@ import { GameModeDetails } from '../shared/GameModeDetails';
 interface InstructionsModalProps {
   isOpen: boolean;
   onClose: () => void;
-  gameMode?: 'classic' | 'timer' | 'hard';
+  gameMode?: 'classic' | 'timer' | 'hard' | 'multi';
 }
 
 export const InstructionsModal: React.FC<InstructionsModalProps> = ({
@@ -15,7 +15,7 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({
 }) => {
   const [activeTab, setActiveTab] = useState<'how-to-play' | 'mode-details'>('how-to-play');
 
-  const hasModeDetails = gameMode === 'timer' || gameMode === 'hard';
+  const hasModeDetails = gameMode === 'timer' || gameMode === 'hard' || gameMode === 'multi';
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title="How to Play" showCloseButton={true}>
@@ -43,7 +43,7 @@ export const InstructionsModal: React.FC<InstructionsModalProps> = ({
               }
             `}
           >
-            {gameMode === 'timer' ? 'Timer Mode' : 'Hard Mode'}
+            {gameMode === 'timer' ? 'Timer Mode' : gameMode === 'multi' ? 'Multi Mode' : 'Hard Mode'}
           </button>
         </div>
       )}

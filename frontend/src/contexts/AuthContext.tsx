@@ -52,7 +52,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           try {
             const { authApi } = await import('../services/api');
             await authApi.syncUser(
-              session.user.id,
               session.user.email || '',
               session.user.user_metadata?.full_name || session.user.user_metadata?.name
             );

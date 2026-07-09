@@ -33,6 +33,12 @@ export const Home: React.FC = () => {
       description: 'A new word every day. Can you guess it?',
       available: true,
     },
+    {
+      id: 'multi',
+      title: 'Multi Mode',
+      description: 'Guess 2 or 4 words at once. One guess counts on every board.',
+      available: true,
+    },
   ];
 
   const handleModeClick = (modeId: string) => {
@@ -44,6 +50,8 @@ export const Home: React.FC = () => {
       navigate('/game/daily');
     } else if (modeId === 'hardcore') {
       navigate('/game/hard');
+    } else if (modeId === 'multi') {
+      navigate('/game/multi');
     }
   };
 

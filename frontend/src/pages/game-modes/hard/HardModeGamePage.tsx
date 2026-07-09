@@ -118,3 +118,4 @@ export const HardModeGamePage: React.FC = () => {
   );
 };
 
+

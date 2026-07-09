@@ -207,7 +207,7 @@ export function useGamePageLogic({
 
     const saveGameStats = async () => {
       try {
-        await statsApi.saveGame(user.id, gameMode, targetWord, gameStatus === 'won', attempts.length);
+        await statsApi.saveGame(gameMode, targetWord, gameStatus === 'won', attempts.length);
         gameSavedRef.current = true;
       } catch (error) {
         // Silently fail - stats are not critical
@@ -283,4 +283,5 @@ export function useGamePageLogic({
     handleRestartGame,
   };
 }
+
 

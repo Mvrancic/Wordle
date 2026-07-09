@@ -39,6 +39,51 @@ export function getRandomWord(wordList: string[]): string {
   return wordList[randomIndex].toUpperCase();
 }
 
+export interface MultiBoardState {
+  targetWord: string;
+  attempts: Array<{ word: string; feedback: CellStatus[] }>;
+  solved: boolean;
+}
+
+/**
+ * Picks `count` unique random words from wordList, so a single Multi Mode
+ * game never shows the same target word on two boards.
+ */
+export function pickUniqueRandomWords(wordList: string[], count: number): string[] {
+  const pool = [...wordList];
+  const words: string[] = [];
+
+  while (words.length < count && pool.length > 0) {
+    const index = Math.floor(Math.random() * pool.length);
+    words.push(pool[index].toUpperCase());
+    pool.splice(index, 1);
+  }
+
+  return words;
+}
+
+/**
+ * Applies one guess to every board that isn't solved yet. Solved boards are
+ * left untouched (they stop receiving attempts), matching Quordle/Dordle
+ * rules where a solved board locks in for the rest of the game.
+ */
+export function submitMultiGuess(boards: MultiBoardState[], guess: string): MultiBoardState[] {
+  const upperGuess = guess.toUpperCase();
+
+  return boards.map((board) => {
+    if (board.solved) {
+      return board;
+    }
+
+    const feedback = evaluateGuess(upperGuess, board.targetWord);
+    return {
+      ...board,
+      attempts: [...board.attempts, { word: upperGuess, feedback }],
+      solved: upperGuess === board.targetWord,
+    };
+  });
+}
+
 export function validateHardMode(
   guess: string,
   previousAttempts: Array<{ word: string; feedback: CellStatus[] }>

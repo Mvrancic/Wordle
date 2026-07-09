@@ -1,14 +1,6 @@
 import axios from 'axios';
-import {
-  ApiResponse,
-  Game,
-  GameWithGuesses,
-  CreateGameResponse,
-  MakeGuessResponse,
-  UserStats,
-  GameHistory,
-  SyncUserResponse,
-} from '../types';
+import { ApiResponse, UserStats, GameHistory, SyncUserResponse } from '../types';
+import { supabase } from '../config/supabase';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
 
@@ -19,65 +11,20 @@ const apiClient = axios.create({
   },
 });
 
-export const gameApi = {
-  createGame: async (gameMode?: string): Promise<Game> => {
-    const response = await apiClient.post<CreateGameResponse>('/games', {
-      gameMode: gameMode || 'classic',
-    });
-    if (response.data.success && response.data.data) {
-      return response.data.data;
-    }
-    throw new Error(response.data.error || 'Failed to create game');
-  },
-
-  getGame: async (id: string): Promise<GameWithGuesses> => {
-    const response = await apiClient.get<ApiResponse<GameWithGuesses>>(
-      `/games/${id}`
-    );
-    if (response.data.success && response.data.data) {
-      return response.data.data;
-    }
-    throw new Error(response.data.error || 'Failed to get game');
-  },
-
-  makeGuess: async (gameId: string, word: string) => {
-    const response = await apiClient.post<MakeGuessResponse>(
-      `/games/${gameId}/guess`,
-      {
-        word,
-      }
-    );
-    if (response.data.success && response.data.data) {
-      return response.data.data;
-    }
-    throw new Error(response.data.error || 'Failed to make guess');
-  },
-
-  validateWord: async (word: string, gameMode: string = 'classic'): Promise<boolean> => {
-    const response = await apiClient.get<ApiResponse<{ isValid: boolean }>>(
-      `/words/validate/${word}?gameMode=${gameMode}`
-    );
-    if (response.data.success && response.data.data) {
-      return response.data.data.isValid;
-    }
-    return false;
-  },
-
-  getAllWords: async (gameMode: string = 'classic'): Promise<string[]> => {
-    const response = await apiClient.get<ApiResponse<{ words: string[] }>>(
-      `/words/all?gameMode=${gameMode}`
-    );
-    if (response.data.success && response.data.data) {
-      return response.data.data.words;
-    }
-    throw new Error(response.data.error || 'Failed to get words');
-  },
-};
+// Attach the current Supabase session token so the backend can verify who's
+// calling instead of trusting whatever userId shows up in the URL/body.
+apiClient.interceptors.request.use(async (config) => {
+  const { data } = await supabase.auth.getSession();
+  const token = data.session?.access_token;
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
 
 export const authApi = {
-  syncUser: async (userId: string, email: string, username?: string): Promise<ApiResponse<SyncUserResponse>> => {
+  syncUser: async (email: string, username?: string): Promise<ApiResponse<SyncUserResponse>> => {
     const response = await apiClient.post<ApiResponse<SyncUserResponse>>('/auth/sync', {
-      userId,
       email,
       username,
     });
@@ -97,18 +44,6 @@ export const statsApi = {
     throw new Error(response.data.error || 'Failed to get stats');
   },
 
-  updateStats: async (userId: string, won: boolean, attemptsUsed: number, mode: string = 'classic'): Promise<ApiResponse<UserStats>> => {
-    const response = await apiClient.post<ApiResponse<UserStats>>(`/stats/${userId}`, {
-      won,
-      attemptsUsed,
-      mode,
-    });
-    if (response.data.success) {
-      return response.data;
-    }
-    throw new Error(response.data.error || 'Failed to update stats');
-  },
-
   getHistory: async (userId: string, limit: number = 100): Promise<ApiResponse<GameHistory[]>> => {
     const response = await apiClient.get<ApiResponse<GameHistory[]>>(
       `/history/${userId}?limit=${limit}`
@@ -119,8 +54,10 @@ export const statsApi = {
     throw new Error(response.data.error || 'Failed to get history');
   },
 
-  saveGame: async (userId: string, mode: string, targetWord: string, won: boolean, attemptsUsed: number, timeLimit?: number, timeTaken?: number): Promise<ApiResponse<GameHistory>> => {
-    const response = await apiClient.post<ApiResponse<GameHistory>>(`/history/${userId}`, {
+  // Records the finished game (history) and updates the user's streak/win-rate
+  // stats in a single call, for whoever the current session belongs to.
+  saveGame: async (mode: string, targetWord: string, won: boolean, attemptsUsed: number, timeLimit?: number, timeTaken?: number): Promise<ApiResponse<UserStats>> => {
+    const response = await apiClient.post<ApiResponse<UserStats>>('/stats/record', {
       mode,
       targetWord,
       won,
@@ -140,10 +77,9 @@ export const dailyWordApi = {
     const response = await apiClient.get<ApiResponse<{ words: string[] }>>('/daily/all');
     return response.data;
   },
-  getTodayWord: async (word: string, userId?: string): Promise<ApiResponse<{ word: string; hasPlayed: boolean; todayGame?: { targetWord: string; won: boolean; attemptsUsed: number } }>> => {
-    const params = userId ? `?userId=${userId}` : '';
+  getTodayWord: async (word: string): Promise<ApiResponse<{ word: string; hasPlayed: boolean; todayGame?: { targetWord: string; won: boolean; attemptsUsed: number } }>> => {
     const response = await apiClient.post<ApiResponse<{ word: string; hasPlayed: boolean; todayGame?: { targetWord: string; won: boolean; attemptsUsed: number } }>>(
-      `/daily/today${params}`,
+      '/daily/today',
       { word }
     );
     return response.data;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface GameModeDetailsProps {
-  mode: 'classic' | 'timer' | 'hard';
+  mode: 'classic' | 'timer' | 'hard' | 'multi';
 }
 
 export const GameModeDetails: React.FC<GameModeDetailsProps> = ({ mode }) => {
@@ -85,6 +85,34 @@ export const GameModeDetails: React.FC<GameModeDetailsProps> = ({ mode }) => {
             <p className="text-gray-300 text-xs sm:text-sm">
               <strong className="text-white">Note:</strong> If you violate any of these rules, your guess will be rejected with an error message explaining what you need to fix.
             </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (mode === 'multi') {
+    return (
+      <div className="space-y-4 sm:space-y-6 flex flex-col justify-center min-h-[400px]">
+        <h3 className="text-white font-semibold text-lg sm:text-xl">
+          Multi Mode Rules
+        </h3>
+        <div className="space-y-4 text-sm sm:text-base">
+          <div>
+            <strong className="text-white text-base sm:text-lg">1. Choose your board count:</strong>
+            <p className="mt-1">Pick 2 or 4 words to guess at the same time.</p>
+          </div>
+          <div>
+            <strong className="text-white text-base sm:text-lg">2. One guess, every board:</strong>
+            <p className="mt-1">Each guess you type is evaluated against every board that isn&apos;t solved yet.</p>
+          </div>
+          <div>
+            <strong className="text-white text-base sm:text-lg">3. Shared attempts:</strong>
+            <p className="mt-1">You get boardCount + 5 attempts total (7 for 2 words, 9 for 4 words) to solve them all.</p>
+          </div>
+          <div>
+            <strong className="text-white text-base sm:text-lg">4. Solved boards lock in:</strong>
+            <p className="mt-1">Once you solve a board it stops changing — keep going on the rest with your remaining attempts.</p>
           </div>
         </div>
       </div>

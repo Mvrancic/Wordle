@@ -147,7 +147,6 @@ export const DailyGamePage: React.FC = () => {
         const attemptsUsed = attempts.length;
 
         await statsApi.saveGame(
-          user.id,
           'daily',
           targetWord,
           won,

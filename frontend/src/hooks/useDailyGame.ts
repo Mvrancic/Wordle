@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import { useWordleEngine } from './useWordleEngine';
 import { useWordDictionary } from './useWordDictionary';
 import { dailyWordApi } from '../services/api';
-import { useAuth } from '../contexts/AuthContext';
 
 /**
  * Hook específico para el modo Daily
@@ -11,7 +10,6 @@ import { useAuth } from '../contexts/AuthContext';
 export function useDailyGame() {
   const engine = useWordleEngine('wordle-daily-game-state');
   const { isReady: dictionaryReady, getWordList } = useWordDictionary();
-  const { user } = useAuth();
   const [isLoading, setIsLoading] = useState(false); // Cambiar a false inicialmente
   const [hasPlayedToday, setHasPlayedToday] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -65,7 +63,7 @@ export function useDailyGame() {
         selectedWord = availableWords[randomIndex];
       }
 
-      const response = await dailyWordApi.getTodayWord(selectedWord, user?.id);
+      const response = await dailyWordApi.getTodayWord(selectedWord);
       
       if (response.success && response.data) {
         const dailyWord = response.data.word;
@@ -90,7 +88,7 @@ export function useDailyGame() {
     } finally {
       setIsLoading(false);
     }
-  }, [engine, user, getWordList, wordLoaded, isLoading]);
+  }, [engine, getWordList, wordLoaded, isLoading]);
 
   useEffect(() => {
     if (dictionaryReady && !wordLoaded && !isLoading) {
